@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Solutions • Gotik Consulting</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Motion.dev Library -->
+    <script src="https://cdn.jsdelivr.net/npm/motion@11.11.17/dist/motion.js"></script>
+
+    <script type="module" async
+        src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fgotikcons3559back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.12"></script>
+    <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.2"></script>
+</head>
+
+<body class="bg-white text-[#1A1A2E] antialiased">
+
+    <!-- Navigation -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-[#3E92CC]/10 py-6 px-6 md:px-12 flex items-center justify-between">
+        <div class="flex items-center gap-12">
+            <button id="mobile-menu-btn" class="flex flex-col gap-1.5 group w-8 md:hidden">
+                <div class="w-full h-px bg-[#0A2463] group-hover:w-3/4 transition-all duration-500 ease-out"></div>
+                <div class="w-2/3 h-px bg-[#0A2463] group-hover:w-full transition-all duration-500 ease-out delay-75">
+                </div>
+            </button>
+            <div class="hidden md:flex gap-8 text-xs font-medium tracking-widest uppercase text-[#0A2463]">
+                <a href="../index.html#solutions" class="hover:text-[#3E92CC] transition-colors">Solutions</a>
+                <a href="ai-solutions.html" class="text-[#3E92CC]">AI Solutions</a>
+                <a href="../index.html#academy" class="hover:text-[#3E92CC] transition-colors">Academy</a>
+                <a href="../index.html#about" class="hover:text-[#3E92CC] transition-colors">About</a>
+            </div>
+        </div>
+
+        <div class="absolute left-1/2 top-6 -translate-x-1/2 text-center">
+            <a href="../index.html" class="font-['DM_Sans'] text-xl tracking-tight font-medium text-[#0A2463]">Gotik
+                Consulting</a>
+        </div>
+
+        <a href="../index.html#contact"
+            class="bg-[#0A2463] text-white px-6 py-2.5 text-[10px] font-bold uppercase tracking-widest hover:bg-[#3E92CC] transition-colors rounded-full">
+            Get Started
+        </a>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu"
+        class="fixed inset-0 bg-[#0A2463] z-[60] flex flex-col justify-center items-center transform -translate-y-full transition-transform duration-500 md:hidden">
+        <button id="close-menu" class="absolute top-6 right-6 text-white text-3xl">
+            <iconify-icon icon="solar:close-circle-bold-duotone"></iconify-icon>
+        </button>
+        <nav class="flex flex-col gap-8 text-center">
+            <a href="../index.html#solutions"
+                class="text-3xl font-['DM_Sans'] text-[#3E92CC] hover:text-white transition-colors mobile-link">Solutions</a>
+            <a href="ai-solutions.html" class="text-3xl font-['DM_Sans'] text-white mobile-link">AI Solutions</a>
+            <a href="../index.html#academy"
+                class="text-3xl font-['DM_Sans'] text-[#3E92CC] hover:text-white transition-colors mobile-link">Academy</a>
+            <a href="../index.html#about"
+                class="text-3xl font-['DM_Sans'] text-[#3E92CC] hover:text-white transition-colors mobile-link">About
+                Us</a>
+            <a href="../index.html#contact"
+                class="text-3xl font-['DM_Sans'] text-[#3E92CC] hover:text-white transition-colors mobile-link">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6 md:px-12 max-w-[1440px] mx-auto">
+        <div class="max-w-4xl mx-auto text-center mb-16">
+            <span
+                class="inline-block py-2 px-4 bg-[#3E92CC]/10 text-[#3E92CC] text-xs font-bold uppercase tracking-widest rounded-full mb-6">
+                AI & Digital Transformation
+            </span>
+            <h1 class="text-5xl md:text-7xl font-['DM_Sans'] font-light text-[#0A2463] mb-6 leading-tight">
+                Transform Your Business with <span class="text-[#3E92CC]">AI Solutions</span>
+            </h1>
+            <p class="text-xl text-[#6B7280] leading-relaxed max-w-3xl mx-auto">
+                Leverage Azure AI, RAG, GenAI workflows, and intelligent automation to streamline operations, optimize
+                processes, and drive unprecedented efficiency across your organization.
+            </p>
+        </div>
+
+        <!-- Key Benefits Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-20">
+            <div
+                class="bg-gradient-to-br from-[#3E92CC]/10 to-transparent border border-[#3E92CC]/20 rounded-2xl p-8 hover:border-[#3E92CC]/40 transition-all">
+                <div class="w-16 h-16 bg-[#3E92CC] rounded-xl flex items-center justify-center mb-6">
+                    <iconify-icon icon="lucide:zap" width="32" class="text-white"></iconify-icon>
+                </div>
+                <h3 class="text-2xl font-['DM_Sans'] font-semibold text-[#0A2463] mb-3">60% Cost Reduction</h3>
+                <p class="text-[#6B7280]">Automate repetitive tasks and optimize resource allocation with intelligent AI
+                    workflows.</p>
+            </div>
+
+            <div
+                class="bg-gradient-to-br from-[#3E92CC]/10 to-transparent border border-[#3E92CC]/20 rounded-2xl p-8 hover:border-[#3E92CC]/40 transition-all">
+                <div class="w-16 h-16 bg-[#3E92CC] rounded-xl flex items-center justify-center mb-6">
+                    <iconify-icon icon="lucide:trending-up" width="32" class="text-white"></iconify-icon>
+                </div>
+                <h3 class="text-2xl font-['DM_Sans'] font-semibold text-[#0A2463] mb-3">5x Faster Processing</h3>
+                <p class="text-[#6B7280]">Accelerate document processing, data analysis, and decision-making with GenAI.
+                </p>
+            </div>
+
+            <div
+                class="bg-gradient-to-br from-[#3E92CC]/10 to-transparent border border-[#3E92CC]/20 rounded-2xl p-8 hover:border-[#3E92CC]/40 transition-all">
+                <div class="w-16 h-16 bg-[#3E92CC] rounded-xl flex items-center justify-center mb-6">
+                    <iconify-icon icon="lucide:shield-check" width="32" class="text-white"></iconify-icon>
+                </div>
+                <h3 class="text-2xl font-['DM_Sans'] font-semibold text-[#0A2463] mb-3">Enterprise-Grade Security</h3>
+                <p class="text-[#6B7280]">Built on Azure with compliance-ready AI solutions for regulated industries.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="py-20 px-6 md:px-12 bg-[#F8FAFC]">
+        <div class="max-w-[1440px] mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-xs font-bold text-[#6B7280] uppercase tracking-widest mb-3 block">Real-World
+                    Applications</span>
+                <h2 class="text-4xl md:text-5xl font-['DM_Sans'] text-[#0A2463] mb-4">AI Transformation Use Cases</h2>
+                <p class="text-[#6B7280] max-w-2xl mx-auto">Proven solutions powered by Azure AI, RAG architecture, and
+                    GenAI workflows</p>
+            </div>
+
+            <!-- Use Case 1: Intelligent Document Processing -->
+            <div
+                class="bg-white rounded-3xl p-8 md:p-12 mb-8 border border-[#3E92CC]/10 hover:border-[#3E92CC]/30 transition-all">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div
+                            class="inline-block px-3 py-1 bg-[#3E92CC]/10 text-[#3E92CC] text-xs font-bold uppercase rounded-full mb-4">
+                            Document Automation
+                        </div>
+                        <h3 class="text-3xl font-['DM_Sans'] font-semibold text-[#0A2463] mb-4">Intelligent Document
+                            Processing with Azure AI</h3>
+                        <p class="text-[#6B7280] mb-6 leading-relaxed">
+                            Transform manual document workflows with Azure Form Recognizer and custom AI models.
+                            Extract, classify, and process thousands of documents automatically with 99.5% accuracy.
+                        </p>
+
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-start gap-3">
+                                <iconify-icon icon="lucide:check-circle" width="20"
+                                    class="text-[#3E92CC] mt-1 flex-shrink-0"></iconify-icon>
+                                <div>
+                                    <strong class="text-[#0A2463]">Invoice Processing:</strong>
+                                    <span class="text-[#6B7280]">Reduce processing time from 3 days to 15 minutes</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <iconify-icon icon="lucide:check-circle" width="20"
+                                    class="text-[#3E92CC] mt-1 flex-shrink-0"></iconify-icon>
+                                <div>
+                                    <strong class="text-[#0A2463]">Contract Analysis:</strong>
+                                    <span class="text-[#6B7280]">Extract key clauses and identify risks
+                                        automatically</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <iconify-icon icon="lucide:check-circle" width="20"
+                                    class="text-[#3E92CC] mt-1 flex-shrink-0"></iconify-icon>
+                                <div>
+                                    <strong class="text-[#0A2463]">Multi-language Support:</strong>
+                                    <span class="text-[#6B7280]">Process documents in 100+ languages seamlessly</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#F8FAFC] rounded-xl p-4 border border-[#3E92CC]/10">
+                            <div class="text-xs font-bold text-[#6B7280] uppercase tracking-wider mb-2">ROI Metrics
+                            </div>
+                            <div class="grid grid-cols-3 gap-4">
+                                <div>
+                                    <div class="text-2xl font-['DM_Sans'] font-bold text-[#3E92CC]">75%</div>
+                                    <div class="text-xs text-[#6B7280]">Cost Savings</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-['DM_Sans'] font-bold text-[#3E92CC]">10x</div>
+                                    <div class="text-xs text-[#6B7280]">Faster Processing</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-['DM_Sans'] font-bold text-[#3E92CC]">99.5%</div>
+                                    <div class="text-xs text-[#6B7280]">Accuracy Rate</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#0A2463] rounded-2xl p-8 text-white">
+                        <div class="text-xs font-bold uppercase tracking-wider mb-4 text-[#3E92CC]">Azure Architecture
+                        </div>
+                        <div class="space-y-4">
+                            <div class="bg-white/10 rounded-lg p-4 border border-white/10">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <iconify-icon icon="lucide:file-text" width="24"
+                                        class="text-[#3E92CC]"></iconify-icon>
+                                    <strong class="font-['DM_Sans']">Input Layer</strong>
+                                </div>
+                                <p class="text-sm text-white/70">Azure Blob Storage + Event Grid</p>
+                            </div>
+                            <div class="flex items-center justify-center text-[#3E92CC]">
+                                <iconify-icon icon="lucide:arrow-down" width="20"></iconify-icon>
+                            </div>
+                            <div class="bg-white/10 rounded-lg p-4 border border-white/10">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <iconify-icon icon="lucide:brain" width="24" class="text-[#3E92CC]"></iconify-icon>
+                                    <strong class="font-['DM_Sans']">AI Processing</strong>
+                                </div>
+                                <p class="text-sm text-white/70">Azure Form Recognizer + Custom Vision</p>
+                            </div>
+                            <div class="flex items-center justify-center text-[#3E92CC]">
+                                <iconify-icon icon="lucide:arrow-down" width="20"></iconify-icon>
+                            </div>
+                            <div class="bg-white/10 rounded-lg p-4 border border-white/10">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <iconify-icon icon="lucide:database" width="24"
+                                        class="text-[#3E92CC]"></iconify-icon>
+                                    <strong class="font-['DM_Sans']">Data Layer</strong>
+                                </div>
+                                <p class="text-sm text-white/70">Cosmos DB + Azure Cognitive Search</p>
+                            </div>
+                            <div class="flex items-center justify-center text-[#3E92CC]">
+                                <iconify-icon icon="lucide:arrow-down" width="20"></iconify-icon>
+                            </div>
+                            <div class="bg-white/10 rounded-lg p-4 border border-white/10">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <iconify-icon icon="lucide:workflow" width="24"
+                                        class="text-[#3E92CC]"></iconify-icon>
+                                    <strong class="font-['DM_Sans']">Automation</strong>
+                                </div>
+                                <p class="text-sm text-white/70">Azure Logic Apps + Power Automate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Use Case 2: RAG-Powered Knowledge Assistant -->
+            <div
+                class="bg-white rounded-3xl p-8 md:p-12 mb-8 border border-[#3E92CC]/10 hover:border-[#3E92CC]/30 transition-all">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="bg-[#0A2463] rounded-2xl p-8 text-white">
+                            <div class="text-xs font-bold uppercase tracking-wider mb-4 text-[#3E92CC]">RAG Architecture
+                            </div>
+                            <div class="space-y-4">
+                                <div class="bg-white/10 rounded-lg p-4 border border-white/10">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <iconify-icon icon="lucide:message-square" width="24"
+                                            class="text-[#3E92CC]"></iconify-icon>
+                                        <strong class="font-['DM_Sans']">User Query</strong>
+                                    </div>
+                                    <p class="text-sm text-white/70">Natural language input processing</p>
+                                </div>
+                                <div class="flex items-center justify-center text-[#3E92CC]">
+                                    <iconify-icon icon="lucide:arrow-down" width="20"></iconify-icon>
+                                </div>
+                                <div class="bg-white/10 rounded-lg p-4 border border-white/10">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <iconify-icon icon="lucide:search" width="24"
+                                            class="text-[#3E92CC]"></iconify-icon>
+                                        <strong class="font-['DM_Sans']">Retrieval</strong>
+                                    </div>
+                                    <p class="text-sm text-white/70">Azure Cognitive Search + Vector DB</p>
+                                </div>
+                                <div class="flex items-center justify-center text-[#3E92CC]">
+                                    <iconify-icon icon="lucide:arrow-down" width="20"></iconify-icon>
+                                </div>
+                                <div class="bg-white/10 rounded-lg p-4 border border-white/10">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <iconify-icon icon="lucide:sparkles" width="24"
+                                            class="text-[#3E92CC]"></iconify-icon>
+                                        <strong class="font-['DM_Sans']">Generation</strong>
+                                    </div>
+                                    <p class="text-sm text-white/70">Azure OpenAI GPT-4 + Context</p>
+                                </div>
+                                <div class="flex items-center justify-center text-[#3E92CC]">
+                                    <iconify-icon icon="lucide:arrow-down" width="20"></iconify-icon>
+                                </div>
+                                <div class="bg-white/10 rounded-lg p-4 border border-white/10">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <iconify-icon icon="lucide:check-check" width="24"
+                                            class="text-[#3E92CC]"></iconify-icon>
+                                        <strong class="font-['DM_Sans']">Response</strong>
+                                    </div>
+                                    <p class="text-sm text-white/70">Accurate, contextual answers with citations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-1 md:order-2">
+                        <div
+                            class="inline-block px-3 py-1 bg-[#3E92CC]/10 text-[#3E92CC] text-xs font-bold uppercase rounded-full mb-4">
+                            Knowledge Management
+                        </div>
+                        <h3 class="text-3xl font-['DM_Sans'] font-semibold text-[#0A2463] mb-4">RAG-Powered Enterprise
+                            Knowledge Assistant</h3>
+                        <p class="text-[#6B7280] mb-6 leading-relaxed">
+                            Deploy intelligent chatbots that provide accurate answers from your entire knowledge base
+                            using Retrieval-Augmented Generation (RAG) with Azure OpenAI and Cognitive Search.
+                        </p>
+
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-start gap-3">
+                                <iconify-icon icon="lucide:check-circle" width="20"
+                                    class="text-[#3E92CC] mt-1 flex-shrink-0"></iconify-icon>
+                                <div>
+                                    <strong class="text-[#0A2463]">Instant Answers:</strong>
+                                    <span class="text-[#6B7280]">Query millions of documents in seconds with semantic
+                                        search</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <iconify-icon icon="lucide:check-circle" width="20"
+                                    class="text-[#3E92CC] mt-1 flex-shrink-0"></iconify-icon>
+                                <div>
+                                    <strong class="text-[#0A2463]">Always Accurate:</strong>
+                                    <span class="text-[#6B7280]">Grounded responses with source citations and confidence
+                                        scores</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <iconify-icon icon="lucide:check-circle" width="20"
+                                    class="text-[#3E92CC] mt-1 flex-shrink-0"></iconify-icon>
+                                <div>
+                                    <strong class="text-[#0A2463]">Multi-Modal:</strong>
+                                    <span class="text-[#6B7280]">Process text, PDFs, images, and structured data
+                                        simultaneously</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#F8FAFC] rounded-xl p-4 border border-[#3E92CC]/10">
+                            <div class="text-xs font-bold text-[#6B7280] uppercase tracking-wider mb-2">Impact Metrics
+                            </div>
+                            <div class="grid grid-cols-3 gap-4">
+                                <div>
+                                    <div class="text-2xl font-['DM_Sans'] font-bold text-[#3E92CC]">85%</div>
+                                    <div class="text-xs text-[#6B7280]">Query Resolution</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-['DM_Sans'] font-bold text-[#3E92CC]">12x</div>
+                                    <div class="text-xs text-[#6B7280]">Faster Search</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-['DM_Sans'] font-bold text-[#3E92CC]">50%</div>
+                                    <div class="text-xs text-[#6B7280]">Support Reduction</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Use Case 3: AI Workflow Automation -->
+            <div
+                class="bg-white rounded-3xl p-8 md:p-12 mb-8 border border-[#3E92CC]/10 hover:border-[#3E92CC]/30 transition-all">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div
+                            class="inline-block px-3 py-1 bg-[#3E92CC]/10 text-[#3E92CC] text-xs font-bold uppercase rounded-full mb-4">
+                            Process Optimization
+                        </div>
+                        <h3 class="text-3xl font-['DM_Sans'] font-semibold text-[#0A2463] mb-4">End-to-End AI Workflow
+                            Automation</h3>
+                        <p class="text-[#6B7280] mb-6 leading-relaxed">
+                            Orchestrate complex business processes with AI-powered decision engines. Automate approvals,
+                            routing, and actions based on intelligent analysis using Azure Logic Apps and Custom AI
+                            Models.
+                        </p>
+
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-start gap-3">
+                                <iconify-icon icon="lucide:check-circle" width="20"
+                                    class="text-[#3E92CC] mt-1 flex-shrink-0"></iconify-icon>
+                                <div>
+                                    <strong class="text-[#0A2463]">Smart Routing:</strong>
+                                    <span class="text-[#6B7280]">AI-driven task assignment based on content, priority,
+                                        and expertise</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <iconify-icon icon="lucide:check-circle" width="20"
+                                    class="text-[#3E92CC] mt-1 flex-shrink-0"></iconify-icon>
+                                <div>
+                                    <strong class="text-[#0A2463]">Automated Approvals:</strong>
+                                    <span class="text-[#6B7280]">Policy-based decision making with ML confidence
+                                        thresholds</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <iconify-icon icon="lucide:check-circle" width="20"
+                                    class="text-[#3E92CC] mt-1 flex-shrink-0"></iconify-icon>
+                                <div>
+                                    <strong class="text-[#0A2463]">Exception Handling:</strong>
+                                    <span class="text-[#6B7280]">Intelligent escalation and human-in-the-loop when
+                                        needed</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#F8FAFC] rounded-xl p-4 border border-[#3E92CC]/10">
+                            <div class="text-xs font-bold text-[#6B7280] uppercase tracking-wider mb-2">Efficiency Gains
+                            </div>
+                            <div class="grid grid-cols-3 gap-4">
+                                <div>
+                                    <div class="text-2xl font-['DM_Sans'] font-bold text-[#3E92CC]">90%</div>
+                                    <div class="text-xs text-[#6B7280]">Manual Tasks Automated</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-['DM_Sans'] font-bold text-[#3E92CC]">8x</div>
+                                    <div class="text-xs text-[#6B7280]">Process Speed</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-['DM_Sans'] font-bold text-[#3E92CC]">65%</div>
+                                    <div class="text-xs text-[#6B7280]">Error Reduction</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#0A2463] rounded-2xl p-8 text-white">
+                        <div class="text-xs font-bold uppercase tracking-wider mb-4 text-[#3E92CC]">Workflow
+                            Architecture</div>
+                        <div class="space-y-4">
+                            <div class="bg-white/10 rounded-lg p-4 border border-white/10">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <iconify-icon icon="lucide:inbox" width="24" class="text-[#3E92CC]"></iconify-icon>
+                                    <strong class="font-['DM_Sans']">Input Trigger</strong>
+                                </div>
+                                <p class="text-sm text-white/70">Email, Form, API, Document Upload</p>
+                            </div>
+                            <div class="flex items-center justify-center text-[#3E92CC]">
+                                <iconify-icon icon="lucide:arrow-down" width="20"></iconify-icon>
+                            </div>
+                            <div class="bg-white/10 rounded-lg p-4 border border-white/10">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <iconify-icon icon="lucide:brain-circuit" width="24"
+                                        class="text-[#3E92CC]"></iconify-icon>
+                                    <strong class="font-['DM_Sans']">AI Analysis</strong>
+                                </div>
+                                <p class="text-sm text-white/70">Content Extraction + Sentiment + Classification</p>
+                            </div>
+                            <div class="flex items-center justify-center text-[#3E92CC]">
+                                <iconify-icon icon="lucide:arrow-down" width="20"></iconify-icon>
+                            </div>
+                            <div class="bg-white/10 rounded-lg p-4 border border-white/10">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <iconify-icon icon="lucide:git-branch" width="24"
+                                        class="text-[#3E92CC]"></iconify-icon>
+                                    <strong class="font-['DM_Sans']">Decision Engine</strong>
+                                </div>
+                                <p class="text-sm text-white/70">ML-based routing + Business rules</p>
+                            </div>
+                            <div class="flex items-center justify-center text-[#3E92CC]">
+                                <iconify-icon icon="lucide:arrow-down" width="20"></iconify-icon>
+                            </div>
+                            <div class="bg-white/10 rounded-lg p-4 border border-white/10">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <iconify-icon icon="lucide:zap" width="24" class="text-[#3E92CC]"></iconify-icon>
+                                    <strong class="font-['DM_Sans']">Automated Actions</strong>
+                                </div>
+                                <p class="text-sm text-white/70">Execute, Notify, Update Systems, Archive</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Use Case 4: Predictive Analytics & Optimization -->
+            <div
+                class="bg-white rounded-3xl p-8 md:p-12 border border-[#3E92CC]/10 hover:border-[#3E92CC]/30 transition-all">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="bg-[#0A2463] rounded-2xl p-8 text-white">
+                            <div class="text-xs font-bold uppercase tracking-wider mb-4 text-[#3E92CC]">ML Pipeline
+                            </div>
+                            <div class="space-y-4">
+                                <div class="bg-white/10 rounded-lg p-4 border border-white/10">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <iconify-icon icon="lucide:database" width="24"
+                                            class="text-[#3E92CC]"></iconify-icon>
+                                        <strong class="font-['DM_Sans']">Data Ingestion</strong>
+                                    </div>
+                                    <p class="text-sm text-white/70">Azure Data Factory + Synapse Analytics</p>
+                                </div>
+                                <div class="flex items-center justify-center text-[#3E92CC]">
+                                    <iconify-icon icon="lucide:arrow-down" width="20"></iconify-icon>
+                                </div>
+                                <div class="bg-white/10 rounded-lg p-4 border border-white/10">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <iconify-icon icon="lucide:sparkles" width="24"
+                                            class="text-[#3E92CC]"></iconify-icon>
+                                        <strong class="font-['DM_Sans']">Feature Engineering</strong>
+                                    </div>
+                                    <p class="text-sm text-white/70">Automated feature extraction + transformation</p>
+                                </div>
+                                <div class="flex items-center justify-center text-[#3E92CC]">
+                                    <iconify-icon icon="lucide:arrow-down" width="20"></iconify-icon>
+                                </div>
+                                <div class="bg-white/10 rounded-lg p-4 border border-white/10">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <iconify-icon icon="lucide:bar-chart-3" width="24"
+                                            class="text-[#3E92CC]"></iconify-icon>
+                                        <strong class="font-['DM_Sans']">Model Training</strong>
+                                    </div>
+                                    <p class="text-sm text-white/70">Azure ML + AutoML optimization</p>
+                                </div>
+                                <div class="flex items-center justify-center text-[#3E92CC]">
+                                    <iconify-icon icon="lucide:arrow-down" width="20"></iconify-icon>
+                                </div>
+                                <div class="bg-white/10 rounded-lg p-4 border border-white/10">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <iconify-icon icon="lucide:activity" width="24"
+                                            class="text-[#3E92CC]"></iconify-icon>
+                                        <strong class="font-['DM_Sans']">Real-time Predictions</strong>
+                                    </div>
+                                    <p class="text-sm text-white/70">API endpoints + Power BI integration</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-1 md:order-2">
+                        <div
+                            class="inline-block px-3 py-1 bg-[#3E92CC]/10 text-[#3E92CC] text-xs font-bold uppercase rounded-full mb-4">
+                            Predictive Intelligence
+                        </div>
+                        <h3 class="text-3xl font-['DM_Sans'] font-semibold text-[#0A2463] mb-4">AI-Powered Predictive
+                            Analytics & Optimization</h3>
+                        <p class="text-[#6B7280] mb-6 leading-relaxed">
+                            Forecast business outcomes, optimize resource allocation, and prevent issues before they
+                            occur using Azure Machine Learning and advanced analytics pipelines.
+                        </p>
+
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-start gap-3">
+                                <iconify-icon icon="lucide:check-circle" width="20"
+                                    class="text-[#3E92CC] mt-1 flex-shrink-0"></iconify-icon>
+                                <div>
+                                    <strong class="text-[#0A2463]">Demand Forecasting:</strong>
+                                    <span class="text-[#6B7280]">Predict inventory needs with 95% accuracy up to 6
+                                        months ahead</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <iconify-icon icon="lucide:check-circle" width="20"
+                                    class="text-[#3E92CC] mt-1 flex-shrink-0"></iconify-icon>
+                                <div>
+                                    <strong class="text-[#0A2463]">Churn Prevention:</strong>
+                                    <span class="text-[#6B7280]">Identify at-risk customers and trigger retention
+                                        workflows automatically</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <iconify-icon icon="lucide:check-circle" width="20"
+                                    class="text-[#3E92CC] mt-1 flex-shrink-0"></iconify-icon>
+                                <div>
+                                    <strong class="text-[#0A2463]">Resource Optimization:</strong>
+                                    <span class="text-[#6B7280]">Dynamic scheduling and allocation based on predicted
+                                        workload</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#F8FAFC] rounded-xl p-4 border border-[#3E92CC]/10">
+                            <div class="text-xs font-bold text-[#6B7280] uppercase tracking-wider mb-2">Business Impact
+                            </div>
+                            <div class="grid grid-cols-3 gap-4">
+                                <div>
+                                    <div class="text-2xl font-['DM_Sans'] font-bold text-[#3E92CC]">35%</div>
+                                    <div class="text-xs text-[#6B7280]">Cost Reduction</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-['DM_Sans'] font-bold text-[#3E92CC]">95%</div>
+                                    <div class="text-xs text-[#6B7280]">Forecast Accuracy</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-['DM_Sans'] font-bold text-[#3E92CC]">22%</div>
+                                    <div class="text-xs text-[#6B7280]">Revenue Increase</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="py-20 px-6 md:px-12 bg-[#0A2463] text-white">
+        <div class="max-w-[1440px] mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-xs font-bold text-[#3E92CC] uppercase tracking-widest mb-3 block">Enterprise
+                    Technology Stack</span>
+                <h2 class="text-4xl md:text-5xl font-['DM_Sans'] text-white mb-4">Built on Azure AI & Modern
+                    Architecture</h2>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6">
+                <div
+                    class="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-all">
+                    <iconify-icon icon="lucide:brain" width="40" class="text-[#3E92CC] mb-4"></iconify-icon>
+                    <h4 class="font-['DM_Sans'] font-semibold text-lg mb-2">Azure OpenAI</h4>
+                    <p class="text-white/70 text-sm">GPT-4, Embeddings, DALL-E</p>
+                </div>
+
+                <div
+                    class="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-all">
+                    <iconify-icon icon="lucide:search" width="40" class="text-[#3E92CC] mb-4"></iconify-icon>
+                    <h4 class="font-['DM_Sans'] font-semibold text-lg mb-2">Cognitive Search</h4>
+                    <p class="text-white/70 text-sm">Vector search, semantic ranking</p>
+                </div>
+
+                <div
+                    class="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-all">
+                    <iconify-icon icon="lucide:file-text" width="40" class="text-[#3E92CC] mb-4"></iconify-icon>
+                    <h4 class="font-['DM_Sans'] font-semibold text-lg mb-2">Form Recognizer</h4>
+                    <p class="text-white/70 text-sm">Document intelligence, OCR</p>
+                </div>
+
+                <div
+                    class="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-all">
+                    <iconify-icon icon="lucide:workflow" width="40" class="text-[#3E92CC] mb-4"></iconify-icon>
+                    <h4 class="font-['DM_Sans'] font-semibold text-lg mb-2">Logic Apps</h4>
+                    <p class="text-white/70 text-sm">Workflow automation, integration</p>
+                </div>
+
+                <div
+                    class="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-all">
+                    <iconify-icon icon="lucide:bar-chart-3" width="40" class="text-[#3E92CC] mb-4"></iconify-icon>
+                    <h4 class="font-['DM_Sans'] font-semibold text-lg mb-2">Machine Learning</h4>
+                    <p class="text-white/70 text-sm">Custom models, AutoML, MLOps</p>
+                </div>
+
+                <div
+                    class="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-all">
+                    <iconify-icon icon="lucide:database" width="40" class="text-[#3E92CC] mb-4"></iconify-icon>
+                    <h4 class="font-['DM_Sans'] font-semibold text-lg mb-2">Cosmos DB</h4>
+                    <p class="text-white/70 text-sm">Global distribution, vector store</p>
+                </div>
+
+                <div
+                    class="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-all">
+                    <iconify-icon icon="lucide:shield-check" width="40" class="text-[#3E92CC] mb-4"></iconify-icon>
+                    <h4 class="font-['DM_Sans'] font-semibold text-lg mb-2">Azure Security</h4>
+                    <p class="text-white/70 text-sm">RBAC, Key Vault, Private Link</p>
+                </div>
+
+                <div
+                    class="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-all">
+                    <iconify-icon icon="lucide:activity" width="40" class="text-[#3E92CC] mb-4"></iconify-icon>
+                    <h4 class="font-['DM_Sans'] font-semibold text-lg mb-2">Monitor & Insights</h4>
+                    <p class="text-white/70 text-sm">Application insights, logging</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Process -->
+    <section class="py-20 px-6 md:px-12">
+        <div class="max-w-[1440px] mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-xs font-bold text-[#6B7280] uppercase tracking-widest mb-3 block">Our
+                    Methodology</span>
+                <h2 class="text-4xl md:text-5xl font-['DM_Sans'] text-[#0A2463] mb-4">AI Implementation in 4 Phases</h2>
+                <p class="text-[#6B7280] max-w-2xl mx-auto">From proof of concept to production deployment in 8-12 weeks
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div
+                    class="bg-white border border-[#3E92CC]/10 rounded-2xl p-8 hover:border-[#3E92CC]/30 transition-all">
+                    <div
+                        class="w-12 h-12 bg-[#3E92CC] rounded-xl flex items-center justify-center text-white font-bold text-xl mb-4">
+                        1</div>
+                    <h4 class="font-['DM_Sans'] font-semibold text-xl text-[#0A2463] mb-3">Discovery & Design</h4>
+                    <p class="text-[#6B7280] text-sm mb-4">Weeks 1-2</p>
+                    <ul class="space-y-2 text-sm text-[#6B7280]">
+                        <li class="flex items-start gap-2">
+                            <iconify-icon icon="lucide:check" width="16"
+                                class="text-[#3E92CC] mt-1 flex-shrink-0"></iconify-icon>
+                            <span>Use case identification & prioritization</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <iconify-icon icon="lucide:check" width="16"
+                                class="text-[#3E92CC] mt-1 flex-shrink-0"></iconify-icon>
+                            <span>Data assessment & architecture design</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <iconify-icon icon="lucide:check" width="16"
+                                class="text-[#3E92CC] mt-1 flex-shrink-0"></iconify-icon>
+                            <span>ROI modeling & success metrics</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div
+                    class="bg-white border border-[#3E92CC]/10 rounded-2xl p-8 hover:border-[#3E92CC]/30 transition-all">
+                    <div
+                        class="w-12 h-12 bg-[#3E92CC] rounded-xl flex items-center justify-center text-white font-bold text-xl mb-4">
+                        2</div>
+                    <h4 class="font-['DM_Sans'] font-semibold text-xl text-[#0A2463] mb-3">Proof of Concept</h4>
+                    <p class="text-[#6B7280] text-sm mb-4">Weeks 3-5</p>
+                    <ul class="space-y-2 text-sm text-[#6B7280]">
+                        <li class="flex items-start gap-2">
+                            <iconify-icon icon="lucide:check" width="16"
+                                class="text-[#3E92CC] mt-1 flex-shrink-0"></iconify-icon>
+                            <span>Rapid prototyping with sample data</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <iconify-icon icon="lucide:check" width="16"
+                                class="text-[#3E92CC] mt-1 flex-shrink-0"></iconify-icon>
+                            <span>Model training & accuracy validation</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <iconify-icon icon="lucide:check" width="16"
+                                class="text-[#3E92CC] mt-1 flex-shrink-0"></iconify-icon>
+                            <span>Demo to stakeholders & iteration</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div
+                    class="bg-white border border-[#3E92CC]/10 rounded-2xl p-8 hover:border-[#3E92CC]/30 transition-all">
+                    <div
+                        class="w-12 h-12 bg-[#3E92CC] rounded-xl flex items-center justify-center text-white font-bold text-xl mb-4">
+                        3</div>
+                    <h4 class="font-['DM_Sans'] font-semibold text-xl text-[#0A2463] mb-3">Development & Testing</h4>
+                    <p class="text-[#6B7280] text-sm mb-4">Weeks 6-10</p>
+                    <ul class="space-y-2 text-sm text-[#6B7280]">
+                        <li class="flex items-start gap-2">
+                            <iconify-icon icon="lucide:check" width="16"
+                                class="text-[#3E92CC] mt-1 flex-shrink-0"></iconify-icon>
+                            <span>Production-grade implementation</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <iconify-icon icon="lucide:check" width="16"
+                                class="text-[#3E92CC] mt-1 flex-shrink-0"></iconify-icon>
+                            <span>Integration with existing systems</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <iconify-icon icon="lucide:check" width="16"
+                                class="text-[#3E92CC] mt-1 flex-shrink-0"></iconify-icon>
+                            <span>Security hardening & compliance</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div
+                    class="bg-white border border-[#3E92CC]/10 rounded-2xl p-8 hover:border-[#3E92CC]/30 transition-all">
+                    <div
+                        class="w-12 h-12 bg-[#3E92CC] rounded-xl flex items-center justify-center text-white font-bold text-xl mb-4">
+                        4</div>
+                    <h4 class="font-['DM_Sans'] font-semibold text-xl text-[#0A2463] mb-3">Deployment & Scaling</h4>
+                    <p class="text-[#6B7280] text-sm mb-4">Weeks 11-12</p>
+                    <ul class="space-y-2 text-sm text-[#6B7280]">
+                        <li class="flex items-start gap-2">
+                            <iconify-icon icon="lucide:check" width="16"
+                                class="text-[#3E92CC] mt-1 flex-shrink-0"></iconify-icon>
+                            <span>Phased rollout with monitoring</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <iconify-icon icon="lucide:check" width="16"
+                                class="text-[#3E92CC] mt-1 flex-shrink-0"></iconify-icon>
+                            <span>User training & documentation</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <iconify-icon icon="lucide:check" width="16"
+                                class="text-[#3E92CC] mt-1 flex-shrink-0"></iconify-icon>
+                            <span>Performance optimization & support</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-6 md:px-12 bg-gradient-to-br from-[#0A2463] to-[#3E92CC] text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-['DM_Sans'] font-semibold mb-6">Ready to Transform Your Business with
+                AI?</h2>
+            <p class="text-xl text-white/80 mb-8 leading-relaxed">
+                Let's discuss how Azure AI, RAG, and GenAI workflows can drive efficiency and innovation in your
+                organization.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="../index.html#contact"
+                    class="inline-flex items-center justify-center gap-2 bg-white text-[#0A2463] px-8 py-4 rounded-full font-bold text-sm uppercase tracking-wider hover:bg-[#F8FAFC] transition-colors shadow-lg">
+                    <span>Schedule AI Consultation</span>
+                    <iconify-icon icon="lucide:arrow-right" width="18"></iconify-icon>
+                </a>
+                <a href="../index.html#solutions"
+                    class="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-bold text-sm uppercase tracking-wider hover:bg-white/10 transition-colors">
+                    <span>View All Solutions</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0A2463] text-white py-20 px-6 md:px-12 border-t border-white/10">
+        <div class="max-w-[1440px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-20">
+                <div class="md:col-span-4">
+                    <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1e099609f-1765724861859.png"
+                        alt="Gotik Consulting" class="h-8 mb-6 brightness-0 invert">
+                    <p class="mb-4 leading-relaxed text-white/60 max-w-xs text-sm">
+                        Transforming ideas into scalable software solutions since 2011. Your trusted partner in digital
+                        transformation.
+                    </p>
+                    <div class="flex gap-4 text-white/40 mt-8">
+                        <a href="#" class="hover:text-[#3E92CC] transition-colors">
+                            <iconify-icon icon="lucide:linkedin" width="20"></iconify-icon>
+                        </a>
+                        <a href="#" class="hover:text-[#3E92CC] transition-colors">
+                            <iconify-icon icon="lucide:twitter" width="20"></iconify-icon>
+                        </a>
+                        <a href="#" class="hover:text-[#3E92CC] transition-colors">
+                            <iconify-icon icon="lucide:github" width="20"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:col-span-2">
+                    <h5 class="text-[10px] font-bold uppercase tracking-widest mb-6 text-[#3E92CC]">Solutions</h5>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="../index.html#solutions" class="hover:text-[#3E92CC] transition-colors">Cloud
+                                Migration</a></li>
+                        <li><a href="../index.html#solutions" class="hover:text-[#3E92CC] transition-colors">Custom
+                                Development</a></li>
+                        <li><a href="../index.html#solutions" class="hover:text-[#3E92CC] transition-colors">DevOps
+                                Setup</a></li>
+                        <li><a href="ai-solutions.html" class="hover:text-[#3E92CC] transition-colors">AI Solutions</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-2">
+                    <h5 class="text-[10px] font-bold uppercase tracking-widest mb-6 text-[#3E92CC]">Company</h5>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="../index.html#about" class="hover:text-[#3E92CC] transition-colors">About Us</a>
+                        </li>
+                        <li><a href="../index.html#academy" class="hover:text-[#3E92CC] transition-colors">Academy</a>
+                        </li>
+                        <li><a href="../index.html#contact" class="hover:text-[#3E92CC] transition-colors">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-4 bg-white/5 p-6 border border-white/10 rounded-xl">
+                    <h5 class="text-lg font-['DM_Sans'] font-semibold mb-2">Newsletter</h5>
+                    <p class="text-white/60 text-xs mb-4">Get the latest AI insights and industry trends.</p>
+                    <div class="flex gap-2 border-b border-white/20 pb-2">
+                        <input type="email" placeholder="your@email.com"
+                            class="flex-1 bg-transparent text-sm focus:outline-none placeholder-white/40">
+                        <button
+                            class="text-[10px] font-bold uppercase tracking-widest hover:text-[#3E92CC] transition-colors">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] uppercase tracking-widest text-white/40">
+                <span>© 2026 Gotik Consulting. All rights reserved.</span>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-[#3E92CC] transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-[#3E92CC] transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const { animate, scroll, inView, stagger } = window.Motion || {};
+
+            if (animate && scroll && inView) {
+                // 1. Hero Section Animation
+                const heroTitle = document.querySelector('.hero-title');
+                const heroSubtitle = document.querySelector('.hero-subtitle');
+
+                if (heroTitle) {
+                    animate(
+                        heroTitle,
+                        {
+                            opacity: [0, 1],
+                            y: [60, 0],
+                            scale: [0.95, 1]
+                        },
+                        {
+                            duration: 1,
+                            easing: [0.22, 1, 0.36, 1]
+                        }
+                    );
+                }
+
+                if (heroSubtitle) {
+                    animate(
+                        heroSubtitle,
+                        {
+                            opacity: [0, 1],
+                            y: [40, 0]
+                        },
+                        {
+                            duration: 0.8,
+                            delay: 0.2,
+                            easing: [0.22, 1, 0.36, 1]
+                        }
+                    );
+                }
+
+                // 2. Use Case Cards Stagger
+                const useCaseCards = document.querySelectorAll('.use-case-card');
+                scroll(
+                    animate(
+                        useCaseCards,
+                        {
+                            opacity: [0, 1],
+                            y: [80, 0],
+                            rotateX: [15, 0]
+                        },
+                        {
+                            duration: 0.8,
+                            delay: stagger(0.15),
+                            easing: [0.17, 0.55, 0.55, 1]
+                        }
+                    ),
+                    {
+                        target: document.querySelector('.use-cases-container'),
+                        offset: ["start end", "center center"]
+                    }
+                );
+
+                // 3. Architecture Diagrams Reveal
+                const architectureDiagrams = document.querySelectorAll('.architecture-diagram');
+                architectureDiagrams.forEach(diagram => {
+                    inView(
+                        diagram,
+                        (info) => {
+                            animate(
+                                info.target,
+                                {
+                                    opacity: [0, 1],
+                                    scale: [0.9, 1],
+                                    clipPath: ["inset(10% 10% 10% 10%)", "inset(0% 0% 0% 0%)"]
+                                },
+                                {
+                                    duration: 1,
+                                    easing: [0.22, 1, 0.36, 1]
+                                }
+                            );
+                        },
+                        { amount: 0.3 }
+                    );
+                });
+
+                // 4. Stats Counter Animation
+                const statNumbers = document.querySelectorAll('.stat-number');
+                statNumbers.forEach(stat => {
+                    inView(
+                        stat,
+                        () => {
+                            const target = parseInt(stat.textContent.replace(/[^0-9]/g, ''));
+                            const suffix = stat.textContent.replace(/[0-9]/g, '');
+
+                            animate(
+                                (progress) => {
+                                    stat.textContent = Math.floor(progress * target) + suffix;
+                                },
+                                {
+                                    duration: 2,
+                                    easing: "ease-out"
+                                }
+                            );
+                        },
+                        { amount: 0.5 }
+                    );
+                });
+
+                // 5. Technology Stack Icons
+                const techIcons = document.querySelectorAll('.tech-icon');
+                scroll(
+                    animate(
+                        techIcons,
+                        {
+                            opacity: [0, 1],
+                            scale: [0.5, 1],
+                            rotate: [180, 0]
+                        },
+                        {
+                            duration: 0.6,
+                            delay: stagger(0.05),
+                            easing: "ease-out"
+                        }
+                    ),
+                    {
+                        target: document.querySelector('.tech-stack-section'),
+                        offset: ["start end", "center center"]
+                    }
+                );
+
+                // 6. Timeline Items Sequential Reveal
+                const timelineItems = document.querySelectorAll('.timeline-item');
+                scroll(
+                    animate(
+                        timelineItems,
+                        {
+                            opacity: [0, 1],
+                            x: [-100, 0]
+                        },
+                        {
+                            duration: 0.8,
+                            delay: stagger(0.2),
+                            easing: [0.17, 0.55, 0.55, 1]
+                        }
+                    ),
+                    {
+                        target: document.querySelector('.implementation-timeline'),
+                        offset: ["start end", "center center"]
+                    }
+                );
+
+                // 7. ROI Metrics Animation
+                const roiMetrics = document.querySelectorAll('.roi-metric');
+                inView(
+                    document.querySelector('.roi-section'),
+                    () => {
+                        animate(
+                            roiMetrics,
+                            {
+                                opacity: [0, 1],
+                                scale: [0.8, 1],
+                                y: [40, 0]
+                            },
+                            {
+                                duration: 0.7,
+                                delay: stagger(0.1),
+                                easing: "ease-out"
+                            }
+                        );
+                    },
+                    { amount: 0.3 }
+                );
+
+                // 8. CTA Button Hover Effect
+                const ctaButtons = document.querySelectorAll('.cta-button');
+                ctaButtons.forEach(button => {
+                    button.addEventListener('mouseenter', () => {
+                        animate(
+                            button,
+                            {
+                                scale: 1.05,
+                                boxShadow: "0 10px 30px rgba(62, 146, 204, 0.3)"
+                            },
+                            { duration: 0.3 }
+                        );
+                    });
+
+                    button.addEventListener('mouseleave', () => {
+                        animate(
+                            button,
+                            {
+                                scale: 1,
+                                boxShadow: "0 0 0 rgba(62, 146, 204, 0)"
+                            },
+                            { duration: 0.3 }
+                        );
+                    });
+                });
+
+                // 9. Parallax Section Backgrounds
+                const parallaxSections = document.querySelectorAll('.parallax-section');
+                parallaxSections.forEach(section => {
+                    const bg = section.querySelector('.parallax-bg');
+                    if (bg) {
+                        scroll(
+                            animate(bg, { y: [0, 200] }),
+                            {
+                                target: section,
+                                offset: ["start end", "end start"]
+                            }
+                        );
+                    }
+                });
+
+                // 10. Navigation Bar Scroll Effect
+                const nav = document.querySelector('nav');
+                scroll(
+                    animate(
+                        nav,
+                        {
+                            backgroundColor: ["rgba(10, 36, 99, 0)", "rgba(10, 36, 99, 0.95)"],
+                            backdropFilter: ["blur(0px)", "blur(12px)"],
+                            boxShadow: ["0 0 0 rgba(0,0,0,0)", "0 4px 20px rgba(0,0,0,0.1)"]
+                        }
+                    ),
+                    {
+                        target: document.body,
+                        offset: ["start", "100px"]
+                    }
+                );
+            }
+
+            // Fallback animations
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const fadeInObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in-active');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in-element').forEach(el => {
+                fadeInObserver.observe(el);
+            });
+
+            // Mobile menu functionality
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const closeMenuBtn = document.getElementById('close-menu');
+
+            if (mobileMenuBtn && mobileMenu && closeMenuBtn) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('-translate-y-full');
+                });
+
+                closeMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.add('-translate-y-full');
+                });
+            }
+
+            // Smooth scroll
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href && href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+    <script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- CSS Variables --- */
+:root {
+    --navy-blue: #0A2463;
+    --sky-blue: #3E92CC;
+    --bright-blue: #1E88E5;
+    --dark-navy: #1A1A2E;
+    --neutral-gray: #6B7280;
+}
+
+/* --- Base Styles --- */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FFFFFF;
+    color: var(--dark-navy);
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-display {
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* --- Animations --- */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, opacity;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-100 {
+    transition-delay: 100ms;
+}
+
+.delay-200 {
+    transition-delay: 200ms;
+}
+
+.delay-300 {
+    transition-delay: 300ms;
+}
+
+/* Text Reveal */
+.text-reveal-wrapper {
+    overflow: hidden;
+    display: inline-flex;
+}
+
+.text-reveal-content {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 1.5s ease;
+}
+
+.reveal-active .text-reveal-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Scroll Text Scrubbing */
+.scroll-scrub-text {
+    background-image: linear-gradient(to right, var(--navy-blue) 50%, var(--neutral-gray) 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: background-position 0.1s linear;
+}
+
+/* --- Spotlight Effect --- */
+.spotlight-group {
+    position: relative;
+}
+
+.spotlight-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid rgba(62, 146, 204, 0.1);
+}
+
+.spotlight-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
+            rgba(62, 146, 204, 0.1),
+            transparent 40%);
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.spotlight-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),
+            rgba(62, 146, 204, 0.6),
+            transparent 40%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.spotlight-group:hover .spotlight-card::after,
+.spotlight-group:hover .spotlight-card::before {
+    opacity: 1;
+}
+
+/* --- Parallax Background --- */
+#parallax-bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: radial-gradient(rgba(62, 146, 204, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.4;
+    z-index: 0;
+    pointer-events: none;
+    transform: translateY(0);
+    will-change: transform;
+}
+
+/* --- Marquee --- */
+.animate-marquee {
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* --- Rotating Badge --- */
+.animate-spin-slow {
+    animation: rotate 12s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* --- Scrollbar Styling --- */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* --- Selection --- */
+::selection {
+    background: rgba(62, 146, 204, 0.2);
+    color: var(--navy-blue);
+}
+
+/* --- Custom Utilities --- */
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+/* --- Responsive Breakpoints --- */
+@media (max-width: 768px) {
+    .text-reveal-content {
+        font-size: 3rem;
+    }
+}

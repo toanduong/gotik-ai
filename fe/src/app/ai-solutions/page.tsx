@@ -5,18 +5,41 @@ import { Footer } from "@/components/layout/Footer";
 import Contact from "@/components/sections/Contact";
 import Link from "next/link";
 import { motionConfig, withDelay } from "@/lib/motion";
+import { useEffect } from "react";
 
 export default function AISolutions() {
+    useEffect(() => {
+            // Animate Contact section with Motion.dev
+            if (typeof window !== 'undefined' && (window as any).Motion) {
+                const { inView } = (window as any).Motion;
+    
+                inView('.ai-solution-hero-1', ({ target }: any) => {
+                    const { animate } = (window as any).Motion;
+                    animate(target, { opacity: [0, 1], x: [-40, 0] }, { duration: 0.6 });
+                });
+
+                inView('.ai-solution-hero-2', ({ target }: any) => {
+                    const { animate } = (window as any).Motion;
+                    animate(target, { opacity: [0, 1], x: [-40, 0] }, { duration: 0.6 });
+                });
+    
+                inView('.ai-solution-hero-3', ({ target }: any) => {
+                    const { animate } = (window as any).Motion;
+                    animate(target, { opacity: [0, 1], x: [40, 0] }, { duration: 0.6, delay: 0.2 });
+                });
+            }
+        }, []);
+
     return (
         <main className="relative bg-white min-h-screen font-sans">
             <Navbar />
 
             {/* Hero - Interactive Solutions Map */}
             <section className="pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-gradient-to-b from-slate-50 to-white">
-                <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-sky-blue/5 rounded-full blur-3xl"></div>
-                <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-navy-blue/5 rounded-full blur-3xl"></div>
+                <div className="ai-solution-hero-1 absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-sky-blue/5 rounded-full blur-3xl"></div>
+                <div className="ai-solution-hero-2 absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-navy-blue/5 rounded-full blur-3xl"></div>
 
-                <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+                <div className="ai-solution-hero-3 max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-12" {...motionConfig.fadeIn}>
                         <div className="inline-block px-4 py-1.5 mb-4 border border-sky-blue/30 rounded-full bg-sky-blue/5 text-sky-blue text-xs font-bold tracking-wider uppercase">
                             Interactive Solutions Map

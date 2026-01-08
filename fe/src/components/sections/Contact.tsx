@@ -1,8 +1,19 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Contact() {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        company: '',
+        service: '',
+        message: ''
+    });
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+    const [errorMessage, setErrorMessage] = useState('');
+
     useEffect(() => {
         // Animate Contact section with Motion.dev
         if (typeof window !== 'undefined' && (window as any).Motion) {
@@ -19,6 +30,54 @@ export default function Contact() {
             });
         }
     }, []);
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({ ...prev, [name]: value }));
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+        setSubmitStatus('idle');
+        setErrorMessage('');
+
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            const data = await response.json();
+
+            if (!response.ok) {
+                throw new Error(data.error || 'Failed to send message');
+            }
+
+            setSubmitStatus('success');
+            // Reset form
+            setFormData({
+                name: '',
+                email: '',
+                company: '',
+                service: '',
+                message: ''
+            });
+
+            // Reset success message after 5 seconds
+            setTimeout(() => {
+                setSubmitStatus('idle');
+            }, 5000);
+        } catch (error) {
+            setSubmitStatus('error');
+            setErrorMessage(error instanceof Error ? error.message : 'An error occurred. Please try again.');
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
 
     return (
         <section id="contact" className="py-32 px-6 md:px-12 bg-navy-blue text-white relative z-10">
@@ -69,26 +128,53 @@ export default function Contact() {
 
                 {/* Right: Form */}
                 <div className="contact-form opacity-0">
-                    <form className="space-y-6">
+                    <form onSubmit={handleSubmit} className="space-y-6">
                         <div>
                             <label className="block text-xs font-bold uppercase tracking-widest text-white/70 mb-2">Full Name *</label>
-                            <input type="text" placeholder="John Doe" required
-                                className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:border-sky-blue focus:outline-none transition-colors" />
+                            <input
+                                type="text"
+                                name="name"
+                                value={formData.name}
+                                onChange={handleChange}
+                                placeholder="John Doe"
+                                required
+                                disabled={isSubmitting}
+                                className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:border-sky-blue focus:outline-none transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                            />
                         </div>
                         <div>
                             <label className="block text-xs font-bold uppercase tracking-widest text-white/70 mb-2">Email *</label>
-                            <input type="email" placeholder="john@company.com" required
-                                className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:border-sky-blue focus:outline-none transition-colors" />
+                            <input
+                                type="email"
+                                name="email"
+                                value={formData.email}
+                                onChange={handleChange}
+                                placeholder="john@company.com"
+                                required
+                                disabled={isSubmitting}
+                                className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:border-sky-blue focus:outline-none transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                            />
                         </div>
                         <div>
                             <label className="block text-xs font-bold uppercase tracking-widest text-white/70 mb-2">Company</label>
-                            <input type="text" placeholder="Your Company Inc."
-                                className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:border-sky-blue focus:outline-none transition-colors" />
+                            <input
+                                type="text"
+                                name="company"
+                                value={formData.company}
+                                onChange={handleChange}
+                                placeholder="Your Company Inc."
+                                disabled={isSubmitting}
+                                className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:border-sky-blue focus:outline-none transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                            />
                         </div>
                         <div>
                             <label className="block text-xs font-bold uppercase tracking-widest text-white/70 mb-2">Service Interest</label>
                             <select
-                                className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:border-sky-blue focus:outline-none transition-colors [&>option]:text-navy-blue">
+                                name="service"
+                                value={formData.service}
+                                onChange={handleChange}
+                                disabled={isSubmitting}
+                                className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:border-sky-blue focus:outline-none transition-colors [&>option]:text-navy-blue disabled:opacity-50 disabled:cursor-not-allowed">
                                 <option>Select a service</option>
                                 <option>AI Solutions</option>
                                 <option>Data Solutions</option>
@@ -99,13 +185,37 @@ export default function Contact() {
                         </div>
                         <div>
                             <label className="block text-xs font-bold uppercase tracking-widest text-white/70 mb-2">Project Details</label>
-                            <textarea rows={4} placeholder="Tell us about your project..."
-                                className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:border-sky-blue focus:outline-none transition-colors resize-none"></textarea>
+                            <textarea
+                                rows={4}
+                                name="message"
+                                value={formData.message}
+                                onChange={handleChange}
+                                placeholder="Tell us about your project..."
+                                disabled={isSubmitting}
+                                className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:border-sky-blue focus:outline-none transition-colors resize-none disabled:opacity-50 disabled:cursor-not-allowed">
+                            </textarea>
                         </div>
-                        <button type="submit"
-                            className="w-full bg-sky-blue text-white h-12 rounded-lg hover:bg-white hover:text-navy-blue hover:scale-105 transition-all flex items-center justify-center gap-2 text-xs font-semibold uppercase tracking-widest shadow-lg">
-                            <span>Send Message</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m22 2-7 20-4-9-9-4Z" /><path d="M22 2 11 13" /></svg>
+
+                        {/* Status Messages */}
+                        {submitStatus === 'success' && (
+                            <div className="bg-green-500/20 border border-green-500/50 rounded-lg px-4 py-3 text-green-100">
+                                ✓ Message sent successfully! We&apos;ll get back to you soon.
+                            </div>
+                        )}
+                        {submitStatus === 'error' && (
+                            <div className="bg-red-500/20 border border-red-500/50 rounded-lg px-4 py-3 text-red-100">
+                                ✗ {errorMessage}
+                            </div>
+                        )}
+
+                        <button
+                            type="submit"
+                            disabled={isSubmitting}
+                            className="w-full bg-sky-blue text-white h-12 rounded-lg hover:bg-white hover:text-navy-blue hover:scale-105 transition-all flex items-center justify-center gap-2 text-xs font-semibold uppercase tracking-widest shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:bg-sky-blue disabled:hover:text-white">
+                            <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
+                            {!isSubmitting && (
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m22 2-7 20-4-9-9-4Z" /><path d="M22 2 11 13" /></svg>
+                            )}
                         </button>
                     </form>
                 </div>

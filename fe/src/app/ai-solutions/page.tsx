@@ -29,9 +29,9 @@ export default function AISolutions() {
                     </div>
 
                     {/* Solutions Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-4 lg:gap-6 h-auto md:h-[600px]" {...withDelay(motionConfig.fadeIn, 0.2)}>
+                    <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-4 lg:gap-6 h-auto md:h-[600px]" data-motion-stagger="0.1">
                         {/* Business Growth - Large */}
-                        <a href="#business-growth" className="group relative md:col-span-2 md:row-span-2 rounded-3xl overflow-hidden shadow-lg border border-sky-blue/10 bg-white p-8 flex flex-col justify-between hover:scale-[1.01] hover:shadow-2xl transition-all duration-300">
+                        <a href="#business-growth" {...withDelay(motionConfig.slideUp, 0.2)} className="group relative md:col-span-2 md:row-span-2 rounded-3xl overflow-hidden shadow-lg border border-sky-blue/10 bg-white p-8 flex flex-col justify-between hover:scale-[1.01] hover:shadow-2xl transition-all duration-300">
                             <div>
                                 <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-sky-blue mb-6 group-hover:bg-sky-blue group-hover:text-white transition-colors duration-300">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
@@ -45,7 +45,7 @@ export default function AISolutions() {
                         </a>
 
                         {/* Agentic AI */}
-                        <a href="#agentic-architecture" className="group relative md:col-span-1 md:row-span-1 rounded-3xl overflow-hidden shadow-md border border-sky-blue/10 bg-slate-50 p-6 flex flex-col justify-between hover:scale-[1.02] hover:shadow-xl transition-all duration-300 hover:bg-white">
+                        <a href="#agentic-architecture" {...withDelay(motionConfig.scaleIn, 0.3)} className="group relative md:col-span-1 md:row-span-1 rounded-3xl overflow-hidden shadow-md border border-sky-blue/10 bg-slate-50 p-6 flex flex-col justify-between hover:scale-[1.02] hover:shadow-xl transition-all duration-300 hover:bg-white">
                             <div className="flex justify-between items-start">
                                 <div className="w-10 h-10 rounded-lg bg-purple-50 flex items-center justify-center text-purple-600">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6"/><path d="m4.93 4.93 4.24 4.24m5.66 5.66 4.24 4.24"/><path d="m1 12h6m6 0h6"/><path d="m4.93 19.07 4.24-4.24m5.66-5.66 4.24-4.24"/></svg>
@@ -59,7 +59,7 @@ export default function AISolutions() {
                         </a>
 
                         {/* Knowledge RAG */}
-                        <a href="#rag-architecture" className="group relative md:col-span-1 md:row-span-2 rounded-3xl overflow-hidden shadow-lg border border-sky-blue/10 bg-sky-blue/5 p-6 flex flex-col justify-between hover:scale-[1.02] hover:shadow-xl transition-all duration-300 hover:bg-sky-blue/10">
+                        <a href="#rag-architecture" {...withDelay(motionConfig.slideRight, 0.4)} className="group relative md:col-span-1 md:row-span-2 rounded-3xl overflow-hidden shadow-lg border border-sky-blue/10 bg-sky-blue/5 p-6 flex flex-col justify-between hover:scale-[1.02] hover:shadow-xl transition-all duration-300 hover:bg-sky-blue/10">
                             <div className="absolute bottom-0 right-0 w-32 h-32 bg-sky-blue/10 rounded-full blur-2xl group-hover:bg-sky-blue/20 transition-colors"></div>
                             <div>
                                 <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center text-sky-blue mb-6 shadow-sm">
@@ -78,7 +78,7 @@ export default function AISolutions() {
                         </a>
 
                         {/* Automation */}
-                        <a href="#workflow-automation" className="group relative md:col-span-1 md:row-span-1 rounded-3xl overflow-hidden shadow-md border border-sky-blue/10 bg-slate-50 p-6 flex flex-col justify-between hover:scale-[1.02] hover:shadow-xl transition-all duration-300 hover:bg-white">
+                        <a href="#workflow-automation" {...withDelay(motionConfig.scaleIn, 0.5)} className="group relative md:col-span-1 md:row-span-1 rounded-3xl overflow-hidden shadow-md border border-sky-blue/10 bg-slate-50 p-6 flex flex-col justify-between hover:scale-[1.02] hover:shadow-xl transition-all duration-300 hover:bg-white">
                             <div className="flex justify-between items-start">
                                 <div className="w-10 h-10 rounded-lg bg-teal-50 flex items-center justify-center text-teal-600">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="8" height="8" x="3" y="3" rx="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4"/><rect width="8" height="8" x="13" y="13" rx="2"/></svg>
@@ -92,7 +92,7 @@ export default function AISolutions() {
                         </a>
 
                         {/* Cost Optimization */}
-                        <a href="#cost-optimization" className="group relative md:col-span-2 md:row-span-1 rounded-3xl overflow-hidden shadow-md border border-sky-blue/10 bg-navy-blue p-6 flex items-center gap-6 hover:scale-[1.01] hover:shadow-xl transition-all duration-300">
+                        <a href="#cost-optimization" {...withDelay(motionConfig.fadeIn, 0.6)} className="group relative md:col-span-2 md:row-span-1 rounded-3xl overflow-hidden shadow-md border border-sky-blue/10 bg-navy-blue p-6 flex items-center gap-6 hover:scale-[1.01] hover:shadow-xl transition-all duration-300">
                             <div className="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center flex-shrink-0 backdrop-blur-sm border border-white/10">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white"><circle cx="12" cy="12" r="8"/><path d="M12 2v7.5"/><path d="m19 5-5.23 5.23"/><path d="M22 12h-7.5"/><path d="m19 19-5.23-5.23"/><path d="M12 14.5V22"/><path d="M10.23 13.77 5 19"/><path d="M9.5 12H2"/><path d="M10.23 10.23 5 5"/><circle cx="12" cy="12" r="2.5"/></svg>
                             </div>
@@ -106,7 +106,7 @@ export default function AISolutions() {
                         </a>
 
                         {/* Contact CTA */}
-                        <a href="#contact" className="group relative md:col-span-2 md:row-span-1 rounded-3xl overflow-hidden shadow-md border border-sky-blue/10 bg-white p-6 flex items-center justify-between hover:scale-[1.01] hover:shadow-xl transition-all duration-300 border-l-4 border-l-sky-blue">
+                        <a href="#contact" {...withDelay(motionConfig.slideLeft, 0.7)} className="group relative md:col-span-2 md:row-span-1 rounded-3xl overflow-hidden shadow-md border border-sky-blue/10 bg-white p-6 flex items-center justify-between hover:scale-[1.01] hover:shadow-xl transition-all duration-300 border-l-4 border-l-sky-blue">
                             <div className="flex items-center gap-5">
                                 <div className="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center text-navy-blue">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>

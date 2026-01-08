@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 
 const containerVariants: Variants = {
     initial: { opacity: 0 },
-    whileInView: {
+    visible: {
         opacity: 1,
         transition: { staggerChildren: 0.15, delayChildren: 0.1 }
     }
@@ -15,7 +15,7 @@ const containerVariants: Variants = {
 
 const itemVariants: Variants = {
     initial: { opacity: 0, y: 30 },
-    whileInView: {
+    visible: {
         opacity: 1,
         y: 0,
         transition: { duration: 0.8, ease: "easeOut" } as Transition
@@ -225,7 +225,7 @@ export default function DataSolutionsPage() {
                         className="text-center mb-16"
                         variants={itemVariants}
                         initial="initial"
-                        whileInView="whileInView"
+                        whileInView="visible"
                         viewport={{ once: true }}
                     >
                         <h2 className="font-display text-3xl lg:text-4xl text-[#0B2347] dark:text-white mb-4">Core Capabilities</h2>
@@ -238,7 +238,7 @@ export default function DataSolutionsPage() {
                             className="lg:col-span-2 row-span-2 bg-white dark:bg-[#0B1120] rounded-3xl p-8 border border-[#E2E8F0] dark:border-[#334155] shadow-sm hover:shadow-md transition-all duration-300 group relative overflow-hidden"
                             variants={itemVariants}
                             initial="initial"
-                            whileInView="whileInView"
+                            whileInView="visible"
                             viewport={{ once: true }}
                         >
                             <div className="absolute top-0 right-0 w-64 h-64 bg-sky-blue/5 rounded-full -mr-16 -mt-16 blur-2xl group-hover:bg-sky-blue/10 transition-colors"></div>
@@ -268,7 +268,7 @@ export default function DataSolutionsPage() {
                             className="bg-[#0B2347] text-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
                             variants={itemVariants}
                             initial="initial"
-                            whileInView="whileInView"
+                            whileInView="visible"
                             viewport={{ once: true }}
                         >
                             <div>
@@ -294,7 +294,7 @@ export default function DataSolutionsPage() {
                             className="bg-white dark:bg-[#0B1120] rounded-3xl p-8 border border-[#E2E8F0] dark:border-[#334155] shadow-sm hover:shadow-md transition-all duration-300"
                             variants={itemVariants}
                             initial="initial"
-                            whileInView="whileInView"
+                            whileInView="visible"
                             viewport={{ once: true }}
                         >
                             <div className="w-12 h-12 bg-emerald-50 dark:bg-emerald-900/20 rounded-xl flex items-center justify-center text-emerald-600 dark:text-emerald-400 mb-6">
@@ -312,7 +312,7 @@ export default function DataSolutionsPage() {
                             className="lg:col-span-2 bg-white dark:bg-[#0B1120] rounded-3xl p-8 border border-[#E2E8F0] dark:border-[#334155] shadow-sm hover:shadow-md transition-all duration-300 group"
                             variants={itemVariants}
                             initial="initial"
-                            whileInView="whileInView"
+                            whileInView="visible"
                             viewport={{ once: true }}
                         >
                             <div className="grid md:grid-cols-2 gap-8 items-center h-full">
@@ -342,7 +342,7 @@ export default function DataSolutionsPage() {
                             className="bg-white dark:bg-[#0B1120] rounded-3xl p-8 border border-[#E2E8F0] dark:border-[#334155] shadow-sm hover:shadow-md transition-all duration-300"
                             variants={itemVariants}
                             initial="initial"
-                            whileInView="whileInView"
+                            whileInView="visible"
                             viewport={{ once: true }}
                         >
                             <div className="w-12 h-12 bg-purple-50 dark:bg-purple-900/20 rounded-xl flex items-center justify-center text-purple-600 dark:text-purple-400 mb-6">
@@ -398,7 +398,7 @@ export default function DataSolutionsPage() {
                                     className={`p-6 rounded-2xl flex flex-col items-center text-center transition-colors ${item.isAction ? 'bg-[#0B2347] text-white cursor-pointer hover:bg-opacity-90 group' : 'bg-[#F3F6F9] dark:bg-[#162033] hover:bg-blue-50 dark:hover:bg-blue-900/10'}`}
                                     variants={itemVariants}
                                     initial="initial"
-                                    whileInView="whileInView"
+                                    whileInView="visible"
                                     viewport={{ once: true }}
                                     transition={{ delay: i * 0.1 }}
                                 >
@@ -428,7 +428,7 @@ export default function DataSolutionsPage() {
                         className="bg-[#0B2347] rounded-3xl p-8 lg:p-16 relative overflow-hidden shadow-2xl"
                         variants={containerVariants}
                         initial="initial"
-                        whileInView="whileInView"
+                        whileInView="visible"
                         viewport={{ once: true }}
                     >
                         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-sky-blue/20 rounded-full blur-3xl"></div>

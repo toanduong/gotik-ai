@@ -7,7 +7,7 @@ import { motion, Variants, Transition } from "framer-motion";
 
 const containerVariants: Variants = {
     initial: { opacity: 0 },
-    whileInView: {
+    visible: {
         opacity: 1,
         transition: { staggerChildren: 0.15, delayChildren: 0.1 }
     }
@@ -15,7 +15,7 @@ const containerVariants: Variants = {
 
 const itemVariants: Variants = {
     initial: { opacity: 0, y: 30 },
-    whileInView: {
+    visible: {
         opacity: 1,
         y: 0,
         transition: { duration: 0.8, ease: "easeOut" } as Transition
@@ -24,7 +24,7 @@ const itemVariants: Variants = {
 
 const popInVariants: Variants = {
     initial: { opacity: 0, scale: 0.8 },
-    whileInView: {
+    visible: {
         opacity: 1,
         scale: 1,
         transition: { type: "spring", stiffness: 100, damping: 15 } as Transition
@@ -74,7 +74,7 @@ const whyAzure = [
     { icon: "autorenew", title: "Innovation", desc: "Continuous updates and cutting-edge AI services built-in.", color: "green" }
 ];
 
-export default function DataSolutionsPage() {
+export default function CloudSolutionsPage() {
     return (
         <main className="relative bg-white min-h-screen font-sans overflow-x-hidden">
             <link
@@ -176,7 +176,7 @@ export default function DataSolutionsPage() {
                         className="text-center max-w-3xl mx-auto mb-20"
                         variants={itemVariants}
                         initial="initial"
-                        whileInView="whileInView"
+                        whileInView="visible"
                         viewport={{ once: true }}
                     >
                         <span className="text-sky-blue font-bold tracking-widest uppercase text-xs mb-3 block">Cloud Focus</span>
@@ -197,7 +197,7 @@ export default function DataSolutionsPage() {
                                 className={`relative flex flex-col ${phase.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center justify-between mb-24`}
                                 variants={containerVariants}
                                 initial="initial"
-                                whileInView="whileInView"
+                                whileInView="visible"
                                 viewport={{ once: true, margin: "-100px" }}
                             >
                                 {/* Timeline Dot */}
@@ -206,7 +206,7 @@ export default function DataSolutionsPage() {
                                 </div>
 
                                 {/* Content */}
-                                <motion.div className={`lg:w-5/12 pl-24 lg:pl-0 ${phase.reverse ? 'lg:pl-16 text-left' : 'lg:pr-16 lg:text-right'}`} variants={itemVariants}>
+                                <motion.div className={`lg:w-5/12 pl-24 lg:pl-0 ${phase.reverse ? 'lg:pl-16 text-left' : 'lg:pr-16 lg:text-right'}`} variants={itemVariants} whileInView="visible">
                                     <div className={`inline-block px-3 py-1 mb-4 border border-blue-100 dark:border-blue-900 rounded-full bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-300 text-[10px] font-bold tracking-wider uppercase`}>
                                         {phase.phase}
                                     </div>
@@ -238,7 +238,7 @@ export default function DataSolutionsPage() {
                                 </motion.div>
 
                                 {/* Image/Visual */}
-                                <motion.div className={`lg:w-5/12 pl-24 lg:pl-16 lg:pr-0 mt-8 lg:mt-0 w-full ${phase.reverse ? 'lg:pr-16 lg:pl-0' : ''}`} variants={popInVariants}>
+                                <motion.div className={`lg:w-5/12 pl-24 lg:pl-16 lg:pr-0 mt-8 lg:mt-0 w-full ${phase.reverse ? 'lg:pr-16 lg:pl-0' : ''}`} variants={popInVariants} whileInView="visible">
                                     <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border-light dark:border-slate-800 group bg-white dark:bg-surface-dark">
                                         <img alt={phase.title} className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700 object-cover aspect-[4/3]" src={phase.image} />
                                         {phase.imageLabel && (
@@ -262,7 +262,7 @@ export default function DataSolutionsPage() {
             <section className="py-24 bg-white dark:bg-[#0B1120] relative overflow-hidden">
                 <div className="absolute inset-0 opacity-5 dark:opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#4A90E2 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
                 <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-                    <motion.div className="text-center mb-16" variants={itemVariants} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
+                    <motion.div className="text-center mb-16" variants={itemVariants} initial="initial" whileInView="visible" viewport={{ once: true }}>
                         <h2 className="font-display text-4xl lg:text-5xl text-navy-blue dark:text-white mb-6">Why Choose Azure?</h2>
                         <p className="max-w-2xl mx-auto text-gray-600 dark:text-gray-300">
                             Azure provides a trusted, global cloud platform that integrates seamlessly with your existing tools,
@@ -296,7 +296,7 @@ export default function DataSolutionsPage() {
                 <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
                 <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
-                        <motion.div variants={itemVariants} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
+                        <motion.div variants={itemVariants} initial="initial" whileInView="visible" viewport={{ once: true }}>
                             <h2 className="font-display text-4xl lg:text-5xl mb-6">Cost Optimization</h2>
                             <p className="text-lg text-gray-300 mb-8 leading-relaxed">
                                 Maximize your ROI by identifying cloud waste. Our experts utilize Azure Cost Management and best

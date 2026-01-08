@@ -3,32 +3,31 @@
 import Navbar from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import Contact from "@/components/sections/Contact";
-import { motion } from "framer-motion";
+import { motion, Variants, Transition } from "framer-motion";
 
-const containerVariants = {
+const containerVariants: Variants = {
     initial: { opacity: 0 },
-    whileInView: {
+    visible: {
         opacity: 1,
         transition: { staggerChildren: 0.15, delayChildren: 0.1 }
-    },
-    viewport: { once: true, margin: "-100px" }
-};
-
-const itemVariants = {
-    initial: { opacity: 0, y: 30 },
-    whileInView: {
-        opacity: 1,
-        y: 0,
-        transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
     }
 };
 
-const popInVariants = {
+const itemVariants: Variants = {
+    initial: { opacity: 0, y: 30 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.8, ease: "easeOut" } as Transition
+    }
+};
+
+const popInVariants: Variants = {
     initial: { opacity: 0, scale: 0.8 },
-    whileInView: {
+    visible: {
         opacity: 1,
         scale: 1,
-        transition: { type: "spring", stiffness: 100, damping: 15 }
+        transition: { type: "spring", stiffness: 100, damping: 15 } as Transition
     }
 };
 
@@ -187,7 +186,7 @@ export default function ERPSystem() {
                 <motion.div
                     className="flex flex-col gap-12"
                     initial="initial"
-                    whileInView="whileInView"
+                    whileInView="visible"
                     viewport={{ once: true, margin: "-100px" }}
                     variants={containerVariants}
                 >
@@ -263,12 +262,12 @@ export default function ERPSystem() {
                         <motion.div
                             className="flex flex-col gap-0 px-4"
                             initial="initial"
-                            whileInView="whileInView"
+                            whileInView="visible"
                             viewport={{ once: true }}
                             variants={{
                                 initial: {},
-                                whileInView: { transition: { staggerChildren: 0.2 } }
-                            }}
+                                visible: { transition: { staggerChildren: 0.2 } }
+                            } as Variants}
                         >
                             {processSteps.map((step, index) => (
                                 <motion.div
@@ -276,8 +275,8 @@ export default function ERPSystem() {
                                     className="flex gap-8 group relative"
                                     variants={{
                                         initial: { opacity: 0, x: 40 },
-                                        whileInView: { opacity: 1, x: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
-                                    }}
+                                        visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } as Transition }
+                                    } as Variants}
                                 >
                                     <div className="flex flex-col items-center">
                                         <motion.div

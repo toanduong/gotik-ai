@@ -3,6 +3,7 @@
 import Navbar from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import Link from "next/link";
+import { motionConfig, withDelay } from "@/lib/motion";
 
 const benefits = [
     {
@@ -76,13 +77,13 @@ export default function AISolutions() {
             {/* Hero Section */}
             <section className="pt-48 pb-20 px-6 md:px-12 max-w-[1440px] mx-auto text-center">
                 <div className="max-w-4xl mx-auto">
-                    <span className="inline-block py-2 px-4 bg-sky-blue/10 text-sky-blue text-xs font-bold uppercase tracking-widest rounded-full mb-6">
+                    <span {...motionConfig.fadeIn} className="inline-block py-2 px-4 bg-sky-blue/10 text-sky-blue text-xs font-bold uppercase tracking-widest rounded-full mb-6">
                         AI & Digital Transformation
                     </span>
-                    <h1 className="text-5xl md:text-7xl font-display font-light text-navy-blue mb-6 leading-tight">
+                    <h1 {...withDelay(motionConfig.slideUp, 0.2)} className="text-5xl md:text-7xl font-display font-light text-navy-blue mb-6 leading-tight">
                         Transform Your Business with <span className="text-sky-blue">AI Solutions</span>
                     </h1>
-                    <p className="text-xl text-neutral-gray leading-relaxed max-w-3xl mx-auto">
+                    <p {...withDelay(motionConfig.fadeIn, 0.4)} className="text-xl text-neutral-gray leading-relaxed max-w-3xl mx-auto">
                         Leverage Azure AI, RAG, GenAI workflows, and intelligent automation to streamline operations, optimize processes, and drive unprecedented efficiency across your organization.
                     </p>
                 </div>
@@ -90,9 +91,9 @@ export default function AISolutions() {
 
             {/* Benefits Grid */}
             <section className="px-6 md:px-12 max-w-6xl mx-auto mb-32">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6" data-motion-stagger="0.15">
                     {benefits.map((b, i) => (
-                        <div key={i} className="bg-gradient-to-br from-sky-blue/10 to-transparent border border-sky-blue/20 rounded-2xl p-8 hover:border-sky-blue/40 transition-all">
+                        <div key={i} {...motionConfig.slideUp} className="bg-gradient-to-br from-sky-blue/10 to-transparent border border-sky-blue/20 rounded-2xl p-8 hover:border-sky-blue/40 transition-all">
                             <div className="w-16 h-16 bg-sky-blue rounded-xl flex items-center justify-center mb-6">
                                 <Icon name={b.icon} className="text-white w-8 h-8" />
                             </div>
@@ -107,14 +108,14 @@ export default function AISolutions() {
             <section className="py-20 px-6 md:px-12 bg-slate-50">
                 <div className="max-w-[1440px] mx-auto">
                     <div className="text-center mb-16">
-                        <span className="text-xs font-bold text-neutral-gray uppercase tracking-widest mb-3 block">Real-World Applications</span>
-                        <h2 className="text-4xl md:text-5xl font-display text-navy-blue mb-4">AI Transformation Use Cases</h2>
-                        <p className="text-neutral-gray max-w-2xl mx-auto">Proven solutions powered by Azure AI, RAG architecture, and GenAI workflows</p>
+                        <span {...motionConfig.fadeIn} className="text-xs font-bold text-neutral-gray uppercase tracking-widest mb-3 block">Real-World Applications</span>
+                        <h2 {...withDelay(motionConfig.slideUp, 0.2)} className="text-4xl md:text-5xl font-display text-navy-blue mb-4">AI Transformation Use Cases</h2>
+                        <p {...withDelay(motionConfig.fadeIn, 0.3)} className="text-neutral-gray max-w-2xl mx-auto">Proven solutions powered by Azure AI, RAG architecture, and GenAI workflows</p>
                     </div>
 
                     <div className="space-y-12">
                         {useCases.map((uc, i) => (
-                            <div key={i} className="bg-white rounded-3xl p-8 md:p-12 border border-sky-blue/10 hover:border-sky-blue/30 transition-all">
+                            <div key={i} {...withDelay(motionConfig.fadeIn, 0.2 * i)} className="bg-white rounded-3xl p-8 md:p-12 border border-sky-blue/10 hover:border-sky-blue/30 transition-all">
                                 <div className={`grid md:grid-cols-2 gap-12 items-center ${uc.reverse ? 'md:flex-row-reverse' : ''}`}>
                                     <div className={uc.reverse ? 'md:order-2' : ''}>
                                         <span className="inline-block px-3 py-1 bg-sky-blue/10 text-sky-blue text-xs font-bold uppercase rounded-full mb-4">
@@ -179,11 +180,11 @@ export default function AISolutions() {
             {/* CTA Section */}
             <section className="py-20 px-6 md:px-12 bg-gradient-to-br from-navy-blue to-sky-blue text-white">
                 <div className="max-w-4xl mx-auto text-center">
-                    <h2 className="text-4xl md:text-5xl font-display font-semibold mb-6">Ready to Transform Your Business with AI?</h2>
-                    <p className="text-xl text-white/80 mb-8 leading-relaxed">
+                    <h2 {...motionConfig.slideUp} className="text-4xl md:text-5xl font-display font-semibold mb-6">Ready to Transform Your Business with AI?</h2>
+                    <p {...withDelay(motionConfig.fadeIn, 0.2)} className="text-xl text-white/80 mb-8 leading-relaxed">
                         Let's discuss how Azure AI, RAG, and GenAI workflows can drive efficiency and innovation in your organization.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <div {...withDelay(motionConfig.scaleIn, 0.4)} className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/#contact" className="bg-white text-navy-blue px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-sky-blue hover:text-white transition-all">
                             Request Consultation
                         </Link>

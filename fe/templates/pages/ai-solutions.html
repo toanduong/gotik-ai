@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Solutions - Gotik Consulting</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0B2347", // Navy Blue
+                        secondary: "#4A90E2", // Sky Blue accent
+                        "background-light": "#FFFFFF",
+                        "background-dark": "#0B1120",
+                        "surface-light": "#F3F6F9",
+                        "surface-dark": "#162033",
+                        "text-light": "#334155",
+                        "text-dark": "#CBD5E1",
+                        "border-light": "#E2E8F0",
+                        "border-dark": "#334155"
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        'xl': '1rem',
+                        '2xl': '1.5rem',
+                        '3xl': '2rem',
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-soft': 'pulseSoft 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        pulseSoft: {
+                            '0%, 100%': { opacity: '1' },
+                            '50%': { opacity: '0.8' },
+                        }
+                    }
+                },
+            },
+        };
+    </script>
+<style>
+        html { scroll-behavior: smooth; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+        .dark ::-webkit-scrollbar-track { background: #1e293b; }
+        .dark ::-webkit-scrollbar-thumb { background: #475569; }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        .reveal-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased font-sans transition-colors duration-300">
+<nav class="fixed w-full z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-border-light dark:border-border-dark transition-all duration-300">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<div class="hidden md:flex items-center space-x-8 text-xs font-semibold tracking-widest uppercase text-primary dark:text-white">
+<a class="hover:text-secondary transition-colors" href="#">Solutions</a>
+<a class="text-secondary dark:text-secondary" href="#">AI Solutions</a>
+<a class="hover:text-secondary transition-colors" href="#">Academy</a>
+<a class="hover:text-secondary transition-colors" href="#">About</a>
+</div>
+<div class="absolute left-1/2 transform -translate-x-1/2">
+<a class="text-xl font-medium text-primary dark:text-white font-sans tracking-tight" href="#">
+                    Gotik Consulting
+                </a>
+</div>
+<div class="flex items-center">
+<a class="hidden md:inline-flex items-center justify-center px-6 py-2.5 text-xs font-bold tracking-widest uppercase text-white bg-black dark:bg-white dark:text-black rounded-full hover:bg-gray-800 dark:hover:bg-gray-200 transition-all duration-300 shadow-lg hover:shadow-xl" href="#contact">
+                    Get Started
+                </a>
+<button class="md:hidden text-primary dark:text-white p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<header class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-gradient-to-b from-surface-light to-background-light dark:from-surface-dark dark:to-background-dark">
+<div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-secondary/5 rounded-full blur-3xl dark:bg-secondary/10"></div>
+<div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl dark:bg-primary/10"></div>
+<div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+<div class="text-center max-w-3xl mx-auto mb-12 animate-fade-in-up">
+<div class="inline-block px-4 py-1.5 mb-4 border border-secondary/30 rounded-full bg-secondary/5 text-secondary text-xs font-bold tracking-wider uppercase">
+            Interactive Solutions Map
+        </div>
+<h1 class="font-serif text-4xl lg:text-6xl text-primary dark:text-white mb-6">
+            Explore our <span class="text-secondary italic">AI Ecosystem</span>
+</h1>
+<p class="text-lg text-gray-600 dark:text-gray-300">
+            Navigate through our comprehensive suite of artificial intelligence capabilities. Click on any node to discover how we drive value.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-4 lg:gap-6 h-auto md:h-[600px] animate-fade-in-up" style="animation-delay: 0.2s;">
+<a class="group relative md:col-span-2 md:row-span-2 rounded-3xl overflow-hidden shadow-lg border border-border-light dark:border-border-dark bg-white dark:bg-surface-dark p-8 flex flex-col justify-between hover:scale-[1.01] hover:shadow-2xl transition-all duration-300 cursor-pointer" href="#business-growth">
+<div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-9xl text-secondary">trending_up</span>
+</div>
+<div class="relative z-10">
+<div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-secondary mb-6 group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+<span class="material-symbols-outlined text-2xl">trending_up</span>
+</div>
+<h3 class="text-3xl font-serif font-medium text-primary dark:text-white mb-2 group-hover:text-secondary transition-colors">Business Growth</h3>
+<p class="text-gray-500 dark:text-gray-400 max-w-sm">Use AI to optimize customer journeys, enhance retention, and drive revenue scale.</p>
+</div>
+<div class="flex items-center text-secondary font-semibold text-sm mt-4 group-hover:translate-x-2 transition-transform">
+                Explore Growth <span class="material-symbols-outlined ml-2 text-base">arrow_forward</span>
+</div>
+<div class="absolute bottom-0 left-0 h-1 bg-secondary w-0 group-hover:w-full transition-all duration-500"></div>
+</a>
+<a class="group relative md:col-span-1 md:row-span-1 rounded-3xl overflow-hidden shadow-md border border-border-light dark:border-border-dark bg-surface-light dark:bg-background-dark p-6 flex flex-col justify-between hover:scale-[1.02] hover:shadow-xl transition-all duration-300 cursor-pointer hover:bg-white dark:hover:bg-surface-dark" href="#agentic-architecture">
+<div class="flex justify-between items-start">
+<div class="w-10 h-10 rounded-lg bg-purple-50 dark:bg-purple-900/20 flex items-center justify-center text-purple-600">
+<span class="material-symbols-outlined">hub</span>
+</div>
+<span class="material-symbols-outlined text-gray-300 group-hover:text-purple-500 transition-colors">arrow_outward</span>
+</div>
+<div>
+<h4 class="text-lg font-bold text-primary dark:text-white mb-1">Agentic AI</h4>
+<p class="text-xs text-gray-500 dark:text-gray-400">Autonomous multi-agent systems.</p>
+</div>
+</a>
+<a class="group relative md:col-span-1 md:row-span-2 rounded-3xl overflow-hidden shadow-lg border border-border-light dark:border-border-dark bg-secondary/5 dark:bg-secondary/10 p-6 flex flex-col justify-between hover:scale-[1.02] hover:shadow-xl transition-all duration-300 cursor-pointer hover:bg-secondary/10 dark:hover:bg-secondary/20" href="#rag-architecture">
+<div class="absolute bottom-0 right-0 w-32 h-32 bg-secondary/10 rounded-full blur-2xl group-hover:bg-secondary/20 transition-colors"></div>
+<div>
+<div class="w-12 h-12 rounded-xl bg-white dark:bg-white/10 flex items-center justify-center text-secondary mb-6 shadow-sm">
+<span class="material-symbols-outlined text-2xl">memory</span>
+</div>
+<h3 class="text-xl font-serif font-medium text-primary dark:text-white mb-2">Knowledge RAG</h3>
+<p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+                    Connect LLMs to your enterprise data for context-aware intelligence and accurate retrieval.
+                </p>
+</div>
+<div class="mt-4">
+<span class="inline-flex items-center justify-center px-3 py-1 rounded-full bg-white dark:bg-black/20 text-[10px] font-bold uppercase tracking-wide text-secondary shadow-sm">
+                    Data Core
+                </span>
+</div>
+</a>
+<a class="group relative md:col-span-1 md:row-span-1 rounded-3xl overflow-hidden shadow-md border border-border-light dark:border-border-dark bg-surface-light dark:bg-background-dark p-6 flex flex-col justify-between hover:scale-[1.02] hover:shadow-xl transition-all duration-300 cursor-pointer hover:bg-white dark:hover:bg-surface-dark" href="#workflow-automation">
+<div class="flex justify-between items-start">
+<div class="w-10 h-10 rounded-lg bg-teal-50 dark:bg-teal-900/20 flex items-center justify-center text-teal-600">
+<span class="material-symbols-outlined">precision_manufacturing</span>
+</div>
+<span class="material-symbols-outlined text-gray-300 group-hover:text-teal-500 transition-colors">arrow_outward</span>
+</div>
+<div>
+<h4 class="text-lg font-bold text-primary dark:text-white mb-1">Automation</h4>
+<p class="text-xs text-gray-500 dark:text-gray-400">Streamline ERP &amp; CRM workflows.</p>
+</div>
+</a>
+<a class="group relative md:col-span-2 md:row-span-1 rounded-3xl overflow-hidden shadow-md border border-border-light dark:border-border-dark bg-primary dark:bg-surface-dark p-6 flex items-center gap-6 hover:scale-[1.01] hover:shadow-xl transition-all duration-300 cursor-pointer" href="#cost-optimization">
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+<div class="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center flex-shrink-0 backdrop-blur-sm border border-white/10">
+<span class="material-symbols-outlined text-3xl text-white">savings</span>
+</div>
+<div class="relative z-10 flex-1">
+<h3 class="text-xl font-bold text-white mb-1">Cost Optimization</h3>
+<p class="text-sm text-gray-300">Maximize ROI with intelligent operational analysis.</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white group-hover:bg-white group-hover:text-primary transition-all">
+<span class="material-symbols-outlined">arrow_downward</span>
+</div>
+</a>
+<a class="group relative md:col-span-2 md:row-span-1 rounded-3xl overflow-hidden shadow-md border border-border-light dark:border-border-dark bg-white dark:bg-background-dark p-6 flex items-center justify-between hover:scale-[1.01] hover:shadow-xl transition-all duration-300 cursor-pointer border-l-4 border-l-secondary" href="#contact">
+<div class="flex items-center gap-5">
+<div class="w-12 h-12 rounded-full bg-surface-light dark:bg-surface-dark flex items-center justify-center text-primary dark:text-white">
+<span class="material-symbols-outlined">rocket_launch</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-primary dark:text-white">Start Your Journey</h3>
+<p class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-widest">Consultation &amp; Strategy</p>
+</div>
+</div>
+<span class="inline-flex items-center justify-center px-6 py-2 text-xs font-bold tracking-widest uppercase text-white bg-black dark:bg-white dark:text-black rounded-full hover:bg-gray-800 dark:hover:bg-gray-200 transition-all duration-300">
+                Contact Us
+            </span>
+</a>
+</div>
+</div>
+</header>
+<section class="py-24 bg-white dark:bg-background-dark relative overflow-hidden" id="business-growth">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="order-2 lg:order-1 reveal-on-scroll">
+<div class="relative rounded-3xl overflow-hidden shadow-2xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark p-8">
+<img alt="Customer Journey Optimization Illustration" class="w-full h-auto rounded-xl shadow-md mb-6 transform hover:scale-[1.02] transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrMMsimr-rvBDTNwn2KhOmKgT2UIvYUShwVCTgGZWUOT1XpTBc5ruboG208Ucnb8rPFoNAFZpBNdFyTMh9SlAYtHTCspLpsfrbyVTprjh7bCC0IEhKcRu3fCtIYbc8lZX3T2SSUmlNhn9n6so-ndfMVPH-aEm_OFdYduvrQi3aDbYy_C5FNkAKwOlKUMO1DQiJ9bUF9M1JUXqaAEtyeWAU2Zy-TUH7lvb6PZf8EZKROBty8avLnCm0vNnh-8gcphWw4OZRDzK9umQ"/>
+<div class="grid grid-cols-3 gap-4">
+<div class="text-center p-4 bg-white dark:bg-black/20 rounded-lg">
+<span class="material-symbols-outlined text-secondary text-2xl mb-2">insights</span>
+<p class="text-xs font-bold text-gray-600 dark:text-gray-300">Insights</p>
+</div>
+<div class="text-center p-4 bg-white dark:bg-black/20 rounded-lg">
+<span class="material-symbols-outlined text-secondary text-2xl mb-2">bolt</span>
+<p class="text-xs font-bold text-gray-600 dark:text-gray-300">Actions</p>
+</div>
+<div class="text-center p-4 bg-white dark:bg-black/20 rounded-lg">
+<span class="material-symbols-outlined text-secondary text-2xl mb-2">rocket_launch</span>
+<p class="text-xs font-bold text-gray-600 dark:text-gray-300">Growth</p>
+</div>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2 reveal-on-scroll">
+<h2 class="font-serif text-4xl lg:text-5xl text-primary dark:text-white mb-6">
+                    Grow Customer Business with <span class="text-secondary">AI</span>
+</h2>
+<p class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+                    Optimize every touchpoint of your customer journey. Our AI solutions ingest data to provide actionable insights, turning passive interactions into active growth opportunities.
+                </p>
+<ul class="space-y-4 mb-8">
+<li class="flex items-start">
+<span class="material-symbols-outlined text-secondary mr-3 mt-1">check_circle</span>
+<span class="text-gray-700 dark:text-gray-300">Personalized customer experiences at scale</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-secondary mr-3 mt-1">check_circle</span>
+<span class="text-gray-700 dark:text-gray-300">Predictive churn analysis and retention strategies</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-secondary mr-3 mt-1">check_circle</span>
+<span class="text-gray-700 dark:text-gray-300">Automated lead qualification and nurturing</span>
+</li>
+</ul>
+<a class="text-secondary font-semibold hover:text-primary dark:hover:text-white transition-colors inline-flex items-center group" href="#">
+                    See how it works 
+                    <span class="material-symbols-outlined ml-1 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface-light dark:bg-surface-dark border-y border-border-light dark:border-border-dark" id="agentic-architecture">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+<span class="text-secondary font-bold tracking-widest uppercase text-xs mb-3 block">Next-Gen Architecture</span>
+<h2 class="font-serif text-4xl lg:text-5xl text-primary dark:text-white mb-6">Agentic AI Architecture</h2>
+<p class="text-gray-600 dark:text-gray-300">
+                Deploy autonomous multi-agent systems coordinated by a central intelligence to handle complex, multi-step enterprise tasks with precision.
+            </p>
+</div>
+<div class="relative bg-white dark:bg-background-dark rounded-3xl p-8 lg:p-12 shadow-xl border border-border-light dark:border-border-dark reveal-on-scroll overflow-hidden">
+<div class="grid lg:grid-cols-2 gap-12 items-center relative z-10">
+<div class="relative">
+<div class="relative rounded-2xl overflow-hidden shadow-lg border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark p-6">
+<img alt="Agentic AI Architecture Diagram - Multi-agent System" class="w-full h-auto object-contain rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4P1gdVE0zBD39KxtTgK5HHlxPZNsJCrrwEs3WrJi6uN3BR3biw4ybSL6AmsDa1g6Zx2uSFhIbBePhJvUDpShR0mz4CeQNKff_ZgYo2PfogRaR6dJIDHZqgPTvmkuBy8YCUqYuLAh2dKa-waD8gJtUawGHo_2n_fg4mc2fBxmkQaw975RnUoUA-xgTlyNQ5JAKcL837Tv7-LVfrG50vs8B0bHvlg6xGR2vnS8t65S-MphAs1axLsZbOpRrWcJI6xzecLkkkeFeONs"/>
+<div class="absolute inset-0 bg-primary/5 dark:bg-primary/20 pointer-events-none"></div>
+</div>
+<div class="absolute -top-4 -right-4 w-24 h-24 bg-secondary/10 rounded-full blur-xl"></div>
+<div class="absolute -bottom-4 -left-4 w-32 h-32 bg-primary/10 rounded-full blur-xl"></div>
+</div>
+<div class="space-y-8">
+<div class="flex gap-4 items-start">
+<div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center flex-shrink-0 text-secondary border border-secondary/20">
+<span class="material-symbols-outlined">hub</span>
+</div>
+<div>
+<h4 class="font-bold text-primary dark:text-white mb-2">Central Orchestrator</h4>
+<p class="text-sm text-gray-600 dark:text-gray-400">Intelligent routing and task decomposition engine that manages agent workflows.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-12 h-12 rounded-xl bg-purple-50 dark:bg-purple-900/20 flex items-center justify-center flex-shrink-0 text-purple-600 border border-purple-200 dark:border-purple-800">
+<span class="material-symbols-outlined">smart_toy</span>
+</div>
+<div>
+<h4 class="font-bold text-primary dark:text-white mb-2">Specialized Agents</h4>
+<p class="text-sm text-gray-600 dark:text-gray-400">Purpose-built autonomous agents for coding, analysis, content generation, and support.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-12 h-12 rounded-xl bg-teal-50 dark:bg-teal-900/20 flex items-center justify-center flex-shrink-0 text-teal-600 border border-teal-200 dark:border-teal-800">
+<span class="material-symbols-outlined">sync_alt</span>
+</div>
+<div>
+<h4 class="font-bold text-primary dark:text-white mb-2">Collaborative Feedback Loop</h4>
+<p class="text-sm text-gray-600 dark:text-gray-400">Self-correcting mechanisms ensuring outputs meet quality standards before final delivery.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-background-light dark:bg-background-dark" id="rag-architecture">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="reveal-on-scroll">
+<div class="inline-block px-4 py-1.5 mb-6 border border-secondary/30 rounded-full bg-secondary/5 text-secondary text-xs font-bold tracking-wider uppercase">
+                    Knowledge Integration
+                </div>
+<h2 class="font-serif text-4xl lg:text-5xl text-primary dark:text-white mb-6">Agent RAG Architecture</h2>
+<p class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+                    Empower your AI with your enterprise data. Our Retrieval Augmented Generation (RAG) systems connect LLMs securely to your documents, vector databases, and APIs for accurate, context-aware responses.
+                </p>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-light dark:bg-surface-dark flex items-center justify-center flex-shrink-0 border border-border-light dark:border-border-dark text-secondary">
+<span class="material-symbols-outlined">library_books</span>
+</div>
+<div>
+<h4 class="font-bold text-primary dark:text-white">Document Ingestion</h4>
+<p class="text-sm text-gray-500 dark:text-gray-400">PDFs, Word docs, and wikis are parsed and chunked.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-light dark:bg-surface-dark flex items-center justify-center flex-shrink-0 border border-border-light dark:border-border-dark text-secondary">
+<span class="material-symbols-outlined">storage</span>
+</div>
+<div>
+<h4 class="font-bold text-primary dark:text-white">Vector Database</h4>
+<p class="text-sm text-gray-500 dark:text-gray-400">Semantic indexing for lightning-fast relevance retrieval.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-light dark:bg-surface-dark flex items-center justify-center flex-shrink-0 border border-border-light dark:border-border-dark text-secondary">
+<span class="material-symbols-outlined">api</span>
+</div>
+<div>
+<h4 class="font-bold text-primary dark:text-white">API Connectors</h4>
+<p class="text-sm text-gray-500 dark:text-gray-400">Real-time data fetching from ERP and CRM systems.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative bg-surface-light dark:bg-surface-dark rounded-3xl p-8 border border-border-light dark:border-border-dark shadow-2xl reveal-on-scroll">
+<div class="relative rounded-xl overflow-hidden bg-white dark:bg-black/20 border border-border-light dark:border-border-dark mb-4 group">
+<img alt="RAG Architecture Diagram - Enterprise Knowledge Flow" class="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsIH7RATIlOkQ09N5uJ8EBqINnfcEIGo-2nkjEcpXsJ0wYS4EFtMu0Oqc2_CGX_TeapI0_Lotn8OOCCT7dT2ye8LwP5uAQUBylQmF_c8FyLP6uGB9TK474QYI6z_aFCXS2IMu65s5Wzf-bbNBv2YPd17gN8rVQ17saAQgv53jp5ANLkdOonfdcVNYeeHwweyq9_xv03oRP37X92kQ81goZDrebH3OGqTm0EW-Hmc07fXlPth-oZ1hCUa7qgIhq9ujqiqjy-5I4UCQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+<div class="w-full">
+<div class="h-1 w-full bg-gray-600 rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-2/3 animate-pulse"></div>
+</div>
+<div class="flex justify-between text-xs text-white mt-2 font-mono">
+<span>Indexing...</span>
+<span>67%</span>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute -top-6 -right-6 bg-white dark:bg-surface-dark p-4 rounded-xl border border-secondary/30 shadow-lg max-w-xs animate-float">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+<span class="font-bold text-xs text-primary dark:text-white uppercase tracking-wider">Live System Status</span>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-[10px] text-gray-500">
+<span>Latency</span>
+<span class="text-primary dark:text-white font-mono">45ms</span>
+</div>
+<div class="flex justify-between text-[10px] text-gray-500">
+<span>Tokens</span>
+<span class="text-primary dark:text-white font-mono">12k/sec</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface-light dark:bg-surface-dark relative overflow-hidden" id="workflow-automation">
+<div class="absolute inset-0 opacity-5 dark:opacity-10 pointer-events-none" style="background-image: radial-gradient(#4A90E2 1px, transparent 1px); background-size: 32px 32px;"></div>
+<div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+<div class="text-center mb-16 reveal-on-scroll">
+<h2 class="font-serif text-4xl lg:text-5xl text-primary dark:text-white mb-6">Workflow Automation</h2>
+<p class="max-w-2xl mx-auto text-gray-600 dark:text-gray-300">
+                Seamlessly integrate AI agents into your existing ERP and CRM pipelines to automate repetitive tasks and optimize process efficiency.
+            </p>
+</div>
+<div class="relative reveal-on-scroll">
+<div class="hidden lg:block absolute top-1/2 left-0 w-full h-1 bg-gray-200 dark:bg-gray-700 -translate-y-1/2 z-0"></div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
+<div class="bg-white dark:bg-background-dark p-6 rounded-2xl shadow-lg border border-border-light dark:border-border-dark group hover:-translate-y-2 transition-transform duration-300">
+<div class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/30 rounded-xl flex items-center justify-center text-indigo-600 mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">input</span>
+</div>
+<h3 class="font-bold text-lg text-primary dark:text-white mb-2">Input Trigger</h3>
+<p class="text-sm text-gray-500">New lead in CRM or Invoice received via Email.</p>
+</div>
+<div class="bg-white dark:bg-background-dark p-6 rounded-2xl shadow-lg border-2 border-secondary/20 group hover:-translate-y-2 transition-transform duration-300 relative">
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-secondary text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">AI Processing</div>
+<div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center text-secondary mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">psychology</span>
+</div>
+<h3 class="font-bold text-lg text-primary dark:text-white mb-2">AI Analysis</h3>
+<p class="text-sm text-gray-500">Data extraction, classification, and decision making.</p>
+</div>
+<div class="bg-white dark:bg-background-dark p-6 rounded-2xl shadow-lg border border-border-light dark:border-border-dark group hover:-translate-y-2 transition-transform duration-300">
+<div class="w-12 h-12 bg-teal-100 dark:bg-teal-900/30 rounded-xl flex items-center justify-center text-teal-600 mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">settings_applications</span>
+</div>
+<h3 class="font-bold text-lg text-primary dark:text-white mb-2">ERP Integration</h3>
+<p class="text-sm text-gray-500">Update records, create orders, or schedule tasks.</p>
+</div>
+<div class="bg-white dark:bg-background-dark p-6 rounded-2xl shadow-lg border border-border-light dark:border-border-dark group hover:-translate-y-2 transition-transform duration-300">
+<div class="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-xl flex items-center justify-center text-green-600 mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<h3 class="font-bold text-lg text-primary dark:text-white mb-2">Completion</h3>
+<p class="text-sm text-gray-500">Process finalized, notifications sent, dashboard updated.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-primary text-white relative overflow-hidden" id="cost-optimization">
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+<div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="reveal-on-scroll">
+<h2 class="font-serif text-4xl lg:text-5xl mb-6">Cost Optimization with AI</h2>
+<p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                    Maximize your ROI by identifying inefficiencies. Our AI models analyze operational expenditure in real-time to suggest cost-saving measures without compromising quality.
+                </p>
+<div class="grid grid-cols-2 gap-8 mb-8">
+<div>
+<div class="text-4xl font-serif font-bold mb-2 text-secondary">-35%</div>
+<p class="text-sm opacity-80 uppercase tracking-widest">Operational Costs</p>
+</div>
+<div>
+<div class="text-4xl font-serif font-bold mb-2 text-secondary">3x</div>
+<p class="text-sm opacity-80 uppercase tracking-widest">Efficiency Gain</p>
+</div>
+</div>
+<a class="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-primary bg-white rounded-lg hover:bg-gray-100 transition-all duration-300" href="#contact">
+                    Calculate Your Savings
+                </a>
+</div>
+<div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 reveal-on-scroll">
+<div class="flex items-end gap-4 h-64 w-full justify-between px-4 pb-4 border-b border-white/30 relative">
+<div class="w-12 bg-white/30 rounded-t-lg h-[80%] relative group">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity text-xs font-bold">Q1</div>
+</div>
+<div class="w-12 bg-white/30 rounded-t-lg h-[65%] relative group">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity text-xs font-bold">Q2</div>
+</div>
+<div class="w-12 bg-secondary rounded-t-lg h-[40%] relative group shadow-[0_0_20px_rgba(74,144,226,0.5)]">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 text-secondary font-bold text-sm bg-white px-2 py-1 rounded shadow-sm">-45%</div>
+<div class="absolute bottom-2 left-1/2 -translate-x-1/2 text-[10px] text-white font-bold opacity-80">AI</div>
+</div>
+<div class="w-12 bg-secondary rounded-t-lg h-[30%] relative group"></div>
+</div>
+<div class="mt-6 flex justify-between items-center text-sm">
+<span class="opacity-70">Legacy Systems Cost</span>
+<span class="font-bold text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">trending_down</span>
+                        Optimized Spend
+                    </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface-light dark:bg-surface-dark" id="contact">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-16">
+<div class="reveal-on-scroll">
+<h2 class="font-serif text-5xl text-primary dark:text-white mb-6">Start Your AI Transformation</h2>
+<p class="text-xl text-gray-600 dark:text-gray-300 mb-10">
+                    Expert guidance for your digital journey. From feasibility studies to full-scale deployment, we turn your vision into intelligent reality.
+                </p>
+<div class="flex items-center gap-4 mb-8">
+<div class="flex -space-x-4">
+<img alt="User 1" class="w-12 h-12 rounded-full border-2 border-white dark:border-surface-dark object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANyHK8Gbf6iLP1fYmnZ6c0Y66gELHIRRbVC4-gg5GvEVQhiqo8iMCGlLcXHXOJHhKPTwMsHgHPGQHP1tAcBat7lxu8WJRA4HBKq8cuOYI-rrt3tP5MB1Oy_vI-tXS7GCyNfJiACyUuJ0w8zyVOb4vwkjpA8Ao8T370BOY8dzn13gcAhtCJ2vdN120iwvB6AXz9IHymyAZAcz1AkglO6rp84ME4DDJMamQlOeeGYnUgtlCyekPUk_IdAsLmNymX5shi2MymMkkZaIQ"/>
+<img alt="User 2" class="w-12 h-12 rounded-full border-2 border-white dark:border-surface-dark object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8MNtSojgF_zrOrBjF7kcdj_xV2Xp1qgM75lX2IxuNkXiCsClzGEPUzCp5iUeQVl19g5g97voolZCikahvbsLv8RtvwVW91-tE-c6b4BzqSjNOOdjCllII3EdrWNIz6wr97E6nSIi81cZiqzO8ycwy5R0B85xI5Gr7yrOPVSzd0X1DC1A_cXQ3D-6qr0YvEAMkcx_BeXpf6xuhxqSvwwZGhUtZMg_8O0eOEx3xA7TFIW2ZPoVSqif7-h_hhyl93y6p1X6lKGR-MVU"/>
+<img alt="User 3" class="w-12 h-12 rounded-full border-2 border-white dark:border-surface-dark object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADHbgFrlGStGmtBINxgB95-3JxN1-4sBcoVyZPncyVTqspxqy8Kv-epQ68GRlF6i7f56Y1DdJowqULlUdZwSSo00Vfo-ZG91NKBNezWGFR-s29FOh0nT7XMplqBeiGxIXEh7wFRD2r1pN4x3bUh6_ujhWuGOFHwDnnrbGCZsktLAuBbpkcNgkfkICTpzYmK5rI4IZyI-jG4jcFszxAaO4EnMwT30FEXshhpVQgMNtzqCZ9iQ8DqLt4gA0pm1TQmXWgQmwZ6UKL0Ng"/>
+</div>
+<span class="text-gray-600 dark:text-gray-400 font-medium">Join 500+ innovators</span>
+</div>
+</div>
+<div class="bg-background-light dark:bg-background-dark p-8 lg:p-10 rounded-3xl shadow-xl border border-border-light dark:border-border-dark reveal-on-scroll" style="transition-delay: 200ms;">
+<form class="space-y-6">
+<h3 class="text-xl font-bold text-primary dark:text-white mb-6">Start Your Project</h3>
+<div>
+<label class="block text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">Your Name</label>
+<input class="w-full px-4 py-4 bg-surface-light dark:bg-surface-dark border-transparent focus:border-secondary focus:ring-0 rounded-xl text-primary dark:text-white placeholder-gray-400 transition-colors" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">Email</label>
+<input class="w-full px-4 py-4 bg-surface-light dark:bg-surface-dark border-transparent focus:border-secondary focus:ring-0 rounded-xl text-primary dark:text-white placeholder-gray-400 transition-colors" placeholder="john@company.com" type="email"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">Interest</label>
+<select class="w-full px-4 py-4 bg-surface-light dark:bg-surface-dark border-transparent focus:border-secondary focus:ring-0 rounded-xl text-primary dark:text-white transition-colors">
+<option>Generative AI</option>
+<option>Predictive Analytics</option>
+<option>Automation</option>
+<option>Consulting</option>
+</select>
+</div>
+<button class="w-full py-4 px-6 bg-primary hover:bg-primary/90 text-white font-bold rounded-xl transition-all duration-300 transform hover:translate-y-[-2px] shadow-lg" type="button">
+                        Request Consultation
+                    </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-background-light dark:bg-background-dark border-t border-border-light dark:border-border-dark pt-20 pb-10">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="flex flex-col md:flex-row justify-between items-center mb-12">
+<div class="mb-6 md:mb-0">
+<h3 class="text-2xl font-serif font-bold text-primary dark:text-white">Gotik Consulting</h3>
+<p class="text-gray-500 dark:text-gray-400 mt-2 text-sm">Transforming ideas into scalable software.</p>
+</div>
+<div class="flex gap-6">
+<a class="text-gray-400 hover:text-secondary transition-colors" href="#"><span class="sr-only">LinkedIn</span><i class="material-symbols-outlined">share</i></a>
+<a class="text-gray-400 hover:text-secondary transition-colors" href="#"><span class="sr-only">Twitter</span><i class="material-symbols-outlined">rss_feed</i></a>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center border-t border-border-light dark:border-border-dark pt-8 text-sm text-gray-500 dark:text-gray-400">
+<p>© 2024 Gotik Consulting. All rights reserved.</p>
+<div class="flex gap-8 mt-4 md:mt-0">
+<a class="hover:text-primary dark:hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary dark:hover:text-white transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    // Simple Intersection Observer for scroll animations
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+    document.querySelectorAll('.reveal-on-scroll').forEach(element => {
+        observer.observe(element);
+    });
+</script>
+
+</body></html>

@@ -2,6 +2,7 @@
 
 import Navbar from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import Contact from "@/components/sections/Contact";
 import Link from "next/link";
 import { motionConfig, withDelay } from "@/lib/motion";
 
@@ -382,63 +383,7 @@ export default function AISolutions() {
             </section>
 
             {/* Contact Section */}
-            <section className="py-24 bg-slate-50" id="contact">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <div className="grid lg:grid-cols-2 gap-16">
-                        <div {...motionConfig.slideLeft}>
-                            <h2 className="font-display text-5xl text-navy-blue mb-6">Start Your AI Transformation</h2>
-                            <p className="text-xl text-neutral-gray mb-10">
-                                Expert guidance for your digital journey. From feasibility studies to full-scale deployment, we turn your vision into intelligent reality.
-                            </p>
-                            <div className="flex items-center gap-4">
-                                <span className="text-neutral-gray font-medium">Join 500+ innovators</span>
-                            </div>
-                        </div>
-
-                        <div {...withDelay(motionConfig.slideRight, 0.2)} className="bg-white p-8 lg:p-10 rounded-3xl shadow-xl border border-sky-blue/10">
-                            <form className="space-y-6">
-                                <h3 className="text-xl font-bold text-navy-blue mb-6">Start Your Project</h3>
-
-                                <div>
-                                    <label className="block text-xs font-bold text-neutral-gray uppercase tracking-wider mb-2">Your Name</label>
-                                    <input
-                                        type="text"
-                                        placeholder="John Doe"
-                                        className="w-full px-4 py-4 bg-slate-50 border border-transparent focus:border-sky-blue focus:ring-0 rounded-xl text-navy-blue placeholder-gray-400 transition-colors"
-                                    />
-                                </div>
-
-                                <div>
-                                    <label className="block text-xs font-bold text-neutral-gray uppercase tracking-wider mb-2">Email</label>
-                                    <input
-                                        type="email"
-                                        placeholder="john@company.com"
-                                        className="w-full px-4 py-4 bg-slate-50 border border-transparent focus:border-sky-blue focus:ring-0 rounded-xl text-navy-blue placeholder-gray-400 transition-colors"
-                                    />
-                                </div>
-
-                                <div>
-                                    <label className="block text-xs font-bold text-neutral-gray uppercase tracking-wider mb-2">Interest</label>
-                                    <select className="w-full px-4 py-4 bg-slate-50 border border-transparent focus:border-sky-blue focus:ring-0 rounded-xl text-navy-blue transition-colors">
-                                        <option>Generative AI</option>
-                                        <option>Predictive Analytics</option>
-                                        <option>Automation</option>
-                                        <option>Consulting</option>
-                                    </select>
-                                </div>
-
-                                <button
-                                    type="button"
-                                    className="w-full py-4 px-6 bg-navy-blue hover:bg-navy-blue/90 text-white font-bold rounded-xl transition-all duration-300 transform hover:translate-y-[-2px] shadow-lg"
-                                >
-                                    Request Consultation
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+            <Contact />
             <Footer />
         </main>
     );

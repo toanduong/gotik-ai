@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git check-ignore:*)",
+      "Bash(git add:*)",
+      "Bash(git ls-tree:*)",
+      "Bash(git rm:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd frontend source code to main repository\n\nConvert fe submodule to regular directory and include all Next.js frontend source files. This includes:\n- Next.js 15 application setup with TypeScript\n- UI components \\(Hero, About, Solutions, Contact, etc.\\)\n- Layout components \\(Navbar, Footer\\)\n- Templates and styling with Tailwind CSS\n- Configuration files and dependencies\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nConfigure Next.js for Netlify deployment\n\n- Add standalone output mode to next.config.ts for proper Netlify deployment\n- Enable unoptimized images for static hosting\n- Add netlify.toml with build configuration\n- Configure @netlify/plugin-nextjs for SSR support\n- Add security headers for production\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd animations to AI Solutions page\n\nApply motion.dev animations throughout the AI Solutions page:\n- Hero section: fade-in badge, slide-up title, delayed fade-in description\n- Benefits grid: staggered slide-up animation for cards\n- Use cases section: animated headers and staggered use case cards\n- CTA section: slide-up heading, fade-in text, scale-in button\n\nEnhances user engagement with smooth, professional animations.\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nUpdate AI Solutions page with comprehensive content sections\n\nReplace simple page structure with full HTML template content:\n- Interactive Solutions Map: Bento-style grid hero showcasing AI capabilities\n- Business Growth: Customer journey optimization with AI\n- Agentic Architecture: Multi-agent systems explanation\n- Agent RAG Architecture: Knowledge integration details\n- Workflow Automation: 4-step process visualization\n- Cost Optimization: ROI metrics and savings chart\n- Contact Form: Lead capture with project interests\n\nAll sections include motion.dev animations \\(fade-in, slide, stagger effects\\)\nMaintains consistent design system with navy-blue and sky-blue palette\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd individual animations to Solutions Grid cards\n\nEnhanced hero grid with unique animations for each card:\n- Business Growth: slide-up with 0.2s delay\n- Agentic AI: scale-in with 0.3s delay\n- Knowledge RAG: slide-right with 0.4s delay\n- Automation: scale-in with 0.5s delay\n- Cost Optimization: fade-in with 0.6s delay\n- Contact CTA: slide-left with 0.7s delay\n\nGrid container now uses stagger effect \\(0.1s\\) to coordinate animations.\nEach card animates sequentially creating a dynamic, engaging entrance.\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}

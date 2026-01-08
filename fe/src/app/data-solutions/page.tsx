@@ -2,6 +2,7 @@
 
 import Navbar from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import Contact from "@/components/sections/Contact";
 import { motion, Variants, Transition, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
@@ -366,10 +367,10 @@ export default function DataSolutionsPage() {
                         <motion.div
                             variants={itemVariants}
                             initial="initial"
-                            whileInView="whileInView"
+                            whileInView="visible"
                             viewport={{ once: true }}
                         >
-                            <h2 className="font-display text-4xl lg:text-5xl text-[#0B2347] dark:text-white mb-6">Why Choose Our Grid?</h2>
+                            <h2 className="font-display text-4xl lg:text-5xl text-[#0B2347] dark:text-white mb-6">Why is Data important?</h2>
                             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
                                 Data isn&apos;t just an asset; it&apos;s a performance driver. Our AI-driven solutions significantly
                                 reduce analysis time while improving prediction accuracy for critical business metrics.
@@ -421,61 +422,7 @@ export default function DataSolutionsPage() {
                 </div>
             </section>
 
-            {/* Activate Your Data - Integrated Contact Banner */}
-            <section className="py-24 bg-[#F3F6F9] dark:bg-[#0B1120]" id="contact">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <motion.div
-                        className="bg-[#0B2347] rounded-3xl p-8 lg:p-16 relative overflow-hidden shadow-2xl"
-                        variants={containerVariants}
-                        initial="initial"
-                        whileInView="visible"
-                        viewport={{ once: true }}
-                    >
-                        <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-sky-blue/20 rounded-full blur-3xl"></div>
-                        <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
-
-                        <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
-                            <div>
-                                <h2 className="font-display text-4xl lg:text-5xl text-white mb-6">Activate Your Data</h2>
-                                <p className="text-xl text-blue-100 mb-8">
-                                    Ready to transform your business with Gen AI? Schedule a consultation to explore how our
-                                    data solutions can drive your analytics.
-                                </p>
-                                <div className="flex flex-wrap gap-3">
-                                    {["Gen AI Integration", "Predictive Analytics", "Data Governance"].map((tag, i) => (
-                                        <span key={i} className="px-4 py-2 bg-white/10 rounded-full text-xs font-semibold text-white uppercase tracking-wider backdrop-blur-sm">
-                                            {tag}
-                                        </span>
-                                    ))}
-                                </div>
-                            </div>
-                            <div className="bg-white dark:bg-[#162033] p-8 rounded-2xl shadow-xl">
-                                <form className="space-y-4">
-                                    <h3 className="text-lg font-bold text-[#0B2347] dark:text-white mb-4">Request Consultation</h3>
-                                    <div className="grid grid-cols-2 gap-4">
-                                        <div>
-                                            <label className="block text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">Name</label>
-                                            <input className="w-full px-4 py-3 bg-[#F3F6F9] dark:bg-[#0B1120] border-transparent focus:border-sky-blue focus:ring-0 rounded-lg text-[#0B2347] dark:text-white placeholder-gray-400 text-sm" placeholder="John Doe" type="text" />
-                                        </div>
-                                        <div>
-                                            <label className="block text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">Email</label>
-                                            <input className="w-full px-4 py-3 bg-[#F3F6F9] dark:bg-[#0B1120] border-transparent focus:border-sky-blue focus:ring-0 rounded-lg text-[#0B2347] dark:text-white placeholder-gray-400 text-sm" placeholder="john@company.com" type="email" />
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <label className="block text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">Message</label>
-                                        <textarea className="w-full px-4 py-3 bg-[#F3F6F9] dark:bg-[#0B1120] border-transparent focus:border-sky-blue focus:ring-0 rounded-lg text-[#0B2347] dark:text-white placeholder-gray-400 text-sm" placeholder="Tell us about your project..." rows={3}></textarea>
-                                    </div>
-                                    <button className="w-full py-3 px-6 bg-[#0B2347] hover:bg-opacity-90 text-white font-bold rounded-lg transition-all duration-300 shadow-lg mt-2" type="button">
-                                        Get in Touch
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </motion.div>
-                </div>
-            </section>
-
+            <Contact />
             <Footer />
         </main>
     );

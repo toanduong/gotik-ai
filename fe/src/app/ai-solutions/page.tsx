@@ -27,6 +27,17 @@ export default function AISolutions() {
                     const { animate } = (window as any).Motion;
                     animate(target, { opacity: [0, 1], x: [40, 0] }, { duration: 0.6, delay: 0.2 });
                 });
+
+                inView('.ai-solution-growth-slideLeft', ({ target }: any) => {
+                    const { animate } = (window as any).Motion;
+                    animate(target, { opacity: [0, 1], y: [-40, 0] }, { duration: 0.6 });
+                });
+    
+                inView('.ai-solution-growth-slideRight', ({ target }: any) => {
+                    const { animate } = (window as any).Motion;
+                    animate(target, { opacity: [0, 1], x: [40, 0] }, { duration: 0.6, delay: 0.2 });
+                });
+    
             }
         }, []);
 
@@ -150,9 +161,9 @@ export default function AISolutions() {
 
             {/* Business Growth Section */}
             <section className="py-24 bg-white" id="business-growth">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8">
+                <div className=" max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
-                        <div {...motionConfig.slideLeft}>
+                        <div {...motionConfig.slideLeft} className="ai-solution-growth-slideLeft">
                             <h2 className="font-display text-4xl lg:text-5xl text-navy-blue mb-6">
                                 Grow Customer Business with <span className="text-sky-blue">AI</span>
                             </h2>
@@ -174,7 +185,7 @@ export default function AISolutions() {
                                 </li>
                             </ul>
                         </div>
-                        <div {...motionConfig.slideRight} className="relative rounded-3xl overflow-hidden shadow-2xl bg-slate-50 border border-sky-blue/10 p-8">
+                        <div {...motionConfig.slideRight} className="ai-solution-growth-slideRight relative rounded-3xl overflow-hidden shadow-2xl bg-slate-50 border border-sky-blue/10 p-8">
                             <div className="grid grid-cols-3 gap-4">
                                 <div className="text-center p-4 bg-white rounded-lg">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-sky-blue mx-auto mb-2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>

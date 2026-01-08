@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 
 const stats = [
-    { label: "Founded", value: "2011" },
+    { label: "Founded", value: "2015" },
     { label: "Projects Delivered", value: "200+" },
     { label: "Expert Team", value: "50+" },
     { label: "Client Rating", value: "4.9★" },
@@ -47,7 +47,7 @@ export default function About() {
         <section id="about" className="py-32 px-6 md:px-12 relative z-10 bg-white">
             <div className="about-header text-center mb-16 opacity-0">
                 <span className="text-[10px] font-bold text-neutral-gray uppercase tracking-widest mb-3 block">About Gotik Consulting</span>
-                <h3 className="text-3xl md:text-4xl font-display text-navy-blue tracking-tight">15+ Years of Software Excellence</h3>
+                <h3 className="text-3xl md:text-4xl font-display text-navy-blue tracking-tight">10+ Years of Software Excellence</h3>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 h-96 md:h-[500px] mb-16">

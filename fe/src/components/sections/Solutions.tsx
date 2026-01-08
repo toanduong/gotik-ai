@@ -1,34 +1,39 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 
 const solutions = [
     {
-        title: "Cloud Migration",
-        description: "Seamlessly migrate your infrastructure to AWS, Azure, or Google Cloud. We handle everything from planning to execution.",
+        title: "Cloud Solutions",
+        description: "Scale your infrastructure with expert Azure and AWS management. We architect resilient, cloud-native environments for modern enterprises.",
+        subItems: ["Azure Management", "Cloud Native Architecture", "Migration & Strategy"],
         icon: "cloud",
-        features: ["6-week migration timeline", "Zero downtime guarantee", "Cost optimization included"],
+        href: "/cloud-solutions",
         className: "lg:col-span-2",
     },
     {
-        title: "Custom Development",
-        description: "Build scalable applications with modern tech stacks. React, Node.js, Python, and more.",
-        icon: "code-2",
-        cta: "Learn More",
+        title: "Data Solutions",
+        description: "Transform raw data into actionable intelligence with Gen AI and predictive analytics.",
+        subItems: ["Unified Data Fabric", "Generative Intelligence", "Governance & Security"],
+        icon: "database",
+        href: "/data-solutions",
         className: "col-span-1",
     },
     {
-        title: "DevOps Setup",
-        description: "Implement CI/CD pipelines, containerization, and infrastructure as code.",
-        icon: "git-branch",
-        cta: "Learn More",
+        title: "ERP Solutions",
+        description: "Streamline operations with customized Odoo and SAP implementations tailored to your workflow.",
+        subItems: ["Odoo Implementation", "SAP Integration", "Workflow Optimization"],
+        icon: "settings",
+        href: "/erp-system",
         className: "col-span-1",
     },
     {
-        title: "AI Integration",
-        description: "Leverage machine learning and AI to automate processes and gain insights. Custom models and API integrations.",
+        title: "AI Solutions",
+        description: "Embed intelligence into your products. From custom LLMs to automated decision engines, we build the future of autonomous systems.",
+        subItems: ["Custom LLMs", "Autonomous Systems", "Decision Engines"],
         icon: "brain",
-        features: ["GPT-4 & Claude integration", "Custom ML model training"],
+        href: "/ai-solutions",
         className: "lg:col-span-2",
     },
 ];
@@ -41,7 +46,7 @@ export default function Solutions() {
         const container = containerRef.current;
         if (!container) return;
 
-        // Enhanced spotlight effect with Motion.dev
+        // Enhanced spotlight effect
         const handleMouseMove = (e: MouseEvent) => {
             const cards = container.getElementsByClassName("spotlight-card");
             for (const card of cards as HTMLCollectionOf<HTMLElement>) {
@@ -56,7 +61,7 @@ export default function Solutions() {
 
         container.addEventListener("mousemove", handleMouseMove);
 
-        // Animate cards on scroll with Motion.dev
+        // Animate cards on scroll
         if (typeof window !== 'undefined' && (window as any).Motion) {
             const { inView } = (window as any).Motion;
 
@@ -82,9 +87,9 @@ export default function Solutions() {
             <div className="solutions-header mb-16 opacity-0">
                 <span className="text-[10px] font-bold text-neutral-gray uppercase tracking-widest mb-3 block">Our Solutions</span>
                 <h2 className="text-4xl md:text-5xl font-display text-navy-blue tracking-tight leading-[1.1] mb-6">
-                    Comprehensive Software <br /><span className="text-sky-blue">Consulting Services</span>
+                    Comprehensive Technology <br /><span className="text-sky-blue">Consulting Services</span>
                 </h2>
-                <p className="text-neutral-gray max-w-2xl">From strategy to implementation, we provide end-to-end solutions tailored to your business needs.</p>
+                <p className="text-neutral-gray max-w-2xl">From cloud architecture to generative AI, we provide end-to-end solutions that drive enterprise growth.</p>
             </div>
 
             <div ref={containerRef} className="spotlight-group grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -94,30 +99,31 @@ export default function Solutions() {
                         className={`spotlight-card relative bg-white border border-sky-blue/10 rounded-2xl p-8 hover:border-sky-blue/30 transition-all group opacity-0 ${solution.className}`}
                         style={{ transitionDelay: `${index * 100}ms` }}
                     >
-                        <div className="relative z-10">
+                        <div className="relative z-10 h-full flex flex-col">
                             <div className="w-12 h-12 bg-sky-blue/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-sky-blue group-hover:scale-110 transition-all duration-300">
                                 <Icon name={solution.icon} />
                             </div>
                             <h3 className="text-2xl font-display font-semibold text-navy-blue mb-3">{solution.title}</h3>
-                            <p className="text-neutral-gray text-sm leading-relaxed mb-4">{solution.description}</p>
+                            <p className="text-neutral-gray text-sm leading-relaxed mb-6">{solution.description}</p>
 
-                            {solution.features && (
-                                <ul className="space-y-2 text-sm text-neutral-gray mb-4">
-                                    {solution.features.map((feature, fIndex) => (
-                                        <li key={fIndex} className="flex items-center gap-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-sky-blue"><path d="M20 6 9 17l-5-5" /></svg>
-                                            {feature}
-                                        </li>
-                                    ))}
-                                </ul>
-                            )}
+                            <ul className="mb-8 space-y-2">
+                                {solution.subItems.map((item, i) => (
+                                    <li key={i} className="flex items-center gap-2 text-xs text-neutral-gray/80">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-emerald-500"><path d="M20 6 9 17l-5-5" /></svg>
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
 
-                            {solution.cta && (
-                                <div className="inline-flex items-center gap-2 text-xs text-sky-blue font-semibold uppercase tracking-wider group-hover:gap-3 transition-all">
-                                    {solution.cta}
+                            <div className="mt-auto">
+                                <Link
+                                    href={solution.href}
+                                    className="inline-flex items-center gap-2 text-xs text-sky-blue font-semibold uppercase tracking-wider group-hover:gap-3 transition-all"
+                                >
+                                    Learn More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14m-7-7 7 7-7 7" /></svg>
-                                </div>
-                            )}
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 ))}
@@ -127,9 +133,31 @@ export default function Solutions() {
 }
 
 function Icon({ name }: { name: string }) {
-    if (name === "cloud") return <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-sky-blue group-hover:text-white transition-colors"><path d="M17.5 19c2.5 0 4.5-2 4.5-4.5 0-3-2.5-4.5-4.5-4.5-1-3-4-5-7-5-4 0-7 3-7 7 0 .5 0 1 .1 1.5C1.5 14.5 0 16 0 18c0 2.5 2 4.5 4.5 4.5h13z" /></svg>;
-    if (name === "code-2") return <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-sky-blue group-hover:text-white transition-colors"><path d="m18 16 4-4-4-4" /><path d="m6 8-4 4 4 4" /><path d="m14.5 4-5 16" /></svg>;
-    if (name === "git-branch") return <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-sky-blue group-hover:text-white transition-colors"><line x1="6" x2="6" y1="3" y2="15" /><circle cx="18" cy="6" r="3" /><circle cx="6" cy="18" r="3" /><path d="M18 9a9 9 0 0 1-9 9" /></svg>;
-    if (name === "brain") return <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-sky-blue group-hover:text-white transition-colors"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.54Z" /><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.54Z" /></svg>;
+    const className = "text-sky-blue group-hover:text-white transition-colors";
+
+    if (name === "cloud") return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+            <path d="M17.5 19c2.5 0 4.5-2 4.5-4.5 0-3-2.5-4.5-4.5-4.5-1-3-4-5-7-5-4 0-7 3-7 7 0 .5 0 1 .1 1.5C1.5 14.5 0 16 0 18c0 2.5 2 4.5 4.5 4.5h13z" />
+        </svg>
+    );
+    if (name === "database") return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+            <ellipse cx="12" cy="5" rx="9" ry="3" />
+            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+            <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3" />
+        </svg>
+    );
+    if (name === "settings") return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+            <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.72V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.1a2 2 0 0 1-1-1.72v-.51a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.72V4a2 2 0 0 0-2-2z" />
+            <circle cx="12" cy="12" r="3" />
+        </svg>
+    );
+    if (name === "brain") return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+            <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.54Z" />
+            <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.54Z" />
+        </svg>
+    );
     return null;
 }

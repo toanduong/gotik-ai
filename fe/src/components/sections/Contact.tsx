@@ -27,7 +27,7 @@ export default function Contact() {
                 <div className="contact-info opacity-0">
                     <span className="text-[10px] font-bold text-sky-blue uppercase tracking-widest mb-3 block">Get In Touch</span>
                     <h2 className="text-4xl md:text-5xl font-display text-white tracking-tight leading-[1.1] mb-6">
-                        Let's Build Something <span className="text-sky-blue">Amazing</span>
+                        Let&apos;s Build Something <span className="text-sky-blue">Amazing</span>
                     </h2>
                     <p className="text-white/70 mb-8 leading-relaxed">
                         Ready to transform your ideas into reality? Fill out the form and our team will get back to you within 24 hours.
@@ -40,7 +40,7 @@ export default function Contact() {
                             </div>
                             <div>
                                 <div className="text-xs text-white/50 uppercase tracking-wider">Email</div>
-                                <a href="mailto:hello@gotik.ai" className="text-white hover:text-sky-blue transition-colors">hello@gotik.ai</a>
+                                <a href="mailto:hello@gotik.ai" className="text-white hover:text-sky-blue transition-colors">david@gotik.ai</a>
                             </div>
                         </div>
                         <div className="flex items-center gap-3">
@@ -49,7 +49,7 @@ export default function Contact() {
                             </div>
                             <div>
                                 <div className="text-xs text-white/50 uppercase tracking-wider">Phone</div>
-                                <a href="tel:+1234567890" className="text-white hover:text-sky-blue transition-colors">+1 (234) 567-890</a>
+                                <a href="tel:(+84) 0328763738" className="text-white hover:text-sky-blue transition-colors">(+84) 0328763738</a>
                             </div>
                         </div>
                     </div>
@@ -90,10 +90,10 @@ export default function Contact() {
                             <select
                                 className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:border-sky-blue focus:outline-none transition-colors [&>option]:text-navy-blue">
                                 <option>Select a service</option>
-                                <option>Cloud Migration</option>
-                                <option>Custom Development</option>
-                                <option>DevOps Setup</option>
-                                <option>AI Integration</option>
+                                <option>AI Solutions</option>
+                                <option>Data Solutions</option>
+                                <option>Cloud Solutions</option>
+                                <option>ERP Solutions</option>
                                 <option>Technical Training</option>
                             </select>
                         </div>

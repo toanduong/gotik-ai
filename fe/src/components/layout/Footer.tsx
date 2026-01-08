@@ -29,9 +29,10 @@ export function Footer() {
                 <div className="md:col-span-2">
                     <h5 className="text-[10px] font-bold uppercase tracking-widest mb-6 text-sky-blue">Solutions</h5>
                     <ul className="space-y-3 text-sm text-white/60 font-light">
-                        <li><Link href="#solutions" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Cloud Migration</Link></li>
-                        <li><Link href="#solutions" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Custom Development</Link></li>
-                        <li><Link href="#solutions" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">DevOps Setup</Link></li>
+                        <li><Link href="/ai-solutions" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">AI Solutions</Link></li>
+                        <li><Link href="/data-solutions" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Data Solutions</Link></li>
+                        <li><Link href="/cloud-solutions" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Cloud Solutions</Link></li>
+                        <li><Link href="/erp-system" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">ERP Solutions</Link></li>
                     </ul>
                 </div>
 
@@ -40,7 +41,7 @@ export function Footer() {
                     <ul className="space-y-3 text-sm text-white/60 font-light">
                         <li><Link href="#about" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">About Us</Link></li>
                         <li><Link href="#approach" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Our Process</Link></li>
-                        <li><Link href="/ai-solutions" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">AI Solutions</Link></li>
+                        <li><Link href="/#solutions" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Our Solutions</Link></li>
                     </ul>
                 </div>
 

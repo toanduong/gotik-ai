@@ -5,9 +5,9 @@ import Link from "next/link";
 
 const solutionsMenu = [
     { name: "AI Solutions", href: "/ai-solutions" },
-    { name: "Data Solution", href: "/data-solution" },
+    { name: "Data Solutions", href: "/data-solutions" },
+    { name: "Cloud Solutions", href: "/cloud-solutions" },
     { name: "ERP System", href: "/erp-system" },
-    { name: "CRM System", href: "/crm-system" },
 ];
 
 export default function Navbar() {
@@ -57,7 +57,7 @@ export default function Navbar() {
                             onMouseLeave={() => setIsSolutionsOpen(false)}
                         >
                             <button className="hover:text-sky-blue transition-colors flex items-center gap-1">
-                                Solutions
+                                SOLUTIONS
                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`transition-transform ${isSolutionsOpen ? 'rotate-180' : ''}`}>
                                     <path d="m6 9 6 6 6-6" />
                                 </svg>

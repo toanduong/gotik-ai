@@ -36,7 +36,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <section className="relative min-h-screen pt-32 pb-20 overflow-hidden flex items-center bg-white">
+        <section className="relative min-h-[80vh] lg:min-h-[700px] pt-48 pb-12 overflow-hidden flex items-center bg-white">
             {/* Background Gradients */}
             <div className="floating-gradient-1 absolute top-0 right-0 w-[800px] h-[800px] bg-sky-blue/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
             <div className="floating-gradient-2 absolute bottom-0 left-0 w-[600px] h-[600px] bg-navy-blue/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>

@@ -47,7 +47,7 @@ export default function Hero() {
                     <div className="max-w-2xl">
                         <div className="hero-badge inline-flex items-center gap-2 px-4 py-2 rounded-full bg-navy-blue/5 border border-navy-blue/10 mb-8 opacity-0">
                             <span className="w-2 h-2 rounded-full bg-bright-blue animate-pulse"></span>
-                            <span className="text-[10px] font-bold uppercase tracking-widest text-navy-blue">Gotik Academy Launching Q1 2024</span>
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-navy-blue">Success anywhere, Dreamforce anywhere and Do more with less</span>
                         </div>
 
                         <h1 className="hero-title text-5xl md:text-7xl font-display font-medium text-navy-blue leading-[1.1] tracking-tight mb-8 opacity-0">

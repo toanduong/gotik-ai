@@ -230,7 +230,7 @@ export default function AIConsulting() {
 
                         <div {...motionConfig.slideRight} className="relative rounded-3xl overflow-hidden shadow-2xl bg-slate-50 border border-sky-blue/10">
                             <img
-                                src="/images/content/ai-hub-header.jpg"
+                                src="/images/Use_Cases_Umfassendes-Wissensmanagement.jpg"
                                 alt="Gotik AI Hub"
                                 className="w-full h-auto"
                             />
@@ -267,7 +267,7 @@ export default function AIConsulting() {
 
                         <div {...motionConfig.slideRight} className="relative rounded-3xl overflow-hidden shadow-2xl">
                             <img
-                                src="/images/content/ai-innovation-workshop.jpg"
+                                src="/images/Generative-AI-Innovation-Workshop.jpg"
                                 alt="Generative AI Innovation Workshop"
                                 className="w-full h-auto"
                             />

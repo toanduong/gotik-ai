@@ -152,7 +152,7 @@ export default function DataArchitecture() {
 
                         <div {...motionConfig.slideRight} className="relative rounded-3xl overflow-hidden shadow-xl">
                             <img
-                                src="/images/content/data-management-assessment.jpg"
+                                src="/images/Teaser_Data-Management-assessment-light.jpg"
                                 alt="Data Management Assessment"
                                 className="w-full h-auto"
                             />

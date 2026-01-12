@@ -250,7 +250,7 @@ export default function DataAndAnalytics() {
 
                         <div {...motionConfig.slideRight} className="relative rounded-3xl overflow-hidden shadow-2xl">
                             <img
-                                src="/images/content/data-science-innovation.jpg"
+                                src="/images/Big-Data-Datenvisualisierunge.jpg"
                                 alt="Data Science Innovation"
                                 className="w-full h-auto"
                             />

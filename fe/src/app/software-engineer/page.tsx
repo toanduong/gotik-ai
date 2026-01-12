@@ -288,7 +288,7 @@ export default function SoftwareEngineer() {
                         </div>
                         <div {...motionConfig.slideRight} className="relative rounded-3xl overflow-hidden shadow-2xl bg-slate-50 border border-sky-blue/10">
                             <img
-                                src="/images/content/quality-map.jpg"
+                                src="/images/quality-map.jpg"
                                 alt="Software Development Quality Map"
                                 className="w-full h-auto"
                             />

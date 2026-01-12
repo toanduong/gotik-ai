@@ -85,7 +85,7 @@ export function Footer() {
                 <div className="md:col-span-2">
                     <h5 className="text-[10px] font-bold uppercase tracking-widest mb-6 text-sky-blue">Services</h5>
                     <ul className="space-y-3 text-sm text-white/60 font-light">
-                        <li><Link href="/software-engineering" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Software Engineering</Link></li>
+                        <li><Link href="/software-engineer" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Software Engineering</Link></li>
                         <li><Link href="/software-modernization" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Software Modernization</Link></li>
                         <li><Link href="/ai-consulting" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">AI Consulting</Link></li>
                         <li><Link href="/rust-transition" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Rust Transition</Link></li>

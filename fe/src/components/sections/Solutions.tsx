@@ -9,7 +9,7 @@ const solutions = [
         description: "Build robust, scalable software solutions with modern engineering practices and cutting-edge technologies.",
         subItems: ["Custom Development", "Agile Methodology", "Quality Assurance"],
         icon: "code",
-        href: "/software-engineering",
+        href: "/software-engineer",
         className: "col-span-1",
     },
     {

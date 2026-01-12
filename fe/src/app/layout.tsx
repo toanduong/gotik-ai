@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
-import { Inter, DM_Sans } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -15,6 +10,10 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "Gotik Consulting • Transforming Ideas into Scalable Software Solutions",
   description: "Expert guidance for your digital transformation journey. From cloud migration to custom development, we turn your vision into reality.",
+  icons: {
+    icon: '/logo.png',
+    apple: '/logo.png',
+  },
 };
 
 export default function RootLayout({
@@ -25,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <body
-        className={`${inter.variable} ${dmSans.variable} antialiased`}
+        className={`${dmSans.variable} antialiased`}
         suppressHydrationWarning
       >
         {children}

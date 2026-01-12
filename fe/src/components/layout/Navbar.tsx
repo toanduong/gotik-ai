@@ -4,10 +4,18 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 
 const solutionsMenu = [
-    { name: "AI Solutions", href: "/ai-solutions" },
-    { name: "Data Solutions", href: "/data-solutions" },
-    { name: "Cloud Solutions", href: "/cloud-solutions" },
-    { name: "ERP System", href: "/erp-system" },
+    { name: "Software Engineering", href: "/software-engineer" },
+    { name: "Software Modernization", href: "/software-modernization" },
+    { name: "AI Consulting", href: "/ai-consulting" },
+    { name: "Rust Transition", href: "/rust-transition" },
+    { name: "Data Management", href: "/data-management" },
+    { name: "Data Architecture", href: "/data-architecture" },
+    { name: "Data & Analytics", href: "/data-and-analytics" },
+    { name: "BIM2FM", href: "/bim2fm" },
+    { name: "Software Architecture", href: "/software-architecture" },
+    { name: "Internet of Things", href: "/internet-of-things" },
+    { name: "Mobile & Web Apps", href: "/mobile-web-apps" },
+    { name: "Cloud Services", href: "/cloud-services" },
 ];
 
 export default function Navbar() {
@@ -57,7 +65,7 @@ export default function Navbar() {
                             onMouseLeave={() => setIsSolutionsOpen(false)}
                         >
                             <button className="hover:text-sky-blue transition-colors flex items-center gap-1">
-                                SOLUTIONS
+                                SERVICES
                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`transition-transform ${isSolutionsOpen ? 'rotate-180' : ''}`}>
                                     <path d="m6 9 6 6 6-6" />
                                 </svg>
@@ -87,8 +95,9 @@ export default function Navbar() {
                 </div>
 
                 <div className="absolute left-1/2 top-6 -translate-x-1/2 text-center pointer-events-auto">
-                    <Link href="/" className="font-display text-xl tracking-tight font-medium">
-                        Gotik Consulting
+                    <Link href="/" className="flex items-center gap-2">
+                        <img src="/logo.png" alt="Gotik Consulting" className="h-4 w-auto" />
+                        <span className="font-display text-xl tracking-tight font-medium">Gotik Consulting</span>
                     </Link>
                 </div>
 

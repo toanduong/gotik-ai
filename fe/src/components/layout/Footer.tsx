@@ -6,8 +6,9 @@ export function Footer() {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-20 max-w-7xl mx-auto">
                 <div className="md:col-span-4 flex flex-col justify-between h-full">
                     <div>
-                        <Link href="/" className="font-display text-2xl tracking-tight font-medium block mb-6">
-                            Gotik Consulting
+                        <Link href="/" className="flex items-center gap-2 mb-6">
+                            <img src="/logo.png" alt="Gotik Consulting" className="h-5 w-auto" />
+                            <span className="font-display text-2xl tracking-tight font-medium">Gotik Consulting</span>
                         </Link>
                         <p className="mb-4 leading-relaxed text-white/60 max-w-xs text-sm font-light">
                             Transforming ideas into scalable software solutions since 2011. Your trusted partner in digital transformation.
@@ -27,12 +28,26 @@ export function Footer() {
                 </div>
 
                 <div className="md:col-span-2">
-                    <h5 className="text-[10px] font-bold uppercase tracking-widest mb-6 text-sky-blue">Solutions</h5>
+                    <h5 className="text-[10px] font-bold uppercase tracking-widest mb-6 text-sky-blue">Services</h5>
                     <ul className="space-y-3 text-sm text-white/60 font-light">
-                        <li><Link href="/ai-solutions" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">AI Solutions</Link></li>
-                        <li><Link href="/data-solutions" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Data Solutions</Link></li>
-                        <li><Link href="/cloud-solutions" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Cloud Solutions</Link></li>
-                        <li><Link href="/erp-system" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">ERP Solutions</Link></li>
+                        <li><Link href="/software-engineering" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Software Engineering</Link></li>
+                        <li><Link href="/software-modernization" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Software Modernization</Link></li>
+                        <li><Link href="/ai-consulting" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">AI Consulting</Link></li>
+                        <li><Link href="/rust-transition" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Rust Transition</Link></li>
+                        <li><Link href="/data-management" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Data Management</Link></li>
+                        <li><Link href="/data-architecture" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Data Architecture</Link></li>
+                        <li><Link href="/data-and-analytics" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Data & Analytics</Link></li>
+                    </ul>
+                </div>
+
+                <div className="md:col-span-2">
+                    <h5 className="text-[10px] font-bold uppercase tracking-widest mb-6 text-sky-blue">More Services</h5>
+                    <ul className="space-y-3 text-sm text-white/60 font-light">
+                        <li><Link href="/bim2fm" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">BIM2FM</Link></li>
+                        <li><Link href="/software-architecture" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Software Architecture</Link></li>
+                        <li><Link href="/internet-of-things" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Internet of Things</Link></li>
+                        <li><Link href="/mobile-web-apps" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Mobile & Web Apps</Link></li>
+                        <li><Link href="/cloud-services" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Cloud Services</Link></li>
                     </ul>
                 </div>
 

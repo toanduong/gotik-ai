@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: "Frutiger Neue LT Pro";
+    src: url("https://db.onlinewebfonts.com/t/567d32f7563d3e51c688c235892ff046.eot");
+    src: url("https://db.onlinewebfonts.com/t/567d32f7563d3e51c688c235892ff046.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/567d32f7563d3e51c688c235892ff046.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/567d32f7563d3e51c688c235892ff046.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/567d32f7563d3e51c688c235892ff046.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/567d32f7563d3e51c688c235892ff046.svg#Frutiger Neue LT Pro")format("svg");
+}
+
 :root {
   --navy-blue: #0A2463;
   --sky-blue: #3E92CC;
@@ -18,7 +28,7 @@
   --color-dark-navy: var(--dark-navy);
   --color-neutral-gray: var(--neutral-gray);
 
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Frutiger Neue LT Pro", ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-dm-sans), sans-serif;
 
   --animate-spin-slow: rotate 12s linear infinite;

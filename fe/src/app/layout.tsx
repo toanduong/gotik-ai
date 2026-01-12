@@ -1,18 +1,13 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
 import "./globals.css";
-
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Gotik Consulting • Transforming Ideas into Scalable Software Solutions",
   description: "Expert guidance for your digital transformation journey. From cloud migration to custom development, we turn your vision into reality.",
   icons: {
-    icon: '/logo.png',
-    apple: '/logo.png',
+    icon: '/logo_footer.png',
+    apple: '/logo_footer.png',
+    shortcut: '/logo_footer.png',
   },
 };
 
@@ -24,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <body
-        className={`${dmSans.variable} antialiased`}
+        className="antialiased"
         suppressHydrationWarning
       >
         {children}

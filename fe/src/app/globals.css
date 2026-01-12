@@ -28,8 +28,8 @@
   --color-dark-navy: var(--dark-navy);
   --color-neutral-gray: var(--neutral-gray);
 
-  --font-sans: "Frutiger Neue LT Pro", ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-dm-sans), sans-serif;
+  --font-sans: 'FrutigerNeueLTPro-Book', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-display: 'FrutigerNeueLTPro-Book', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
   --animate-spin-slow: rotate 12s linear infinite;
   --animate-marquee: marquee 20s linear infinite;

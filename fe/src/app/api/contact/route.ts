@@ -28,8 +28,8 @@ export async function POST(request: NextRequest) {
         // Send email using Resend
         const { data, error } = await resend.emails.send({
             from: 'Gotik AI Contact Form <onboarding@resend.dev>', // Update this with your verified domain
-            to: ['duongmanhtoan86@gmail.com'], // Update with your email
-
+            to: ['daovo@gotik.ai'], // Update with your email
+            replyTo: email,
             subject: `New Contact Form Submission from ${name}`,
             html: `
         <!DOCTYPE html>

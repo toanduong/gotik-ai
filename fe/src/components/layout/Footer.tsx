@@ -1,13 +1,68 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 export function Footer() {
+    const [email, setEmail] = useState("");
+    const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+    const [message, setMessage] = useState("");
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setStatus("loading");
+        setMessage("");
+
+        try {
+            const response = await fetch("/api/newsletter", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ email }),
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                setStatus("success");
+                setMessage("Thanks for subscribing! Check your email.");
+                setEmail("");
+
+                // Reset success message after 5 seconds
+                setTimeout(() => {
+                    setStatus("idle");
+                    setMessage("");
+                }, 5000);
+            } else {
+                setStatus("error");
+                setMessage(data.error || "Failed to subscribe. Please try again.");
+
+                // Reset error message after 5 seconds
+                setTimeout(() => {
+                    setStatus("idle");
+                    setMessage("");
+                }, 5000);
+            }
+        } catch (error) {
+            setStatus("error");
+            setMessage("Something went wrong. Please try again.");
+
+            // Reset error message after 5 seconds
+            setTimeout(() => {
+                setStatus("idle");
+                setMessage("");
+            }, 5000);
+        }
+    };
+
     return (
         <footer className="bg-navy-blue text-white py-20 px-6 md:px-12 border-t border-white/10">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-20 max-w-7xl mx-auto">
                 <div className="md:col-span-4 flex flex-col justify-between h-full">
                     <div>
                         <Link href="/" className="flex items-center gap-2 mb-6">
-                            <img src="/logo.png" alt="Gotik Consulting" className="h-5 w-auto" />
+                            <img src="/logo_footer.png" alt="Gotik Consulting" className="h-5 w-auto" />
                             <span className="font-display text-2xl tracking-tight font-medium">Gotik Consulting</span>
                         </Link>
                         <p className="mb-4 leading-relaxed text-white/60 max-w-xs text-sm font-light">
@@ -63,10 +118,31 @@ export function Footer() {
                 <div className="md:col-span-4">
                     <h5 className="text-[10px] font-bold uppercase tracking-widest mb-6 text-sky-blue">Newsletter</h5>
                     <p className="text-sm text-white/60 mb-6 font-light">Stay updated with our latest insights and news.</p>
-                    <div className="flex gap-2">
-                        <input type="email" placeholder="Email Address" className="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm w-full outline-none focus:border-sky-blue/50" />
-                        <button className="bg-white text-navy-blue px-4 py-2 rounded-lg font-bold text-[10px] uppercase tracking-widest hover:bg-sky-blue hover:text-white transition-all">Join</button>
-                    </div>
+                    <form onSubmit={handleSubmit} className="space-y-3">
+                        <div className="flex gap-2">
+                            <input
+                                type="email"
+                                placeholder="Email Address"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                disabled={status === "loading"}
+                                required
+                                className="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm w-full outline-none focus:border-sky-blue/50 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                            />
+                            <button
+                                type="submit"
+                                disabled={status === "loading"}
+                                className="bg-white text-navy-blue px-4 py-2 rounded-lg font-bold text-[10px] uppercase tracking-widest hover:bg-sky-blue hover:text-white transition-all disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
+                            >
+                                {status === "loading" ? "..." : "Join"}
+                            </button>
+                        </div>
+                        {message && (
+                            <p className={`text-xs font-light ${status === "success" ? "text-green-400" : "text-red-400"}`}>
+                                {message}
+                            </p>
+                        )}
+                    </form>
                 </div>
             </div>
 

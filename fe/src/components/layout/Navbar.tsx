@@ -96,7 +96,7 @@ export default function Navbar() {
 
                 <div className="absolute left-1/2 top-6 -translate-x-1/2 text-center pointer-events-auto">
                     <Link href="/" className="flex items-center gap-2">
-                        <img src="/logo.png" alt="Gotik Consulting" className="h-4 w-auto" />
+                        <img src="/logo_footer.png" alt="Gotik Consulting" className="h-4 w-auto" />
                         <span className="font-display text-xl tracking-tight font-medium">Gotik Consulting</span>
                     </Link>
                 </div>
@@ -104,9 +104,13 @@ export default function Navbar() {
                 <div className="isolate">
                     <Link
                         href="/#contact"
-                        className={`px-6 py-2.5 text-[10px] font-bold uppercase tracking-widest hover:bg-sky-blue hover:text-white transition-all hover:scale-105 rounded-full ${isScrolled ? "bg-sky-blue text-navy-blue" : "bg-black text-white"}`}
+                        className={`px-6 py-2.5 text-[10px] font-bold uppercase tracking-widest hover:bg-sky-blue hover:text-white transition-all hover:scale-105 rounded-full ${isScrolled ? "bg-sky-blue text-navy-blue" : "bg-black text-white"} flex items-center justify-center`}
                     >
-                        Get Started
+                        <span className="hidden md:inline">Get Started</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="md:hidden">
+                            <path d="M5 12h14"/>
+                            <path d="m12 5 7 7-7 7"/>
+                        </svg>
                     </Link>
                 </div>
             </nav>

@@ -90,7 +90,7 @@ export default function Navbar() {
                         </div>
 
                         <Link href="/#academy" className="hover:text-sky-blue transition-colors">Academy</Link>
-                        <Link href="/#about" className="hover:text-sky-blue transition-colors">About</Link>
+                        <Link href="/#about" className="hover:text-sky-blue transition-colors">Our Story</Link>
                     </div>
                 </div>
 
@@ -167,7 +167,7 @@ export default function Navbar() {
                         onClick={toggleMenu}
                         className="text-3xl font-display text-sky-blue hover:text-white transition-colors"
                     >
-                        About Us
+                        Our Story
                     </Link>
                     <Link
                         href="/#contact"

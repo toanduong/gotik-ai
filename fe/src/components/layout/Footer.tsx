@@ -109,7 +109,7 @@ export function Footer() {
                 <div className="md:col-span-2">
                     <h5 className="text-[10px] font-bold uppercase tracking-widest mb-6 text-sky-blue">Company</h5>
                     <ul className="space-y-3 text-sm text-white/60 font-light">
-                        <li><Link href="#about" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">About Us</Link></li>
+                        <li><Link href="#about" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Our Story</Link></li>
                         <li><Link href="#approach" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Our Process</Link></li>
                         <li><Link href="/#solutions" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Our Solutions</Link></li>
                     </ul>

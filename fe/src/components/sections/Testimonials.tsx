@@ -4,22 +4,22 @@ import { useEffect, useRef } from "react";
 
 const testimonials = [
     {
-        quote: "Gotik Consulting reduced our cloud costs by 60% while improving performance. Their expertise in AWS architecture is unmatched.",
-        author: "John Davis",
-        role: "CTO, TechFlow Inc",
-        initials: "JD",
+        quote: "Gotik supported us in modernizing our software to a highly flexible system. We benefited enormously from the know-how of the various Gotik experts.",
+        author: "Rolf Traber",
+        role: "CTO",
+        initials: "RT",
     },
     {
-        quote: "The team delivered our custom CRM in 8 weeks. The quality and attention to detail exceeded our expectations. Highly recommended!",
-        author: "Sarah Chen",
-        role: "CEO, DataSync Solutions",
-        initials: "SC",
+        quote: "We brought in Gotik so that we can implement future innovations faster in our software. The collaboration with Gotik was first-class – technically and personally.",
+        author: "Christian Königsdorfer",
+        role: "CEO",
+        initials: "CK",
     },
     {
-        quote: "Their DevOps training program transformed our team. We now deploy 10x faster with zero downtime. Worth every penny.",
-        author: "Michael Park",
-        role: "VP Engineering, CloudNet",
-        initials: "MP",
+        quote: "The microservices architecture that Gotik designed for us has transformed our ability to scale. We can now deploy updates independently and respond to market changes faster than ever before.",
+        author: "Michael S.",
+        role: "CTO, Technology Company",
+        initials: "MS",
     },
 ];
 

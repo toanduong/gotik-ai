@@ -19,21 +19,25 @@ export default function Home() {
       <div className="w-full overflow-hidden border-y border-sky-blue/10 bg-slate-50 py-4">
         <div className="flex whitespace-nowrap animate-marquee">
           <div className="flex items-center gap-12 text-neutral-gray text-xs font-display tracking-wider px-6">
-            <span>Cloud Architecture</span>
+            <span>Cloud Services</span>
             <span className="w-1 h-1 rounded-full bg-sky-blue"></span>
-            <span>DevOps Automation</span>
+            <span>AI Consulting</span>
             <span className="w-1 h-1 rounded-full bg-sky-blue"></span>
-            <span>Custom Development</span>
-            <span className="w-1 h-1 rounded-full bg-sky-blue"></span>
-            <span>Technical Training</span>
-            <span className="w-1 h-1 rounded-full bg-sky-blue"></span>
-            <span>Cloud Architecture</span>
-            <span className="w-1 h-1 rounded-full bg-sky-blue"></span>
-            <span>DevOps Automation</span>
-            <span className="w-1 h-1 rounded-full bg-sky-blue"></span>
-            <span>Custom Development</span>
+            <span>Data Management</span>
             <span className="w-1 h-1 rounded-full bg-sky-blue"></span>
             <span>Technical Training</span>
+            <span className="w-1 h-1 rounded-full bg-sky-blue"></span>
+            <span>Software Engineering</span>
+            <span className="w-1 h-1 rounded-full bg-sky-blue"></span>
+            <span>BIM2FM</span>
+            <span className="w-1 h-1 rounded-full bg-sky-blue"></span>
+            <span>Data & Analytics</span>
+            <span className="w-1 h-1 rounded-full bg-sky-blue"></span>
+            <span>Internet of Things</span>
+            <span className="w-1 h-1 rounded-full bg-sky-blue"></span>
+            <span>Mobile & Web Apps</span>
+            <span className="w-1 h-1 rounded-full bg-sky-blue"></span>
+            <span>Software Modernization</span>
           </div>
         </div>
       </div>

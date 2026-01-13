@@ -1,0 +1,14 @@
+# robots.txt for Gotik Consulting
+
+User-agent: *
+Allow: /
+
+# Disallow admin or private areas (add if needed)
+# Disallow: /admin/
+# Disallow: /api/
+
+# Sitemap location
+Sitemap: https://gotik.ai/sitemap.xml
+
+# Crawl-delay (optional, for rate limiting)
+# Crawl-delay: 1

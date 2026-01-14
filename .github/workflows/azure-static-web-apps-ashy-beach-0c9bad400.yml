@@ -46,6 +46,8 @@ jobs:
           github_id_token: ${{ steps.idtoken.outputs.result }}
           node_version: "20"
           ###### End of Repository/Build Configurations ######
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
@@ -57,6 +59,7 @@ jobs:
         uses: Azure/static-web-apps-deploy@v1
         with:
           action: "close"
+
 
 
 

@@ -12,7 +12,7 @@ A modern HTML project utilizing Tailwind CSS for building responsive web applica
 
 ## 📋 Prerequisites
 
-- Node.js (v12.x or higher)
+- Node.js (v20.x or higher)
 - npm or yarn
 
 ## 🛠️ Installation

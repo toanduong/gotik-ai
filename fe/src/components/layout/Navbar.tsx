@@ -2,6 +2,13 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { supabaseClient } from "@/lib/supabase";
+
+type Post = {
+    id: number;
+    title: string;
+    created_at: string;
+};
 
 const solutionsMenu = [
     { name: "Software Engineering", href: "/software-engineer" },
@@ -22,6 +29,8 @@ export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
+    const [isPostsOpen, setIsPostsOpen] = useState(false);
+    const [posts, setPosts] = useState<Post[]>([]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -29,6 +38,32 @@ export default function Navbar() {
         };
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    // Fetch latest 5 published posts
+    useEffect(() => {
+        async function fetchPosts() {
+            try {
+                const { data, error } = await supabaseClient
+                    .from('posts')
+                    .select('id, title, created_at')
+                    .eq('status', 'published')
+                    .order('created_at', { ascending: false })
+                    .limit(5);
+
+                if (error) {
+                    console.error('Supabase error fetching posts:', error);
+                    return;
+                }
+                setPosts(data || []);
+            } catch (error) {
+                console.error('Error fetching posts:', error);
+                // Silently fail - navbar will just not show posts dropdown
+                setPosts([]);
+            }
+        }
+
+        fetchPosts();
     }, []);
 
     const toggleMenu = () => {
@@ -89,6 +124,58 @@ export default function Navbar() {
                             </div>
                         </div>
 
+                        {/* Blog Dropdown */}
+                        <div
+                            className="relative group"
+                            onMouseEnter={() => setIsPostsOpen(true)}
+                            onMouseLeave={() => setIsPostsOpen(false)}
+                        >
+                            <button className="hover:text-sky-blue transition-colors flex items-center gap-1">
+                                BLOG
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`transition-transform ${isPostsOpen ? 'rotate-180' : ''}`}>
+                                    <path d="m6 9 6 6 6-6" />
+                                </svg>
+                            </button>
+
+                            {/* Dropdown Menu */}
+                            <div className={`absolute top-full left-0 pt-2 transition-all duration-300 ${isPostsOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-2 pointer-events-none'}`}>
+                                <div className="w-72 bg-white backdrop-blur-md rounded-xl shadow-2xl border border-gray overflow-hidden">
+                                    <div className="py-2">
+                                        {posts.length > 0 ? (
+                                            <>
+                                                {posts.map((post) => (
+                                                    <Link
+                                                        key={post.id}
+                                                        href={`/blog/${post.id}`}
+                                                        className="block px-6 py-3 text-navy-blue hover:bg-sky-blue/20 hover:text-sky-blue transition-colors text-sm font-medium border-b border-gray-100 last:border-0"
+                                                    >
+                                                        <div className="line-clamp-2">{post.title}</div>
+                                                        <div className="text-xs text-gray-500 mt-1">
+                                                            {new Date(post.created_at).toLocaleDateString('en-US', {
+                                                                month: 'short',
+                                                                day: 'numeric',
+                                                                year: 'numeric'
+                                                            })}
+                                                        </div>
+                                                    </Link>
+                                                ))}
+                                                <Link
+                                                    href="/blog"
+                                                    className="block px-6 py-3 text-center text-sky-blue hover:bg-sky-blue/20 transition-colors text-sm font-semibold"
+                                                >
+                                                    View All Posts →
+                                                </Link>
+                                            </>
+                                        ) : (
+                                            <div className="px-6 py-4 text-gray-500 text-sm text-center">
+                                                No posts available
+                                            </div>
+                                        )}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <Link href="/#academy" className="hover:text-sky-blue transition-colors">Academy</Link>
                         <Link href="/#about" className="hover:text-sky-blue transition-colors">Our Story</Link>
                     </div>
@@ -137,7 +224,7 @@ export default function Navbar() {
                         />
                     </svg>
                 </button>
-                <nav className="flex flex-col gap-6 text-center">
+                <nav className="flex flex-col gap-6 text-center max-h-[80vh] overflow-y-auto">
                     {/* Mobile Solutions Section */}
                     <div className="flex flex-col gap-4">
                         <div className="text-2xl font-display text-white/50 uppercase tracking-wider">Solutions</div>
@@ -154,6 +241,33 @@ export default function Navbar() {
                     </div>
 
                     <div className="h-px bg-white/10 my-2"></div>
+
+                    {/* Mobile Blog Section */}
+                    {posts.length > 0 && (
+                        <>
+                            <div className="flex flex-col gap-4">
+                                <div className="text-2xl font-display text-white/50 uppercase tracking-wider">Recent Blog</div>
+                                {posts.slice(0, 3).map((post) => (
+                                    <Link
+                                        key={post.id}
+                                        href={`/blog/${post.id}`}
+                                        onClick={toggleMenu}
+                                        className="text-lg font-display text-sky-blue hover:text-white transition-colors line-clamp-1"
+                                    >
+                                        {post.title}
+                                    </Link>
+                                ))}
+                                <Link
+                                    href="/blog"
+                                    onClick={toggleMenu}
+                                    className="text-sm text-white/70 hover:text-white transition-colors"
+                                >
+                                    View All Posts →
+                                </Link>
+                            </div>
+                            <div className="h-px bg-white/10 my-2"></div>
+                        </>
+                    )}
 
                     <Link
                         href="/#academy"

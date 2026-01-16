@@ -2,36 +2,35 @@ import { Resend } from 'resend';
 import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(request: NextRequest) {
-    // Initialize Resend at runtime to avoid build-time errors
-    const resend = new Resend(process.env.RESEND_API_KEY);
-    try {
-        const body = await request.json();
-        const { name, email, company, service, message } = body;
+  // Initialize Resend at runtime to avoid build-time errors
+  const resend = new Resend(process.env.RESEND_API_KEY);
+  try {
+    const body = await request.json();
+    const { name, email, company, service, message } = body;
 
-        // Validate required fields
-        if (!name || !email) {
-            return NextResponse.json(
-                { error: 'Name and email are required' },
-                { status: 400 }
-            );
-        }
+    // Validate required fields
+    if (!name || !email) {
+      return NextResponse.json(
+        { error: 'Name and email are required' },
+        { status: 400 }
+      );
+    }
 
-        // Validate email format
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            return NextResponse.json(
-                { error: 'Invalid email format' },
-                { status: 400 }
-            );
-        }
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return NextResponse.json(
+        { error: 'Invalid email format' },
+        { status: 400 }
+      );
+    }
 
-        // Send email using Resend
-        const { data, error } = await resend.emails.send({
-            from: 'Gotik AI Contact Form <onboarding@resend.dev>', // Update this with your verified domain
-            to: ['support@gokits.art'], // Update with your email
-            replyTo: "daovo@gotik.ai",
-            subject: `New Contact Form Submission from ${name}`,
-            html: `
+    // Send email using Resend
+    const { data, error } = await resend.emails.send({
+      from: 'Gotik AI Contact Form <onboarding@resend.dev>', // Update this with your verified domain
+      to: ['victor@gotik.ai'],
+      subject: `New Contact Form Submission from ${name}`,
+      html: `
         <!DOCTYPE html>
         <html>
           <head>
@@ -83,25 +82,25 @@ export async function POST(request: NextRequest) {
           </body>
         </html>
       `,
-        });
+    });
 
-        if (error) {
-            console.error('Resend error:', error);
-            return NextResponse.json(
-                { error: 'Failed to send email' },
-                { status: 500 }
-            );
-        }
-
-        return NextResponse.json(
-            { message: 'Email sent successfully', id: data?.id },
-            { status: 200 }
-        );
-    } catch (error) {
-        console.error('Error processing contact form:', error);
-        return NextResponse.json(
-            { error: 'Internal server error' },
-            { status: 500 }
-        );
+    if (error) {
+      console.error('Resend error:', error);
+      return NextResponse.json(
+        { error: 'Failed to send email' },
+        { status: 500 }
+      );
     }
+
+    return NextResponse.json(
+      { message: 'Email sent successfully', id: data?.id },
+      { status: 200 }
+    );
+  } catch (error) {
+    console.error('Error processing contact form:', error);
+    return NextResponse.json(
+      { error: 'Internal server error' },
+      { status: 500 }
+    );
+  }
 }

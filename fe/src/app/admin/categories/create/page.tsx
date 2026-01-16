@@ -54,8 +54,8 @@ export default function CreateCategory() {
                 })}
                 placeholder="Enter category name"
               />
-              {errors.name && (
-                <p className="text-sm text-red-500">{errors.name.message}</p>
+              {errors.name?.message && (
+                <p className="text-sm text-red-500">{String(errors.name.message)}</p>
               )}
             </div>
 
@@ -67,9 +67,9 @@ export default function CreateCategory() {
                 placeholder="Enter category description"
                 rows={5}
               />
-              {errors.description && (
+              {errors.description?.message && (
                 <p className="text-sm text-red-500">
-                  {errors.description.message}
+                  {String(errors.description.message)}
                 </p>
               )}
             </div>

@@ -36,7 +36,10 @@ export default function CategoriesList() {
   const [sortField, setSortField] = useState<keyof Category>("created_at");
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("desc");
 
-  const { tableQuery, current, setCurrent, pageCount } = useTable<Category>({
+  const [currentPage, setCurrentPage] = useState(1);
+  const pageSize = 10;
+
+  const { tableQuery } = useTable<Category>({
     resource: "categories",
   });
 
@@ -221,42 +224,51 @@ export default function CategoriesList() {
       </div>
 
       {/* Pagination */}
-      <div className="flex items-center justify-between">
-        <p className="text-sm text-[var(--admin-text-secondary)]">
-          Showing {filteredCategories.length} of {categories.length} categories
-        </p>
-        <div className="flex items-center space-x-2">
-          <button
-            onClick={() => setCurrent(current - 1)}
-            disabled={current === 1}
-            className="rounded-lg border border-[var(--admin-border)] px-3 py-2 text-sm font-medium text-[var(--admin-text-secondary)] transition-colors hover:bg-[var(--admin-surface-hover)] disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            Previous
-          </button>
-          <div className="flex items-center space-x-1">
-            {[...Array(Math.min(pageCount, 5))].map((_, i) => (
+      {(() => {
+        const totalPages = Math.ceil(filteredCategories.length / pageSize);
+        const paginatedCategories = filteredCategories.slice(
+          (currentPage - 1) * pageSize,
+          currentPage * pageSize
+        );
+        return (
+          <div className="flex items-center justify-between">
+            <p className="text-sm text-[var(--admin-text-secondary)]">
+              Showing {paginatedCategories.length} of {filteredCategories.length} categories
+            </p>
+            <div className="flex items-center space-x-2">
               <button
-                key={i}
-                onClick={() => setCurrent(i + 1)}
-                className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
-                  current === i + 1
-                    ? "bg-[var(--admin-sky)] text-white"
-                    : "text-[var(--admin-text-secondary)] hover:bg-[var(--admin-surface-hover)]"
-                }`}
+                onClick={() => setCurrentPage(currentPage - 1)}
+                disabled={currentPage === 1}
+                className="rounded-lg border border-[var(--admin-border)] px-3 py-2 text-sm font-medium text-[var(--admin-text-secondary)] transition-colors hover:bg-[var(--admin-surface-hover)] disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {i + 1}
+                Previous
               </button>
-            ))}
+              <div className="flex items-center space-x-1">
+                {[...Array(Math.min(totalPages, 5))].map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setCurrentPage(i + 1)}
+                    className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+                      currentPage === i + 1
+                        ? "bg-[var(--admin-sky)] text-white"
+                        : "text-[var(--admin-text-secondary)] hover:bg-[var(--admin-surface-hover)]"
+                    }`}
+                  >
+                    {i + 1}
+                  </button>
+                ))}
+              </div>
+              <button
+                onClick={() => setCurrentPage(currentPage + 1)}
+                disabled={currentPage === totalPages || totalPages === 0}
+                className="rounded-lg border border-[var(--admin-border)] px-3 py-2 text-sm font-medium text-[var(--admin-text-secondary)] transition-colors hover:bg-[var(--admin-surface-hover)] disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                Next
+              </button>
+            </div>
           </div>
-          <button
-            onClick={() => setCurrent(current + 1)}
-            disabled={current === pageCount}
-            className="rounded-lg border border-[var(--admin-border)] px-3 py-2 text-sm font-medium text-[var(--admin-text-secondary)] transition-colors hover:bg-[var(--admin-surface-hover)] disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            Next
-          </button>
-        </div>
-      </div>
+        );
+      })()}
     </div>
   );
 }

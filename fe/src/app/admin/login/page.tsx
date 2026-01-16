@@ -8,7 +8,7 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/Button";
 
 export default function LoginPage() {
-  const { mutate: login, isLoading } = useLogin();
+  const { mutate: login, isPending } = useLogin();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -53,9 +53,9 @@ export default function LoginPage() {
             <Button
               type="submit"
               className="w-full"
-              disabled={isLoading}
+              disabled={isPending}
             >
-              {isLoading ? "Signing in..." : "Sign In"}
+              {isPending ? "Signing in..." : "Sign In"}
             </Button>
           </form>
         </CardContent>

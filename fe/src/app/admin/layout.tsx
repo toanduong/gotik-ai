@@ -44,7 +44,6 @@ export default function AdminLayout({
       options={{
         syncWithLocation: true,
         warnWhenUnsavedChanges: true,
-        useNewQueryKeys: true,
       }}
     >
       <div className="admin-layout min-h-screen">

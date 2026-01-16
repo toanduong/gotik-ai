@@ -38,7 +38,7 @@ export function OrganizationSchema() {
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "Customer Service",
-      "email": "contact@gotik.ai",
+      "email": "daovo@gotik.ai",
       "availableLanguage": ["English"]
     },
     "areaServed": {
@@ -51,7 +51,17 @@ export function OrganizationSchema() {
       "Cloud Services",
       "Data Solutions",
       "Software Engineering",
-      "Digital Transformation"
+      "Digital Transformation",
+      "Odoo Integration",
+      "Salesforce Integration",
+      "Software Modernization",
+      "Software Architecture",
+      "Mobile & Web Apps",
+      "Internet of Things",
+      "Data Management",
+      "Data Architecture",
+      "Data & Analytics",
+      "BIM2FM",
     ]
   };
 

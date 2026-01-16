@@ -23,6 +23,8 @@ const solutionsMenu = [
     { name: "Internet of Things", href: "/internet-of-things" },
     { name: "Mobile & Web Apps", href: "/mobile-web-apps" },
     { name: "Cloud Services", href: "/cloud-services" },
+    { name: "Salesforce", href: "/salesforce" },
+    { name: "Odoo", href: "/odoo" },
 ];
 
 export default function Navbar() {
@@ -195,8 +197,8 @@ export default function Navbar() {
                     >
                         <span className="hidden md:inline">Get Started</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="md:hidden">
-                            <path d="M5 12h14"/>
-                            <path d="m12 5 7 7-7 7"/>
+                            <path d="M5 12h14" />
+                            <path d="m12 5 7 7-7 7" />
                         </svg>
                     </Link>
                 </div>

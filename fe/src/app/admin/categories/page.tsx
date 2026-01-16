@@ -26,7 +26,7 @@ import {
 } from "lucide-react";
 
 type Category = {
-  id: number;
+  id: string;
   name: string;
   description: string;
   created_at: string;
@@ -170,7 +170,9 @@ export default function CategoriesList() {
                   className="border-[var(--admin-border)] hover:bg-[var(--admin-surface-hover)]"
                 >
                   <TableCell className="font-medium text-[var(--admin-text-primary)]">
-                    #{category.id}
+                    {String(category.id).length > 8
+                      ? `${String(category.id).slice(0, 8)}...`
+                      : `#${category.id}`}
                   </TableCell>
                   <TableCell className="font-medium text-[var(--admin-text-primary)]">
                     {category.name}
@@ -250,11 +252,10 @@ export default function CategoriesList() {
                   <button
                     key={i}
                     onClick={() => setCurrentPage(i + 1)}
-                    className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
-                      currentPage === i + 1
-                        ? "bg-[var(--admin-sky)] text-white"
-                        : "text-[var(--admin-text-secondary)] hover:bg-[var(--admin-surface-hover)]"
-                    }`}
+                    className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors ${currentPage === i + 1
+                      ? "bg-[var(--admin-sky)] text-white"
+                      : "text-[var(--admin-text-secondary)] hover:bg-[var(--admin-surface-hover)]"
+                      }`}
                   >
                     {i + 1}
                   </button>

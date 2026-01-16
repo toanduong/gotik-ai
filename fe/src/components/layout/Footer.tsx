@@ -103,6 +103,8 @@ export function Footer() {
                         <li><Link href="/internet-of-things" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Internet of Things</Link></li>
                         <li><Link href="/mobile-web-apps" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Mobile & Web Apps</Link></li>
                         <li><Link href="/cloud-services" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Cloud Services</Link></li>
+                        <li><Link href="/salesforce" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Salesforce</Link></li>
+                        <li><Link href="/odoo" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Odoo</Link></li>
                     </ul>
                 </div>
 

@@ -35,8 +35,9 @@ import {
 } from "lucide-react";
 
 type Post = {
-  id: number;
+  id: string;
   title: string;
+  slug: string;
   content: string;
   status: string;
   created_at: string;
@@ -206,20 +207,21 @@ export default function PostsList() {
                   className="border-[var(--admin-border)] hover:bg-[var(--admin-surface-hover)]"
                 >
                   <TableCell className="font-medium text-[var(--admin-text-primary)]">
-                    #{post.id}
+                    {String(post.id).length > 8
+                      ? `${String(post.id).slice(0, 8)}...`
+                      : `#${post.id}`}
                   </TableCell>
                   <TableCell className="font-medium text-[var(--admin-text-primary)]">
                     {post.title}
                   </TableCell>
                   <TableCell>
                     <span
-                      className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium capitalize ${
-                        post.status === "published"
-                          ? "bg-[var(--admin-success)]/10 text-[var(--admin-success)]"
-                          : post.status === "draft"
+                      className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium capitalize ${post.status === "published"
+                        ? "bg-[var(--admin-success)]/10 text-[var(--admin-success)]"
+                        : post.status === "draft"
                           ? "bg-[var(--admin-warning)]/10 text-[var(--admin-warning)]"
                           : "bg-[var(--admin-gray-200)] text-[var(--admin-text-secondary)]"
-                      }`}
+                        }`}
                     >
                       {post.status}
                     </span>
@@ -292,11 +294,10 @@ export default function PostsList() {
                   <button
                     key={i}
                     onClick={() => setCurrentPage(i + 1)}
-                    className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
-                      currentPage === i + 1
-                        ? "bg-[var(--admin-sky)] text-white"
-                        : "text-[var(--admin-text-secondary)] hover:bg-[var(--admin-surface-hover)]"
-                    }`}
+                    className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors ${currentPage === i + 1
+                      ? "bg-[var(--admin-sky)] text-white"
+                      : "text-[var(--admin-text-secondary)] hover:bg-[var(--admin-surface-hover)]"
+                      }`}
                   >
                     {i + 1}
                   </button>

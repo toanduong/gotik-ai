@@ -3,7 +3,7 @@
 export const dynamic = 'force-dynamic';
 
 import { Suspense } from "react";
-import { Refine } from "@refinedev/core";
+import { Refine, Authenticated } from "@refinedev/core";
 import routerProvider from "@refinedev/nextjs-router";
 import { dataProvider, liveProvider } from "@refinedev/supabase";
 import { supabaseClient } from "@/lib/supabase";
@@ -11,6 +11,7 @@ import { authProvider } from "./providers/auth-provider";
 import { Sidebar } from "@/components/admin/Sidebar";
 import { Topbar } from "@/components/admin/Topbar";
 import { Loader2 } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 function AdminLoadingFallback() {
   return (
@@ -28,6 +29,9 @@ export default function AdminLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+  const isLoginPage = pathname === "/admin/login";
+
   return (
     <Suspense fallback={<AdminLoadingFallback />}>
       <Refine
@@ -62,11 +66,17 @@ export default function AdminLayout({
           warnWhenUnsavedChanges: true,
         }}
       >
-        <div className="admin-layout min-h-screen">
-          <Sidebar />
-          <Topbar />
-          <main className="ml-64 mt-16 p-6 md:p-8">{children}</main>
-        </div>
+        {isLoginPage ? (
+          children
+        ) : (
+          <Authenticated key="admin-auth" appendCurrentPathToQuery={false}>
+            <div className="admin-layout min-h-screen">
+              <Sidebar />
+              <Topbar />
+              <main className="ml-64 mt-16 p-6 md:p-8">{children}</main>
+            </div>
+          </Authenticated>
+        )}
       </Refine>
     </Suspense>
   );

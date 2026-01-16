@@ -22,8 +22,17 @@ import { ArrowLeft, Save, Loader2 } from "lucide-react";
 
 type PostFormValues = {
   title: string;
+  slug: string;
   content: string;
-  status: string;
+  status: "draft" | "published";
+  category_id: string;
+  featured_image_url?: string;
+  author_id?: string;
+};
+
+type Category = {
+  id: string;
+  name: string;
 };
 
 export default function EditPost() {
@@ -34,6 +43,30 @@ export default function EditPost() {
   const [post, setPost] = useState<PostFormValues | null>(null);
   const [isLoadingPost, setIsLoadingPost] = useState(true);
   const [fetchError, setFetchError] = useState<string | null>(null);
+  const [categories, setCategories] = useState<Category[]>([]);
+  const [isLoadingCategories, setIsLoadingCategories] = useState(true);
+
+  // Fetch categories
+  useEffect(() => {
+    async function fetchCategories() {
+      try {
+        setIsLoadingCategories(true);
+        const { data, error } = await supabaseClient
+          .from('categories')
+          .select('id, name')
+          .order('name', { ascending: true });
+
+        if (error) throw error;
+        setCategories(data || []);
+      } catch (error) {
+        console.error('Error fetching categories:', error);
+      } finally {
+        setIsLoadingCategories(false);
+      }
+    }
+
+    fetchCategories();
+  }, []);
 
   // Fetch the post data directly from Supabase
   useEffect(() => {
@@ -83,26 +116,43 @@ export default function EditPost() {
   const status = watch("status");
   const content = watch("content");
   const postTitle = watch("title");
-
-  // Debug logging
-  console.log('Edit Form - Post Data:', post);
-  console.log('Edit Form - Loading:', isLoadingPost);
-  console.log('Edit Form - Error:', fetchError);
-  console.log('Edit Form - Current Content Value:', content);
+  const categoryId = watch("category_id");
 
   // Populate form with data once loaded
   useEffect(() => {
     if (post) {
-      console.log('Resetting form with data:', post);
       reset({
         title: post.title,
+        slug: post.slug,
         content: post.content,
-        status: post.status,
+        status: post.status as any,
+        category_id: post.category_id ? String(post.category_id) : "none",
+        featured_image_url: post.featured_image_url || "",
+        author_id: post.author_id,
       });
       // Force set the content for the editor
       setValue("content", post.content);
     }
   }, [post, reset, setValue]);
+
+  const title = watch("title");
+
+  // Slug generation logic (optional for edit, but keeping it consistent with create)
+  useEffect(() => {
+    const generateSlug = (text: string) => {
+      return text
+        .toLowerCase()
+        .trim()
+        .replace(/[^\w\s-]/g, "")
+        .replace(/[\s_-]+/g, "-")
+        .replace(/^-+|-+$/g, "");
+    };
+
+    if (title && !post?.slug) { // Only auto-generate if there was no slug before
+      const slug = generateSlug(title);
+      setValue("slug", slug, { shouldValidate: true });
+    }
+  }, [title, setValue, post?.slug]);
 
   if (isLoadingPost) {
     return (
@@ -163,7 +213,19 @@ export default function EditPost() {
       </div>
 
       {/* Form */}
-      <form onSubmit={handleSubmit(onFinish)} className="space-y-6">
+      <form
+        onSubmit={handleSubmit(async (data) => {
+          try {
+            await onFinish({
+              ...data,
+              category_id: (data.category_id === "none" || !data.category_id) ? null : data.category_id,
+            } as any);
+          } catch (error) {
+            console.error("Update error:", error);
+          }
+        })}
+        className="space-y-6"
+      >
         <div className="admin-card p-6">
           <div className="space-y-6">
             <div className="space-y-2">
@@ -185,28 +247,85 @@ export default function EditPost() {
               )}
             </div>
 
-            <div className="space-y-2">
-              <Label htmlFor="status" className="text-sm font-medium text-[var(--admin-text-primary)]">
-                Status
-              </Label>
-              <Select
-                value={status}
-                onValueChange={(value) => setValue("status", value)}
-              >
-                <SelectTrigger className="border-[var(--admin-border)] focus:border-[var(--admin-sky)] focus:ring-[var(--admin-sky)]/20">
-                  <SelectValue placeholder="Select status" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="draft">Draft</SelectItem>
-                  <SelectItem value="published">Published</SelectItem>
-                  <SelectItem value="archived">Archived</SelectItem>
-                </SelectContent>
-              </Select>
-              {errors.status?.message && (
-                <p className="text-sm text-[var(--admin-error)] mt-1">
-                  {String(errors.status.message)}
-                </p>
-              )}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <Label htmlFor="slug" className="text-sm font-medium text-[var(--admin-text-primary)]">
+                  Slug <span className="text-[var(--admin-error)]">*</span>
+                </Label>
+                <Input
+                  id="slug"
+                  {...register("slug", {
+                    required: "Slug is required",
+                  })}
+                  placeholder="post-url-slug"
+                  className="border-[var(--admin-border)] focus:border-[var(--admin-sky)] focus:ring-[var(--admin-sky)]/20"
+                />
+                {errors.slug?.message && (
+                  <p className="text-sm text-[var(--admin-error)] flex items-center mt-1">
+                    {String(errors.slug.message)}
+                  </p>
+                )}
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="featured_image_url" className="text-sm font-medium text-[var(--admin-text-primary)]">
+                  Featured Image URL
+                </Label>
+                <Input
+                  id="featured_image_url"
+                  {...register("featured_image_url")}
+                  placeholder="https://example.com/image.jpg"
+                  className="border-[var(--admin-border)] focus:border-[var(--admin-sky)] focus:ring-[var(--admin-sky)]/20"
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <Label htmlFor="category_id" className="text-sm font-medium text-[var(--admin-text-primary)]">
+                  Category
+                </Label>
+                <Select
+                  value={categoryId}
+                  onValueChange={(value) => setValue("category_id", value)}
+                  disabled={isLoadingCategories}
+                >
+                  <SelectTrigger className="border-[var(--admin-border)] focus:border-[var(--admin-sky)] focus:ring-[var(--admin-sky)]/20">
+                    <SelectValue placeholder={isLoadingCategories ? "Loading categories..." : "Select category"} />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="none">No category</SelectItem>
+                    {categories.map((category) => (
+                      <SelectItem key={category.id} value={String(category.id)}>
+                        {category.name}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="status" className="text-sm font-medium text-[var(--admin-text-primary)]">
+                  Status
+                </Label>
+                <Select
+                  value={status}
+                  onValueChange={(value) => setValue("status", value)}
+                >
+                  <SelectTrigger className="border-[var(--admin-border)] focus:border-[var(--admin-sky)] focus:ring-[var(--admin-sky)]/20">
+                    <SelectValue placeholder="Select status" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="draft">Draft</SelectItem>
+                    <SelectItem value="published">Published</SelectItem>
+                  </SelectContent>
+                </Select>
+                {errors.status?.message && (
+                  <p className="text-sm text-[var(--admin-error)] mt-1">
+                    {String(errors.status.message)}
+                  </p>
+                )}
+              </div>
             </div>
           </div>
         </div>

@@ -84,6 +84,14 @@ export const authProvider: AuthProvider = {
     return null;
   },
   onError: async (error) => {
+    if (error.status === 401 || error.status === 403) {
+      return {
+        logout: true,
+        redirectTo: "/admin/login",
+        error: new Error("Unauthorized"),
+      };
+    }
+
     console.error(error);
     return { error };
   },

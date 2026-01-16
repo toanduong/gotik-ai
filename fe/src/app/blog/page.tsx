@@ -14,6 +14,8 @@ type Post = {
     content: string;
     status: string;
     created_at: string;
+    featured_image_url: string;
+    slug: string;
 };
 
 const POSTS_PER_PAGE = 10;
@@ -33,7 +35,7 @@ export default function BlogPage() {
                 setIsLoading(true);
                 const { data, error } = await supabaseClient
                     .from('posts')
-                    .select('id, title, content, status, created_at')
+                    .select('id, title, content, status, created_at, featured_image_url, slug')
                     .eq('status', 'published')
                     .order('created_at', { ascending: false });
 
@@ -91,7 +93,7 @@ export default function BlogPage() {
             <Navbar />
 
             {/* Hero Section */}
-            <section className="pt-32 pb-16 px-6 md:px-12 bg-gradient-to-br from-navy-blue to-navy-blue/90">
+            <section className="pt-32 pb-16 px-6 md:px-12 bg-gradient-to-br from-white to-white/90">
                 <div className="max-w-6xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -99,10 +101,10 @@ export default function BlogPage() {
                         transition={{ duration: 0.6 }}
                         className="text-center"
                     >
-                        <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6">
+                        <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-navy-blue mb-6">
                             Our Blog
                         </h1>
-                        <p className="text-xl text-white/80 max-w-2xl mx-auto">
+                        <p className="text-xl text-sky-blue max-w-2xl mx-auto">
                             Insights, updates, and stories from the world of technology and innovation
                         </p>
                     </motion.div>
@@ -144,6 +146,11 @@ export default function BlogPage() {
                                                 <h2 className="text-2xl font-display font-bold text-navy-blue mb-4 group-hover:text-sky-blue transition-colors line-clamp-2">
                                                     {post.title}
                                                 </h2>
+                                                <img
+                                                    src={post.featured_image_url}
+                                                    alt={post.slug}
+                                                    className="w-full h-auto"
+                                                />
                                                 <p className="text-neutral-gray leading-relaxed mb-4 line-clamp-3 flex-1">
                                                     {getExcerpt(post.content)}
                                                 </p>

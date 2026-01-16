@@ -59,6 +59,10 @@ export default function Home() {
             <span>Mobile & Web Apps</span>
             <span className="w-1 h-1 rounded-full bg-sky-blue"></span>
             <span>Software Modernization</span>
+            <span className="w-1 h-1 rounded-full bg-sky-blue"></span>
+            <span>Odoo Integration</span>
+            <span className="w-1 h-1 rounded-full bg-sky-blue"></span>
+            <span>Salesforce Integration</span>
           </div>
         </div>
       </div>

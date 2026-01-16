@@ -3,7 +3,9 @@
 export const dynamic = 'force-dynamic';
 
 import { useForm } from "@refinedev/react-hook-form";
-import { useGo } from "@refinedev/core";
+import { useGo, useGetIdentity } from "@refinedev/core";
+import { useEffect, useState } from "react";
+import { supabaseClient } from "@/lib/supabase";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { TiptapEditor } from "@/components/ui/tiptap-editor";
@@ -19,12 +21,45 @@ import { ArrowLeft, Save } from "lucide-react";
 
 type PostFormValues = {
   title: string;
+  slug: string;
   content: string;
-  status: string;
+  status: "draft" | "published";
+  category_id: string;
+  featured_image_url?: string;
+};
+
+type Category = {
+  id: string;
+  name: string;
 };
 
 export default function CreatePost() {
   const go = useGo();
+  const { data: user } = useGetIdentity<{ id: string }>();
+  const [categories, setCategories] = useState<Category[]>([]);
+  const [isLoadingCategories, setIsLoadingCategories] = useState(true);
+
+  // Fetch categories
+  useEffect(() => {
+    async function fetchCategories() {
+      try {
+        setIsLoadingCategories(true);
+        const { data, error } = await supabaseClient
+          .from('categories')
+          .select('id, name')
+          .order('name', { ascending: true });
+
+        if (error) throw error;
+        setCategories(data || []);
+      } catch (error) {
+        console.error('Error fetching categories:', error);
+      } finally {
+        setIsLoadingCategories(false);
+      }
+    }
+
+    fetchCategories();
+  }, []);
 
   const {
     refineCore: { onFinish },
@@ -38,13 +73,36 @@ export default function CreatePost() {
       redirect: "list",
     },
     defaultValues: {
+      title: "",
+      slug: "",
       content: "",
       status: "draft",
+      category_id: "none",
+      featured_image_url: "",
     },
   });
 
   const status = watch("status");
   const content = watch("content");
+  const categoryId = watch("category_id");
+  const title = watch("title");
+
+  // Slug generation logic
+  useEffect(() => {
+    const generateSlug = (text: string) => {
+      return text
+        .toLowerCase()
+        .trim()
+        .replace(/[^\w\s-]/g, "")
+        .replace(/[\s_-]+/g, "-")
+        .replace(/^-+|-+$/g, "");
+    };
+
+    if (title) {
+      const slug = generateSlug(title);
+      setValue("slug", slug, { shouldValidate: true });
+    }
+  }, [title, setValue]);
 
   return (
     <div className="space-y-6">
@@ -76,7 +134,20 @@ export default function CreatePost() {
       </div>
 
       {/* Form */}
-      <form onSubmit={handleSubmit(onFinish)} className="space-y-6">
+      <form
+        onSubmit={handleSubmit(async (data) => {
+          try {
+            await onFinish({
+              ...data,
+              category_id: (data.category_id === "none" || !data.category_id) ? null : data.category_id,
+              author_id: user?.id,
+            } as any);
+          } catch (error) {
+            console.error("Form submission error:", error);
+          }
+        })}
+        className="space-y-6"
+      >
         <div className="admin-card p-6">
           <div className="space-y-6">
             <div className="space-y-2">
@@ -98,28 +169,90 @@ export default function CreatePost() {
               )}
             </div>
 
-            <div className="space-y-2">
-              <Label htmlFor="status" className="text-sm font-medium text-[var(--admin-text-primary)]">
-                Status
-              </Label>
-              <Select
-                value={status}
-                onValueChange={(value) => setValue("status", value)}
-              >
-                <SelectTrigger className="border-[var(--admin-border)] focus:border-[var(--admin-sky)] focus:ring-[var(--admin-sky)]/20">
-                  <SelectValue placeholder="Select status" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="draft">Draft</SelectItem>
-                  <SelectItem value="published">Published</SelectItem>
-                  <SelectItem value="archived">Archived</SelectItem>
-                </SelectContent>
-              </Select>
-              {errors.status?.message && (
-                <p className="text-sm text-[var(--admin-error)] mt-1">
-                  {String(errors.status.message)}
-                </p>
-              )}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <Label htmlFor="slug" className="text-sm font-medium text-[var(--admin-text-primary)]">
+                  Slug <span className="text-[var(--admin-error)]">*</span>
+                </Label>
+                <Input
+                  id="slug"
+                  {...register("slug", {
+                    required: "Slug is required",
+                  })}
+                  placeholder="post-url-slug"
+                  className="border-[var(--admin-border)] focus:border-[var(--admin-sky)] focus:ring-[var(--admin-sky)]/20"
+                />
+                {errors.slug?.message && (
+                  <p className="text-sm text-[var(--admin-error)] mt-1">
+                    {String(errors.slug.message)}
+                  </p>
+                )}
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="featured_image_url" className="text-sm font-medium text-[var(--admin-text-primary)]">
+                  Featured Image URL
+                </Label>
+                <Input
+                  id="featured_image_url"
+                  {...register("featured_image_url")}
+                  placeholder="https://example.com/image.jpg"
+                  className="border-[var(--admin-border)] focus:border-[var(--admin-sky)] focus:ring-[var(--admin-sky)]/20"
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <Label htmlFor="category_id" className="text-sm font-medium text-[var(--admin-text-primary)]">
+                  Category
+                </Label>
+                <Select
+                  value={categoryId}
+                  onValueChange={(value) => setValue("category_id", value)}
+                  disabled={isLoadingCategories}
+                >
+                  <SelectTrigger className="border-[var(--admin-border)] focus:border-[var(--admin-sky)] focus:ring-[var(--admin-sky)]/20">
+                    <SelectValue placeholder={isLoadingCategories ? "Loading categories..." : "Select category"} />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="none">No category</SelectItem>
+                    {categories.map((category) => (
+                      <SelectItem key={category.id} value={String(category.id)}>
+                        {category.name}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+                {errors.category_id?.message && (
+                  <p className="text-sm text-[var(--admin-error)] mt-1">
+                    {String(errors.category_id.message)}
+                  </p>
+                )}
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="status" className="text-sm font-medium text-[var(--admin-text-primary)]">
+                  Status
+                </Label>
+                <Select
+                  value={status}
+                  onValueChange={(value) => setValue("status", value)}
+                >
+                  <SelectTrigger className="border-[var(--admin-border)] focus:border-[var(--admin-sky)] focus:ring-[var(--admin-sky)]/20">
+                    <SelectValue placeholder="Select status" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="draft">Draft</SelectItem>
+                    <SelectItem value="published">Published</SelectItem>
+                  </SelectContent>
+                </Select>
+                {errors.status?.message && (
+                  <p className="text-sm text-[var(--admin-error)] mt-1">
+                    {String(errors.status.message)}
+                  </p>
+                )}
+              </div>
             </div>
           </div>
         </div>
@@ -131,8 +264,24 @@ export default function CreatePost() {
             </Label>
             <TiptapEditor
               value={content || ""}
-              onChange={(value) => setValue("content", value)}
+              onChange={(value) => {
+                setValue("content", value);
+                // Trigger validation for content
+                if (value && value !== "<p></p>") {
+                  setValue("content", value, { shouldValidate: true });
+                }
+              }}
               placeholder="Start writing your post content..."
+            />
+            <input
+              type="hidden"
+              {...register("content", {
+                required: "Content is required",
+                validate: (value) => {
+                  if (!value || value === "<p></p>") return "Content is required";
+                  return true;
+                }
+              })}
             />
             {errors.content?.message && (
               <p className="text-sm text-[var(--admin-error)] mt-1">

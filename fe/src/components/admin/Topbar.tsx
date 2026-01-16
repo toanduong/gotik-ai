@@ -1,11 +1,24 @@
 "use client";
 
-import { Bell, Search, Settings, User, LogOut } from "lucide-react";
+import { Bell, Search, Settings, User, LogOut, Loader2 } from "lucide-react";
 import { useState } from "react";
+import { useLogout, useGetIdentity } from "@refinedev/core";
 
 export function Topbar() {
   const [showUserMenu, setShowUserMenu] = useState(false);
   const [showNotifications, setShowNotifications] = useState(false);
+
+  const { mutate: logout } = useLogout();
+  const { data: identity } = useGetIdentity<{
+    id: string;
+    name: string;
+    email: string;
+    avatar?: string;
+  }>();
+
+  const handleLogout = () => {
+    logout();
+  };
 
   return (
     <header className="fixed left-64 right-0 top-0 z-30 h-16 border-b border-[var(--admin-border)] bg-[var(--admin-surface)]">
@@ -84,14 +97,14 @@ export function Topbar() {
               className="flex items-center space-x-3 rounded-lg px-3 py-2 transition-colors hover:bg-[var(--admin-surface-hover)]"
             >
               <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--admin-navy)] text-sm font-medium text-white">
-                A
+                {identity?.name?.[0].toUpperCase() || "A"}
               </div>
               <div className="text-left">
                 <p className="text-sm font-medium text-[var(--admin-text-primary)]">
-                  Admin User
+                  {identity?.name || "Loading..."}
                 </p>
                 <p className="text-xs text-[var(--admin-text-muted)]">
-                  admin@gotik.ai
+                  {identity?.email || ""}
                 </p>
               </div>
             </button>
@@ -101,10 +114,10 @@ export function Topbar() {
               <div className="absolute right-0 mt-2 w-56 rounded-lg border border-[var(--admin-border)] bg-[var(--admin-surface)] shadow-lg">
                 <div className="border-b border-[var(--admin-border)] p-3">
                   <p className="text-sm font-medium text-[var(--admin-text-primary)]">
-                    Admin User
+                    {identity?.name}
                   </p>
                   <p className="text-xs text-[var(--admin-text-muted)]">
-                    admin@gotik.ai
+                    {identity?.email}
                   </p>
                 </div>
                 <div className="p-2">
@@ -118,7 +131,10 @@ export function Topbar() {
                   </button>
                 </div>
                 <div className="border-t border-[var(--admin-border)] p-2">
-                  <button className="flex w-full items-center space-x-2 rounded-md px-3 py-2 text-sm text-[var(--admin-error)] transition-colors hover:bg-red-50">
+                  <button
+                    onClick={() => handleLogout()}
+                    className="flex w-full items-center space-x-2 rounded-md px-3 py-2 text-sm text-[var(--admin-error)] transition-colors hover:bg-red-50"
+                  >
                     <LogOut className="h-4 w-4" />
                     <span>Logout</span>
                   </button>

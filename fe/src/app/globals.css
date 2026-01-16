@@ -290,7 +290,6 @@ h4,
 /* Prose styles for TipTap editor */
 .prose {
   color: var(--foreground);
-  max-width: 65ch;
 }
 
 .prose :where(p):not(:where([class~="not-prose"] *)) {

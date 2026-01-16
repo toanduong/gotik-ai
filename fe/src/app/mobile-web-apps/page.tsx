@@ -68,7 +68,7 @@ export default function MobileWebApps() {
                                 DV
                             </div>
                             <div className="text-center md:text-left">
-                                <h3 className="font-bold text-navy-blue text-lg">Dao Vo</h3>
+                                <h3 className="font-bold text-navy-blue text-lg">David Vu</h3>
                                 <p className="text-sky-blue text-sm font-medium">CEO & Gotik Founder</p>
                             </div>
                             <div className="ml-auto">

@@ -68,7 +68,7 @@ export default function SoftwareEngineer() {
                                 DV
                             </div>
                             <div className="text-center md:text-left">
-                                <h3 className="font-bold text-navy-blue text-lg">Dao Vo</h3>
+                                <h3 className="font-bold text-navy-blue text-lg">David Vu</h3>
                                 <p className="text-sky-blue text-sm font-medium">CEO & Gotik Founder</p>
                             </div>
                             <div className="ml-auto">
@@ -288,7 +288,7 @@ export default function SoftwareEngineer() {
                         </div>
                         <div {...motionConfig.slideRight} className="relative rounded-3xl overflow-hidden shadow-2xl bg-slate-50 border border-sky-blue/10">
                             <img
-                                src="/images/quality-map.jpg"
+                                src="/images/software-life-cycle.png"
                                 alt="Software Development Quality Map"
                                 className="w-full h-auto"
                             />

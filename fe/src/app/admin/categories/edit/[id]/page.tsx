@@ -155,9 +155,9 @@ export default function EditCategory() {
                 placeholder="Enter category name"
                 className="border-[var(--admin-border)] focus:border-[var(--admin-sky)] focus:ring-[var(--admin-sky)]/20"
               />
-              {errors.name && (
+              {errors.name?.message && (
                 <p className="text-sm text-[var(--admin-error)] mt-1">
-                  {errors.name.message}
+                  {String(errors.name.message)}
                 </p>
               )}
             </div>
@@ -173,9 +173,9 @@ export default function EditCategory() {
                 rows={5}
                 className="border-[var(--admin-border)] focus:border-[var(--admin-sky)] focus:ring-[var(--admin-sky)]/20"
               />
-              {errors.description && (
+              {errors.description?.message && (
                 <p className="text-sm text-[var(--admin-error)] mt-1">
-                  {errors.description.message}
+                  {String(errors.description.message)}
                 </p>
               )}
             </div>

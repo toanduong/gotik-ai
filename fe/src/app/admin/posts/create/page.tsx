@@ -89,9 +89,9 @@ export default function CreatePost() {
                 placeholder="Enter post title"
                 className="border-[var(--admin-border)] focus:border-[var(--admin-sky)] focus:ring-[var(--admin-sky)]/20"
               />
-              {errors.title && (
+              {errors.title?.message && (
                 <p className="text-sm text-[var(--admin-error)] flex items-center mt-1">
-                  {errors.title.message}
+                  {String(errors.title.message)}
                 </p>
               )}
             </div>
@@ -113,9 +113,9 @@ export default function CreatePost() {
                   <SelectItem value="archived">Archived</SelectItem>
                 </SelectContent>
               </Select>
-              {errors.status && (
+              {errors.status?.message && (
                 <p className="text-sm text-[var(--admin-error)] mt-1">
-                  {errors.status.message}
+                  {String(errors.status.message)}
                 </p>
               )}
             </div>
@@ -132,9 +132,9 @@ export default function CreatePost() {
               onChange={(value) => setValue("content", value)}
               placeholder="Start writing your post content..."
             />
-            {errors.content && (
+            {errors.content?.message && (
               <p className="text-sm text-[var(--admin-error)] mt-1">
-                {errors.content.message}
+                {String(errors.content.message)}
               </p>
             )}
           </div>

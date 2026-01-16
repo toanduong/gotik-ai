@@ -1,5 +1,7 @@
 "use client";
 
+export const dynamic = 'force-dynamic';
+
 import { useForm } from "@refinedev/react-hook-form";
 import { useGo } from "@refinedev/core";
 import { Input } from "@/components/ui/input";

@@ -1,5 +1,7 @@
 "use client";
 
+export const dynamic = 'force-dynamic';
+
 import { useState, useEffect } from "react";
 import { FileText, FolderOpen, TrendingUp, Activity, Clock, Loader2 } from "lucide-react";
 import { Breadcrumb } from "@/components/admin/Breadcrumb";

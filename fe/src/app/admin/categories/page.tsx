@@ -1,5 +1,7 @@
 "use client";
 
+export const dynamic = 'force-dynamic';
+
 import { useTable } from "@refinedev/core";
 import { useGo } from "@refinedev/core";
 import { useState } from "react";

@@ -1,5 +1,7 @@
 "use client";
 
+export const dynamic = 'force-dynamic';
+
 import { useForm } from "@refinedev/react-hook-form";
 import { useGo, useOne } from "@refinedev/core";
 import { useParams } from "next/navigation";

@@ -1,5 +1,7 @@
 "use client";
 
+export const dynamic = 'force-dynamic';
+
 import { useGo } from "@refinedev/core";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";

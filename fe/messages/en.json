@@ -102,57 +102,101 @@
       "softwareEngineering": {
         "title": "Software Engineering",
         "description": "Build robust, scalable software solutions with modern engineering practices and cutting-edge technologies.",
-        "subItems": ["Custom Development", "Agile Methodology", "Quality Assurance"]
+        "subItems": [
+          "Custom Development",
+          "Agile Methodology",
+          "Quality Assurance"
+        ]
       },
       "softwareModernization": {
         "title": "Software Modernization",
         "description": "Transform legacy systems into modern, cloud-ready applications with minimal disruption.",
-        "subItems": ["Legacy Migration", "Architecture Redesign", "Tech Stack Upgrade"]
+        "subItems": [
+          "Legacy Migration",
+          "Architecture Redesign",
+          "Tech Stack Upgrade"
+        ]
       },
       "aiConsulting": {
         "title": "AI Consulting",
         "description": "Embed intelligence into your products with custom AI solutions and autonomous systems.",
-        "subItems": ["Custom LLMs", "ML Models", "AI Strategy"]
+        "subItems": [
+          "Custom LLMs",
+          "ML Models",
+          "AI Strategy"
+        ]
       },
       "dataManagement": {
         "title": "Data Management",
         "description": "Turn data into your competitive advantage with comprehensive management strategies.",
-        "subItems": ["Data Strategy", "Governance", "Quality Management"]
+        "subItems": [
+          "Data Strategy",
+          "Governance",
+          "Quality Management"
+        ]
       },
       "dataArchitecture": {
         "title": "Data Architecture",
         "description": "Design scalable data architectures that support your business growth and analytics needs.",
-        "subItems": ["Data Modeling", "Pipeline Design", "Infrastructure"]
+        "subItems": [
+          "Data Modeling",
+          "Pipeline Design",
+          "Infrastructure"
+        ]
       },
       "dataAnalytics": {
         "title": "Data & Analytics",
         "description": "Transform raw data into actionable insights with advanced analytics and BI solutions.",
-        "subItems": ["Business Intelligence", "Predictive Analytics", "Data Visualization"]
+        "subItems": [
+          "Business Intelligence",
+          "Predictive Analytics",
+          "Data Visualization"
+        ]
       },
       "bim2fm": {
         "title": "BIM2FM",
         "description": "Seamlessly connect BIM data to facility management with our award-winning LCDM Hub platform.",
-        "subItems": ["Data Synchronization", "Quality Control", "FM Integration"]
+        "subItems": [
+          "Data Synchronization",
+          "Quality Control",
+          "FM Integration"
+        ]
       },
       "softwareArchitecture": {
         "title": "Software Architecture",
         "description": "Design evolutionary architectures that enable quick adjustments and continuous improvements.",
-        "subItems": ["Cloud-Native", "Microservices", "Distributed Systems"]
+        "subItems": [
+          "Cloud-Native",
+          "Microservices",
+          "Distributed Systems"
+        ]
       },
       "iot": {
         "title": "Internet of Things",
         "description": "Connect your devices to the cloud with end-to-end IoT solutions for smart operations.",
-        "subItems": ["Device Connectivity", "IoT Platforms", "Real-time Analytics"]
+        "subItems": [
+          "Device Connectivity",
+          "IoT Platforms",
+          "Real-time Analytics"
+        ]
       },
       "mobileWeb": {
         "title": "Mobile & Web Apps",
         "description": "Create powerful mobile and web applications that users love across all platforms.",
-        "subItems": ["Native Apps", "Progressive Web Apps", "Cross-Platform"]
+        "subItems": [
+          "Native Apps",
+          "Progressive Web Apps",
+          "Cross-Platform"
+        ]
       },
       "cloudServices": {
         "title": "Cloud Services",
         "description": "Scale your infrastructure with expert cloud solutions on AWS, Azure, and Google Cloud.",
-        "subItems": ["Cloud Migration", "Multi-Cloud Strategy", "Cost Optimization"]
+        "subItems": [
+          "Cloud Migration",
+          "Multi-Cloud Strategy",
+          "Cost Optimization"
+        ]
       }
     }
   },
@@ -164,22 +208,42 @@
       "engineering": {
         "category": "Engineering Excellence",
         "description": "Master modern software development from fundamentals to advanced patterns",
-        "topics": ["Clean Architecture", "Test-Driven Development", "Design Patterns", "Code Review Best Practices"]
+        "topics": [
+          "Clean Architecture",
+          "Test-Driven Development",
+          "Design Patterns",
+          "Code Review Best Practices"
+        ]
       },
       "cloud": {
         "category": "Cloud & DevOps",
         "description": "Build, deploy, and scale applications in modern cloud environments",
-        "topics": ["Kubernetes & Docker", "CI/CD Pipelines", "Infrastructure as Code", "Cloud Security"]
+        "topics": [
+          "Kubernetes & Docker",
+          "CI/CD Pipelines",
+          "Infrastructure as Code",
+          "Cloud Security"
+        ]
       },
       "data": {
         "category": "Data & AI",
         "description": "Transform data into insights and build intelligent applications",
-        "topics": ["Machine Learning Fundamentals", "LLM Integration", "Data Engineering", "AI Strategy"]
+        "topics": [
+          "Machine Learning Fundamentals",
+          "LLM Integration",
+          "Data Engineering",
+          "AI Strategy"
+        ]
       },
       "leadership": {
         "category": "Leadership & Strategy",
         "description": "Lead technical teams and drive strategic technology decisions",
-        "topics": ["Technical Leadership", "Agile at Scale", "Tech Debt Management", "Team Building"]
+        "topics": [
+          "Technical Leadership",
+          "Agile at Scale",
+          "Tech Debt Management",
+          "Team Building"
+        ]
       }
     },
     "stats": {
@@ -214,22 +278,38 @@
       "discovery": {
         "title": "Discovery Workshop",
         "description": "Week 1: Two-day intensive session to understand your business goals, technical requirements, and success metrics.",
-        "features": ["Stakeholder interviews", "Technical architecture review", "Risk assessment"]
+        "features": [
+          "Stakeholder interviews",
+          "Technical architecture review",
+          "Risk assessment"
+        ]
       },
       "planning": {
         "title": "Strategic Planning",
         "description": "Week 2-3: Develop comprehensive roadmap with milestones, deliverables, and resource allocation.",
-        "features": ["Detailed project plan", "Technology stack selection", "Budget and timeline finalization"]
+        "features": [
+          "Detailed project plan",
+          "Technology stack selection",
+          "Budget and timeline finalization"
+        ]
       },
       "execution": {
         "title": "Agile Execution",
         "description": "Week 4+: Sprint-based development with continuous feedback and iterative improvements.",
-        "features": ["2-week sprints", "Daily standups", "Weekly demos"]
+        "features": [
+          "2-week sprints",
+          "Daily standups",
+          "Weekly demos"
+        ]
       },
       "delivery": {
         "title": "Delivery & Support",
         "description": "Final week: Deployment, training, and 90-day support period to ensure smooth transition.",
-        "features": ["Production deployment", "Team training sessions", "90-day warranty support"]
+        "features": [
+          "Production deployment",
+          "Team training sessions",
+          "90-day warranty support"
+        ]
       }
     }
   },
@@ -258,129 +338,1730 @@
     ]
   },
   "pages": {
-    "softwareEngineer": {
-      "meta": {
-        "title": "Software Engineering | Gotik Consulting",
-        "description": "We turn your ideas into excellent software solutions. Benefit from our expertise and the latest methodological insights."
-      },
+    "aiConsulting": {
       "hero": {
-        "badge": "Software Engineering",
-        "title": "Transform Your Ideas into",
-        "titleHighlight": "Excellent Software",
-        "description": "We turn your ideas into excellent software solutions. Benefit from our expertise and the latest methodological insights.",
-        "consultant": {
+        "badge": "AI Consulting",
+        "title": "AI Consulting for",
+        "titleHighlight": "Your Company",
+        "description": "Discover the world of individualized AI consulting. Our advanced AI agents open new horizons for your company's digital transformation.",
+        "consultantName": "David Vu",
+        "consultantRole": "CEO & Gotik Founder",
+        "consultation": "Free Consultation"
+      },
+      "benefits": {
+        "title": "Why Our AI Consulting Brings Your Company Forward",
+        "items": {
+          "optimize": {
+            "title": "Optimize Data-Intensive Decision Processes",
+            "description": "In today's business world, you deal with a wealth of data to make informed decisions. Our AI consultants help you analyze this data efficiently with AI agents and gain valuable insights without spending hours scrolling through spreadsheets."
+          },
+          "knowledge": {
+            "title": "Simplify Knowledge Management",
+            "description": "In large companies, finding information in the knowledge base is often difficult. Use AI agents to make this easier by retrieving relevant information quickly and accurately."
+          },
+          "automate": {
+            "title": "Automate Repetitive Tasks",
+            "description": "Processing daily routine tasks is tedious. AI agents allow you to automate such tasks so your teams have more time for innovative projects."
+          }
+        }
+      },
+      "services": {
+        "title": "Our AI Consulting Services Overview",
+        "description": "Increase your efficiency, protect your data, and unlock the full potential of artificial intelligence with an individually developed AI strategy and the AI Hub.",
+        "items": {
+          "innovation": {
+            "title": "Innovation Workshops",
+            "description": "Together, we develop ideas and business cases for the use of generative AI in your company in the Generative AI Innovation Workshop."
+          },
+          "solutions": {
+            "title": "Individual AI Solutions",
+            "description": "We develop individual AI agents that help you automate routine tasks, analyze complex data, and simplify knowledge management in your company."
+          },
+          "hub": {
+            "title": "AI Hub",
+            "description": "Lay the foundation for the use of AI in your organization with the AI Hub. A secure and flexibly configurable all-in-one platform tailored to your needs."
+          }
+        }
+      },
+      "aiHub": {
+        "badge": "AI Platform",
+        "title": "AI Hub",
+        "description": "The Gotik AI Hub is a secure and flexible AI platform that enables companies to easily use generative AI. With pre-configurable and customizable AI agents, you increase efficiency and protect your data.",
+        "features": {
+          "configurable": {
+            "title": "Flexibly Configurable",
+            "description": "Expand with individual AI agents and prompt libraries tailored to your needs."
+          },
+          "protection": {
+            "title": "Comprehensive Data Protection",
+            "description": "Your data remains in safe hands using your private Azure Cloud."
+          },
+          "llm": {
+            "title": "Choose Your Desired LLM",
+            "description": "Model-agnostic platform allowing you to select the underlying LLM yourself."
+          },
+          "insights": {
+            "title": "Real-Time Insights",
+            "description": "Clear dashboard with token counts, costs, and usage analytics."
+          }
+        },
+        "imageAlt": "Gotik AI Hub",
+        "imageTitle": "Secure AI Platform",
+        "imageSubtitle": "Flexible. Private. Scalable."
+      },
+      "workshop": {
+        "badge": "Generative AI",
+        "title": "Innovation Workshop",
+        "description": "Discover the potential of generative AI for new products and services. The Generative AI Innovation Workshop offers you an ideal format to develop ideas and business cases.",
+        "cta": "Request Workshop Information",
+        "imageAlt": "Generative AI Innovation Workshop",
+        "imageTitle": "Transform Your Business",
+        "imageSubtitle": "With generative AI innovation"
+      },
+      "faq": {
+        "title": "FAQ about Generative AI",
+        "items": {
+          "whatIs": {
+            "question": "What is generative AI?",
+            "answer": "Generative artificial intelligence is a form of artificial intelligence that is trained to independently create content such as texts, images, videos, music, or code. It uses complex algorithms to learn patterns and structures from data and generate new, original content that is similar to the learned examples."
+          },
+          "agents": {
+            "question": "What are AI agents?",
+            "answer": "AI agents are virtual assistants that have a task they can accomplish autonomously and human-like thanks to their 'character', tool set, and 'basic intelligence'. The basic intelligence, the brain of the AI agent, is usually a Large Language Model (LLM), for example ChatGPT, or another generative AI model."
+          },
+          "apps": {
+            "question": "What applications exist for AI agents?",
+            "answer": "Knowledge transfer, decision support, process automation, customer service & support, analysis & research, and code generation are among the applications for AI agents."
+          },
+          "act": {
+            "question": "What does the EU AI Act regulate?",
+            "answer": "The EU AI Act is a regulation by the European Union that sets uniform rules for the use of artificial intelligence. It aims to ensure that AI systems are safe and respect fundamental rights. It is based on a risk-based approach."
+          }
+        }
+      },
+      "finalCta": {
+        "title": "Ready to See AI Agents in Action?",
+        "description": "Let's talk about how AI can transform your business.",
+        "cta": "Book Free AI Consulting Now"
+      }
+    },
+    "aiSolutions": {
+      "hero": {
+        "badge": "Interactive Solutions Map",
+        "title": "Explore our",
+        "titleHighlight": "AI Ecosystem",
+        "description": "Navigate through our comprehensive suite of artificial intelligence capabilities. Click on any node to discover how we drive value."
+      },
+      "grid": {
+        "growth": {
+          "title": "Business Growth",
+          "description": "Use AI to optimize customer journeys, enhance retention, and drive revenue scale.",
+          "cta": "Explore Growth"
+        },
+        "agentic": {
+          "title": "Agentic AI",
+          "description": "Autonomous multi-agent systems."
+        },
+        "rag": {
+          "title": "Knowledge RAG",
+          "description": "Connect LLMs to your enterprise data for context-aware intelligence and accurate retrieval.",
+          "badge": "Data Core"
+        },
+        "automation": {
+          "title": "Automation",
+          "description": "Streamline ERP & CRM workflows."
+        },
+        "cost": {
+          "title": "Cost Optimization",
+          "description": "Maximize ROI with intelligent operational analysis."
+        },
+        "contact": {
+          "title": "Start Your Journey",
+          "subtitle": "Consultation & Strategy",
+          "cta": "Contact Us"
+        }
+      },
+      "growth": {
+        "title": "Grow Customer Business with",
+        "titleHighlight": "AI",
+        "description": "Optimize every touchpoint of your customer journey. Our AI solutions ingest data to provide actionable insights, turning passive interactions into active growth opportunities.",
+        "points": [
+          "Personalized customer experiences at scale",
+          "Predictive churn analysis and retention strategies",
+          "Automated lead qualification and nurturing"
+        ],
+        "stats": {
+          "insights": "Insights",
+          "actions": "Actions",
+          "growth": "Growth"
+        }
+      },
+      "agentic": {
+        "badge": "Next-Gen Architecture",
+        "title": "Agentic AI Architecture",
+        "description": "Deploy autonomous multi-agent systems coordinated by a central intelligence to handle complex, multi-step enterprise tasks with precision.",
+        "features": {
+          "orchestrator": {
+            "title": "Central Orchestrator",
+            "description": "Intelligent routing and task decomposition engine that manages agent workflows."
+          },
+          "agents": {
+            "title": "Specialized Agents",
+            "description": "Purpose-built autonomous agents for coding, analysis, content generation, and support."
+          },
+          "feedback": {
+            "title": "Collaborative Feedback Loop",
+            "description": "Self-correcting mechanisms ensuring outputs meet quality standards before final delivery."
+          }
+        }
+      },
+      "rag": {
+        "badge": "Knowledge Integration",
+        "title": "Agent RAG Architecture",
+        "description": "Empower your AI with your enterprise data. Our Retrieval Augmented Generation (RAG) systems connect LLMs securely to your documents, vector databases, and APIs for accurate, context-aware responses.",
+        "features": {
+          "ingestion": {
+            "title": "Document Ingestion",
+            "description": "PDFs, Word docs, and wikis are parsed and chunked."
+          },
+          "vector": {
+            "title": "Vector Database",
+            "description": "Semantic indexing for lightning-fast relevance retrieval."
+          },
+          "api": {
+            "title": "API Connectors",
+            "description": "Real-time data fetching from ERP and CRM systems."
+          }
+        },
+        "status": {
+          "title": "Live System Status",
+          "latency": "Latency",
+          "tokens": "Tokens",
+          "accuracy": "Accuracy"
+        }
+      },
+      "workflow": {
+        "title": "Workflow Automation",
+        "description": "Seamlessly integrate AI agents into your existing ERP and CRM pipelines to automate repetitive tasks and optimize process efficiency.",
+        "steps": {
+          "input": {
+            "title": "Input Trigger",
+            "description": "New lead in CRM or Invoice received via Email."
+          },
+          "analysis": {
+            "badge": "AI Processing",
+            "title": "AI Analysis",
+            "description": "Data extraction, classification, and decision making."
+          },
+          "integration": {
+            "title": "ERP Integration",
+            "description": "Update records, create orders, or schedule tasks."
+          },
+          "completion": {
+            "title": "Completion",
+            "description": "Process finalized, notifications sent, dashboard updated."
+          }
+        }
+      },
+      "cost": {
+        "title": "Cost Optimization with AI",
+        "description": "Maximize your ROI by identifying inefficiencies. Our AI models analyze operational expenditure in real-time to suggest cost-saving measures without compromising quality.",
+        "stats": {
+          "operational": {
+            "value": "-35%",
+            "label": "Operational Costs"
+          },
+          "efficiency": {
+            "value": "3x",
+            "label": "Efficiency Gain"
+          }
+        },
+        "cta": "Calculate Your Savings",
+        "chart": {
+          "legacy": "Legacy Systems Cost",
+          "optimized": "Optimized Spend"
+        }
+      }
+    },
+    "bim2fm": {
+      "hero": {
+        "badge": "LCDM Hub",
+        "title": "BIM to Facility Management",
+        "titleHighlight": "Made Simple",
+        "description": "Transform your Building Information Modeling data into actionable facility management insights. The award-winning platform for seamless data exchange and quality management."
+      },
+      "grid": {
+        "sync": {
+          "title": "Bi-directional Data Sync",
+          "description": "Seamlessly synchronize data between BIM models and facility management systems in real-time.",
+          "cta": "Explore Sync"
+        },
+        "quality": {
+          "title": "Quality Control",
+          "description": "Visual data quality assurance."
+        },
+        "userFriendly": {
+          "title": "User-Friendly",
+          "description": "No deep IT knowledge required. Designed for facility management professionals to work intuitively.",
+          "badge": "Easy to Use"
+        },
+        "filtering": {
+          "title": "Smart Filtering",
+          "description": "Control data detail levels."
+        },
+        "contact": {
+          "title": "Get Started with BIM2FM",
+          "subtitle": "Transform Your Data Today",
+          "cta": "Contact Us"
+        }
+      },
+      "dataSync": {
+        "title": "Seamless",
+        "titleHighlight": "Data Synchronization",
+        "description": "The LCDM Hub enables bi-directional data synchronization between BIM models and facility management systems, keeping your building data up-to-date across all platforms.",
+        "points": [
+          "Automatic synchronization of cleaning, maintenance, and changes",
+          "Faster building commissioning and operational readiness",
+          "Real-time data availability for increased planning reliability"
+        ],
+        "bimModel": "BIM Model",
+        "fmSystem": "FM System",
+        "syncBadge": "Bi-directional Sync"
+      },
+      "qualityControl": {
+        "badge": "Visual Quality Assurance",
+        "title": "Quality Control Center",
+        "description": "The LCDM Hub includes a comprehensive quality control center that visually displays the entire data processing workflow, ensuring the highest data quality standards.",
+        "features": {
+          "visual": {
+            "title": "Visual Workflow Display",
+            "description": "See the entire data processing pipeline in real-time with intuitive visualizations."
+          },
+          "validation": {
+            "title": "Automated Validation",
+            "description": "Automatic data quality checks at every stage of the transfer process."
+          },
+          "detection": {
+            "title": "Error Detection & Correction",
+            "description": "Identify and resolve data inconsistencies before they impact operations."
+          }
+        }
+      },
+      "filtering": {
+        "badge": "User Control",
+        "title": "Smart Data Filtering",
+        "description": "Take full control of your data transfers. Easily specify the level of detail you need and decide which data is relevant for your facility management operations.",
+        "features": {
+          "custom": {
+            "title": "Custom Detail Levels",
+            "description": "Choose exactly how much detail you need for each data transfer."
+          },
+          "selective": {
+            "title": "Selective Data Transfer",
+            "description": "Transfer only the data you need, reducing complexity and processing time."
+          },
+          "userDriven": {
+            "title": "User-Driven Transformation",
+            "description": "Actively control selection, transformation, and conversion during transfers."
+          }
+        },
+        "status": {
+          "title": "Active Data Transfer",
+          "detailLevel": "Detail Level",
+          "high": "High",
+          "elements": "Data Elements",
+          "elementsValue": "2,847",
+          "status": "Transfer Status",
+          "inProgress": "In Progress"
+        }
+      },
+      "benefits": {
+        "title": "Key Benefits",
+        "description": "Discover how the LCDM Hub transforms building lifecycle management and accelerates operational efficiency.",
+        "items": {
+          "commissioning": {
+            "title": "Faster Commissioning",
+            "description": "Get buildings operational faster with early data availability and improved planning reliability."
+          },
+          "maintenance": {
+            "badge": "Featured",
+            "title": "Improved Maintenance",
+            "description": "Access building component data instantly, significantly speeding up maintenance operations."
+          },
+          "digitalTwin": {
+            "title": "Digital Twin Benefits",
+            "description": "Leverage digital building twins for facility management, sustainability, and change management."
+          },
+          "coordination": {
+            "title": "Better Coordination",
+            "description": "Improve collaboration between architects, clients, and designers throughout the building lifecycle."
+          }
+        }
+      }
+    },
+    "cloudServices": {
+      "hero": {
+        "badge": "Cloud Services",
+        "title": "Transform Your Business with",
+        "titleHighlight": "Cloud Solutions",
+        "description": "Custom cloud strategies tailored to your needs. From migration to optimization, we deliver secure, scalable cloud solutions on AWS, Azure, and Google Cloud.",
+        "founder": {
           "name": "David Vu",
           "role": "CEO & Gotik Founder",
           "cta": "Free Consultation"
         }
       },
-      "benefits": {
-        "title": "Benefits of Professional Software Engineering",
-        "description": "With over 25 years of experience in software development, we have a deep understanding of the challenges and needs of companies of all sizes and industries.",
+      "solutions": {
+        "title": "Comprehensive Cloud Solutions",
+        "description": "Whether cloud-first or hybrid – we design the perfect cloud strategy for your business requirements.",
         "items": {
-          "customSoftware": {
-            "title": "Excellent Custom Software",
-            "description": "Our tailored software solutions are characterized by the highest quality down to the smallest detail. We implement your project not only skillfully technically, but also incorporate the latest methodological insights to develop excellent custom software."
+          "strategy": {
+            "title": "Cloud Strategy & Consulting",
+            "description": "Custom cloud strategies tailored to your business goals with cloud-first or hybrid approaches."
           },
-          "solutionPortfolio": {
-            "title": "Comprehensive Solution Portfolio",
-            "description": "Our offering covers the entire solution spectrum, from components and interfaces to comprehensive platforms and entire software suites. Whether simple or highly complex requirements, we develop tailored solutions for Cloud, Web, Mobile, Desktop, and Embedded systems."
+          "migration": {
+            "title": "Cloud Migration",
+            "description": "Seamless migration of applications and data to AWS, Azure, or Google Cloud platforms."
           },
-          "technologyCompetence": {
-            "title": "Versatile Technology Competence",
-            "description": "We are familiar with a wide range of technologies, methods, and tools. This broad spectrum of expertise allows us to select the best options for your specific project."
+          "native": {
+            "title": "Cloud-Native Development",
+            "description": "Build applications designed specifically for cloud platforms with microservices and containers."
           },
-          "crossIndustry": {
-            "title": "Cross-Industry Know-how",
-            "description": "Our team consists of proven specialists who are familiar with different domains and technologies. This cross-industry expertise enables us to respond flexibly and effectively to the individual requirements and challenges of your project."
+          "multiCloud": {
+            "title": "Multi-Cloud Strategy",
+            "description": "Reduce vendor lock-in with multi-cloud strategies and open standards across platforms."
+          },
+          "security": {
+            "title": "Cloud Security",
+            "description": "Enterprise-grade security ensuring the highest standards for your cloud infrastructure."
+          },
+          "optimization": {
+            "title": "Cloud Optimization",
+            "description": "Cost optimization and performance tuning to maximize your cloud ROI."
+          },
+          "swiss": {
+            "title": "Swiss Data Centers",
+            "description": "Cloud solutions with data centers in Switzerland for organizations with high security and compliance requirements."
+          }
+        }
+      },
+      "platforms": {
+        "title": "Multi-Cloud Expertise",
+        "description": "We work with all major cloud platforms to deliver the best solution for your needs.",
+        "aws": {
+          "title": "Amazon Web Services",
+          "features": [
+            "EC2, Lambda, ECS/EKS",
+            "S3, RDS, DynamoDB",
+            "CloudFormation & CDK",
+            "AWS IoT & AI/ML services"
+          ]
+        },
+        "azure": {
+          "title": "Microsoft Azure",
+          "features": [
+            "App Service, Functions, AKS",
+            "Azure SQL, Cosmos DB",
+            "Azure DevOps & ARM",
+            "Azure AI & Cognitive Services"
+          ]
+        },
+        "gcp": {
+          "title": "Google Cloud Platform",
+          "features": [
+            "Compute Engine, Cloud Run, GKE",
+            "Cloud Storage, BigQuery",
+            "Cloud Build & Deployment Manager",
+            "Vertex AI & ML services"
+          ]
+        }
+      },
+      "approach": {
+        "title": "Our Cloud Approach",
+        "description": "Strategic planning, seamless migration, and continuous optimization for long-term cloud success.",
+        "steps": {
+          "strategy": {
+            "step": "1",
+            "title": "Strategy & Assessment",
+            "subtitle": "Define your cloud vision",
+            "description": "We analyze your current infrastructure, assess workloads, and develop a tailored cloud strategy aligned with your business objectives."
+          },
+          "migration": {
+            "step": "2",
+            "title": "Migration & Implementation",
+            "subtitle": "Seamless transition to cloud",
+            "description": "Execute migration with minimal disruption using proven methodologies, ensuring security and performance throughout the process."
+          },
+          "optimization": {
+            "step": "3",
+            "title": "Optimization & Support",
+            "subtitle": "Continuous improvement",
+            "points": [
+              "Cost optimization & resource management",
+              "Performance monitoring & tuning",
+              "Security audits & compliance",
+              "24/7 support & incident response"
+            ]
+          }
+        }
+      },
+      "whyChoose": {
+        "title": "Why Choose Gotik for Cloud Services?",
+        "description": "Comprehensive cloud expertise across all major platforms. We deliver secure, scalable solutions that drive business value and innovation.",
+        "points": [
+          "Multi-cloud expertise (AWS, Azure, GCP)",
+          "Enterprise-grade security and compliance",
+          "Cost optimization and resource efficiency",
+          "Swiss data center options for high security"
+        ],
+        "stats": {
+          "migrations": {
+            "value": "150+",
+            "label": "Cloud Migrations"
+          },
+          "uptime": {
+            "value": "99.99%",
+            "label": "Uptime SLA"
+          },
+          "savings": {
+            "value": "40%",
+            "label": "Avg. Cost Savings"
+          },
+          "support": {
+            "value": "24/7",
+            "label": "Support Available"
+          }
+        }
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "What are the benefits of cloud migration?",
+            "answer": "Cloud migration offers numerous benefits including reduced infrastructure costs through pay-as-you-go pricing, improved scalability to handle traffic spikes, enhanced disaster recovery capabilities, automatic updates and maintenance, global reach with multiple data centers, and increased innovation through access to cutting-edge services. Companies typically see 30-40% cost savings in the long term while gaining significant agility and flexibility."
+          },
+          {
+            "question": "How do you ensure cloud security?",
+            "answer": "We implement comprehensive security measures including identity and access management (IAM), data encryption at rest and in transit, network security with VPCs and firewalls, regular security audits and compliance checks, automated backup and disaster recovery, security monitoring and incident response, and compliance with standards like ISO 27001, SOC 2, and GDPR. For Swiss clients, we can utilize data centers in Switzerland to meet stringent local requirements."
+          },
+          {
+            "question": "Should I use single cloud or multi-cloud?",
+            "answer": "The choice depends on your requirements. Single cloud offers simplicity, easier management, and deeper integration with platform services. Multi-cloud provides vendor independence, reduced lock-in risk, the ability to use best-of-breed services from each provider, and improved disaster recovery across cloud providers. We help you evaluate factors like existing infrastructure, specific service requirements, compliance needs, and team expertise to determine the best approach. Multi-cloud strategies require careful planning with open standards and proper architecture."
+          },
+          {
+            "question": "How long does cloud migration take?",
+            "answer": "Migration timelines vary based on complexity and scope. A simple application migration might take 4-8 weeks, while enterprise-wide migrations typically require 3-12 months. We follow a phased approach: assessment and planning (2-4 weeks), pilot migration (4-6 weeks), incremental migration of remaining workloads, and optimization. This approach minimizes disruption and allows you to realize benefits early while managing risk effectively. We work closely with your team to develop a realistic timeline based on your specific requirements."
+          }
+        ]
+      }
+    },
+    "dataAnalytics": {
+      "hero": {
+        "badge": "Data & Analytics",
+        "title": "We Turn Your Data into",
+        "titleHighlight": "Valuable Knowledge",
+        "description": "Gotik specialists accompany you along the entire data value chain: from developing and implementing your data strategy to building tools for data collection and selecting optimal analysis methods."
+      },
+      "consultant": {
+        "name": "David Vu",
+        "role": "CEO & Gotik Founder",
+        "cta": "Free Consultation"
+      },
+      "benefits": {
+        "title": "Your Benefits through Data and Analytics",
+        "items": {
+          "competitive": {
+            "title": "Competitive Advantages through Data",
+            "description": "Use your data to better understand your company and customers and gain a decisive market advantage."
+          },
+          "strategic": {
+            "title": "Strategic Decision Making",
+            "description": "Our analyses help you better assess future developments and make strategically smart decisions."
+          },
+          "optimize": {
+            "title": "Optimize Business Processes",
+            "description": "Recognize potential for efficiency gains in areas like procurement, production, and sales through data analysis."
+          },
+          "innovation": {
+            "title": "Drive Innovation",
+            "description": "Use data-based insights to develop more successful innovations and business models."
+          },
+          "complex": {
+            "title": "Make Complex Data Usable",
+            "description": "We offer tools with which you can effectively use large and complex amounts of data."
+          },
+          "visible": {
+            "title": "Make Insights Visible",
+            "description": "Our solutions make hidden patterns and relationships in your data visible to optimize customer relationships."
           }
         }
       },
       "services": {
-        "title": "Our Software Engineering Services",
-        "description": "From the initial idea to successful implementation – we accompany you throughout the entire software development lifecycle.",
+        "title": "Our Data and Analytics Services",
         "items": {
-          "endToEnd": {
-            "title": "End-to-End Software Development",
-            "description": "Our experts support you from the initial idea to successful introduction – for simple as well as highly complex projects. Our engineering portfolio includes all types of software – from components and interfaces to extensive platforms and entire software suites. We turn your ideas into powerful applications for Cloud, Web, Mobile, Desktop, and Embedded systems.",
-            "features": ["Cloud & Web Applications", "Mobile & Desktop Solutions", "Embedded Systems"]
+          "strategy": {
+            "title": "Development of Data Strategies",
+            "description": "Our specialists support you in planning and implementing a customized data strategy that aligns with your company goals."
           },
-          "techConsulting": {
-            "title": "Technology Consulting",
-            "description": "Our technology experts advise you on selecting and deploying the best technologies for your project. We are always at the cutting edge and offer you innovative and future-proof solutions.",
-            "features": ["Technology Selection & Evaluation", "Architecture Design", "Future-Proof Solutions"]
+          "collection": {
+            "title": "Building Data Collection Tools",
+            "description": "We offer solutions for efficient collection and structuring of your data to create a solid foundation for analysis."
           },
-          "projectManagement": {
-            "title": "Project Management",
-            "description": "Our experienced project managers ensure smooth execution of your software projects. They master both classical and agile methods and ensure your project is completed on time and within budget.",
-            "features": ["Agile & Waterfall Methods", "Risk Management", "On-Time Delivery"]
+          "analysis": {
+            "title": "Selection of Analysis Tools",
+            "description": "We advise you on selecting the optimal analysis tools and methods for your specific requirements."
           },
-          "managedTeams": {
-            "title": "Managed Teams",
-            "description": "With our managed teams, we offer you an effective solution to relieve your organization and flexibly strengthen it with the required expertise and manpower at short notice. Together with you, we put together a dedicated team that is precisely tailored to your individual requirements in terms of size and skill set.",
-            "features": ["Dedicated Team Assembly", "Flexible Scaling", "Skill Matching"]
+          "ai": {
+            "title": "Expertise in AI and Machine Learning",
+            "description": "Our software engineers are up-to-date in areas such as Artificial Intelligence, Smart Bots, Machine Learning, and Data Mining."
+          },
+          "specific": {
+            "title": "Specific Tool Development",
+            "description": "We develop the tools you need to effectively use and understand your data in the shortest possible time."
+          },
+          "expertise": {
+            "title": "Technical and Business Expertise",
+            "description": "Our experts master not only the technical aspects but also understand business challenges to deliver analyses with measurable value."
           }
         }
       },
-      "qualityMap": {
-        "badge": "Quality Assurance",
-        "title": "Software Development Quality Map",
-        "description": "Good software quality is close to every development team's heart. But what to do when the software hasn't reached the desired quality yet? The Software Development Quality Map shows the solution path: It takes teams on a discovery journey through 80 different topics.",
-        "imageAlt": "Software Development Quality Map",
-        "caption": "80 Topics for Excellence",
-        "subcaption": "Your path to better software quality"
+      "workshop": {
+        "badge": "Innovation Workshop",
+        "title": "Data Science Innovation Workshop",
+        "description": "The Data Science Innovation Workshop offers you an ideal format to assess potentials and risks in the area of Data & Analytics faster and better. We support you individually with our process, methods, technology, and business expertise.",
+        "cta": "Request Workshop Information",
+        "imageAlt": "Data Science Innovation",
+        "imageTitle": "Assess Potentials & Risks",
+        "imageSubtitle": "Faster and better with our expertise"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "What is the difference between Data Science and Data Analytics?",
+            "answer": "While Data Analytics mainly focuses on interpreting existing data, Data Science goes a step further and develops algorithms to detect patterns in complex data.",
+            "dataScience": {
+              "title": "Data Science",
+              "points": [
+                "Interdisciplinary: Combines statistics, computer science, and business analysis",
+                "Predictive and prescriptive focus",
+                "Often works with Big Data"
+              ]
+            },
+            "dataAnalytics": {
+              "title": "Data Analytics",
+              "points": [
+                "Focused on evaluating existing data",
+                "Descriptive: Explains past and present",
+                "Usually deals with structured data"
+              ]
+            }
+          },
+          {
+            "question": "Why is a data strategy important?",
+            "answer": "A data strategy is crucial because it defines how your organization collects, processes, analyzes, and uses data. Without a clear strategy, companies risk data silos, inconsistent data quality, and missed opportunities for optimization and innovation. A well-thought-out data strategy enables informed decision-making, improves operational efficiency, and creates a competitive advantage."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Do You Want to Turn Your Data into Knowledge?",
+        "description": "Schedule a free consultation now!",
+        "cta": "Schedule Free Consultation"
+      }
+    },
+    "dataArchitecture": {
+      "hero": {
+        "badge": "Data Architecture",
+        "title": "Foundation for",
+        "titleHighlight": "Sustainable Data Management",
+        "description": "A well-thought-out data architecture forms the backbone of successful data management. It defines how data is captured, stored, integrated, transformed, and used to efficiently meet business requirements and enable innovation."
+      },
+      "consultant": {
+        "name": "David Vu",
+        "role": "CEO & Gotik Founder",
+        "cta": "Free Consultation"
+      },
+      "challenges": {
+        "title": "Do These Data Challenges Sound Familiar?",
+        "items": {
+          "transparency": {
+            "title": "Lack of Transparency",
+            "description": "About existing data stocks and their quality"
+          },
+          "silos": {
+            "title": "Data Silos",
+            "description": "Redundant data storage leading to inconsistencies"
+          },
+          "integration": {
+            "title": "Integration Gaps",
+            "description": "Insufficient integration of new data sources like IoT"
+          },
+          "compliance": {
+            "title": "Compliance Issues",
+            "description": "Difficulties in complying with data protection requirements"
+          },
+          "delivery": {
+            "title": "Slow Data Delivery",
+            "description": "For analysis and reporting"
+          }
+        }
+      },
+      "assessment": {
+        "badge": "Quick Check",
+        "title": "Data Strategy Assessment Light",
+        "description": "You want to know how your company's data strategy stands but have little time? Our Assessment Light is the perfect starting point to evaluate your data maturity.",
+        "imageAlt": "Data Management Assessment",
+        "imageTitle": "Your Quick Maturity Check",
+        "imageSubtitle": "Get started in minutes"
+      },
+      "approach": {
+        "title": "The 4-Phase Journey to the Right Data Architecture",
+        "description": "We accompany you through every step of your data architecture transformation.",
+        "phases": [
+          {
+            "step": "1",
+            "badge": "Phase 1",
+            "title": "Analysis & Goal Definition",
+            "description": "We capture your business requirements, analyze existing data landscapes, and identify weaknesses and potential for improvement.",
+            "color": "teal"
+          },
+          {
+            "step": "2",
+            "badge": "Phase 2",
+            "title": "Conceptualization & Modeling",
+            "description": "We develop a customized data architecture blueprint – from conceptual to logical to physical data models. Standards, guidelines, and governance are clearly defined.",
+            "color": "sky"
+          },
+          {
+            "step": "3",
+            "badge": "Phase 3",
+            "title": "Implementation & Integration",
+            "description": "We implement the architecture, integrate relevant data sources, establish ETL processes, and ensure consistent data management across your organization.",
+            "color": "purple"
+          },
+          {
+            "step": "4",
+            "badge": "Phase 4",
+            "title": "Quality Assurance & Optimization",
+            "description": "We check data quality, establish monitoring, and continuously optimize the architecture to flexibly support future requirements.",
+            "color": "green"
+          }
+        ]
+      },
+      "results": {
+        "title": "Results and Artifacts",
+        "items": [
+          "Documented as-is analysis of the data landscape",
+          "Target picture and blueprint of data architecture (including data models and data flows)",
+          "Detailed integration and migration plans",
+          "Guidelines and standards for data management and governance",
+          "Implemented data platforms (e.g., Data Warehouse, Data Lake)",
+          "Monitoring and quality reports on data availability and consistency"
+        ]
+      },
+      "whyTrust": {
+        "title": "Why Clients Trust Gotik",
+        "items": {
+          "expertise": {
+            "title": "Comprehensive Expertise",
+            "description": "Over 300 specialists in software engineering, data management, AI, and digital transformation.",
+            "color": "teal"
+          },
+          "holistic": {
+            "title": "Holistic Approach",
+            "description": "We think along with you – from the first idea to successful operation.",
+            "color": "sky"
+          },
+          "sustainable": {
+            "title": "Sustainable Results",
+            "description": "Flexible, future-proof digital architectures that deliver real value.",
+            "color": "green"
+          },
+          "enterprise": {
+            "title": "Enterprise Experience",
+            "description": "Understanding complex IT landscapes and demanding integrations.",
+            "color": "purple"
+          }
+        }
+      },
+      "faq": {
+        "title": "FAQ on Data Strategy",
+        "items": [
+          {
+            "question": "What exactly is a data strategy and why is it important for my company?",
+            "answer": "A data strategy is a comprehensive plan that defines how your company captures, stores, manages, shares, and uses data as a strategic asset to achieve business goals. It's important because it helps break down data silos, make informed decisions, optimize processes, ensure compliance, and ultimately gain competitive advantages. Without a strategy, data often remains untapped potential or can even lead to inefficiencies and risks."
+          },
+          {
+            "question": "Is a data strategy also relevant for small and medium-sized enterprises (SMEs)?",
+            "answer": "Yes, absolutely. SMEs in particular can benefit enormously from a clear data strategy. It enables more efficient operations, better customer knowledge, and faster responses to market changes – often with fewer resources than large corporations. A data strategy tailored to SMEs ensures that data investments are targeted and deliver maximum benefit."
+          },
+          {
+            "question": "What is the process for developing a data strategy with Gotik?",
+            "answer": "Our approach is collaborative and customized. We typically start with an assessment to understand your current situation, challenges, and goals. Based on this, we develop the strategy together with you, define concrete measures, and create an implementation roadmap. We emphasize that the strategy is practical and fits your company."
+          },
+          {
+            "question": "Is it only about the strategy on paper, or does Gotik also support with implementation?",
+            "answer": "We accompany you beyond pure strategy development if desired. Our offering also includes support for implementing data management processes, introducing governance structures, integrating systems, and training your employees. Our goal is to ensure your data strategy is sustainably embedded in the company and delivers measurable results."
+          }
+        ]
+      }
+    },
+    "dataManagement": {
+      "hero": {
+        "badge": "Data Management",
+        "title": "Your Path to",
+        "titleHighlight": "Data Excellence",
+        "description": "Data is the fuel of your digital transformation. But only with the right strategy, technology, and implementation do real competitive advantages emerge."
+      },
+      "consultant": {
+        "name": "David Vu",
+        "role": "CEO & Gotik Founder",
+        "cta": "Free Consultation"
+      },
+      "entryPoints": {
+        "title": "Choose Your Entry Point",
+        "description": "Start your data journey at the point that matters most to your business.",
+        "items": {
+          "strategy": {
+            "title": "I need a clear data strategy",
+            "description": "Develop a target picture with us, clarify roles & governance, and create the foundation for data-driven decisions.",
+            "cta": "The Path to Data Strategy",
+            "color": "blue"
+          },
+          "analytics": {
+            "title": "I want to turn data into knowledge",
+            "description": "Our solutions make hidden patterns and connections in your data visible to optimize your business.",
+            "cta": "To Data & Analytics",
+            "color": "purple"
+          },
+          "bim2fm": {
+            "title": "I want simple facility management",
+            "description": "BIM2FM is designed so specialists without deep IT knowledge can prepare and use BIM data.",
+            "cta": "To BIM2FM",
+            "color": "green"
+          },
+          "architecture": {
+            "title": "I want to find my data",
+            "description": "Thoughtful data architecture leads to successful data management – defining capture, storage, and use.",
+            "cta": "To Data Architecture",
+            "color": "indigo"
+          },
+          "ai": {
+            "title": "I want to use AI securely",
+            "description": "Our AI team implements AI in your organization in a controlled, privacy-compliant manner.",
+            "cta": "To AI Consulting",
+            "color": "orange"
+          },
+          "pimcore": {
+            "title": "I want to master data and delight customers",
+            "description": "Transform complex data landscapes into seamless, AI-powered customer experiences. We combine Pimcore's data management power with the Gotik AI Hub.",
+            "cta": "To Agentic Pimcore",
+            "color": "rose"
+          }
+        }
       },
       "testimonials": {
         "title": "What Our Clients Say",
         "items": [
           {
-            "quote": "Gotik was able to quickly implement our requirements into high-quality software. We are thrilled with the good collaboration and the high quality of the software.",
-            "author": "Daniel Mayer",
-            "initials": "DM"
+            "content": "Thanks to our collaboration with Gotik, we now make data-driven decisions, work more efficiently, and focus on what matters: our customers and innovations. This gives us security – and a good feeling.",
+            "author": "Peter K.",
+            "role": "Managing Director, Industrial Company",
+            "initials": "PK"
           },
           {
-            "quote": "Gotik is the ideal software partner for us: great expertise, strong in analysis, and efficient in implementation.",
-            "author": "Istvan Szalai",
-            "initials": "IS"
+            "content": "Our data was distributed across many systems – that cost us time, money, and nerves. With Gotik, we developed a clear data strategy and intelligently linked our systems. Finally, we can really use our data.",
+            "author": "Dieter F.",
+            "role": "CDO, Service Company",
+            "initials": "DF"
           }
         ]
       },
+      "methodology": {
+        "title": "Our Approach",
+        "description": "With a clearly defined, methodical approach, we support you in strategically using your data. From the first impulse to a scalable pilot project, we guide you purposefully.",
+        "steps": [
+          {
+            "step": "1",
+            "title": "Impulse Workshop",
+            "duration": "0.5 days – compact & practical",
+            "description": "We jointly analyze your data challenges and show first concrete potentials."
+          },
+          {
+            "step": "2",
+            "title": "Maturity Assessment",
+            "subtitle": "Assessment of your data strategy & organization",
+            "description": "Guided – with benchmark, recommendations & strengths-weaknesses profile."
+          },
+          {
+            "step": "3",
+            "title": "Pilot Project",
+            "subtitle": "Show impact, prepare scaling",
+            "items": [
+              "Concretize strategy & prioritize use cases",
+              "Implement first applications (Quick Wins)",
+              "Establish platforms & architecture",
+              "Enable & Change Management"
+            ]
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Why Gotik for Data Management?",
+        "description": "We combine strategic consulting with technical implementation from a single source. Our sustainable architectures ensure long-term success.",
+        "list": [
+          "Strategic consulting & technical implementation from a single source",
+          "Platforms for structured and unstructured data",
+          "Experience in healthcare, construction, industry & administration",
+          "Sustainable architectures instead of project island solutions"
+        ]
+      },
+      "stats": {
+        "experience": {
+          "value": "25+",
+          "label": "Years Experience"
+        },
+        "projects": {
+          "value": "500+",
+          "label": "Projects Delivered"
+        },
+        "locations": {
+          "value": "8",
+          "label": "Office Locations"
+        },
+        "experts": {
+          "value": "200+",
+          "label": "Data Experts"
+        }
+      },
       "faq": {
-        "title": "FAQ About Software Engineering",
+        "title": "Frequently Asked Questions",
         "items": [
           {
-            "question": "What is custom software?",
-            "answer": "Custom software is a tailored software solution developed specifically according to the requirements and needs of your company or project. Our experience, know-how, and quality standards ensure that your individual software solution is perfect down to the smallest detail."
+            "question": "What is professional data management?",
+            "answer": "Professional data management encompasses all processes, methods, and technologies for structured capture, maintenance, integration, analysis, and use of data in the company. The goal is to ensure high data quality, consistent data flows, and maximum data availability – as a basis for informed decisions and efficient business processes."
           },
           {
-            "question": "What are the advantages of custom software over standard software?",
-            "answer": "Custom software offers flexibility, scalability, and perfect alignment with your business processes. While standard software may require compromises, custom solutions are designed exactly for your needs. This leads to higher efficiency, better user experience, and competitive advantages."
+            "question": "Why is data management so important today?",
+            "answer": "Companies that actively manage data are more competitive: They make decisions faster and more informed, reduce operational risks, and create the basis for AI applications, automation, and data-driven innovation. In short: Good data management determines the digital maturity of your company."
           },
           {
-            "question": "Can Gotik also further develop or modernize existing software?",
-            "answer": "Yes, we not only offer the development of new software solutions but can also further develop or modernize your existing software. Use our expertise to modernize your software so that it can flexibly adapt to changing business requirements."
+            "question": "How does a typical data management project with Gotik work?",
+            "answer": "A project usually starts with data analysis and potential assessment. This is followed by concept development and architecture design, implementation including data integration and governance, quality management and training, and operations, monitoring, and continuous optimization. We work iteratively and involve all relevant stakeholders from the start."
+          },
+          {
+            "question": "How long does a data management project take?",
+            "answer": "The duration depends heavily on the initial situation and goals. While an impulse workshop can be completed in half a day, comprehensive data management transformations can take several months. We always work in phases, so you can see initial results quickly and decide step by step how to proceed."
           }
         ]
       }
     },
-    "softwareModernization": {
+    "dataStrategy": {
       "hero": {
-        "badge": "Software Modernization",
-        "title": "Harness the Potential of",
-        "titleHighlight": "Software Modernization",
-        "description": "Software modernization promises enormous potential: from boosting performance, improving security and quality, to developing new business ideas.",
-        "consultant": { "name": "David Vu", "role": "CEO & Gotik Founder", "cta": "Free Consultation" }
+        "badge": "Data Strategy",
+        "title": "Transform Data into",
+        "titleHighlight": "Strategic Value",
+        "description": "We help you develop a comprehensive data strategy that turns your data into actionable insights and competitive advantages."
+      },
+      "consultant": {
+        "name": "David Vu",
+        "role": "CEO & Gotik Founder",
+        "cta": "Free Consultation"
       },
       "benefits": {
-        "title": "Your Benefits through Software Modernization",
-        "description": "Make your software fit for the future. New methods open the door to significantly streamline business processes and develop new services.",
-        "items": {
-          "potential": { "title": "Enormous Potential", "description": "Boost your software's performance, security, and quality, and develop new business ideas. Migrate legacy systems to the cloud, maintain and further develop existing applications, and integrate mobile apps." },
-          "efficient": { "title": "Efficient Business Processes", "description": "Use modern methods to optimize your business processes and create new services that drive efficiency and innovation." },
-          "adaptive": { "title": "Adaptive Software", "description": "Benefit from our expertise to modernize your software so it can flexibly adapt to changing business and user requirements." },
-          "futureProof": { "title": "Future-Proof Solutions", "description": "Prepare for the future and avoid costly patchwork through targeted modernization or a complete redevelopment of your software." },
-          "quality": { "title": "Quality and Stability", "description": "Resolve existing quality and stability issues and bring user guidance up to date with modern UX standards." }
-        }
+        "title": "Why Your Business Needs a Data Strategy",
+        "description": "In today's data-driven world, organizations that can effectively leverage their data gain significant competitive advantages. A well-crafted data strategy enables better decision-making, operational efficiency, and innovation.",
+        "items": [
+          {
+            "title": "Data-Driven Decision Making",
+            "description": "Transform raw data into actionable insights that drive strategic decisions. Our data strategy consulting helps you establish frameworks for evidence-based decision-making across all levels of your organization."
+          },
+          {
+            "title": "Enhanced Operational Efficiency",
+            "description": "Optimize your business processes through data-driven insights. We help you identify inefficiencies, streamline operations, and automate decision processes to reduce costs and improve performance."
+          },
+          {
+            "title": "Monetize Your Data Assets",
+            "description": "Unlock new revenue streams by leveraging your data assets strategically. We guide you in identifying opportunities to monetize data through new products, services, or partnerships."
+          },
+          {
+            "title": "Ensure Data Governance & Compliance",
+            "description": "Establish robust data governance frameworks that ensure data quality, security, and compliance with regulations like GDPR. Protect your organization while maximizing data value."
+          }
+        ]
+      },
+      "services": {
+        "title": "Our Data Strategy Services",
+        "description": "Comprehensive consulting services to develop and implement a data strategy aligned with your business objectives.",
+        "items": [
+          {
+            "title": "Data Strategy Development",
+            "description": "We work with you to develop a comprehensive data strategy that aligns with your business goals. From vision definition to roadmap creation, we ensure your data strategy drives tangible business value.",
+            "points": [
+              "Data Vision & Mission",
+              "Strategic Roadmap Planning",
+              "Business Value Alignment"
+            ]
+          },
+          {
+            "title": "Data Governance Framework",
+            "description": "Establish robust data governance structures to ensure data quality, security, and compliance. We help you define policies, processes, and organizational structures for effective data management.",
+            "points": [
+              "Data Quality Standards",
+              "Compliance & Security",
+              "Data Stewardship Models"
+            ]
+          },
+          {
+            "title": "Data Architecture Design",
+            "description": "Design scalable and future-proof data architectures that support your strategic objectives. From data lakes to modern data platforms, we architect solutions that enable innovation.",
+            "points": [
+              "Modern Data Platform Design",
+              "Data Lake & Warehouse Solutions",
+              "Integration Architecture"
+            ]
+          },
+          {
+            "title": "Data Culture & Change Management",
+            "description": "Foster a data-driven culture throughout your organization. We help you develop the people, processes, and mindset needed to successfully leverage data as a strategic asset.",
+            "points": [
+              "Data Literacy Programs",
+              "Organizational Change",
+              "Skills Development"
+            ]
+          }
+        ]
+      },
+      "approach": {
+        "badge": "Our Approach",
+        "title": "Strategic & Practical Data Strategy",
+        "description": "We combine strategic thinking with practical implementation expertise. Our approach ensures your data strategy is not just a document, but a living framework that drives continuous value creation and adapts to changing business needs.",
+        "steps": [
+          {
+            "title": "Assessment & Discovery",
+            "description": "Evaluate your current data landscape and identify opportunities"
+          },
+          {
+            "title": "Strategy Design",
+            "description": "Develop a comprehensive strategy aligned with business goals"
+          },
+          {
+            "title": "Implementation & Execution",
+            "description": "Execute the strategy with clear milestones and measurable outcomes"
+          }
+        ]
+      },
+      "faq": {
+        "title": "FAQ About Data Strategy",
+        "items": [
+          {
+            "question": "What is a data strategy?",
+            "answer": "A data strategy is a comprehensive plan that defines how an organization will collect, manage, analyze, and leverage data to achieve business objectives. It encompasses data governance, architecture, analytics, and organizational change to turn data into a strategic asset."
+          },
+          {
+            "question": "Why do I need a data strategy?",
+            "answer": "Without a clear data strategy, organizations struggle with data silos, poor data quality, compliance risks, and missed opportunities. A data strategy provides direction, ensures alignment with business goals, and enables you to maximize the value of your data assets while managing risks effectively."
+          },
+          {
+            "question": "How long does it take to develop a data strategy?",
+            "answer": "The timeline varies based on organization size and complexity, but typically ranges from 8-16 weeks for strategy development. Implementation is an ongoing process that unfolds over months or years. We work in phases to deliver value incrementally while building toward the long-term vision."
+          },
+          {
+            "question": "What's the difference between data strategy and data architecture?",
+            "answer": "Data strategy is the \"what\" and \"why\" – it defines your vision, objectives, and approach to data management. Data architecture is the \"how\" – it's the technical blueprint for implementing the strategy. A strong data strategy informs and guides architectural decisions, while architecture makes the strategy actionable."
+          }
+        ]
+      }
+    },
+    "internetOfThings": {
+      "hero": {
+        "badge": "Internet of Things",
+        "title": "Connect Your World with",
+        "titleHighlight": "Smart IoT Solutions",
+        "description": "From strategy to implementation – we connect your devices to the cloud and transform data into actionable insights. Secure, scalable IoT solutions that drive business value."
+      },
+      "consultant": {
+        "name": "David Vu",
+        "role": "CEO & Gotik Founder",
+        "cta": "Free Consultation"
+      },
+      "useCases": {
+        "title": "IoT Solutions Across Industries",
+        "description": "Transform your operations with intelligent, connected devices and real-time data insights.",
+        "items": [
+          {
+            "id": "smart-cities",
+            "title": "Smart Cities",
+            "description": "Improve traffic management, waste management, and public safety with intelligent IoT networks.",
+            "cta": "Learn More →",
+            "icon": "city"
+          },
+          {
+            "id": "industrial",
+            "title": "Industrial IoT",
+            "description": "Monitor machine performance, optimize production processes, and enable predictive maintenance.",
+            "cta": "Learn More →",
+            "icon": "industry"
+          },
+          {
+            "id": "energy",
+            "title": "Energy & Utilities",
+            "description": "Monitor and optimize energy consumption with smart metering and real-time analytics.",
+            "cta": "Learn More →",
+            "icon": "energy"
+          },
+          {
+            "id": "logistics",
+            "title": "Logistics & Transport",
+            "description": "Real-time tracking of deliveries, fleet management, and route optimization.",
+            "cta": "Learn More →",
+            "icon": "logistics"
+          },
+          {
+            "id": "retail",
+            "title": "Smart Retail",
+            "description": "Inventory management, customer analytics, and personalized shopping experiences.",
+            "cta": "Learn More →",
+            "icon": "retail"
+          },
+          {
+            "id": "buildings",
+            "title": "Smart Buildings",
+            "description": "Automated climate control, security systems, and energy-efficient building management.",
+            "cta": "Learn More →",
+            "icon": "building"
+          },
+          {
+            "id": "healthcare",
+            "title": "Healthcare IoT",
+            "description": "Remote patient monitoring, medical device connectivity, and hospital asset tracking for improved patient care.",
+            "cta": "Learn More →",
+            "icon": "healthcare"
+          }
+        ]
+      },
+      "successStories": {
+        "title": "IoT Success Stories",
+        "items": [
+          {
+            "badge": "CABLE CAR OPERATIONS",
+            "title": "SisControl Platform",
+            "description": "Comprehensive IoT platform providing cable car operators in ski resorts with real-time access to the latest data and forecasts. Developed together with Sisag to enhance operational efficiency.",
+            "point": "Real-time monitoring & forecasting"
+          },
+          {
+            "badge": "INDUSTRIAL CONNECTIVITY",
+            "title": "Komax Connect",
+            "description": "Gives customers online insight into the productivity of their Komax machines. Complete solution from machine connectivity to data visualization and analytics.",
+            "point": "Machine performance insights"
+          },
+          {
+            "badge": "SMART APPLIANCES",
+            "title": "Thermoplan Connected Coffee Machines",
+            "description": "Innovative cloud solution connecting coffee machines worldwide. Enables remote monitoring of appliance performance and seamless delivery of new recipes and functions to enhance customer experience.",
+            "points": [
+              "Remote performance monitoring",
+              "Over-the-air recipe updates"
+            ]
+          }
+        ]
+      },
+      "approach": {
+        "title": "Our IoT Approach",
+        "description": "From strategy to deployment – we guide you through every step of your IoT journey with proven methodologies and expert guidance.",
+        "steps": [
+          {
+            "title": "Strategy & Planning",
+            "subtitle": "Define your IoT vision",
+            "description": "We develop tailored IoT strategies aligned with your business goals, identifying high-value use cases and creating a roadmap for implementation."
+          },
+          {
+            "title": "Connectivity & Integration",
+            "subtitle": "Connect devices to cloud",
+            "description": "Seamless device networking and cloud connectivity with robust security concepts protecting your IoT devices and data from threats."
+          },
+          {
+            "title": "Analytics & Insights",
+            "subtitle": "Transform data into value",
+            "points": [
+              "Real-time data processing & analytics",
+              "Predictive maintenance algorithms",
+              "Custom dashboards & visualization",
+              "Continuous monitoring & optimization"
+            ]
+          }
+        ]
+      },
+      "whyChoose": {
+        "title": "Why Choose Gotik for IoT?",
+        "description": "End-to-end IoT expertise from device connectivity to cloud analytics. We deliver secure, scalable solutions that transform your operations.",
+        "features": [
+          "Complete IoT strategy and implementation",
+          "Proven security concepts for IoT devices",
+          "Cloud connectivity across all major platforms",
+          "Industry-specific IoT expertise and experience"
+        ],
+        "stats": [
+          {
+            "value": "100+",
+            "label": "IoT Projects Delivered"
+          },
+          {
+            "value": "1M+",
+            "label": "Connected Devices"
+          },
+          {
+            "value": "15+",
+            "label": "Industries Served"
+          },
+          {
+            "value": "99.9%",
+            "label": "Platform Uptime"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "What is IoT and how can it benefit my business?",
+            "answer": "Internet of Things (IoT) refers to the network of physical devices connected to the internet, collecting and sharing data. IoT can benefit your business by enabling real-time monitoring, predictive maintenance, process automation, improved decision-making through data analytics, and enhanced customer experiences. Common applications include asset tracking, energy management, quality control, and remote operations."
+          },
+          {
+            "question": "How do you ensure IoT security?",
+            "answer": "Security is paramount in IoT implementations. We employ multi-layered security approaches including device authentication, encrypted data transmission, secure cloud infrastructure, regular security audits, and over-the-air update capabilities. We also implement network segmentation, access controls, and continuous monitoring to protect against threats. Our security concepts are designed from the ground up to protect both devices and data."
+          },
+          {
+            "question": "What platforms and protocols do you work with?",
+            "answer": "We have expertise across all major IoT platforms including AWS IoT, Azure IoT, Google Cloud IoT, and industry-specific platforms. We work with standard protocols like MQTT, CoAP, HTTP/HTTPS, and support various connectivity options including WiFi, cellular (4G/5G), LoRaWAN, NB-IoT and Bluetooth. Our platform-agnostic approach ensures we select the best technology stack for your specific requirements."
+          },
+          {
+            "question": "How long does an IoT project typically take?",
+            "answer": "Project timelines vary based on complexity and scope. A pilot project with a limited number of devices can be deployed in 2-3 months, while enterprise-wide deployments may take 6-12 months. We follow an agile approach, starting with strategy development and proof of concept, then moving to pilot implementation and finally scaling to production. This phased approach allows you to see value quickly while minimizing risk."
+          }
+        ]
+      }
+    },
+    "mobileWebApps": {
+      "hero": {
+        "badge": "Mobile & Web Apps",
+        "title": "Build Powerful Apps for",
+        "titleHighlight": "Every Platform",
+        "description": "From concept to launch – we create custom mobile and web applications that drive business growth. Native, cross-platform, or progressive web apps with powerful cloud backends."
+      },
+      "consultant": {
+        "name": "David Vu",
+        "role": "CEO & Gotik Founder",
+        "cta": "Free Consultation"
+      },
+      "solutions": {
+        "title": "Comprehensive App Solutions",
+        "description": "Choose the right approach for your business – native performance, cross-platform efficiency, or web flexibility.",
+        "items": [
+          {
+            "title": "Native iOS & Android Apps",
+            "description": "Custom native apps delivering the best performance and user experience on each platform."
+          },
+          {
+            "title": "Cross-Platform Apps",
+            "description": "Single codebase for iOS and Android using React Native, Flutter, or .NET MAUI."
+          },
+          {
+            "title": "Progressive Web Apps (PWA)",
+            "description": "Web apps that work offline, send push notifications, and feel like native apps."
+          },
+          {
+            "title": "Enterprise Apps",
+            "description": "Custom enterprise solutions for sales, marketing, and customer service automation."
+          },
+          {
+            "title": "E-Commerce Solutions",
+            "description": "Full-featured online stores with secure payments and inventory management."
+          },
+          {
+            "title": "Custom Web Portals",
+            "description": "Tailored portals for customers, partners, or employees with role-based access."
+          },
+          {
+            "title": "Cloud Backend Integration",
+            "description": "Modern web and mobile applications with powerful, scalable cloud backends on AWS, Azure, or Google Cloud."
+          }
+        ]
+      },
+      "technology": {
+        "title": "Our Technology Stack",
+        "categories": [
+          {
+            "title": "Mobile Technologies",
+            "items": [
+              {
+                "title": "iOS (Swift & SwiftUI)",
+                "description": "Native development for iPhone and iPad"
+              },
+              {
+                "title": "Android (Kotlin & Jetpack Compose)",
+                "description": "Modern Android app development"
+              },
+              {
+                "title": "React Native",
+                "description": "Cross-platform with JavaScript/TypeScript"
+              },
+              {
+                "title": "Flutter",
+                "description": "Beautiful cross-platform UI with Dart"
+              }
+            ]
+          },
+          {
+            "title": "Web Technologies",
+            "items": [
+              {
+                "title": "React & Next.js",
+                "description": "Modern web apps with server-side rendering"
+              },
+              {
+                "title": "Vue.js & Nuxt",
+                "description": "Progressive and performant web applications"
+              },
+              {
+                "title": ".NET & ASP.NET Core",
+                "description": "Enterprise-grade web applications"
+              },
+              {
+                "title": "Java & Spring Boot",
+                "description": "Robust backend services"
+              }
+            ]
+          }
+        ]
+      },
+      "approach": {
+        "title": "Our Development Approach",
+        "description": "From concept to launch, we guide you through every step with proven agile methodologies and user-centered design.",
+        "steps": [
+          {
+            "title": "Discovery & Design",
+            "subtitle": "Understanding your vision",
+            "description": "We work closely with you to understand your goals, define features, and create user-centered designs that delight your customers."
+          },
+          {
+            "title": "Agile Development",
+            "subtitle": "Iterative and collaborative",
+            "description": "Using agile methodologies, we deliver working software in sprints, allowing you to see progress and provide feedback continuously."
+          },
+          {
+            "title": "Launch & Support",
+            "subtitle": "Successful deployment",
+            "points": [
+              "App store submission & approval",
+              "Performance monitoring & analytics",
+              "Ongoing maintenance & updates",
+              "User support & bug fixes"
+            ]
+          }
+        ]
+      },
+      "whyChoose": {
+        "title": "Why Choose Gotik for App Development?",
+        "description": "Comprehensive support from initial concept to successful launch. We create apps that users love and businesses rely on.",
+        "features": [
+          "Full-stack expertise in mobile and web technologies",
+          "User-centered design and exceptional UX",
+          "Agile development with continuous delivery",
+          "Comprehensive maintenance and support services"
+        ],
+        "stats": [
+          {
+            "value": "200+",
+            "label": "Apps Launched"
+          },
+          {
+            "value": "5M+",
+            "label": "Active Users"
+          },
+          {
+            "value": "4.8/5",
+            "label": "Average App Rating"
+          },
+          {
+            "value": "98%",
+            "label": "Client Satisfaction"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "Should I build a native or cross-platform app?",
+            "answer": "The choice depends on your requirements. Native apps (Swift for iOS, Kotlin for Android) offer the best performance and access to all platform features, making them ideal for complex apps or those requiring cutting-edge features. Cross-platform frameworks like React Native or Flutter are excellent for faster time-to-market and when you want to maintain a single codebase. We'll help you evaluate factors like budget, timeline, required features, and target audience to make the best choice."
+          },
+          {
+            "question": "What is a Progressive Web App (PWA)?",
+            "answer": "Progressive Web Apps are web applications that use modern web technologies to deliver app-like experiences. PWAs work on any device with a web browser, can be installed on the home screen, work offline, send push notifications, and update automatically. They're cost-effective because you maintain one codebase for all platforms, and users don't need to download them from app stores. PWAs are ideal for content-heavy apps, e-commerce, and when you want to reach users across all platforms efficiently."
+          },
+          {
+            "question": "How long does it take to develop a mobile app?",
+            "answer": "Development timelines vary based on app complexity. A simple app with basic features can take 2-3 months, while a medium-complexity app with custom features and backend integration typically requires 4-6 months. Complex apps with advanced features, third-party integrations, and sophisticated backends may take 6-12 months or more. We use agile methodologies to deliver working software incrementally, so you'll see progress throughout the development process and can start testing early versions."
+          },
+          {
+            "question": "Do you provide post-launch support and maintenance?",
+            "answer": "Yes, we offer comprehensive post-launch support including bug fixes, performance monitoring, security updates, OS compatibility updates, feature enhancements, and technical support. We can provide ongoing maintenance contracts or on-demand support based on your needs. Our support services ensure your app stays current with the latest platform requirements, maintains optimal performance, and continues to delight your users long after launch."
+          }
+        ]
+      }
+    },
+    "rustTransition": {
+      "hero": {
+        "badge": "Rust Transition Service",
+        "title": "Securely into the Future with",
+        "titleHighlight": "Rust",
+        "description": "Software development is changing rapidly. Our Rust Transition Service helps your company make your software safe, efficient, and future-proof."
+      },
+      "consultant": {
+        "name": "David Vu",
+        "role": "CEO & Gotik Founder",
+        "cta": "Free Consultation"
+      },
+      "whyRust": {
+        "title": "Why Rust is the Right Step Now",
+        "description": "The regulatory pressure to make software safer, more efficient, and more economical is increasing. Requirements like the Cyber Resilience Act (CRA) or standards such as IEC 62443 or IEC 60601 (medical technology) greatly increase the demands on software security. Traditional languages like C++ are reaching their limits - Rust offers decisive advantages through memory-safe and thread-safe development and deterministic performance without garbage collection.",
+        "features": [
+          {
+            "title": "Memory Safety",
+            "description": "Rust ensures memory safety through its ownership system, eliminating entire classes of security vulnerabilities."
+          },
+          {
+            "title": "Predictable Performance",
+            "description": "Deterministic performance without garbage collection, matching C++ speed and efficiency."
+          },
+          {
+            "title": "Safe Concurrency",
+            "description": "Thread-safe development that prevents data races at compile time."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Your Benefits from Using Rust",
+        "description": "Rust performs formal checks during compilation based on ownership rules. This ensures that memory cannot be written to and freed at the same time when it is no longer needed.",
+        "items": [
+          {
+            "title": "Increased Software Security",
+            "description": "Protection against memory errors and security vulnerabilities such as buffer overflows or use-after-free."
+          },
+          {
+            "title": "Optimized Regulatory Compliance",
+            "description": "Simplified compliance with industry-specific standards and regulations like IEC 62443, IEC 60601, and CRA."
+          },
+          {
+            "title": "Economic Benefits",
+            "description": "Reduction of total cost of ownership (TCO) through fewer errors, shorter development cycles, and lower maintenance costs."
+          }
+        ]
+      },
+      "approach": {
+        "title": "The Key Aspect of the Gotik Rust Transition Service",
+        "description": "The Transition Service offers a continuous switch from traditional programming languages as a modernization of software during its further development in ongoing projects, or a \"jumpstart\" for new projects.",
+        "highlight": {
+          "title": "Prevention of Legacy Systems",
+          "description": "Avoid technical debt by adopting Rust from the start."
+        },
+        "steps": [
+          {
+            "id": "01",
+            "label": "Assessment"
+          },
+          {
+            "id": "02",
+            "label": "Planning"
+          },
+          {
+            "id": "03",
+            "label": "Migration"
+          },
+          {
+            "id": "04",
+            "label": "Optimization"
+          }
+        ]
+      },
+      "details": {
+        "badge": "Our Approach",
+        "title": "Details of the Gotik Rust Transition Service",
+        "description": "With our Rust Transition Service, we accompany you holistically and structured through the strategic switch to Rust.",
+        "items": [
+          {
+            "title": "Organizational Support",
+            "description": "We accompany the establishment of a specialized migration team and actively support your company in the change management process to ensure a smooth introduction of Rust."
+          },
+          {
+            "title": "Technical Implementation",
+            "description": "Our experts perform architecture analyses, integrate Rust sensibly into existing systems, and modernize your software while considering existing dependencies. We also optimize your CI/CD processes for efficient Rust migration."
+          },
+          {
+            "title": "Staff Development",
+            "description": "We offer individual training, workshops, and personal coaching to optimally prepare your team for using Rust and ensure sustainable skills development."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "Why is now the right time for switching to Rust?",
+            "answer": "Increasing regulatory requirements and growing cyber risks make it increasingly difficult to use traditional languages like C++ safely and economically. Rust, as a memory-safe language, offers an optimal solution for these challenges."
+          },
+          {
+            "question": "Which industries benefit most from Rust?",
+            "answer": "Especially safety-critical and highly regulated industries such as the automotive industry, medical technology, or the financial sector benefit particularly from the introduction of Rust."
+          },
+          {
+            "question": "Which regulatory requirements does Rust effectively support?",
+            "answer": "Rust facilitates compliance with important safety standards such as ISO 26262, IEC 62304, IEC 62443, IEC 60601, FDA guidelines, the CRA, and the European NIS2 directive."
+          },
+          {
+            "question": "Is a step-by-step introduction of Rust possible?",
+            "answer": "Yes, Rust can be integrated into existing projects step by step and in a controlled manner, for example via FFI (Foreign Function Interface) or special build tools like Corrosion."
+          }
+        ]
+      }
+    },
+    "softwareArchitecture": {
+      "hero": {
+        "badge": "Software Architecture",
+        "title": "Agile Architectures for",
+        "titleHighlight": "Future-Ready Software",
+        "description": "We develop evolutionary architectures that enable quick adjustments and continuous improvements. Robust, scalable solutions that master current challenges and flexibly adapt to future requirements."
+      },
+      "consultant": {
+        "name": "David Vu",
+        "role": "CEO & Gotik Founder",
+        "cta": "Free Consultation"
+      },
+      "services": {
+        "title": "Our Architecture Services",
+        "description": "From cloud-native solutions to microservices architectures – we design systems that grow with your business.",
+        "items": [
+          {
+            "title": "Cloud Architecture",
+            "description": "Scalable and efficient cloud solutions with expertise in Cloud-Native, IaaS, PaaS, and SaaS implementations."
+          },
+          {
+            "title": "Microservices",
+            "description": "Independent, scalable services that each cover specific business functions with high flexibility and modularity."
+          },
+          {
+            "title": "Serverless Architecture",
+            "description": "Cost-effective and easily scalable applications using modern serverless technologies and paradigms."
+          },
+          {
+            "title": "Evolutionary Architecture",
+            "description": "Adaptable architectures designed for incremental change, ensuring long-term value and business agility."
+          },
+          {
+            "title": "Service-Oriented Architecture",
+            "description": "SOA solutions enabling modular and reusable software components for maximum flexibility."
+          },
+          {
+            "title": "Distributed Systems",
+            "description": "Components and services running across multiple machines for enhanced reliability and performance."
+          },
+          {
+            "title": "Domain-Driven Design",
+            "description": "Strategic approach to software design that focuses on the core domain and domain logic, with strong bounded contexts and clear separation of concerns."
+          }
+        ]
+      },
+      "testimonials": {
+        "title": "What Our Clients Say",
+        "items": [
+          {
+            "text": "\"The microservices architecture that Gotik designed for us has transformed our ability to scale. We can now deploy updates independently and respond to market changes faster than ever before.\"",
+            "author": "Michael S.",
+            "role": "CTO, Technology Company"
+          },
+          {
+            "text": "\"Working with Gotik on our cloud migration was a game-changer. Their evolutionary architecture approach meant we could migrate incrementally without disrupting our business operations.\"",
+            "author": "Laura W.",
+            "role": "Head of IT, Financial Services"
+          }
+        ]
+      },
+      "approach": {
+        "title": "Our Architecture Approach",
+        "description": "We follow a systematic approach to ensure your software architecture is robust, scalable, and aligned with your business goals.",
+        "steps": [
+          {
+            "title": "Analysis & Assessment",
+            "subtitle": "Understanding your current state",
+            "description": "We analyze your existing systems, identify bottlenecks, and assess your technical debt to create a clear baseline."
+          },
+          {
+            "title": "Architecture Design",
+            "subtitle": "Crafting the optimal solution",
+            "description": "We design evolutionary architectures that balance current needs with future flexibility, selecting the right patterns and technologies."
+          },
+          {
+            "title": "Implementation & Evolution",
+            "subtitle": "Building for continuous improvement",
+            "points": [
+              "Incremental implementation with quick wins",
+              "DevOps practices & automation",
+              "Continuous monitoring & optimization",
+              "Knowledge transfer & team enablement"
+            ]
+          }
+        ]
+      },
+      "whyChoose": {
+        "title": "Why Choose Gotik for Software Architecture?",
+        "description": "Our expertise in software architecture guarantees robust and performant solutions that efficiently support your business processes with maximum flexibility.",
+        "features": [
+          "Evolutionary architectures designed for incremental change",
+          "Cloud-native expertise across all major platforms",
+          "Microservices and distributed systems specialists",
+          "Future-proof solutions with high scalability"
+        ],
+        "stats": [
+          {
+            "value": "20+",
+            "label": "Years Architecting Software"
+          },
+          {
+            "value": "300+",
+            "label": "Architectures Designed"
+          },
+          {
+            "value": "99.9%",
+            "label": "System Uptime"
+          },
+          {
+            "value": "50+",
+            "label": "Architecture Experts"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "What is evolutionary architecture?",
+            "answer": "Evolutionary architecture is an approach that designs for incremental change as a first principle. Rather than trying to predict all future requirements upfront, evolutionary architectures embrace change and make it easy to modify the system over time. This approach uses principles like strong bounded contexts, advanced DevOps practices, and automated testing to enable safe, continuous evolution of the software."
+          },
+          {
+            "question": "When should I consider microservices architecture?",
+            "answer": "Microservices are ideal when you need high scalability, independent deployment of different business capabilities, or have multiple teams working on different parts of the system. They're particularly valuable for complex domains that benefit from clear separation of concerns and when you need to use different technologies for different services. However, they add operational complexity, so they're best suited for organizations ready to invest in DevOps practices and distributed systems management."
+          },
+          {
+            "question": "How do you ensure our architecture remains flexible?",
+            "answer": "We design architectures with flexibility in mind by using principles like loose coupling, strong cohesion, and clear boundaries between components. We employ patterns like Domain-Driven Design to align software structure with business domains, use cloud-native approaches for scalability, and implement comprehensive automated testing to enable safe refactoring. Regular architecture reviews and continuous improvement practices ensure the architecture evolves with your business needs."
+          },
+          {
+            "question": "What's the difference between cloud-native and cloud-ready?",
+            "answer": "Cloud-ready applications can run in the cloud but may not fully leverage cloud capabilities. Cloud-native applications are specifically designed to take advantage of cloud computing frameworks – they're built for scalability, resilience, and agility. Cloud-native architectures typically use microservices, containers, dynamic orchestration, and DevOps practices. They enable you to experiment with innovative services, scale automatically based on demand, and achieve higher resilience through distributed architectures."
+          }
+        ]
+      }
+    },
+    "odoo": {
+      "hero": {
+        "badge": "Odoo Platform",
+        "title": "Streamline Your Business with",
+        "titleHighlight": "Odoo ERP Solutions",
+        "description": "Gotik is a proud Odoo Partner. We help you transform your operations with a fully integrated, modular ERP platform designed for modern growth."
+      },
+      "consultant": {
+        "name": "Thao Quynh Nguyen",
+        "role": "Partnerships Consultant @ HK",
+        "cta": "Book a Demo"
+      },
+      "benefits": {
+        "title": "The Odoo Advantage",
+        "description": "Odoo's unique modular approach allows businesses to start with what they need and scale seamlessly as they grow.",
+        "items": [
+          {
+            "title": "All-in-One Integration",
+            "description": "Replace multiple disconnected legacy systems with a single integrated database. Finance, HR, Sales, and Inventory all work together in perfect harmony."
+          },
+          {
+            "title": "Infinite Modularity",
+            "description": "With over 30,000 apps available, Odoo can be tailored to any industry or business size. Only pay for the features you actually use."
+          },
+          {
+            "title": "Cost-Effective Scalability",
+            "description": "Enjoy lower total cost of ownership compared to traditional ERPs. Odoo's open-source core and flexible pricing make it accessible for both SMEs and enterprises."
+          },
+          {
+            "title": "User-Friendly Interface",
+            "description": "Odoo features a modern, intuitive interface that simplifies complex business processes, leading to higher employee adoption and fewer errors."
+          }
+        ]
+      },
+      "services": {
+        "title": "Our Odoo Services",
+        "description": "As your Odoo Partner, we provide end-to-end services to ensure your ERP implementation is a success.",
+        "items": [
+          {
+            "title": "Implementation & Consulting",
+            "description": "We guide you through the entire implementation process, from business analysis and requirement gathering to configuration and final go-live.",
+            "points": [
+              "Business Process Mapping",
+              "Configuration & Setup",
+              "User Training & Adoption"
+            ]
+          },
+          {
+            "title": "Custom Module Development",
+            "description": "If standard Odoo apps don't fit your needs, we develop tailored modules to extend Odoo's functionality, ensuring your ERP fits your business like a glove.",
+            "points": [
+              "Technical Development (Python)",
+              "UI/UX Customization (XML)",
+              "Integration with Third-party APIs"
+            ]
+          },
+          {
+            "title": "Migration & Version Upgrades",
+            "description": "We help you upgrade from older Odoo versions or migrate from other ERP systems like SAP or Microsoft Dynamics while preserving your critical data.",
+            "points": [
+              "Legacy Data Migration",
+              "Odoo Version Upgrades",
+              "Ongoing Technical Support"
+            ]
+          },
+          {
+            "title": "E-commerce & Web Integration",
+            "description": "We seamlessly connect Odoo with your e-commerce storefront or build a powerful Odoo E-commerce solution to synchronize sales, inventory, and accounting in real-time.",
+            "points": [
+              "Shopify & WooCommerce Integration",
+              "Odoo E-commerce Implementation",
+              "Real-time Inventory Sync"
+            ]
+          }
+        ]
+      },
+      "testimonials": {
+        "title": "Loved by Businesses",
+        "items": [
+          "\"Moving to Odoo was the best decision for our warehouse management. Gotik's implementation was smooth and efficient.\"",
+          "\"The custom modules built by Gotik allowed us to automate our unique billing process, saving us hours of manual work every week.\""
+        ]
+      },
+      "faq": {
+        "title": "Odoo FAQ",
+        "items": [
+          {
+            "question": "Is Odoo suitable for small businesses?",
+            "answer": "Yes, Odoo is highly scalable. Small businesses can start with just one app (like Invoicing) and add more modules as they grow, making it one of the most cost-effective ERP solutions on the market."
+          },
+          {
+            "question": "Can Odoo be hosted on-premise?",
+            "answer": "Absolutely. Odoo offers multiple hosting options: Odoo Online (SaaS), Odoo.sh (PaaS), or on-premise on your own servers for full control."
+          },
+          {
+            "question": "How long does an Odoo implementation take?",
+            "answer": "A typical implementation can take anywhere from a few weeks for standard configurations to several months for complex, multi-departmental rollouts with extensive customizations."
+          }
+        ]
       }
     },
     "salesforce": {
@@ -388,57 +2069,100 @@
         "badge": "Salesforce Solutions",
         "title": "Transform Your Business with",
         "titleHighlight": "Expert Salesforce Solutions",
-        "description": "Unlock the full potential of your CRM. We provide tailored Salesforce implementations and custom development to drive efficiency and growth.",
-        "consultant": { "title": "Salesforce Expertise", "role": "Certified CRM Strategists", "cta": "Request a Quote" }
+        "description": "Unlock the full potential of your CRM. We provide tailored Salesforce implementations and custom development to drive efficiency and growth."
+      },
+      "consultant": {
+        "name": "Salesforce Expertise",
+        "role": "Certified CRM Strategists",
+        "cta": "Request a Quote"
       },
       "benefits": {
         "title": "Why Choose Our Salesforce Services?",
-        "description": "We bridge the gap between business needs and Salesforce capabilities, ensuring your platform is a catalyst for success."
-      }
-    },
-    "odoo": {
-      "meta": {
-        "title": "Odoo ERP Solutions | Gotik Consulting",
-        "description": "Transform your business operations with Odoo ERP. Gotik is a proud Odoo Partner offering implementation, customization, and support services."
-      },
-      "badge": "Odoo Platform",
-      "hero": {
-        "title": "Streamline Your Business with",
-        "titleHighlight": "Odoo ERP Solutions",
-        "description": "Gotik is a proud Odoo Partner. We help you transform your operations with a fully integrated, modular ERP platform designed for modern growth.",
-        "consultantName": "Thao Quynh Nguyen",
-        "consultantRole": "Partnerships Consultant @ HK",
-        "bookDemo": "Book a Demo"
-      },
-      "benefits": {
-        "title": "The Odoo Advantage",
-        "description": "Odoo's unique modular approach allows businesses to start with what they need and scale seamlessly as they grow.",
-        "integration": {
-          "title": "All-in-One Integration",
-          "description": "Replace multiple disconnected legacy systems with a single integrated database. Finance, HR, Sales, and Inventory all work together in perfect harmony."
-        },
-        "modularity": {
-          "title": "Infinite Modularity",
-          "description": "With over 30,000 apps available, Odoo can be tailored to any industry or business size. Only pay for the features you actually use."
-        },
-        "scalability": {
-          "title": "Cost-Effective Scalability",
-          "description": "Enjoy lower total cost of ownership compared to traditional ERPs. Odoo's open-source core and flexible pricing make it accessible for both SMEs and enterprises."
-        },
-        "interface": {
-          "title": "User-Friendly Interface",
-          "description": "Odoo features a modern, intuitive interface that simplifies complex business processes, leading to higher employee adoption and fewer errors."
-        }
+        "description": "We bridge the gap between business needs and Salesforce capabilities, ensuring your platform is a catalyst for success.",
+        "items": [
+          {
+            "title": "Enhanced Customer 360",
+            "description": "Gain a complete, unified view of your customers across all departments. We optimize your Salesforce instance to deliver personalized experiences that drive loyalty."
+          },
+          {
+            "title": "Automated Workflows",
+            "description": "Eliminate manual tasks and boost productivity with advanced Salesforce Flow and Process Builder automation. Let your team focus on high-value activities."
+          },
+          {
+            "title": "Seamless Integrations",
+            "description": "Connect Salesforce with your existing ERP, marketing, and accounting tools. We ensure data flows smoothly across your entire tech stack for a single source of truth."
+          },
+          {
+            "title": "Actionable Analytics",
+            "description": "Leverage Salesforce reports and dashboards to make informed decisions. We help you visualize key metrics and predict future trends with precision."
+          }
+        ]
       },
       "services": {
-        "title": "Our Odoo Services",
-        "description": "As your Odoo Partner, we provide end-to-end services to ensure your ERP implementation is a success."
+        "title": "Our Salesforce Expertise",
+        "description": "From initial setup to complex custom development, we cover the full spectrum of Salesforce services.",
+        "items": [
+          {
+            "title": "Implementation & Customization",
+            "description": "We help you set up Sales Cloud, Service Cloud, and Marketing Cloud from scratch or refine your current configuration to better align with your business goals.",
+            "points": [
+              "Standard & Custom Object Configuration",
+              "Security & Access Models",
+              "Data Migration & Cleansing"
+            ]
+          },
+          {
+            "title": "Custom Development (Apex & LWC)",
+            "description": "When out-of-the-box features aren't enough, our developers build custom components and logic using Lightning Web Components and Apex to meet your unique needs.",
+            "points": [
+              "Custom UI with Lightning Web Components",
+              "Apex Triggers & Controllers",
+              "Complex Business Logic Implementation"
+            ]
+          },
+          {
+            "title": "API & System Integration",
+            "description": "We connect Salesforce with external systems using REST/SOAP APIs and middleware like MuleSoft or Dell Boomi to ensure seamless data exchange.",
+            "points": [
+              "Third-party App Integrations",
+              "External Data Sources (OData)",
+              "Custom API Development"
+            ]
+          },
+          {
+            "title": "Managed Services & Support",
+            "description": "Keep your Salesforce environment running at peak performance with our ongoing administrative support, health checks, and user training programs.",
+            "points": [
+              "Regular Health Checks & Audits",
+              "User Training & Adoption",
+              "Continuous Support & Optimization"
+            ]
+          }
+        ]
       },
       "testimonials": {
-        "title": "Loved by Businesses"
+        "title": "Driving Success with Salesforce",
+        "items": [
+          "\"Thanks to their Salesforce expertise, our sales cycle was reduced by 30% through automation and better data visibility.\"",
+          "\"The custom Lightning components they built transformed our user experience and significantly increased CRM adoption.\""
+        ]
       },
       "faq": {
-        "title": "Odoo FAQ"
+        "title": "Salesforce FAQ",
+        "items": [
+          {
+            "question": "What Salesforce Clouds do you support?",
+            "answer": "We support the entire Salesforce ecosystem, with specialized expertise in Sales Cloud, Service Cloud, Marketing Cloud, and Community Cloud."
+          },
+          {
+            "question": "Can you integrate Salesforce with my existing ERP?",
+            "answer": "Yes, we have extensive experience integrating Salesforce with SAP, Oracle, Microsoft Dynamics, and custom legacy systems using both point-to-point APIs and enterprise service buses."
+          },
+          {
+            "question": "Do you provide ongoing administrative support?",
+            "answer": "Absolutely. We offer managed services packages that include daily user support, periodic system maintenance, and strategic roadmapping to ensure your platform evolves with your business."
+          }
+        ]
       }
     }
   }

@@ -11,36 +11,36 @@ export default function SoftwareModernization() {
     const t = useTranslations('pages.softwareModernization');
 
     useEffect(() => {
-            if (typeof window !== 'undefined' && (window as any).Motion) {
-                const { inView } = (window as any).Motion;
+        if (typeof window !== 'undefined' && (window as any).Motion) {
+            const { inView } = (window as any).Motion;
 
-                inView('.sm-hero-1', ({ target }: any) => {
-                    const { animate } = (window as any).Motion;
-                    animate(target, { opacity: [0, 1], x: [-40, 0] }, { duration: 0.6 });
-                });
+            inView('.sm-hero-1', ({ target }: any) => {
+                const { animate } = (window as any).Motion;
+                animate(target, { opacity: [0, 1], x: [-40, 0] }, { duration: 0.6 });
+            });
 
-                inView('.sm-hero-2', ({ target }: any) => {
-                    const { animate } = (window as any).Motion;
-                    animate(target, { opacity: [0, 1], x: [-40, 0] }, { duration: 0.6 });
-                });
+            inView('.sm-hero-2', ({ target }: any) => {
+                const { animate } = (window as any).Motion;
+                animate(target, { opacity: [0, 1], x: [-40, 0] }, { duration: 0.6 });
+            });
 
-                inView('.sm-hero-3', ({ target }: any) => {
-                    const { animate } = (window as any).Motion;
-                    animate(target, { opacity: [0, 1], x: [40, 0] }, { duration: 0.6, delay: 0.2 });
-                });
+            inView('.sm-hero-3', ({ target }: any) => {
+                const { animate } = (window as any).Motion;
+                animate(target, { opacity: [0, 1], x: [40, 0] }, { duration: 0.6, delay: 0.2 });
+            });
 
-                inView('.sm-benefit-slideLeft', ({ target }: any) => {
-                    const { animate } = (window as any).Motion;
-                    animate(target, { opacity: [0, 1], y: [-40, 0] }, { duration: 0.6 });
-                });
+            inView('.sm-benefit-slideLeft', ({ target }: any) => {
+                const { animate } = (window as any).Motion;
+                animate(target, { opacity: [0, 1], y: [-40, 0] }, { duration: 0.6 });
+            });
 
-                inView('.sm-benefit-slideRight', ({ target }: any) => {
-                    const { animate } = (window as any).Motion;
-                    animate(target, { opacity: [0, 1], x: [40, 0] }, { duration: 0.6, delay: 0.2 });
-                });
+            inView('.sm-benefit-slideRight', ({ target }: any) => {
+                const { animate } = (window as any).Motion;
+                animate(target, { opacity: [0, 1], x: [40, 0] }, { duration: 0.6, delay: 0.2 });
+            });
 
-            }
-        }, []);
+        }
+    }, []);
 
     const benefits = [
         { key: 'potential', icon: 'lightning', color: 'blue' },
@@ -72,23 +72,6 @@ export default function SoftwareModernization() {
                         </p>
                     </div>
 
-                    {/* Contact Card */}
-                    <div {...withDelay(motionConfig.slideUp, 0.3)} className="max-w-2xl mx-auto bg-white rounded-3xl shadow-xl border border-sky-blue/10 p-8">
-                        <div className="flex flex-col md:flex-row items-center gap-6">
-                            <div className="w-24 h-24 rounded-full bg-teal-500/10 flex items-center justify-center text-teal-600 font-bold text-2xl">
-                                DV
-                            </div>
-                            <div className="text-center md:text-left">
-                                <h3 className="font-bold text-navy-blue text-lg">{t('hero.consultant.name')}</h3>
-                                <p className="text-sky-blue text-sm font-medium">{t('hero.consultant.role')}</p>
-                            </div>
-                            <div className="ml-auto">
-                                <a href="#contact" className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-navy-blue rounded-lg hover:bg-navy-blue/90 transition-all duration-300">
-                                    {t('hero.consultant.cta')}
-                                </a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </section>
 
@@ -109,19 +92,19 @@ export default function SoftwareModernization() {
                             <div key={benefit.key} {...motionConfig.slideUp} className="group bg-slate-50 rounded-3xl p-8 border border-sky-blue/10 hover:scale-[1.02] hover:shadow-xl transition-all duration-300">
                                 <div className={`w-14 h-14 rounded-2xl bg-${benefit.color}-50 flex items-center justify-center text-${benefit.color}-600 mb-6 group-hover:bg-${benefit.color}-600 group-hover:text-white transition-colors duration-300`}>
                                     {benefit.icon === 'lightning' && (
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" /></svg>
                                     )}
                                     {benefit.icon === 'settings' && (
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" /><circle cx="12" cy="12" r="3" /></svg>
                                     )}
                                     {benefit.icon === 'cube' && (
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="7.5 4.21 12 6.81 16.5 4.21"/><polyline points="7.5 19.79 7.5 14.6 3 12"/><polyline points="21 12 16.5 14.6 16.5 19.79"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" x2="12" y1="22.08" y2="12"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /><polyline points="7.5 4.21 12 6.81 16.5 4.21" /><polyline points="7.5 19.79 7.5 14.6 3 12" /><polyline points="21 12 16.5 14.6 16.5 19.79" /><polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" x2="12" y1="22.08" y2="12" /></svg>
                                     )}
                                     {benefit.icon === 'clock' && (
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>
                                     )}
                                     {benefit.icon === 'check' && (
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                                     )}
                                 </div>
                                 <h3 className="font-display text-xl text-navy-blue mb-4">{t(`benefits.items.${benefit.key}.title`)}</h3>

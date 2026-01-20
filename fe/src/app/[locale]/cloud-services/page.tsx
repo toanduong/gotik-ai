@@ -3,41 +3,44 @@
 import Navbar from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import Contact from "@/components/sections/Contact";
+import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { motionConfig, withDelay } from "@/lib/motion";
 import { useEffect } from "react";
 
 export default function CloudServices() {
+    const t = useTranslations('pages.cloudServices');
     useEffect(() => {
-            if (typeof window !== 'undefined' && (window as any).Motion) {
-                const { inView } = (window as any).Motion;
+        if (typeof window !== 'undefined' && (window as any).Motion) {
+            const { inView } = (window as any).Motion;
 
-                inView('.cs-hero-1', ({ target }: any) => {
-                    const { animate } = (window as any).Motion;
-                    animate(target, { opacity: [0, 1], x: [-40, 0] }, { duration: 0.6 });
-                });
+            inView('.cs-hero-1', ({ target }: any) => {
+                const { animate } = (window as any).Motion;
+                animate(target, { opacity: [0, 1], x: [-40, 0] }, { duration: 0.6 });
+            });
 
-                inView('.cs-hero-2', ({ target }: any) => {
-                    const { animate } = (window as any).Motion;
-                    animate(target, { opacity: [0, 1], x: [-40, 0] }, { duration: 0.6 });
-                });
+            inView('.cs-hero-2', ({ target }: any) => {
+                const { animate } = (window as any).Motion;
+                animate(target, { opacity: [0, 1], x: [-40, 0] }, { duration: 0.6 });
+            });
 
-                inView('.cs-hero-3', ({ target }: any) => {
-                    const { animate } = (window as any).Motion;
-                    animate(target, { opacity: [0, 1], x: [40, 0] }, { duration: 0.6, delay: 0.2 });
-                });
+            inView('.cs-hero-3', ({ target }: any) => {
+                const { animate } = (window as any).Motion;
+                animate(target, { opacity: [0, 1], x: [40, 0] }, { duration: 0.6, delay: 0.2 });
+            });
 
-                inView('.cs-benefit-slideLeft', ({ target }: any) => {
-                    const { animate } = (window as any).Motion;
-                    animate(target, { opacity: [0, 1], y: [-40, 0] }, { duration: 0.6 });
-                });
+            inView('.cs-benefit-slideLeft', ({ target }: any) => {
+                const { animate } = (window as any).Motion;
+                animate(target, { opacity: [0, 1], y: [-40, 0] }, { duration: 0.6 });
+            });
 
-                inView('.cs-benefit-slideRight', ({ target }: any) => {
-                    const { animate } = (window as any).Motion;
-                    animate(target, { opacity: [0, 1], x: [40, 0] }, { duration: 0.6, delay: 0.2 });
-                });
+            inView('.cs-benefit-slideRight', ({ target }: any) => {
+                const { animate } = (window as any).Motion;
+                animate(target, { opacity: [0, 1], x: [40, 0] }, { duration: 0.6, delay: 0.2 });
+            });
 
-            }
-        }, []);
+        }
+    }, []);
 
     return (
         <main className="relative bg-white min-h-screen font-sans">
@@ -50,106 +53,114 @@ export default function CloudServices() {
 
                 <div className="cs-hero-3 max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-12" {...motionConfig.fadeIn}>
-                        <div className="inline-block px-4 py-1.5 mb-4 border border-blue-500/30 rounded-full bg-blue-500/5 text-blue-600 text-xs font-bold tracking-wider uppercase">
-                            Cloud Services
+                        <div className="inline-block px-4 py-1.5 mb-6 border border-sky-blue/30 rounded-full bg-sky-blue/5 text-sky-blue text-xs font-bold tracking-wider uppercase">
+                            {t('hero.badge')}
                         </div>
-                        <h1 className="font-display text-4xl lg:text-6xl text-navy-blue mb-6">
-                            Transform Your Business with <span className="text-blue-500 italic">Cloud Solutions</span>
+                        <h1 className="font-display text-5xl lg:text-7xl text-navy-blue mb-8 leading-[1.1]">
+                            {t('hero.title')} <br />
+                            <span className="text-sky-blue italic relative inline-block">
+                                {t('hero.titleHighlight')}
+                                <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 300 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 10C50 4 150 4 298 10" stroke="#00AEEF" strokeWidth="4" strokeLinecap="round" />
+                                </svg>
+                            </span>
                         </h1>
-                        <p className="text-lg text-neutral-gray">
-                            Custom cloud strategies tailored to your needs. From migration to optimization, we deliver secure, scalable cloud solutions on AWS, Azure, and Google Cloud.
+                        <p className="text-xl text-neutral-gray mb-10 max-w-2xl leading-relaxed">
+                            {t('hero.description')}
                         </p>
                     </div>
 
-                    {/* Contact Card */}
-                    <div {...withDelay(motionConfig.slideUp, 0.3)} className="max-w-2xl mx-auto bg-white rounded-3xl shadow-xl border border-blue-500/10 p-8">
-                        <div className="flex flex-col md:flex-row items-center gap-6">
-                            <div className="w-24 h-24 rounded-full bg-teal-500/10 flex items-center justify-center text-teal-600 font-bold text-2xl">
-                                DV
-                            </div>
-                            <div className="text-center md:text-left">
-                                <h3 className="font-bold text-navy-blue text-lg">David Vu</h3>
-                                <p className="text-sky-blue text-sm font-medium">CEO & Gotik Founder</p>
-                            </div>
-                            <div className="ml-auto">
-                                <a href="#contact" className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-navy-blue rounded-lg hover:bg-navy-blue/90 transition-all duration-300">
-                                    Free Consultation
-                                </a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </section>
 
             {/* Cloud Solutions Grid */}
             <section className="py-24 bg-white" id="solutions">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <div className="text-center max-w-3xl mx-auto mb-16" {...motionConfig.fadeIn}>
-                        <h2 className="font-display text-4xl lg:text-5xl text-navy-blue mb-6">
-                            Comprehensive Cloud Solutions
-                        </h2>
-                        <p className="text-lg text-neutral-gray">
-                            Whether cloud-first or hybrid – we design the perfect cloud strategy for your business requirements.
+                    <div className="text-center max-w-3xl mx-auto mb-20" {...motionConfig.fadeIn}>
+                        <h2 className="font-display text-4xl lg:text-5xl text-navy-blue mb-6">{t('solutions.title')}</h2>
+                        <p className="text-lg text-neutral-gray italic">
+                            {t('solutions.description')}
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <div {...motionConfig.slideUp} className="group bg-slate-50 rounded-3xl p-6 border border-sky-blue/10 hover:scale-[1.02] hover:shadow-xl transition-all duration-300">
-                            <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-sky-blue mb-4 group-hover:bg-sky-blue group-hover:text-white transition-colors duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {/* Strategy */}
+                        <div {...motionConfig.slideUp} className="bg-white p-8 rounded-3xl border border-sky-blue/10 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                            <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-sky-blue mb-6 group-hover:bg-sky-blue group-hover:text-white transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
                             </div>
-                            <h3 className="font-display text-lg text-navy-blue mb-3">Cloud Strategy & Consulting</h3>
-                            <p className="text-sm text-neutral-gray mb-4">Custom cloud strategies tailored to your business goals with cloud-first or hybrid approaches.</p>
+                            <h3 className="text-xl font-bold text-navy-blue mb-4">{t('solutions.items.strategy.title')}</h3>
+                            <p className="text-neutral-gray leading-relaxed">
+                                {t('solutions.items.strategy.description')}
+                            </p>
                         </div>
 
-                        <div {...motionConfig.slideUp} className="group bg-slate-50 rounded-3xl p-6 border border-sky-blue/10 hover:scale-[1.02] hover:shadow-xl transition-all duration-300">
-                            <div className="w-12 h-12 rounded-xl bg-purple-50 flex items-center justify-center text-purple-600 mb-4 group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" x2="12" y1="2" y2="15"/></svg>
+                        {/* Migration */}
+                        <div {...withDelay(motionConfig.slideUp, 0.1)} className="bg-white p-8 rounded-3xl border border-sky-blue/10 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                            <div className="w-14 h-14 bg-purple-50 rounded-2xl flex items-center justify-center text-purple-600 mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" /></svg>
                             </div>
-                            <h3 className="font-display text-lg text-navy-blue mb-3">Cloud Migration</h3>
-                            <p className="text-sm text-neutral-gray mb-4">Seamless migration of applications and data to AWS, Azure, or Google Cloud platforms.</p>
+                            <h3 className="text-xl font-bold text-navy-blue mb-4">{t('solutions.items.migration.title')}</h3>
+                            <p className="text-neutral-gray leading-relaxed">
+                                {t('solutions.items.migration.description')}
+                            </p>
                         </div>
 
-                        <div {...motionConfig.slideUp} className="group bg-slate-50 rounded-3xl p-6 border border-sky-blue/10 hover:scale-[1.02] hover:shadow-xl transition-all duration-300">
-                            <div className="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center text-green-600 mb-4 group-hover:bg-green-600 group-hover:text-white transition-colors duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="7.5 4.21 12 6.81 16.5 4.21"/></svg>
+                        {/* Native */}
+                        <div {...withDelay(motionConfig.slideUp, 0.2)} className="bg-white p-8 rounded-3xl border border-sky-blue/10 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                            <div className="w-14 h-14 bg-teal-50 rounded-2xl flex items-center justify-center text-teal-600 mb-6 group-hover:bg-teal-600 group-hover:text-white transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
                             </div>
-                            <h3 className="font-display text-lg text-navy-blue mb-3">Cloud-Native Development</h3>
-                            <p className="text-sm text-neutral-gray mb-4">Build applications designed specifically for cloud platforms with microservices and containers.</p>
+                            <h3 className="text-xl font-bold text-navy-blue mb-4">{t('solutions.items.native.title')}</h3>
+                            <p className="text-neutral-gray leading-relaxed">
+                                {t('solutions.items.native.description')}
+                            </p>
                         </div>
 
-                        <div {...motionConfig.slideUp} className="group bg-slate-50 rounded-3xl p-6 border border-sky-blue/10 hover:scale-[1.02] hover:shadow-xl transition-all duration-300">
-                            <div className="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 mb-4 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                        {/* Multi-Cloud */}
+                        <div {...withDelay(motionConfig.slideUp, 0.3)} className="bg-white p-8 rounded-3xl border border-sky-blue/10 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                            <div className="w-14 h-14 bg-orange-50 rounded-2xl flex items-center justify-center text-orange-600 mb-6 group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
                             </div>
-                            <h3 className="font-display text-lg text-navy-blue mb-3">Multi-Cloud Strategy</h3>
-                            <p className="text-sm text-neutral-gray mb-4">Reduce vendor lock-in with multi-cloud strategies and open standards across platforms.</p>
+                            <h3 className="text-xl font-bold text-navy-blue mb-4">{t('solutions.items.multiCloud.title')}</h3>
+                            <p className="text-neutral-gray leading-relaxed">
+                                {t('solutions.items.multiCloud.description')}
+                            </p>
                         </div>
 
-                        <div {...motionConfig.slideUp} className="group bg-slate-50 rounded-3xl p-6 border border-sky-blue/10 hover:scale-[1.02] hover:shadow-xl transition-all duration-300">
-                            <div className="w-12 h-12 rounded-xl bg-orange-50 flex items-center justify-center text-orange-600 mb-4 group-hover:bg-orange-600 group-hover:text-white transition-colors duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        {/* Security */}
+                        <div {...withDelay(motionConfig.slideUp, 0.4)} className="bg-white p-8 rounded-3xl border border-sky-blue/10 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                            <div className="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center text-red-600 mb-6 group-hover:bg-red-600 group-hover:text-white transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
                             </div>
-                            <h3 className="font-display text-lg text-navy-blue mb-3">Cloud Security</h3>
-                            <p className="text-sm text-neutral-gray mb-4">Enterprise-grade security ensuring the highest standards for your cloud infrastructure.</p>
+                            <h3 className="text-xl font-bold text-navy-blue mb-4">{t('solutions.items.security.title')}</h3>
+                            <p className="text-neutral-gray leading-relaxed">
+                                {t('solutions.items.security.description')}
+                            </p>
                         </div>
 
-                        <div {...motionConfig.slideUp} className="group bg-slate-50 rounded-3xl p-6 border border-sky-blue/10 hover:scale-[1.02] hover:shadow-xl transition-all duration-300">
-                            <div className="w-12 h-12 rounded-xl bg-rose-50 flex items-center justify-center text-rose-600 mb-4 group-hover:bg-rose-600 group-hover:text-white transition-colors duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        {/* Optimization */}
+                        <div {...withDelay(motionConfig.slideUp, 0.5)} className="bg-white p-8 rounded-3xl border border-sky-blue/10 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                            <div className="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center text-green-600 mb-6 group-hover:bg-green-600 group-hover:text-white transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                             </div>
-                            <h3 className="font-display text-lg text-navy-blue mb-3">Cloud Optimization</h3>
-                            <p className="text-sm text-neutral-gray mb-4">Cost optimization and performance tuning to maximize your cloud ROI.</p>
+                            <h3 className="text-xl font-bold text-navy-blue mb-4">{t('solutions.items.optimization.title')}</h3>
+                            <p className="text-neutral-gray leading-relaxed">
+                                {t('solutions.items.optimization.description')}
+                            </p>
                         </div>
 
-                        <div {...motionConfig.slideUp} className="group bg-slate-50 rounded-3xl p-6 border border-sky-blue/10 hover:scale-[1.02] hover:shadow-xl transition-all duration-300 md:col-span-2 lg:col-span-2">
-                            <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 rounded-xl bg-teal-50 flex items-center justify-center text-teal-600 mb-4 group-hover:bg-teal-600 group-hover:text-white transition-colors duration-300 flex-shrink-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"/><path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9"/><path d="M12 3v6"/></svg>
+                        {/* Swiss */}
+                        <div {...withDelay(motionConfig.slideUp, 0.6)} className="bg-navy-blue p-8 rounded-3xl shadow-xl transition-all duration-300 group col-span-full mt-8">
+                            <div className="flex flex-col md:flex-row items-center gap-8">
+                                <div className="w-20 h-20 bg-white/10 rounded-2xl flex items-center justify-center text-white mb-6 md:mb-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
                                 </div>
                                 <div>
-                                    <h3 className="font-display text-lg text-navy-blue mb-3">Swiss Data Centers</h3>
-                                    <p className="text-sm text-neutral-gray mb-4">Cloud solutions with data centers in Switzerland for organizations with high security and compliance requirements.</p>
+                                    <h3 className="text-2xl font-bold text-white mb-4">{t('solutions.items.swiss.title')}</h3>
+                                    <p className="text-white/70 leading-relaxed max-w-3xl">
+                                        {t('solutions.items.swiss.description')}
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -161,88 +172,41 @@ export default function CloudServices() {
             <section className="py-24 bg-slate-50" id="platforms">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="text-center max-w-3xl mx-auto mb-16" {...motionConfig.fadeIn}>
-                        <h2 className="font-display text-4xl lg:text-5xl text-navy-blue mb-6">
-                            Multi-Cloud Expertise
-                        </h2>
+                        <h2 className="font-display text-4xl lg:text-5xl text-navy-blue mb-6">{t('platforms.title')}</h2>
                         <p className="text-lg text-neutral-gray">
-                            We work with all major cloud platforms to deliver the best solution for your needs.
+                            {t('platforms.description')}
                         </p>
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-8">
-                        <div {...motionConfig.slideUp} className="cs-benefit-slideLeft bg-white rounded-3xl p-8 shadow-lg border border-sky-blue/10">
-                            <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white font-bold text-xl mb-6">
-                                AWS
+                        <div {...motionConfig.slideUp} className="bg-white p-8 rounded-3xl border border-sky-blue/10 shadow-sm hover:shadow-xl transition-all duration-300 text-center">
+                            <div className="w-20 h-20 bg-orange-50 rounded-2xl flex items-center justify-center text-orange-600 mx-auto mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
                             </div>
-                            <h3 className="font-display text-2xl text-navy-blue mb-4">Amazon Web Services</h3>
-                            <ul className="space-y-3">
-                                <li className="flex items-start gap-2 text-sm text-neutral-gray">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-500 mt-0.5 flex-shrink-0"><polyline points="20 6 9 17 4 12"/></svg>
-                                    <span>EC2, Lambda, ECS/EKS</span>
-                                </li>
-                                <li className="flex items-start gap-2 text-sm text-neutral-gray">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-500 mt-0.5 flex-shrink-0"><polyline points="20 6 9 17 4 12"/></svg>
-                                    <span>S3, RDS, DynamoDB</span>
-                                </li>
-                                <li className="flex items-start gap-2 text-sm text-neutral-gray">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-500 mt-0.5 flex-shrink-0"><polyline points="20 6 9 17 4 12"/></svg>
-                                    <span>CloudFormation & CDK</span>
-                                </li>
-                                <li className="flex items-start gap-2 text-sm text-neutral-gray">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-500 mt-0.5 flex-shrink-0"><polyline points="20 6 9 17 4 12"/></svg>
-                                    <span>AWS IoT & AI/ML services</span>
-                                </li>
-                            </ul>
+                            <h3 className="text-xl font-bold text-navy-blue mb-4">{t('platforms.aws.title')}</h3>
+                            <p className="text-neutral-gray text-sm leading-relaxed">
+                                {t('platforms.aws.description')}
+                            </p>
                         </div>
 
-                        <div {...motionConfig.slideUp} className="bg-white rounded-3xl p-8 shadow-lg border border-sky-blue/10">
-                            <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-bold text-xl mb-6">
-                                Azure
+                        <div {...withDelay(motionConfig.slideUp, 0.1)} className="bg-white p-8 rounded-3xl border border-sky-blue/10 shadow-sm hover:shadow-xl transition-all duration-300 text-center">
+                            <div className="w-20 h-20 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 mx-auto mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
                             </div>
-                            <h3 className="font-display text-2xl text-navy-blue mb-4">Microsoft Azure</h3>
-                            <ul className="space-y-3">
-                                <li className="flex items-start gap-2 text-sm text-neutral-gray">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-500 mt-0.5 flex-shrink-0"><polyline points="20 6 9 17 4 12"/></svg>
-                                    <span>App Service, Functions, AKS</span>
-                                </li>
-                                <li className="flex items-start gap-2 text-sm text-neutral-gray">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-500 mt-0.5 flex-shrink-0"><polyline points="20 6 9 17 4 12"/></svg>
-                                    <span>Azure SQL, Cosmos DB</span>
-                                </li>
-                                <li className="flex items-start gap-2 text-sm text-neutral-gray">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-500 mt-0.5 flex-shrink-0"><polyline points="20 6 9 17 4 12"/></svg>
-                                    <span>Azure DevOps & ARM</span>
-                                </li>
-                                <li className="flex items-start gap-2 text-sm text-neutral-gray">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-500 mt-0.5 flex-shrink-0"><polyline points="20 6 9 17 4 12"/></svg>
-                                    <span>Azure AI & Cognitive Services</span>
-                                </li>
-                            </ul>
+                            <h3 className="text-xl font-bold text-navy-blue mb-4">{t('platforms.azure.title')}</h3>
+                            <p className="text-neutral-gray text-sm leading-relaxed">
+                                {t('platforms.azure.description')}
+                            </p>
                         </div>
 
-                        <div {...motionConfig.slideUp} className="cs-benefit-slideRight bg-white rounded-3xl p-8 shadow-lg border border-sky-blue/10">
-                            <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-red-500 to-yellow-500 flex items-center justify-center text-white font-bold text-xl mb-6">
-                                GCP
+                        <div {...withDelay(motionConfig.slideUp, 0.2)} className="bg-white p-8 rounded-3xl border border-sky-blue/10 shadow-sm hover:shadow-xl transition-all duration-300 text-center">
+                            <div className="w-20 h-20 bg-red-50 rounded-2xl flex items-center justify-center text-red-600 mx-auto mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
                             </div>
-                            <h3 className="font-display text-2xl text-navy-blue mb-4">Google Cloud Platform</h3>
-                            <ul className="space-y-3">
-                                <li className="flex items-start gap-2 text-sm text-neutral-gray">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-500 mt-0.5 flex-shrink-0"><polyline points="20 6 9 17 4 12"/></svg>
-                                    <span>Compute Engine, Cloud Run, GKE</span>
-                                </li>
-                                <li className="flex items-start gap-2 text-sm text-neutral-gray">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-500 mt-0.5 flex-shrink-0"><polyline points="20 6 9 17 4 12"/></svg>
-                                    <span>Cloud Storage, BigQuery</span>
-                                </li>
-                                <li className="flex items-start gap-2 text-sm text-neutral-gray">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-500 mt-0.5 flex-shrink-0"><polyline points="20 6 9 17 4 12"/></svg>
-                                    <span>Cloud Build & Deployment Manager</span>
-                                </li>
-                                <li className="flex items-start gap-2 text-sm text-neutral-gray">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-500 mt-0.5 flex-shrink-0"><polyline points="20 6 9 17 4 12"/></svg>
-                                    <span>Vertex AI & ML services</span>
-                                </li>
-                            </ul>
+                            <h3 className="text-xl font-bold text-navy-blue mb-4">{t('platforms.gcp.title')}</h3>
+                            <p className="text-neutral-gray text-sm leading-relaxed">
+                                {t('platforms.gcp.description')}
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -251,50 +215,33 @@ export default function CloudServices() {
             {/* Our Approach Section */}
             <section className="py-24 bg-white" id="approach">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <div className="text-center max-w-3xl mx-auto mb-16" {...motionConfig.fadeIn}>
-                        <h2 className="font-display text-4xl lg:text-5xl text-navy-blue mb-6">
-                            Our Cloud Approach
-                        </h2>
-                        <p className="text-lg text-neutral-gray">
-                            Strategic planning, seamless migration, and continuous optimization for long-term cloud success.
+                    <div className="text-center max-w-3xl mx-auto mb-20" {...motionConfig.fadeIn}>
+                        <h2 className="font-display text-4xl lg:text-5xl text-navy-blue mb-6">{t('approach.title')}</h2>
+                        <p className="text-lg text-neutral-gray leading-relaxed">
+                            {t('approach.description')}
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-3 gap-8">
-                        <div {...motionConfig.slideUp} className="relative bg-gradient-to-b from-slate-50 to-white rounded-3xl p-8 border border-sky-blue/10">
-                            <div className="absolute -top-4 left-8 w-12 h-12 rounded-full bg-blue-500 text-white font-display font-bold text-xl flex items-center justify-center shadow-lg">
-                                1
-                            </div>
-                            <h3 className="font-display text-2xl text-navy-blue mb-4 mt-4">Strategy & Assessment</h3>
-                            <p className="text-sky-blue font-semibold text-sm mb-4">Define your cloud vision</p>
-                            <p className="text-neutral-gray leading-relaxed">
-                                We analyze your current infrastructure, assess workloads, and develop a tailored cloud strategy aligned with your business objectives.
-                            </p>
-                        </div>
+                    <div className="relative">
+                        {/* Connection Line */}
+                        <div className="hidden lg:block absolute top-1/2 left-0 w-full h-0.5 bg-sky-blue/20 -translate-y-1/2"></div>
 
-                        <div {...motionConfig.slideUp} className="relative bg-gradient-to-b from-slate-50 to-white rounded-3xl p-8 border border-sky-blue/10">
-                            <div className="absolute -top-4 left-8 w-12 h-12 rounded-full bg-blue-500 text-white font-display font-bold text-xl flex items-center justify-center shadow-lg">
-                                2
-                            </div>
-                            <h3 className="font-display text-2xl text-navy-blue mb-4 mt-4">Migration & Implementation</h3>
-                            <p className="text-sky-blue font-semibold text-sm mb-4">Seamless transition to cloud</p>
-                            <p className="text-neutral-gray leading-relaxed">
-                                Execute migration with minimal disruption using proven methodologies, ensuring security and performance throughout the process.
-                            </p>
-                        </div>
-
-                        <div {...motionConfig.slideUp} className="relative bg-gradient-to-b from-slate-50 to-white rounded-3xl p-8 border border-sky-blue/10">
-                            <div className="absolute -top-4 left-8 w-12 h-12 rounded-full bg-blue-500 text-white font-display font-bold text-xl flex items-center justify-center shadow-lg">
-                                3
-                            </div>
-                            <h3 className="font-display text-2xl text-navy-blue mb-4 mt-4">Optimization & Support</h3>
-                            <p className="text-sky-blue font-semibold text-sm mb-4">Continuous improvement</p>
-                            <div className="space-y-2">
-                                <p className="text-neutral-gray text-sm">• Cost optimization & resource management</p>
-                                <p className="text-neutral-gray text-sm">• Performance monitoring & tuning</p>
-                                <p className="text-neutral-gray text-sm">• Security audits & compliance</p>
-                                <p className="text-neutral-gray text-sm">• 24/7 support & incident response</p>
-                            </div>
+                        <div className="grid lg:grid-cols-3 gap-12 relative z-10">
+                            {[
+                                { step: t('approach.steps.strategy.step'), title: t('approach.steps.strategy.title'), desc: t('approach.steps.strategy.description'), color: "bg-blue-600" },
+                                { step: t('approach.steps.migration.step'), title: t('approach.steps.migration.title'), desc: t('approach.steps.migration.description'), color: "bg-sky-blue" },
+                                { step: t('approach.steps.optimization.step'), title: t('approach.steps.optimization.title'), desc: t('approach.steps.optimization.description'), color: "bg-teal-500" }
+                            ].map((item, index) => (
+                                <div key={index} {...withDelay(motionConfig.slideUp, index * 0.1)} className="bg-white p-8 rounded-3xl border border-sky-blue/10 shadow-sm hover:shadow-xl transition-all duration-300">
+                                    <div className={`w-12 h-12 ${item.color} text-white rounded-full flex items-center justify-center font-bold mb-6 mx-auto lg:mx-0 shadow-lg`}>
+                                        {item.step}
+                                    </div>
+                                    <h3 className="text-xl font-bold text-navy-blue mb-4">{item.title}</h3>
+                                    <p className="text-neutral-gray leading-relaxed">
+                                        {item.desc}
+                                    </p>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -303,54 +250,30 @@ export default function CloudServices() {
             {/* Benefits Section */}
             <section className="py-24 bg-navy-blue text-white" id="benefits">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <div className="grid lg:grid-cols-2 gap-16 items-center">
-                        <div {...motionConfig.slideLeft}>
-                            <h2 className="font-display text-4xl lg:text-5xl mb-6">
-                                Why Choose Gotik for Cloud Services?
-                            </h2>
-                            <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-                                Comprehensive cloud expertise across all major platforms. We deliver secure, scalable solutions that drive business value and innovation.
-                            </p>
-                            <ul className="space-y-4">
-                                <li className="flex items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-400 mr-3"><polyline points="20 6 9 17 4 12"/></svg>
-                                    <span className="text-gray-200">Multi-cloud expertise (AWS, Azure, GCP)</span>
-                                </li>
-                                <li className="flex items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-400 mr-3"><polyline points="20 6 9 17 4 12"/></svg>
-                                    <span className="text-gray-200">Enterprise-grade security and compliance</span>
-                                </li>
-                                <li className="flex items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-400 mr-3"><polyline points="20 6 9 17 4 12"/></svg>
-                                    <span className="text-gray-200">Cost optimization and resource efficiency</span>
-                                </li>
-                                <li className="flex items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-400 mr-3"><polyline points="20 6 9 17 4 12"/></svg>
-                                    <span className="text-gray-200">Swiss data center options for high security</span>
-                                </li>
-                            </ul>
-                        </div>
+                    <div className="text-center max-w-3xl mx-auto mb-20" {...motionConfig.fadeIn}>
+                        <h2 className="font-display text-4xl lg:text-5xl text-navy-blue mb-6">{t('whyChoose.title')}</h2>
+                        <p className="text-lg text-neutral-gray leading-relaxed">
+                            {t('whyChoose.description')}
+                        </p>
+                    </div>
 
-                        <div {...motionConfig.slideRight} className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20">
-                            <div className="grid grid-cols-2 gap-6 text-center">
-                                <div className="bg-white/10 rounded-2xl p-6">
-                                    <div className="text-4xl font-display font-bold text-blue-400 mb-2">150+</div>
-                                    <p className="text-sm text-gray-300">Cloud Migrations</p>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        {[
+                            { title: t('whyChoose.items.certified.title'), desc: t('whyChoose.items.certified.description'), icon: <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>, color: "text-blue-600", bg: "bg-blue-50" },
+                            { title: t('whyChoose.items.custom.title'), desc: t('whyChoose.items.custom.description'), icon: <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" /></svg>, color: "text-sky-blue", bg: "bg-sky-blue/10" },
+                            { title: t('whyChoose.items.security.title'), desc: t('whyChoose.items.security.description'), icon: <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z" /></svg>, color: "text-red-500", bg: "bg-red-50" },
+                            { title: t('whyChoose.items.support.title'), desc: t('whyChoose.items.support.description'), icon: <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.172l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" /></svg>, color: "text-teal-600", bg: "bg-teal-50" }
+                        ].map((item, index) => (
+                            <div key={index} {...withDelay(motionConfig.scaleIn, index * 0.1)} className="p-8 rounded-3xl bg-white border border-sky-blue/10 text-center transition-all hover:shadow-xl group">
+                                <div className={`w-16 h-16 ${item.bg} ${item.color} rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform`}>
+                                    {item.icon}
                                 </div>
-                                <div className="bg-white/10 rounded-2xl p-6">
-                                    <div className="text-4xl font-display font-bold text-blue-400 mb-2">99.99%</div>
-                                    <p className="text-sm text-gray-300">Uptime SLA</p>
-                                </div>
-                                <div className="bg-white/10 rounded-2xl p-6">
-                                    <div className="text-4xl font-display font-bold text-blue-400 mb-2">40%</div>
-                                    <p className="text-sm text-gray-300">Avg. Cost Savings</p>
-                                </div>
-                                <div className="bg-white/10 rounded-2xl p-6">
-                                    <div className="text-4xl font-display font-bold text-blue-400 mb-2">24/7</div>
-                                    <p className="text-sm text-gray-300">Support Available</p>
-                                </div>
+                                <h3 className="text-lg font-bold text-navy-blue mb-4">{item.title}</h3>
+                                <p className="text-neutral-gray text-sm leading-relaxed">
+                                    {item.desc}
+                                </p>
                             </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </section>
@@ -359,39 +282,16 @@ export default function CloudServices() {
             <section className="py-24 bg-white" id="faq">
                 <div className="max-w-4xl mx-auto px-6 lg:px-8">
                     <div className="text-center mb-16" {...motionConfig.fadeIn}>
-                        <h2 className="font-display text-4xl lg:text-5xl text-navy-blue mb-6">
-                            Frequently Asked Questions
-                        </h2>
+                        <h2 className="font-display text-4xl lg:text-5xl text-navy-blue mb-6">{t('faq.title')}</h2>
                     </div>
 
                     <div className="space-y-6">
-                        <div {...motionConfig.slideUp} className="bg-slate-50 rounded-2xl p-8 border border-sky-blue/10">
-                            <h3 className="font-display text-xl text-navy-blue mb-4">What are the benefits of cloud migration?</h3>
-                            <p className="text-neutral-gray leading-relaxed">
-                                Cloud migration offers numerous benefits including reduced infrastructure costs through pay-as-you-go pricing, improved scalability to handle traffic spikes, enhanced disaster recovery capabilities, automatic updates and maintenance, global reach with multiple data centers, and increased innovation through access to cutting-edge services. Companies typically see 30-40% cost savings in the long term while gaining significant agility and flexibility.
-                            </p>
-                        </div>
-
-                        <div {...motionConfig.slideUp} className="bg-slate-50 rounded-2xl p-8 border border-sky-blue/10">
-                            <h3 className="font-display text-xl text-navy-blue mb-4">How do you ensure cloud security?</h3>
-                            <p className="text-neutral-gray leading-relaxed">
-                                We implement comprehensive security measures including identity and access management (IAM), data encryption at rest and in transit, network security with VPCs and firewalls, regular security audits and compliance checks, automated backup and disaster recovery, security monitoring and incident response, and compliance with standards like ISO 27001, SOC 2, and GDPR. For Swiss clients, we can utilize data centers in Switzerland to meet stringent local requirements.
-                            </p>
-                        </div>
-
-                        <div {...motionConfig.slideUp} className="bg-slate-50 rounded-2xl p-8 border border-sky-blue/10">
-                            <h3 className="font-display text-xl text-navy-blue mb-4">Should I use single cloud or multi-cloud?</h3>
-                            <p className="text-neutral-gray leading-relaxed">
-                                The choice depends on your requirements. Single cloud offers simplicity, easier management, and deeper integration with platform services. Multi-cloud provides vendor independence, reduced lock-in risk, the ability to use best-of-breed services from each provider, and improved disaster recovery across cloud providers. We help you evaluate factors like existing infrastructure, specific service requirements, compliance needs, and team expertise to determine the best approach. Multi-cloud strategies require careful planning with open standards and proper architecture.
-                            </p>
-                        </div>
-
-                        <div {...motionConfig.slideUp} className="bg-slate-50 rounded-2xl p-8 border border-sky-blue/10">
-                            <h3 className="font-display text-xl text-navy-blue mb-4">How long does cloud migration take?</h3>
-                            <p className="text-neutral-gray leading-relaxed">
-                                Migration timelines vary based on complexity and scope. A simple application migration might take 4-8 weeks, while enterprise-wide migrations typically require 3-12 months. We follow a phased approach: assessment and planning (2-4 weeks), pilot migration (4-6 weeks), incremental migration of remaining workloads, and optimization. This approach minimizes disruption and allows you to realize benefits early while managing risk effectively. We work closely with your team to develop a realistic timeline based on your specific requirements.
-                            </p>
-                        </div>
+                        {(t.raw('faq.items') as any[]).map((item, index) => (
+                            <div key={index} {...withDelay(motionConfig.slideUp, index * 0.1)} className="bg-slate-50 p-8 rounded-3xl border border-sky-blue/10 hover:bg-white hover:shadow-lg transition-all duration-300">
+                                <h3 className="text-lg font-bold text-navy-blue mb-3">{item.question}</h3>
+                                <p className="text-neutral-gray leading-relaxed">{item.answer}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>

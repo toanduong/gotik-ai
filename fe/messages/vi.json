@@ -347,7 +347,7 @@
         "badge": "Kỹ Thuật Phần Mềm",
         "title": "Chuyển Đổi Ý Tưởng Của Bạn Thành",
         "titleHighlight": "Phần Mềm Xuất Sắc",
-        "description": "Mô tả mới",
+        "description": "Chúng tôi biến ý tưởng của bạn thành các giải pháp phần mềm xuất sắc. Hãy tận hưởng lợi ích từ chuyên môn và những hiểu biết về phương pháp mới nhất của chúng tôi.",
         "consultant": {
           "name": "David Vu",
           "role": "CEO & Người Sáng Lập Gotik",
@@ -465,80 +465,1864 @@
         "title": "Khai Thác Tiềm Năng Của",
         "titleHighlight": "Hiện Đại Hóa Phần Mềm",
         "description": "Hiện đại hóa phần mềm hứa hẹn tiềm năng to lớn: từ tăng hiệu suất, cải thiện bảo mật và chất lượng, đến phát triển các ý tưởng kinh doanh mới.",
-        "consultant": { "name": "David Vu", "role": "CEO & Người Sáng Lập Gotik", "cta": "Tư Vấn Miễn Phí" }
+        "consultant": {
+          "name": "David Vu",
+          "role": "CEO & Người Sáng Lập Gotik",
+          "cta": "Tư Vấn Miễn Phí"
+        }
       },
       "benefits": {
         "title": "Lợi Ích Của Bạn Thông Qua Hiện Đại Hóa Phần Mềm",
         "description": "Làm cho phần mềm của bạn phù hợp với tương lai. Các phương pháp mới mở ra cánh cửa để hợp lý hóa đáng kể các quy trình kinh doanh và phát triển các dịch vụ mới.",
         "items": {
-          "potential": { "title": "Tiềm Năng To Lớn", "description": "Tăng hiệu suất, bảo mật và chất lượng phần mềm của bạn, và phát triển các ý tưởng kinh doanh mới. Di chuyển hệ thống cũ lên đám mây, duy trì và phát triển thêm các ứng dụng hiện có, và tích hợp ứng dụng di động." },
-          "efficient": { "title": "Quy Trình Kinh Doanh Hiệu Quả", "description": "Sử dụng các phương pháp hiện đại để tối ưu hóa quy trình kinh doanh của bạn và tạo ra các dịch vụ mới thúc đẩy hiệu quả và đổi mới." },
-          "adaptive": { "title": "Phần Mềm Thích Ứng", "description": "Hưởng lợi từ chuyên môn của chúng tôi để hiện đại hóa phần mềm của bạn để nó có thể thích ứng linh hoạt với các yêu cầu kinh doanh và người dùng thay đổi." },
-          "futureProof": { "title": "Giải Pháp Hướng Tới Tương Lai", "description": "Chuẩn bị cho tương lai và tránh các bản vá tốn kém thông qua hiện đại hóa có mục tiêu hoặc phát triển lại hoàn toàn phần mềm của bạn." },
-          "quality": { "title": "Chất Lượng và Ổn Định", "description": "Giải quyết các vấn đề chất lượng và ổn định hiện có và cập nhật hướng dẫn người dùng phù hợp với tiêu chuẩn UX hiện đại." }
+          "potential": {
+            "title": "Tiềm Năng To Lớn",
+            "description": "Tăng hiệu suất, bảo mật và chất lượng phần mềm của bạn, và phát triển các ý tưởng kinh doanh mới. Di chuyển hệ thống cũ lên đám mây, duy trì và phát triển thêm các ứng dụng hiện có, và tích hợp ứng dụng di động."
+          },
+          "efficient": {
+            "title": "Quy Trình Kinh Doanh Hiệu Quả",
+            "description": "Sử dụng các phương pháp hiện đại để tối ưu hóa quy trình kinh doanh của bạn và tạo ra các dịch vụ mới thúc đẩy hiệu quả và đổi mới."
+          },
+          "adaptive": {
+            "title": "Phần Mềm Thích Ứng",
+            "description": "Hưởng lợi từ chuyên môn của chúng tôi để hiện đại hóa phần mềm của bạn để nó có thể thích ứng linh hoạt với các yêu cầu kinh doanh và người dùng thay đổi."
+          },
+          "futureProof": {
+            "title": "Giải Pháp Hướng Tới Tương Lai",
+            "description": "Chuẩn bị cho tương lai và tránh các bản vá tốn kém thông qua hiện đại hóa có mục tiêu hoặc phát triển lại hoàn toàn phần mềm của bạn."
+          },
+          "quality": {
+            "title": "Chất Lượng và Ổn Định",
+            "description": "Giải quyết các vấn đề chất lượng và ổn định hiện có và cập nhật hướng dẫn người dùng phù hợp với tiêu chuẩn UX hiện đại."
+          }
         }
+      }
+    },
+    "aiConsulting": {
+      "hero": {
+        "badge": "Tư Vấn AI",
+        "title": "Tư Vấn AI cho",
+        "titleHighlight": "Công Ty Của Bạn",
+        "description": "Khám phá thế giới tư vấn AI cá nhân hóa. Các agent AI tiên tiến của chúng tôi mở ra những chân trời mới cho quá trình chuyển đổi số của công ty bạn.",
+        "consultantName": "David Vu",
+        "consultantRole": "CEO & Người Sáng Lập Gotik",
+        "consultation": "Tư Vấn Miễn Phí"
+      },
+      "benefits": {
+        "title": "Tại Sao Tư Vấn AI Của Chúng Tôi Giúp Công Ty Bạn Tiến Xa",
+        "items": {
+          "optimize": {
+            "title": "Tối Ưu Hóa Quy Trình Ra Quyết Định Dựa Trên Dữ Liệu",
+            "description": "Trong thế giới kinh doanh ngày nay, bạn phải đối mặt với lượng dữ liệu khổng lồ để đưa ra các quyết định sáng suốt. Các chuyên gia tư vấn AI của chúng tôi giúp bạn phân tích dữ liệu này một cách hiệu quả với các agent AI và thu được những thông tin chi tiết giá trị mà không cần dành hàng giờ để xem qua các bảng tính."
+          },
+          "knowledge": {
+            "title": "Đơn Giản Hóa Quản Lý Kiến Thức",
+            "description": "Trong các công ty lớn, việc tìm kiếm thông tin trong cơ sở kiến thức thường gặp khó khăn. Sử dụng các agent AI để giúp việc này trở nên dễ dàng hơn bằng cách truy xuất thông tin liên quan nhanh chóng và chính xác."
+          },
+          "automate": {
+            "title": "Tự Động Hóa Nhiệm Vụ Lặp Đi Lặp Lại",
+            "description": "Xử lý các nhiệm vụ hàng ngày tẻ nhạt. Các agent AI cho phép bạn tự động hóa các nhiệm vụ như vậy để đội ngũ của bạn có thêm thời gian cho các dự án sáng tạo."
+          }
+        }
+      },
+      "services": {
+        "title": "Tổng Quan Dịch Vụ Tư Vấn AI Của Chúng Tôi",
+        "description": "Tăng hiệu quả, bảo vệ dữ liệu và mở khóa toàn bộ tiềm năng của trí tuệ nhân tạo với chiến lược AI được phát triển riêng và AI Hub.",
+        "items": {
+          "innovation": {
+            "title": "Workshop Sáng Tạo",
+            "description": "Cùng nhau, chúng ta phát triển các ý tưởng và trường hợp kinh doanh cho việc sử dụng AI sinh tạo trong công ty của bạn thông qua Workshop Sáng Tạo AI Sinh Tạo."
+          },
+          "solutions": {
+            "title": "Giải Pháp AI Cá Nhân",
+            "description": "Chúng tôi phát triển các agent AI cá nhân giúp bạn tự động hóa các nhiệm vụ định kỳ, phân tích dữ liệu phức tạp và đơn giản hóa việc quản lý kiến thức trong công ty bạn."
+          },
+          "hub": {
+            "title": "AI Hub",
+            "description": "Đặt nền móng cho việc sử dụng AI trong tổ chức của bạn với AI Hub. Một nền tảng tất cả trong một an toàn và có thể cấu hình linh hoạt theo nhu cầu của bạn."
+          }
+        }
+      },
+      "aiHub": {
+        "badge": "Nền Tảng AI",
+        "title": "AI Hub",
+        "description": "Gotik AI Hub là một nền tảng AI an toàn và linh hoạt, cho phép các công ty dễ dàng sử dụng AI sinh tạo. Với các agent AI có thể cấu hình sẵn và tùy chỉnh, bạn tăng hiệu quả và bảo vệ dữ liệu của mình.",
+        "features": {
+          "configurable": {
+            "title": "Cấu Hình Linh Hoạt",
+            "description": "Mở rộng với các agent AI riêng lẻ và thư viện prompt phù hợp với nhu cầu của bạn."
+          },
+          "protection": {
+            "title": "Bảo Mật Dữ Liệu Toàn Diện",
+            "description": "Dữ liệu của bạn luôn nằm trong tầm tay an toàn khi sử dụng Azure Cloud riêng của bạn."
+          },
+          "llm": {
+            "title": "Chọn LLM Mong Muốn",
+            "description": "Nền tảng độc lập với mô hình, cho phép bạn tự lựa chọn LLM cơ sở."
+          },
+          "insights": {
+            "title": "Thông Tin Thời Gian Thực",
+            "description": "Bảng điều khiển rõ ràng với số lượng token, chi phí và phân tích sử dụng."
+          }
+        },
+        "imageAlt": "Gotik AI Hub",
+        "imageTitle": "Nền Tảng AI An Toàn",
+        "imageSubtitle": "Linh Hoạt. Riêng Tư. Quy Mô."
+      },
+      "workshop": {
+        "badge": "AI Sinh Tạo",
+        "title": "Workshop Sáng Tạo",
+        "description": "Khám phá tiềm năng của AI sinh tạo cho các sản phẩm và dịch vụ mới. Workshop Sáng Tạo AI Sinh Tạo cung cấp cho bạn một định dạng lý tưởng để phát triển các ý tưởng và trường hợp kinh doanh.",
+        "cta": "Yêu Cầu Thông Tin Workshop",
+        "imageAlt": "Workshop Sáng Tạo AI Sinh Tạo",
+        "imageTitle": "Chuyển Đổi Doanh Nghiệp",
+        "imageSubtitle": "Với sự đổi mới từ AI sinh tạo"
+      },
+      "faq": {
+        "title": "Câu Hỏi Thường Gặp Về AI Sinh Tạo",
+        "items": {
+          "whatIs": {
+            "question": "AI sinh tạo là gì?",
+            "answer": "Trí tuệ nhân tạo sinh tạo là một dạng trí tuệ nhân tạo được đào tạo để tạo ra nội dung một cách độc lập như văn bản, hình ảnh, video, âm nhạc hoặc mã nguồn. Nó sử dụng các thuật toán phức tạp để học các mẫu và cấu trúc từ dữ liệu và tạo ra nội dung mới, nguyên bản tương tự như các ví dụ đã học."
+          },
+          "agents": {
+            "question": "Agent AI là gì?",
+            "answer": "Agent AI là các trợ lý ảo có nhiệm vụ mà chúng có thể hoàn thành một cách tự chủ và giống con người nhờ vào 'tính cách', bộ công cụ và 'trí thông minh cơ bản'. Trí thông minh cơ bản, bộ não của agent AI, thường là một Mô Hình Ngôn Ngữ Lớn (LLM), ví dụ như ChatGPT, hoặc một mô hình AI sinh tạo khác."
+          },
+          "apps": {
+            "question": "Có những ứng dụng nào cho agent AI?",
+            "answer": "Chuyển giao kiến thức, hỗ trợ quyết định, tự động hóa quy trình, dịch vụ khách hàng & hỗ trợ, phân tích & nghiên cứu, và tạo mã nguồn là một trong những ứng dụng của agent AI."
+          },
+          "act": {
+            "question": "Đạo luật AI của EU quy định điều gì?",
+            "answer": "Đạo luật AI của EU là một quy định của Liên minh Châu Âu thiết lập các quy tắc thống nhất cho việc sử dụng trí tuệ nhân tạo. Nó nhằm đảm bảo rằng các hệ thống AI an toàn và tôn trọng các quyền cơ bản. Nó dựa trên cách tiếp cận dựa trên rủi ro."
+          }
+        }
+      },
+      "finalCta": {
+        "title": "Sẵn Sàng Xem Agent AI Hoạt Động?",
+        "description": "Hãy cùng thảo luận về cách AI có thể chuyển đổi doanh nghiệp của bạn.",
+        "cta": "Đặt Lịch Tư Vấn AI Miễn Phí Ngay"
+      }
+    },
+    "aiSolutions": {
+      "hero": {
+        "badge": "Bản Đồ Giải Pháp Tương Tác",
+        "title": "Khám Phá",
+        "titleHighlight": "Hệ Sinh Thái AI",
+        "description": "Điều hướng thông qua bộ khả năng trí tuệ nhân tạo toàn diện của chúng tôi. Nhấp vào bất kỳ nút nào để khám phá cách chúng tôi tạo ra giá trị."
+      },
+      "grid": {
+        "growth": {
+          "title": "Tăng Trưởng Kinh Doanh",
+          "description": "Sử dụng AI để tối ưu hóa hành trình khách hàng, tăng khả năng giữ chân và mở rộng quy mô doanh thu.",
+          "cta": "Khám Phá Tăng Trưởng"
+        },
+        "agentic": {
+          "title": "Agentic AI",
+          "description": "Hệ thống đa agent tự chủ."
+        },
+        "rag": {
+          "title": "Knowledge RAG",
+          "description": "Kết nối LLM với dữ liệu doanh nghiệp của bạn để có trí thông minh nhận biết ngữ cảnh và truy xuất chính xác.",
+          "badge": "Cốt Lõi Dữ Liệu"
+        },
+        "automation": {
+          "title": "Tự Động Hóa",
+          "description": "Hợp lý hóa quy trình ERP & CRM."
+        },
+        "cost": {
+          "title": "Tối Ưu Chi Phí",
+          "description": "Tối đa hóa ROI với phân tích vận hành thông minh."
+        },
+        "contact": {
+          "title": "Bắt Đầu Hành Trình",
+          "subtitle": "Tư Vấn & Chiến Lược",
+          "cta": "Liên Hệ"
+        }
+      },
+      "growth": {
+        "title": "Phát Triển Kinh Doanh Với",
+        "titleHighlight": "AI",
+        "description": "Tối ưu hóa mọi điểm chạm trong hành trình khách hàng của bạn. Các giải pháp AI của chúng tôi tiếp nhận dữ liệu để cung cấp thông tin chi tiết có thể hành động, biến các tương tác thụ động thành cơ hội tăng trưởng chủ động.",
+        "points": [
+          "Trải nghiệm khách hàng cá nhân hóa theo quy mô",
+          "Phân tích dự đoán tỷ lệ rời bỏ và chiến lược giữ chân",
+          "Phân loại và nuôi dưỡng khách hàng tiềm năng tự động"
+        ],
+        "stats": {
+          "insights": "Thông Tin Chi Tiết",
+          "actions": "Hành Động",
+          "growth": "Tăng Trưởng"
+        }
+      },
+      "agentic": {
+        "badge": "Kiến Trúc Thế Hệ Mới",
+        "title": "Kiến Trúc Agentic AI",
+        "description": "Triển khai các hệ thống đa agent tự chủ được điều phối bởi một trí thông minh trung tâm để xử lý các tác vụ doanh nghiệp phức tạp, nhiều bước với độ chính xác cao.",
+        "features": {
+          "orchestrator": {
+            "title": "Điều Phối Trung Tâm",
+            "description": "Công cụ định tuyến thông minh và phân tách tác vụ quản lý luồng công việc của agent."
+          },
+          "agents": {
+            "title": "Agent Chuyên Biệt",
+            "description": "Các agent tự chủ được xây dựng cho mục đích viết mã, phân tích, tạo nội dung và hỗ trợ."
+          },
+          "feedback": {
+            "title": "Vòng Lặp Phản Hồi Cộng Tác",
+            "description": "Cơ chế tự điều chỉnh đảm bảo đầu ra đáp ứng các tiêu chuẩn chất lượng trước khi giao hàng cuối cùng."
+          }
+        }
+      },
+      "rag": {
+        "badge": "Tích Hợp Kiến Thức",
+        "title": "Kiến Trúc Agent RAG",
+        "description": "Trao quyền cho AI của bạn với dữ liệu doanh nghiệp. Các hệ thống Retrieval Augmented Generation (RAG) của chúng tôi kết nối LLM an toàn với tài liệu, cơ sở dữ liệu vector và API của bạn để có phản hồi chính xác, nhận biết ngữ cảnh.",
+        "features": {
+          "ingestion": {
+            "title": "Tiếp Nhận Tài Liệu",
+            "description": "PDF, tài liệu Word và wiki được phân tích và chia nhỏ."
+          },
+          "vector": {
+            "title": "Cơ Sở Dữ Liệu Vector",
+            "description": "Chỉ mục ngữ nghĩa để truy xuất mức độ liên quan cực nhanh."
+          },
+          "api": {
+            "title": "Kết Nối API",
+            "description": "Lấy dữ liệu theo thời gian thực từ hệ thống ERP và CRM."
+          }
+        },
+        "status": {
+          "title": "Trạng Thái Hệ Thống Trực Tuyến",
+          "latency": "Độ Trễ",
+          "tokens": "Token",
+          "accuracy": "Độ Chính Xác"
+        }
+      },
+      "workflow": {
+        "title": "Tự Động Hóa Quy Trình",
+        "description": "Tích hợp liền mạch các agent AI vào quy trình ERP và CRM hiện có của bạn để tự động hóa các tác vụ lặp đi lặp lại và tối ưu hóa hiệu quả quy trình.",
+        "steps": {
+          "input": {
+            "title": "Kích Hoạt Đầu Vào",
+            "description": "Khách hàng tiềm năng mới trong CRM hoặc Hóa đơn nhận được qua Email."
+          },
+          "analysis": {
+            "badge": "Xử Lý AI",
+            "title": "Phân Tích AI",
+            "description": "Trích xuất dữ liệu, phân loại và đưa ra quyết định."
+          },
+          "integration": {
+            "title": "Tích Hợp ERP",
+            "description": "Cập nhật hồ sơ, tạo đơn hàng hoặc lập lịch tác vụ."
+          },
+          "completion": {
+            "title": "Hoàn Thành",
+            "description": "Quy trình hoàn tất, thông báo được gửi, bảng điều khiển được cập nhật."
+          }
+        }
+      },
+      "cost": {
+        "title": "Tối Ưu Chi Phí Với AI",
+        "description": "Tối đa hóa ROI của bạn bằng cách xác định các điểm kém hiệu quả. Các mô hình AI của chúng tôi phân tích chi phí vận hành theo thời gian thực để đề xuất các biện pháp tiết kiệm chi phí mà không ảnh hưởng đến chất lượng.",
+        "stats": {
+          "operational": {
+            "value": "-35%",
+            "label": "Chi Phí Vận Hành"
+          },
+          "efficiency": {
+            "value": "3x",
+            "label": "Mức Tăng Hiệu Quả"
+          }
+        },
+        "cta": "Tính Toán Khoản Tiết Kiệm Của Bạn",
+        "chart": {
+          "legacy": "Chi Phí Hệ Thống Cũ",
+          "optimized": "Chi Tiêu Được Tối Ưu"
+        }
+      }
+    },
+    "bim2fm": {
+      "hero": {
+        "badge": "LCDM Hub",
+        "title": "BIM đến Quản Lý Cơ Sở Vật Chất",
+        "titleHighlight": "Trở Nên Đơn Giản",
+        "description": "Chuyển đổi dữ liệu Mô hình Thông tin Xây dựng của bạn thành thông tin quản lý cơ sở vật chất có thể hành động. Nền tảng đạt giải thưởng cho việc trao đổi dữ liệu liền mạch và quản lý chất lượng."
+      },
+      "grid": {
+        "sync": {
+          "title": "Đồng bộ Dữ liệu Hai chiều",
+          "description": "Đồng bộ hóa liền mạch dữ liệu giữa các mô hình BIM và hệ thống quản lý cơ sở vật chất trong thời gian thực.",
+          "cta": "Khám phá Đồng bộ"
+        },
+        "quality": {
+          "title": "Kiểm soát Chất lượng",
+          "description": "Đảm bảo chất lượng dữ liệu trực quan."
+        },
+        "userFriendly": {
+          "title": "Thân thiện với Người dùng",
+          "description": "Không yêu cầu kiến thức CNTT sâu rộng. Được thiết kế để các chuyên gia quản lý cơ sở vật chất làm việc một cách trực quan.",
+          "badge": "Dễ Sử dụng"
+        },
+        "filtering": {
+          "title": "Lọc Thông minh",
+          "description": "Kiểm soát mức độ chi tiết của dữ liệu."
+        },
+        "contact": {
+          "title": "Bắt đầu với BIM2FM",
+          "subtitle": "Chuyển đổi Dữ liệu của Bạn Ngay Hôm Nay",
+          "cta": "Liên hệ với Chúng tôi"
+        }
+      },
+      "dataSync": {
+        "title": "Liền mạch",
+        "titleHighlight": "Đồng bộ Dữ liệu",
+        "description": "LCDM Hub cho phép đồng bộ hóa dữ liệu hai chiều giữa các mô hình BIM và hệ thống quản lý cơ sở vật chất, giữ cho dữ liệu tòa nhà của bạn luôn cập nhật trên tất cả các nền tảng.",
+        "points": [
+          "Tự động đồng bộ hóa việc làm sạch, bảo trì và các thay đổi",
+          "Đưa tòa nhà vào vận hành nhanh hơn và sẵn sàng hoạt động sớm hơn",
+          "Tính sẵn dùng của dữ liệu thời gian thực giúp tăng độ tin cậy trong lập kế hoạch"
+        ],
+        "bimModel": "Mô hình BIM",
+        "fmSystem": "Hệ thống FM",
+        "syncBadge": "Đồng bộ Hai chiều"
+      },
+      "qualityControl": {
+        "badge": "Đảm bảo Chất lượng Trực quan",
+        "title": "Trung tâm Kiểm soát Chất lượng",
+        "description": "LCDM Hub bao gồm một trung tâm kiểm soát chất lượng toàn diện hiển thị trực quan toàn bộ quy trình xử lý dữ liệu, đảm bảo các tiêu chuẩn chất lượng dữ liệu cao nhất.",
+        "features": {
+          "visual": {
+            "title": "Hiển thị Quy trình Trực quan",
+            "description": "Xem toàn bộ quy trình xử lý dữ liệu trong thời gian thực với các hình ảnh trực quan."
+          },
+          "validation": {
+            "title": "Xác thực Tự động",
+            "description": "Kiểm tra chất lượng dữ liệu tự động ở mọi giai đoạn của quá trình chuyển giao."
+          },
+          "detection": {
+            "title": "Phát hiện & Khắc phục Lỗi",
+            "description": "Xác định và giải quyết các điểm không nhất quán của dữ liệu trước khi chúng ảnh hưởng đến vận hành."
+          }
+        }
+      },
+      "filtering": {
+        "badge": "Sự Kiểm soát của Người dùng",
+        "title": "Lọc Dữ liệu Thông minh",
+        "description": "Kiểm soát hoàn toàn việc chuyển giao dữ liệu của bạn. Dễ dàng chỉ định mức độ chi tiết bạn cần và quyết định dữ liệu nào phù hợp cho hoạt động quản lý cơ sở vật chất của bạn.",
+        "features": {
+          "custom": {
+            "title": "Mức độ Chi tiết Tùy chỉnh",
+            "description": "Chọn chính xác mức độ chi tiết bạn cần cho mỗi lần chuyển giao dữ liệu."
+          },
+          "selective": {
+            "title": "Chuyển giao Dữ liệu Có Chọn lọc",
+            "description": "Chỉ chuyển giao dữ liệu bạn cần, giảm độ phức tạp và thời gian xử lý."
+          },
+          "userDriven": {
+            "title": "Chuyển đổi Hướng Người dùng",
+            "description": "Chủ động kiểm soát việc lựa chọn, biến đổi và chuyển đổi trong quá trình chuyển giao."
+          }
+        },
+        "status": {
+          "title": "Chuyển giao Dữ liệu Hoạt động",
+          "detailLevel": "Mức độ Chi tiết",
+          "high": "Cao",
+          "elements": "Thành phần Dữ liệu",
+          "elementsValue": "2,847",
+          "status": "Trạng thái Chuyển giao",
+          "inProgress": "Đang thực hiện"
+        }
+      },
+      "benefits": {
+        "title": "Lợi ích Chính",
+        "description": "Khám phá cách LCDM Hub chuyển đổi quản lý vòng đời tòa nhà và tăng tốc hiệu quả vận hành.",
+        "items": {
+          "commissioning": {
+            "title": "Vận hành Nhanh hơn",
+            "description": "Đưa các tòa nhà vào hoạt động nhanh hơn với khả năng truy cập dữ liệu sớm và độ tin cậy lập kế hoạch được cải thiện."
+          },
+          "maintenance": {
+            "badge": "Nổi bật",
+            "title": "Bảo trì Cải thiện",
+            "description": "Truy cập dữ liệu thành phần tòa nhà ngay lập tức, tăng tốc đáng kể các hoạt động bảo trì."
+          },
+          "digitalTwin": {
+            "title": "Lợi ích Bản sao Số",
+            "description": "Tận dụng bản sao số của tòa nhà để quản lý cơ sở vật chất, tính bền vững và quản lý thay đổi."
+          },
+          "coordination": {
+            "title": "Phối hợp Tốt hơn",
+            "description": "Cải thiện sự hợp tác giữa các kiến trúc sư, khách hàng và nhà thiết kế trong suốt vòng đời tòa nhà."
+          }
+        }
+      }
+    },
+    "cloudServices": {
+      "hero": {
+        "badge": "Dịch vụ Đám mây",
+        "title": "Chuyển đổi Doanh nghiệp với",
+        "titleHighlight": "Giải pháp Đám mây",
+        "description": "Chiến lược đám mây tùy chỉnh phù hợp với nhu cầu của bạn. Từ di chuyển đến tối ưu hóa, chúng tôi cung cấp các giải pháp đám mây an toàn, có khả năng mở rộng trên AWS, Azure và Google Cloud.",
+        "founder": {
+          "name": "David Vu",
+          "role": "CEO & Người Sáng Lập Gotik",
+          "cta": "Tư Vấn Miễn Phí"
+        }
+      },
+      "solutions": {
+        "title": "Giải pháp Đám mây Toàn diện",
+        "description": "Dù là ưu tiên đám mây hay kết hợp – chúng tôi thiết kế chiến lược đám mây hoàn hảo cho các yêu cầu kinh doanh của bạn.",
+        "items": {
+          "strategy": {
+            "title": "Chiến lược & Tư vấn Đám mây",
+            "description": "Chiến lược đám mây tùy chỉnh phù hợp với mục tiêu kinh doanh của bạn với các phương pháp ưu tiên đám mây hoặc kết hợp."
+          },
+          "migration": {
+            "title": "Di chuyển Đám mây",
+            "description": "Di chuyển liền mạch các ứng dụng và dữ liệu sang nền tảng AWS, Azure hoặc Google Cloud."
+          },
+          "native": {
+            "title": "Phát triển Cloud-Native",
+            "description": "Xây dựng các ứng dụng được thiết kế riêng cho nền tảng đám mây với microservices và container."
+          },
+          "multiCloud": {
+            "title": "Chiến lược Đa đám mây",
+            "description": "Giảm sự phụ thuộc vào nhà cung cấp với các chiến lược đa đám mây và tiêu chuẩn mở trên các nền tảng."
+          },
+          "security": {
+            "title": "Bảo mật Đám mây",
+            "description": "Bảo mật cấp doanh nghiệp đảm bảo các tiêu chuẩn cao nhất cho cơ sở hạ tầng đám mây của bạn."
+          },
+          "optimization": {
+            "title": "Tối ưu hóa Đám mây",
+            "description": "Tối ưu hóa chi phí và điều chỉnh hiệu suất để tối đa hóa ROI đám mây của bạn."
+          },
+          "swiss": {
+            "title": "Trung tâm Dữ liệu Thụy Sĩ",
+            "description": "Giải pháp đám mây với các trung tâm dữ liệu tại Thụy Sĩ cho các tổ chức có yêu cầu cao về bảo mật và tuân thủ."
+          }
+        }
+      },
+      "platforms": {
+        "title": "Chuyên môn Đa đám mây",
+        "description": "Chúng tôi làm việc với tất cả các nền tảng đám mây lớn để cung cấp giải pháp tốt nhất cho nhu cầu của bạn.",
+        "aws": {
+          "title": "Amazon Web Services",
+          "features": [
+            "EC2, Lambda, ECS/EKS",
+            "S3, RDS, DynamoDB",
+            "CloudFormation & CDK",
+            "Dịch vụ AWS IoT & AI/ML"
+          ]
+        },
+        "azure": {
+          "title": "Microsoft Azure",
+          "features": [
+            "App Service, Functions, AKS",
+            "Azure SQL, Cosmos DB",
+            "Azure DevOps & ARM",
+            "Dịch vụ Azure AI & Nhận thức"
+          ]
+        },
+        "gcp": {
+          "title": "Google Cloud Platform",
+          "features": [
+            "Compute Engine, Cloud Run, GKE",
+            "Cloud Storage, BigQuery",
+            "Cloud Build & Deployment Manager",
+            "Dịch vụ Vertex AI & ML"
+          ]
+        }
+      },
+      "approach": {
+        "title": "Cách Tiếp cận Đám mây của Chúng tôi",
+        "description": "Lập kế hoạch chiến lược, di chuyển liền mạch và tối ưu hóa liên tục cho sự thành công lâu dài của đám mây.",
+        "steps": {
+          "strategy": {
+            "step": "1",
+            "title": "Chiến lược & Đánh giá",
+            "subtitle": "Xác định tầm nhìn đám mây của bạn",
+            "description": "Chúng tôi phân tích cơ sở hạ tầng hiện có, đánh giá khối lượng công việc và phát triển chiến lược đám mây phù hợp với mục tiêu kinh doanh của bạn."
+          },
+          "migration": {
+            "step": "2",
+            "title": "Di chuyển & Triển khai",
+            "subtitle": "Chuyển đổi liền mạch sang đám mây",
+            "description": "Thực hiện di chuyển với sự gián đoạn tối thiểu bằng cách sử dụng các phương pháp đã được chứng minh, đảm bảo bảo mật và hiệu suất trong suốt quá trình."
+          },
+          "optimization": {
+            "step": "3",
+            "title": "Tối ưu hóa & Hỗ trợ",
+            "subtitle": "Cải tiến liên tục",
+            "points": [
+              "Tối ưu hóa chi phí & quản lý tài nguyên",
+              "Theo dõi & điều chỉnh hiệu suất",
+              "Kiểm tra bảo mật & tuân thủ",
+              "Hỗ trợ 24/7 & phản ứng sự cố"
+            ]
+          }
+        }
+      },
+      "whyChoose": {
+        "title": "Tại sao Chọn Gotik cho Dịch vụ Đám mây?",
+        "description": "Chuyên môn đám mây toàn diện trên tất cả các nền tảng chính. Chúng tôi cung cấp các giải pháp an toàn, có khả năng mở rộng thúc đẩy giá trị kinh doanh và sự đổi mới.",
+        "points": [
+          "Chuyên môn đa đám mây (AWS, Azure, GCP)",
+          "Bảo mật và tuân thủ cấp doanh nghiệp",
+          "Tối ưu hóa chi phí và hiệu quả tài nguyên",
+          "Tùy chọn trung tâm dữ liệu Thụy Sĩ cho bảo mật cao"
+        ],
+        "stats": {
+          "migrations": {
+            "value": "150+",
+            "label": "Di chuyển Đám mây"
+          },
+          "uptime": {
+            "value": "99.99%",
+            "label": "Cam kết Uptime"
+          },
+          "savings": {
+            "value": "40%",
+            "label": "Tiết kiệm Chi phí TB"
+          },
+          "support": {
+            "value": "24/7",
+            "label": "Hỗ trợ Sẵn sàng"
+          }
+        }
+      },
+      "faq": {
+        "title": "Câu hỏi Thường gặp",
+        "items": [
+          {
+            "question": "Lợi ích của việc di chuyển lên đám mây là gì?",
+            "answer": "Di chuyển lên đám mây mang lại nhiều lợi ích bao gồm giảm chi phí cơ sở hạ tầng thông qua mô hình trả theo mức sử dụng, cải thiện khả năng mở rộng để xử lý các đợt lưu lượng truy cập tăng đột biến, tăng cường khả năng phục hồi sau thảm họa, cập nhật và bảo trì tự động, phạm vi tiếp cận toàn cầu với nhiều trung tâm dữ liệu và tăng cường đổi mới thông qua quyền truy cập vào các dịch vụ tiên tiến. Các công ty thường tiết kiệm được 30-40% chi phí trong dài hạn đồng thời đạt được sự linh hoạt và nhanh nhẹn đáng kể."
+          },
+          {
+            "question": "Làm thế nào để bạn đảm bảo bảo mật đám mây?",
+            "answer": "Chúng tôi triển khai các biện pháp bảo mật toàn diện bao gồm quản lý định danh và truy cập (IAM), mã hóa dữ liệu khi lưu trữ và khi truyền tải, bảo mật mạng với VPC và tường lửa, kiểm tra bảo mật và tuân thủ thường xuyên, sao lưu và phục hồi sau thảm họa tự động, giám sát bảo mật và phản ứng sự cố, và tuân thủ các tiêu chuẩn như ISO 27001, SOC 2 và GDPR. Đối với khách hàng Thụy Sĩ, chúng tôi có thể sử dụng các trung tâm dữ liệu tại Thụy Sĩ để đáp ứng các yêu cầu nghiêm ngặt của địa phương."
+          },
+          {
+            "question": "Tôi nên sử dụng đám mây đơn hay đa đám mây?",
+            "answer": "Sự lựa chọn phụ thuộc vào yêu cầu của bạn. Đám mây đơn mang lại sự đơn giản, quản lý dễ dàng hơn và tích hợp sâu hơn với các dịch vụ của nền tảng. Đa đám mây cung cấp sự độc lập với nhà cung cấp, giảm rủi ro bị khóa, khả năng sử dụng các dịch vụ tốt nhất từ mỗi nhà cung cấp và cải thiện khả năng phục hồi sau thảm họa giữa các nhà cung cấp đám mây. Chúng tôi giúp bạn đánh giá các yếu tố như cơ sở hạ tầng hiện có, yêu cầu dịch vụ cụ thể, nhu cầu tuân thủ và chuyên môn của đội ngũ để xác định cách tiếp cận tốt nhất. Các chiến lược đa đám mây yêu cầu lập kế hoạch cẩn thận với các tiêu chuẩn mở và kiến trúc phù hợp."
+          },
+          {
+            "question": "Việc di chuyển lên đám mây mất bao lâu?",
+            "answer": "Thời gian di chuyển thay đổi tùy thuộc vào độ phức tạp và phạm vi. Một cuộc di chuyển ứng dụng đơn giản có thể mất 4-8 tuần, trong khi các cuộc di chuyển toàn doanh nghiệp thường yêu cầu 3-12 tháng. Chúng tôi tuân theo cách tiếp cận theo từng giai đoạn: đánh giá và lập kế hoạch (2-4 tuần), di chuyển thí điểm (4-6 tuần), di chuyển dần các khối lượng công việc còn lại và tối ưu hóa. Cách tiếp cận này giảm thiểu gián đoạn và cho phép bạn nhận thấy lợi ích sớm trong khi quản lý rủi ro hiệu quả. Chúng tôi hợp tác chặt chẽ với đội ngũ của bạn để phát triển một lộ trình thực tế dựa trên các yêu cầu cụ thể của bạn."
+          }
+        ]
+      }
+    },
+    "dataAnalytics": {
+      "hero": {
+        "badge": "Dữ liệu & Phân tích",
+        "title": "Chúng tôi biến dữ liệu của bạn thành",
+        "titleHighlight": "Kiến thức giá trị",
+        "description": "Các chuyên gia của Gotik đồng hành cùng bạn trong suốt chuỗi giá trị dữ liệu: từ phát triển và triển khai chiến lược dữ liệu đến xây dựng các công cụ thu thập dữ liệu và lựa chọn các phương pháp phân tích tối ưu."
+      },
+      "consultant": {
+        "name": "David Vu",
+        "role": "CEO & Founder Gotik",
+        "cta": "Tư vấn miễn phí"
+      },
+      "benefits": {
+        "title": "Lợi ích của bạn thông qua Dữ liệu và Phân tích",
+        "items": {
+          "competitive": {
+            "title": "Lợi thế cạnh tranh thông qua dữ liệu",
+            "description": "Sử dụng dữ liệu để hiểu rõ hơn về công ty và khách hàng của bạn, từ đó giành lợi thế thị trường quyết định."
+          },
+          "strategic": {
+            "title": "Ra quyết định chiến lược",
+            "description": "Các phân tích của chúng tôi giúp bạn đánh giá tốt hơn các bước phát triển trong tương lai và đưa ra các quyết định chiến lược thông minh."
+          },
+          "optimize": {
+            "title": "Tối ưu hóa quy trình kinh doanh",
+            "description": "Nhận diện tiềm năng tăng hiệu quả trong các lĩnh vực như thu mua, sản xuất và bán hàng thông qua phân tích dữ liệu."
+          },
+          "innovation": {
+            "title": "Thúc đẩy đổi mới",
+            "description": "Sử dụng các thông tin chi tiết dựa trên dữ liệu để phát triển các mô hình kinh doanh và đổi mới thành công hơn."
+          },
+          "complex": {
+            "title": "Làm cho dữ liệu phức tạp trở nên hữu ích",
+            "description": "Chúng tôi cung cấp các công cụ giúp bạn sử dụng hiệu quả lượng dữ liệu lớn và phức tạp."
+          },
+          "visible": {
+            "title": "Hiển thị các thông tin chi tiết",
+            "description": "Các giải pháp của chúng tôi làm lộ diện các mô hình và mối quan hệ ẩn trong dữ liệu để tối ưu hóa quan hệ khách hàng."
+          }
+        }
+      },
+      "services": {
+        "title": "Dịch vụ Dữ liệu và Phân tích của chúng tôi",
+        "items": {
+          "strategy": {
+            "title": "Phát triển chiến lược dữ liệu",
+            "description": "Các chuyên gia của chúng tôi hỗ trợ bạn lập kế hoạch và triển khai chiến lược dữ liệu tùy chỉnh phù hợp với mục tiêu công ty."
+          },
+          "collection": {
+            "title": "Xây dựng công cụ thu thập dữ liệu",
+            "description": "Chúng tôi cung cấp các giải pháp để thu thập và cấu trúc dữ liệu hiệu quả nhằm tạo nền tảng vững chắc cho phân tích."
+          },
+          "analysis": {
+            "title": "Lựa chọn công cụ phân tích",
+            "description": "Chúng tôi tư vấn cho bạn việc lựa chọn các công cụ và phương pháp phân tích tối ưu cho các yêu cầu cụ thể của bạn."
+          },
+          "ai": {
+            "title": "Chuyên môn về AI và Học máy",
+            "description": "Các kỹ sư phần mềm của chúng tôi luôn cập nhật những lĩnh vực như Trí tuệ nhân tạo, Smart Bot, Học máy và Khai phá dữ liệu."
+          },
+          "specific": {
+            "title": "Phát triển công cụ cụ thể",
+            "description": "Chúng tôi phát triển các công cụ bạn cần để sử dụng và hiểu dữ liệu hiệu quả trong thời gian ngắn nhất."
+          },
+          "expertise": {
+            "title": "Chuyên môn Kỹ thuật và Kinh doanh",
+            "description": "Các chuyên gia của chúng tôi không chỉ làm chủ các khía cạnh kỹ thuật mà còn hiểu các thách thức kinh doanh để đưa ra các phân tích mang lại giá trị đo lường được."
+          }
+        }
+      },
+      "workshop": {
+        "badge": "Hội thảo Đổi mới",
+        "title": "Hội thảo Đổi mới Khoa học Dữ liệu",
+        "description": "Hội thảo Đổi mới Khoa học Dữ liệu mang đến định dạng lý tưởng để bạn đánh giá tiềm năng và rủi ro trong lĩnh vực Dữ liệu & Phân tích nhanh hơn và tốt hơn. Chúng tôi hỗ trợ cá nhân hóa quy trình, phương pháp, công nghệ và chuyên môn kinh doanh.",
+        "cta": "Yêu cầu thông tin hội thảo",
+        "imageAlt": "Đổi mới Khoa học Dữ liệu",
+        "imageTitle": "Đánh giá Tiềm năng & Rủi ro",
+        "imageSubtitle": "Nhanh hơn và tốt hơn với chuyên môn của chúng tôi"
+      },
+      "faq": {
+        "title": "Câu hỏi thường gặp",
+        "items": [
+          {
+            "question": "Sự khác biệt giữa Khoa học dữ liệu (Data Science) và Phân tích dữ liệu (Data Analytics) là gì?",
+            "answer": "Trong khi Phân tích dữ liệu chủ yếu tập trung vào việc diễn giải dữ liệu hiện có, Khoa học dữ liệu tiến xa hơn một bước và phát triển các thuật toán để phát hiện các mô hình trong dữ liệu phức tạp.",
+            "dataScience": {
+              "title": "Khoa học Dữ liệu",
+              "points": [
+                "Liên ngành: Kết hợp thống kê, khoa học máy tính và phân tích kinh doanh",
+                "Tập trung vào dự đoán và đề xuất",
+                "Thường làm việc với Dữ liệu lớn (Big Data)"
+              ]
+            },
+            "dataAnalytics": {
+              "title": "Phân tích Dữ liệu",
+              "points": [
+                "Tập trung vào việc đánh giá dữ liệu hiện có",
+                "Mô tả: Giải thích quá khứ và hiện tại",
+                "Thường xử lý dữ liệu có cấu trúc"
+              ]
+            }
+          },
+          {
+            "question": "Tại sao chiến lược dữ liệu lại quan trọng?",
+            "answer": "Chiến lược dữ liệu rất quan trọng vì nó xác định cách tổ chức của bạn thu thập, xử lý, phân tích và sử dụng dữ liệu. Không có chiến lược rõ ràng, các công ty có nguy cơ bị cô lập dữ liệu, chất lượng dữ liệu không nhất quán và bỏ lỡ các cơ hội tối ưu hóa và đổi mới. Một chiến lược dữ liệu thấu đáo cho phép đưa ra quyết định sáng suốt, cải thiện hiệu quả hoạt động và tạo lợi thế cạnh tranh."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Bạn có muốn biến dữ liệu của mình thành kiến thức?",
+        "description": "Đặt lịch tư vấn miễn phí ngay bây giờ!",
+        "cta": "Đặt lịch tư vấn miễn phí"
+      }
+    },
+    "dataArchitecture": {
+      "hero": {
+        "badge": "Kiến trúc dữ liệu",
+        "title": "Nền tảng cho",
+        "titleHighlight": "Quản trị dữ liệu bền vững",
+        "description": "Một kiến trúc dữ liệu được cân nhắc kỹ lưỡng tạo nên xương sống của quản trị dữ liệu thành công. Nó xác định cách dữ liệu được thu thập, lưu trữ, tích hợp, chuyển đổi và sử dụng để đáp ứng hiệu quả các yêu cầu kinh doanh và thúc đẩy đổi mới."
+      },
+      "consultant": {
+        "name": "David Vu",
+        "role": "CEO & Founder Gotik",
+        "cta": "Tư vấn miễn phí"
+      },
+      "challenges": {
+        "title": "Những thách thức về dữ liệu này có vẻ quen thuộc?",
+        "items": {
+          "transparency": {
+            "title": "Thiếu minh bạch",
+            "description": "Về kho dữ liệu hiện có và chất lượng của chúng"
+          },
+          "silos": {
+            "title": "Ốc đảo dữ liệu",
+            "description": "Lưu trữ dữ liệu dư thừa dẫn đến sự không nhất quán"
+          },
+          "integration": {
+            "title": "Khoảng cách tích hợp",
+            "description": "Tích hợp chưa đủ các nguồn dữ liệu mới như IoT"
+          },
+          "compliance": {
+            "title": "Vấn đề tuân thủ",
+            "description": "Khó khăn trong việc tuân thủ các yêu cầu bảo vệ dữ liệu"
+          },
+          "delivery": {
+            "title": "Cung cấp dữ liệu chậm",
+            "description": "Cho phân tích và báo cáo"
+          }
+        }
+      },
+      "assessment": {
+        "badge": "Kiểm tra nhanh",
+        "title": "Đánh giá Chiến lược Dữ liệu Light",
+        "description": "Bạn muốn biết chiến lược dữ liệu của công ty mình đang ở đâu nhưng có ít thời gian? Assessment Light của chúng tôi là điểm khởi đầu hoàn hảo để đánh giá mức độ trưởng thành về dữ liệu của bạn.",
+        "imageAlt": "Đánh giá Quản trị Dữ liệu",
+        "imageTitle": "Kiểm tra Nhanh mức độ Trưởng thành",
+        "imageSubtitle": "Bắt đầu chỉ trong vài phút"
+      },
+      "approach": {
+        "title": "Hành trình 4 giai đoạn đến Kiến trúc dữ liệu đúng đắn",
+        "description": "Chúng tôi đồng hành cùng bạn qua từng bước chuyển đổi kiến trúc dữ liệu.",
+        "phases": [
+          {
+            "step": "1",
+            "badge": "Giai đoạn 1",
+            "title": "Phân tích & Xác định mục tiêu",
+            "description": "Chúng tôi nắm bắt các yêu cầu kinh doanh của bạn, phân tích bối cảnh dữ liệu hiện có, đồng thời xác định các điểm yếu và tiềm năng cải thiện.",
+            "color": "teal"
+          },
+          {
+            "step": "2",
+            "badge": "Giai đoạn 2",
+            "title": "Khái niệm hóa & Mô hình hóa",
+            "description": "Chúng tôi phát triển một bản thiết kế kiến trúc dữ liệu tùy chỉnh – từ mô hình dữ liệu khái niệm đến logic và vật lý. Các tiêu chuẩn, hướng dẫn và quản trị được xác định rõ ràng.",
+            "color": "sky"
+          },
+          {
+            "step": "3",
+            "badge": "Giai đoạn 3",
+            "title": "Triển khai & Tích hợp",
+            "description": "Chúng tôi triển khai kiến trúc, tích hợp các nguồn dữ liệu liên quan, thiết lập các quy trình ETL và đảm bảo quản trị dữ liệu nhất quán trong toàn tổ chức.",
+            "color": "purple"
+          },
+          {
+            "step": "4",
+            "badge": "Giai đoạn 4",
+            "title": "Đảm bảo chất lượng & Tối ưu hóa",
+            "description": "Chúng tôi kiểm tra chất lượng dữ liệu, thiết lập giám sát và liên tục tối ưu hóa kiến trúc để hỗ trợ linh hoạt các yêu cầu trong tương lai.",
+            "color": "green"
+          }
+        ]
+      },
+      "results": {
+        "title": "Kết quả và Sản phẩm",
+        "items": [
+          "Báo cáo phân tích hiện trạng của bối cảnh dữ liệu",
+          "Bức tranh mục tiêu và bản thiết kế kiến trúc dữ liệu (bao gồm các mô hình và luồng dữ liệu)",
+          "Kế hoạch tích hợp và di chuyển chi tiết",
+          "Hướng dẫn và tiêu chuẩn cho quản trị và quản lý dữ liệu",
+          "Các nền tảng dữ liệu đã triển khai (ví dụ: Kho dữ liệu, Hồ dữ liệu)",
+          "Báo cáo giám sát và chất lượng về tính sẵn có và nhất quán của dữ liệu"
+        ]
+      },
+      "whyTrust": {
+        "title": "Tại sao Khách hàng Tin tưởng Gotik",
+        "items": {
+          "expertise": {
+            "title": "Chuyên môn sâu rộng",
+            "description": "Hơn 300 chuyên gia trong lĩnh vực kỹ thuật phần mềm, quản trị dữ liệu, AI và chuyển đổi số.",
+            "color": "teal"
+          },
+          "holistic": {
+            "title": "Tiếp cận toàn diện",
+            "description": "Chúng tôi suy nghĩ cùng bạn – từ ý tưởng đầu tiên đến khi vận hành thành công.",
+            "color": "sky"
+          },
+          "sustainable": {
+            "title": "Kết quả bền vững",
+            "description": "Kiến trúc số linh hoạt, hướng tới tương lai mang lại giá trị thực sự.",
+            "color": "green"
+          },
+          "enterprise": {
+            "title": "Kinh nghiệm doanh nghiệp",
+            "description": "Hiểu rõ bối cảnh IT phức tạp và các yêu cầu tích hợp khắt khe.",
+            "color": "purple"
+          }
+        }
+      },
+      "faq": {
+        "title": "Câu hỏi thường gặp về Chiến lược dữ liệu",
+        "items": [
+          {
+            "question": "Chính xác thì chiến lược dữ liệu là gì và tại sao nó lại quan trọng đối với công ty của tôi?",
+            "answer": "Chiến lược dữ liệu là một kế hoạch toàn diện xác định cách công ty của bạn thu thập, lưu trữ, quản lý, chia sẻ và sử dụng dữ liệu như một tài sản chiến lược để đạt được các mục tiêu kinh doanh. Nó quan trọng vì giúp phá vỡ các ốc đảo dữ liệu, đưa ra quyết định sáng suốt, tối ưu hóa quy trình, đảm bảo tuân thủ và cuối cùng là giành được lợi thế cạnh tranh. Không có chiến lược, dữ liệu thường vẫn là tiềm năng chưa được khai thác hoặc thậm chí có thể dẫn đến sự kém hiệu quả và rủi ro."
+          },
+          {
+            "question": "Chiến lược dữ liệu có phù hợp với các doanh nghiệp vừa và nhỏ (SME) không?",
+            "answer": "Có, chắc chắn rồi. Đặc biệt các doanh nghiệp vừa và nhỏ có thể hưởng lợi rất nhiều từ một chiến lược dữ liệu rõ ràng. Nó cho phép vận hành hiệu quả hơn, hiểu rõ khách hàng hơn và phản ứng nhanh hơn với các thay đổi của thị trường – thường với ít nguồn lực hơn các tập đoàn lớn. Một chiến lược dữ liệu được thiết kế riêng cho SME đảm bảo rằng các khoản đầu tư dữ liệu có mục tiêu và mang lại lợi ích tối đa."
+          },
+          {
+            "question": "Quy trình phát triển chiến lược dữ liệu với Gotik diễn ra như thế nào?",
+            "answer": "Cách tiếp cận của chúng tôi mang tính hợp tác và tùy chỉnh. Chúng tôi thường bắt đầu bằng một bản đánh giá để hiểu tình hình hiện tại, các thách thức và mục tiêu của bạn. Dựa trên đó, chúng tôi cùng bạn phát triển chiến lược, xác định các biện pháp cụ thể và tạo lộ trình triển khai. Chúng tôi nhấn mạnh rằng chiến lược phải mang tính thực tiễn và phù hợp với công ty của bạn."
+          },
+          {
+            "question": "Đây chỉ là chiến lược trên giấy hay Gotik cũng hỗ trợ triển khai thực tế?",
+            "answer": "Chúng tôi đồng hành cùng bạn xa hơn việc xây dựng chiến lược thuần túy nếu được yêu cầu. Các dịch vụ của chúng tôi cũng bao gồm hỗ trợ triển khai các quy trình quản trị dữ liệu, giới thiệu các cấu trúc quản trị, tích hợp hệ thống và đào tạo nhân viên của bạn. Mục tiêu của chúng tôi là đảm bảo chiến lược dữ liệu của bạn được lồng ghép bền vững trong công ty và mang lại kết quả có thể đo lường được."
+          }
+        ]
+      }
+    },
+    "dataManagement": {
+      "hero": {
+        "badge": "Quản trị dữ liệu",
+        "title": "Hành trình đến",
+        "titleHighlight": "Dữ liệu xuất sắc",
+        "description": "Dữ liệu là nhiên liệu cho quá trình chuyển đổi số của bạn. Nhưng chỉ với chiến lược, công nghệ và triển khai đúng đắn, các lợi thế cạnh tranh thực sự mới xuất hiện."
+      },
+      "consultant": {
+        "name": "David Vu",
+        "role": "CEO & Founder Gotik",
+        "cta": "Tư vấn miễn phí"
+      },
+      "entryPoints": {
+        "title": "Chọn điểm bắt đầu của bạn",
+        "description": "Bắt đầu hành trình dữ liệu của bạn tại điểm quan trọng nhất đối với doanh nghiệp của bạn.",
+        "items": {
+          "strategy": {
+            "title": "Tôi cần một chiến lược dữ liệu rõ ràng",
+            "description": "Xây dựng bức tranh mục tiêu cùng chúng tôi, làm rõ vai trò & quản trị, và tạo nền tảng cho các quyết định dựa trên dữ liệu.",
+            "cta": "Đường đến Chiến lược Dữ liệu",
+            "color": "blue"
+          },
+          "analytics": {
+            "title": "Tôi muốn biến dữ liệu thành kiến thức",
+            "description": "Các giải pháp của chúng tôi làm lộ diện các mô hình và mối liên kết ẩn trong dữ liệu của bạn để tối ưu hóa kinh doanh.",
+            "cta": "Đến Dữ liệu & Phân tích",
+            "color": "purple"
+          },
+          "bim2fm": {
+            "title": "Tôi muốn quản lý cơ sở hạ tầng đơn giản",
+            "description": "BIM2FM được thiết kế để các chuyên gia không có kiến thức sâu về IT cũng có thể chuẩn bị và sử dụng dữ liệu BIM.",
+            "cta": "Đến BIM2FM",
+            "color": "green"
+          },
+          "architecture": {
+            "title": "Tôi muốn tìm thấy dữ liệu của mình",
+            "description": "Kiến trúc dữ liệu thấu đáo dẫn đến quản trị dữ liệu thành công – xác định việc thu thập, lưu trữ và sử dụng.",
+            "cta": "Đến Kiến trúc Dữ liệu",
+            "color": "indigo"
+          },
+          "ai": {
+            "title": "Tôi muốn sử dụng AI an toàn",
+            "description": "Đội ngũ AI của chúng tôi triển khai AI trong tổ chức của bạn một cách có kiểm soát và tuân thủ quyền riêng tư.",
+            "cta": "Đến Tư vấn AI",
+            "color": "orange"
+          },
+          "pimcore": {
+            "title": "Tôi muốn làm chủ dữ liệu và làm hài lòng khách hàng",
+            "description": "Chuyển đổi bối cảnh dữ liệu phức tạp thành trải nghiệm khách hàng liền mạch, được hỗ trợ bởi AI. Chúng tôi kết hợp sức mạnh quản trị dữ liệu của Pimcore với Gotik AI Hub.",
+            "cta": "Đến Agentic Pimcore",
+            "color": "rose"
+          }
+        }
+      },
+      "testimonials": {
+        "title": "Khách hàng nói gì về chúng tôi",
+        "items": [
+          {
+            "content": "Nhờ hợp tác với Gotik, giờ đây chúng tôi đưa ra các quyết định dựa trên dữ liệu, làm việc hiệu quả hơn và tập trung vào những gì quan trọng: khách hàng và sự đổi mới. Điều này mang lại cho chúng tôi sự an tâm – và một cảm giác tốt.",
+            "author": "Peter K.",
+            "role": "Giám đốc điều hành, Công ty Công nghiệp",
+            "initials": "PK"
+          },
+          {
+            "content": "Dữ liệu của chúng tôi được phân tán trên nhiều hệ thống – điều đó khiến chúng tôi tốn thời gian, tiền bạc và sự mệt mỏi. Với Gotik, chúng tôi đã phát triển một chiến lược dữ liệu rõ ràng và liên kết các hệ thống của mình một cách thông minh. Cuối cùng, chúng tôi thực sự có thể sử dụng dữ liệu của mình.",
+            "author": "Dieter F.",
+            "role": "CDO, Công ty Dịch vụ",
+            "initials": "DF"
+          }
+        ]
+      },
+      "methodology": {
+        "title": "Cách tiếp cận của chúng tôi",
+        "description": "Với cách tiếp cận bài bản, được xác định rõ ràng, chúng tôi hỗ trợ bạn tối ưu hóa việc sử dụng dữ liệu một cách chiến lược. Từ những thôi thúc đầu tiên đến một dự án thí điểm có thể mở rộng, chúng tôi dẫn dắt bạn một cách có mục đích.",
+        "steps": [
+          {
+            "step": "1",
+            "title": "Hội thảo thôi thúc",
+            "duration": "0,5 ngày – ngắn gọn & thực tế",
+            "description": "Chúng tôi cùng phân tích các thách thức dữ liệu của bạn và chỉ ra những tiềm năng cụ thể đầu tiên."
+          },
+          {
+            "step": "2",
+            "title": "Đánh giá mức độ trưởng thành",
+            "subtitle": "Đánh giá chiến lược & tổ chức dữ liệu của bạn",
+            "description": "Được hướng dẫn – với điểm chuẩn, đề xuất & hồ sơ điểm mạnh - điểm yếu."
+          },
+          {
+            "step": "3",
+            "title": "Dự án thí điểm",
+            "subtitle": "Cho thấy tác động, chuẩn bị mở rộng",
+            "items": [
+              "Cụ thể hóa chiến lược & ưu tiên các kịch bản sử dụng",
+              "Triển khai các ứng dụng đầu tiên (Thắng lợi nhanh)",
+              "Thiết lập các nền tảng & kiến trúc",
+              "Đào tạo & Quản trị sự thay đổi"
+            ]
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Tại sao chọn Gotik để Quản trị dữ liệu?",
+        "description": "Chúng tôi kết hợp tư vấn chiến lược với triển khai kỹ thuật từ một nguồn duy nhất. Kiến trúc bền vững của chúng tôi đảm bảo thành công lâu dài.",
+        "list": [
+          "Tư vấn chiến lược & triển khai kỹ thuật từ một nguồn duy nhất",
+          "Nền tảng cho dữ liệu có cấu trúc và không có cấu trúc",
+          "Kinh nghiệm trong y tế, xây dựng, công nghiệp & quản chính",
+          "Kiến trúc bền vững thay vì các giải pháp dự án đơn lẻ"
+        ]
+      },
+      "stats": {
+        "experience": {
+          "value": "25+",
+          "label": "Năm kinh nghiệm"
+        },
+        "projects": {
+          "value": "500+",
+          "label": "Dự án đã bàn giao"
+        },
+        "locations": {
+          "value": "8",
+          "label": "Văn phòng"
+        },
+        "experts": {
+          "value": "200+",
+          "label": "Chuyên gia dữ liệu"
+        }
+      },
+      "faq": {
+        "title": "Câu hỏi thường gặp",
+        "items": [
+          {
+            "question": "Quản trị dữ liệu chuyên nghiệp là gì?",
+            "answer": "Quản trị dữ liệu chuyên nghiệp bao gồm tất cả các quy trình, phương pháp và công nghệ để thu thập, duy trì, tích hợp, phân tích và sử dụng dữ liệu có cấu trúc trong công ty. Mục tiêu là đảm bảo chất lượng dữ liệu cao, luồng dữ liệu nhất quán và tính sẵn có tối đa của dữ liệu – làm cơ sở cho các quyết định sáng suốt và quy trình kinh doanh hiệu quả."
+          },
+          {
+            "question": "Tại sao quản trị dữ liệu lại quan trọng như vậy hiện nay?",
+            "answer": "Các công ty quản lý dữ liệu tích cực sẽ có khả năng cạnh tranh cao hơn: Họ đưa ra quyết định nhanh hơn và sáng suốt hơn, giảm rủi ro hoạt động và tạo nền tảng cho các ứng dụng AI, tự động hóa và đổi mới dựa trên dữ liệu. Tóm lại: Quản trị dữ liệu tốt quyết định mức độ trưởng thành về mặt kỹ thuật số của công ty bạn."
+          },
+          {
+            "question": "Một dự án quản trị dữ liệu điển hình với Gotik diễn ra như thế nào?",
+            "answer": "Một dự án thường bắt đầu bằng việc phân tích dữ liệu và đánh giá tiềm năng. Tiếp theo là phát triển khái niệm và thiết kế kiến trúc, triển khai bao gồm tích hợp dữ liệu và quản trị, quản lý chất lượng và đào tạo, cùng với vận hành, giám sát và tối ưu hóa liên tục. Chúng tôi làm việc lặp đi lặp lại và thu hút tất cả các bên liên quan ngay từ đầu."
+          },
+          {
+            "question": "Một dự án quản trị dữ liệu mất bao lâu?",
+            "answer": "Thời gian phụ thuộc nhiều vào tình hình ban đầu và làm nền tảng. Trong khi một hội thảo thôi thúc có thể hoàn thành trong nửa ngày, các quá trình chuyển đổi quản trị dữ liệu toàn diện có thể mất vài tháng. Chúng tôi luôn làm việc theo từng giai đoạn, vì vậy bạn có thể thấy kết quả ban đầu nhanh chóng và quyết định từng bước cho hành động tiếp theo."
+          }
+        ]
+      }
+    },
+    "dataStrategy": {
+      "hero": {
+        "badge": "Chiến lược dữ liệu",
+        "title": "Biến dữ liệu thành",
+        "titleHighlight": "Giá trị chiến lược",
+        "description": "Chúng tôi giúp bạn phát triển một chiến lược dữ liệu toàn diện để biến dữ liệu thành các hiểu biết thực tế và lợi thế cạnh tranh."
+      },
+      "consultant": {
+        "name": "David Vu",
+        "role": "CEO & Gotik Founder",
+        "cta": "Tư vấn miễn phí"
+      },
+      "benefits": {
+        "title": "Tại sao doanh nghiệp của bạn cần một chiến lược dữ liệu",
+        "description": "Trong thế giới hướng tới dữ liệu ngày nay, các tổ chức có thể tận dụng hiệu quả dữ liệu của họ sẽ giành được lợi thế cạnh tranh đáng kể. Một chiến lược dữ liệu được xây dựng tốt cho phép đưa ra quyết định tốt hơn, nâng cao hiệu quả hoạt động và đổi mới.",
+        "items": [
+          {
+            "title": "Ra quyết định dựa trên dữ liệu",
+            "description": "Biến dữ liệu thô thành các hiểu biết có thể hành động để thúc đẩy các quyết định chiến lược. Tư vấn chiến lược dữ liệu của chúng tôi giúp bạn thiết lập các khuôn khổ cho việc ra quyết định dựa trên bằng chứng ở mọi cấp độ trong tổ chức của bạn."
+          },
+          {
+            "title": "Nâng cao hiệu quả hoạt động",
+            "description": "Tối ưu hóa các quy trình kinh doanh của bạn thông qua các hiểu biết dựa trên dữ liệu. Chúng tôi giúp bạn xác định các điểm kém hiệu quả, tinh giản hoạt động và tự động hóa các quy trình quyết định để giảm chi phí và cải thiện hiệu suất."
+          },
+          {
+            "title": "Cấp vốn cho tài sản dữ liệu của bạn",
+            "description": "Mở khóa các dòng doanh thu mới bằng cách tận dụng tài sản dữ liệu của bạn một cách chiến lược. Chúng tôi hướng dẫn bạn xác định các cơ hội để kiếm tiền từ dữ liệu thông qua các sản phẩm, dịch vụ hoặc quan hệ đối tác mới."
+          },
+          {
+            "title": "Đảm bảo quản trị và tuân thủ dữ liệu",
+            "description": "Thiết lập các khuôn khổ quản trị dữ liệu mạnh mẽ để đảm bảo chất lượng, bảo mật và tuân thủ dữ liệu với các quy định như GDPR. Bảo vệ tổ chức của bạn trong khi tối đa hóa giá trị dữ liệu."
+          }
+        ]
+      },
+      "services": {
+        "title": "Dịch vụ Chiến lược dữ liệu của chúng tôi",
+        "description": "Dịch vụ tư vấn toàn diện để phát triển và triển khai chiến lược dữ liệu phù hợp với các mục tiêu kinh doanh của bạn.",
+        "items": [
+          {
+            "title": "Phát triển chiến lược dữ liệu",
+            "description": "Chúng tôi làm việc với bạn để phát triển một chiến lược dữ liệu toàn diện phù hợp với mục tiêu kinh doanh của bạn. Từ xác định tầm nhìn đến tạo lộ trình, chúng tôi đảm bảo chiến lược dữ liệu của bạn mang lại giá trị kinh doanh hữu hình.",
+            "points": [
+              "Tầm nhìn & Sứ mệnh dữ liệu",
+              "Lập kế hoạch lộ trình chiến lược",
+              "Căn chỉnh giá trị kinh doanh"
+            ]
+          },
+          {
+            "title": "Khuôn khổ quản trị dữ liệu",
+            "description": "Thiết lập các cấu trúc quản trị dữ liệu mạnh mẽ để đảm bảo chất lượng, bảo mật và tuân thủ dữ liệu. Chúng tôi giúp bạn xác định các chính sách, quy trình và cấu trúc tổ chức để quản lý dữ liệu hiệu quả.",
+            "points": [
+              "Tiêu chuẩn chất lượng dữ liệu",
+              "Tuân thủ & Bảo mật",
+              "Mô hình quản lý dữ liệu"
+            ]
+          },
+          {
+            "title": "Thiết kế kiến trúc dữ liệu",
+            "description": "Thiết kế các kiến trúc dữ liệu có thể mở rộng và hướng tới tương lai để hỗ trợ các mục tiêu chiến lược của bạn. Từ hồ dữ liệu đến các nền tảng dữ liệu hiện đại, chúng tôi thiết kế các giải pháp cho phép đổi mới.",
+            "points": [
+              "Thiết kế nền tảng dữ liệu hiện đại",
+              "Giải pháp Hồ & Kho dữ liệu",
+              "Kiến trúc tích hợp"
+            ]
+          },
+          {
+            "title": "Văn hóa dữ liệu & Quản trị sự thay đổi",
+            "description": "Thúc đẩy văn hóa hướng tới dữ liệu trong toàn tổ chức của bạn. Chúng tôi giúp bạn phát triển con người, quy trình và tư duy cần thiết để tận dụng thành công dữ liệu như một tài sản chiến lược.",
+            "points": [
+              "Chương trình nâng cao năng lực dữ liệu",
+              "Thay đổi tổ chức",
+              "Phát triển kỹ năng"
+            ]
+          }
+        ]
+      },
+      "approach": {
+        "badge": "Cách tiếp cận của chúng tôi",
+        "title": "Chiến lược dữ liệu Chiến lược & Thực tiễn",
+        "description": "Chúng tôi kết hợp tư duy chiến lược với chuyên môn triển khai thực tế. Cách tiếp cận của chúng tôi đảm bảo chiến lược dữ liệu của bạn không chỉ là một tài liệu, mà là một khuôn khổ sống động thúc đẩy tạo ra giá trị liên tục và thích ứng với nhu cầu kinh doanh thay đổi.",
+        "steps": [
+          {
+            "title": "Đánh giá & Khám phá",
+            "description": "Đánh giá bối cảnh dữ liệu hiện tại của bạn và xác định các cơ hội"
+          },
+          {
+            "title": "Thiết kế chiến lược",
+            "description": "Phát triển một chiến lược toàn diện phù hợp với mục tiêu kinh doanh"
+          },
+          {
+            "title": "Triển khai & Thực hiện",
+            "description": "Thực hiện chiến lược với các cột mốc rõ ràng và kết quả có thể đo lường được"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Câu hỏi thường gặp về Chiến lược dữ liệu",
+        "items": [
+          {
+            "question": "Chiến lược dữ liệu là gì?",
+            "answer": "Chiến lược dữ liệu là một kế hoạch toàn diện xác định cách một tổ chức sẽ thu thập, quản lý, phân tích và tận dụng dữ liệu để đạt được các mục tiêu kinh doanh. Nó bao gồm quản trị dữ liệu, kiến trúc, phân tích và thay đổi tổ chức để biến dữ liệu thành tài sản chiến lược."
+          },
+          {
+            "question": "Tại sao tôi cần một chiến lược dữ liệu?",
+            "answer": "Nếu không có một chiến lược dữ liệu rõ ràng, các tổ chức sẽ gặp khó khăn với các ốc đảo dữ liệu, chất lượng dữ liệu kém, rủi ro tuân thủ và bỏ lỡ các cơ hội. Một chiến lược dữ liệu cung cấp định hướng, đảm bảo căn chỉnh với các mục tiêu kinh doanh và cho phép bạn tối đa hóa giá trị tài sản dữ liệu của mình trong khi quản lý rủi ro hiệu quả."
+          },
+          {
+            "question": "Mất bao lâu để phát triển một chiến lược dữ liệu?",
+            "answer": "Mốc thời gian thay đổi tùy theo quy mô và độ phức tạp của tổ chức, nhưng thường dao động từ 8-16 tuần để phát triển chiến lược. Triển khai là một quá trình liên tục diễn ra trong nhiều tháng hoặc nhiều năm. Chúng tôi làm việc theo từng giai đoạn để mang lại giá trị gia tăng trong khi xây dựng hướng tới tầm nhìn dài hạn."
+          },
+          {
+            "question": "Sự khác biệt giữa chiến lược dữ liệu và kiến trúc dữ liệu là gì?",
+            "answer": "Chiến lược dữ liệu là \"cái gì\" và \"tại sao\" – nó xác định tầm nhìn, mục tiêu và cách tiếp cận quản lý dữ liệu của bạn. Kiến trúc dữ liệu là \"như thế nào\" – đó là bản thiết kế kỹ thuật để triển khai chiến lược. Một chiến lược dữ liệu mạnh mẽ cung cấp thông tin và hướng dẫn các quyết định kiến trúc, trong khi kiến trúc làm cho chiến lược có thể thực hiện được."
+          }
+        ]
+      }
+    },
+    "internetOfThings": {
+      "hero": {
+        "badge": "Internet of Things",
+        "title": "Kết nối Thế giới của bạn với",
+        "titleHighlight": "Giải pháp IoT Thông minh",
+        "description": "Từ chiến lược đến triển khai – chúng tôi kết nối thiết bị của bạn với đám mây và biến dữ liệu thành thông tin chi tiết hữu ích. Các giải pháp IoT an toàn, có thể mở rộng mang lại giá trị kinh doanh."
+      },
+      "consultant": {
+        "name": "David Vu",
+        "role": "CEO & Người sáng lập Gotik",
+        "cta": "Tư vấn Miễn phí"
+      },
+      "useCases": {
+        "title": "Giải pháp IoT trong các Ngành công nghiệp",
+        "description": "Chuyển đổi hoạt động của bạn với các thiết bị kết nối thông minh và thông tin chi tiết về dữ liệu thời gian thực.",
+        "items": [
+          {
+            "id": "smart-cities",
+            "title": "Thành phố Thông minh",
+            "description": "Cải thiện quản lý giao thông, quản lý rác thải và an toàn công cộng với các mạng lưới IoT thông minh.",
+            "cta": "Tìm hiểu thêm →",
+            "icon": "city"
+          },
+          {
+            "id": "industrial",
+            "title": "IoT Công nghiệp",
+            "description": "Giám sát hiệu suất máy móc, tối ưu hóa quy trình sản xuất và hỗ trợ bảo trì dự đoán.",
+            "cta": "Tìm hiểu thêm →",
+            "icon": "industry"
+          },
+          {
+            "id": "energy",
+            "title": "Năng lượng & Tiện ích",
+            "description": "Giám sát và tối ưu hóa mức tiêu thụ năng lượng với đo lường thông minh và phân tích thời gian thực.",
+            "cta": "Tìm hiểu thêm →",
+            "icon": "energy"
+          },
+          {
+            "id": "logistics",
+            "title": "Logistics & Vận tải",
+            "description": "Theo dõi việc giao hàng theo thời gian thực, quản lý đội tàu và tối ưu hóa tuyến đường.",
+            "cta": "Tìm hiểu thêm →",
+            "icon": "logistics"
+          },
+          {
+            "id": "retail",
+            "title": "Bán lẻ Thông minh",
+            "description": "Quản lý hàng tồn kho, phân tích khách hàng và trải nghiệm mua sắm cá nhân hóa.",
+            "cta": "Tìm hiểu thêm →",
+            "icon": "retail"
+          },
+          {
+            "id": "buildings",
+            "title": "Tòa nhà Thông minh",
+            "description": "Kiểm soát khí hậu tự động, hệ thống an ninh và quản lý tòa nhà tiết kiệm năng lượng.",
+            "cta": "Tìm hiểu thêm →",
+            "icon": "building"
+          },
+          {
+            "id": "healthcare",
+            "title": "IoT Y tế",
+            "description": "Theo dõi bệnh nhân từ xa, kết nối thiết bị y tế và theo dõi tài sản bệnh viện để cải thiện việc chăm sóc bệnh nhân.",
+            "cta": "Tìm hiểu thêm →",
+            "icon": "healthcare"
+          }
+        ]
+      },
+      "successStories": {
+        "title": "Câu chuyện Thành công về IoT",
+        "items": [
+          {
+            "badge": "VẬN HÀNH CÁP TREO",
+            "title": "Nền tảng SisControl",
+            "description": "Nền tảng IoT toàn diện cung cấp cho người vận hành cáp treo tại các khu nghỉ dưỡng trượt tuyết khả năng truy cập thời gian thực vào dữ liệu và dự báo mới nhất. Được phát triển cùng với Sisag để nâng cao hiệu quả hoạt động.",
+            "point": "Giám sát & dự báo thời gian thực"
+          },
+          {
+            "badge": "KẾT NỐI CÔNG NGHIỆP",
+            "title": "Komax Connect",
+            "description": "Cung cấp cho khách hàng cái nhìn trực tuyến về năng suất của máy móc Komax của họ. Giải pháp hoàn chỉnh từ kết nối máy móc đến trực quan hóa và phân tích dữ liệu.",
+            "point": "Thông tin chi tiết về hiệu suất máy móc"
+          },
+          {
+            "badge": "THIẾT BỊ THÔNG MINH",
+            "title": "Máy pha cà phê kết nối Thermoplan",
+            "description": "Giải pháp đám mây sáng tạo kết nối các máy pha cà phê trên toàn thế giới. Cho phép giám sát từ xa hiệu suất thiết bị và cung cấp liền mạch các công thức và chức năng mới để nâng cao trải nghiệm khách hàng.",
+            "points": [
+              "Giám sát hiệu suất từ xa",
+              "Cập nhật công thức qua mạng"
+            ]
+          }
+        ]
+      },
+      "approach": {
+        "title": "Cách tiếp cận IoT của chúng tôi",
+        "description": "Từ chiến lược đến triển khai – chúng tôi hướng dẫn bạn qua từng bước của hành trình IoT với các phương pháp đã được chứng minh và sự hướng dẫn của chuyên gia.",
+        "steps": [
+          {
+            "title": "Chiến lược & Lập kế hoạch",
+            "subtitle": "Xác định tầm nhìn IoT của bạn",
+            "description": "Chúng tôi phát triển các chiến lược IoT phù hợp với mục tiêu kinh doanh của bạn, xác định các trường hợp sử dụng giá trị cao và tạo lộ trình triển khai."
+          },
+          {
+            "title": "Kết nối & Tích hợp",
+            "subtitle": "Kết nối thiết bị với đám mây",
+            "description": "Kết nối mạng thiết bị và đám mây liền mạch với các khái niệm bảo mật mạnh mẽ bảo vệ thiết bị IoT và dữ liệu của bạn khỏi các mối đe dọa."
+          },
+          {
+            "title": "Phân tích & Thông tin chi tiết",
+            "subtitle": "Biến dữ liệu thành giá trị",
+            "points": [
+              "Xử lý & phân tích dữ liệu thời gian thực",
+              "Thuật toán bảo trì dự đoán",
+              "Bảng điều khiển & trực quan hóa tùy chỉnh",
+              "Giám sát & tối ưu hóa liên tục"
+            ]
+          }
+        ]
+      },
+      "whyChoose": {
+        "title": "Tại sao chọn Gotik cho IoT?",
+        "description": "Chuyên môn IoT toàn diện từ kết nối thiết bị đến phân tích đám mây. Chúng tôi cung cấp các giải pháp an toàn, có thể mở rộng để chuyển đổi hoạt động của bạn.",
+        "features": [
+          "Chiến lược và triển khai IoT hoàn chỉnh",
+          "Các khái niệm bảo mật đã được chứng minh cho các thiết bị IoT",
+          "Kết nối đám mây trên tất cả các nền tảng chính",
+          "Chuyên môn và kinh nghiệm IoT đặc thù của ngành"
+        ],
+        "stats": [
+          {
+            "value": "100+",
+            "label": "Dự án IoT đã bàn giao"
+          },
+          {
+            "value": "1M+",
+            "label": "Thiết bị kết nối"
+          },
+          {
+            "value": "15+",
+            "label": "Ngành công nghiệp được phục vụ"
+          },
+          {
+            "value": "99.9%",
+            "label": "Thời gian hoạt động của nền tảng"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Các câu hỏi thường gặp",
+        "items": [
+          {
+            "question": "IoT là gì và nó có thể mang lại lợi ích gì cho doanh nghiệp của tôi?",
+            "answer": "Internet of Things (IoT) đề cập đến mạng lưới các thiết bị vật lý được kết nối với internet, thu thập và chia sẻ dữ liệu. IoT có thể mang lại lợi ích cho doanh nghiệp của bạn bằng cách cho phép giám sát thời gian thực, bảo trì dự đoán, tự động hóa quy trình, cải thiện việc ra quyết định thông qua phân tích dữ liệu và nâng cao trải nghiệm khách hàng. Các ứng dụng phổ biến bao gồm theo dõi tài sản, quản lý năng lượng, kiểm soát chất lượng và vận hành từ xa."
+          },
+          {
+            "question": "Làm thế nào để bạn đảm bảo an ninh IoT?",
+            "answer": "Bảo mật là tối quan trọng trong việc triển khai IoT. Chúng tôi sử dụng các phương pháp bảo mật đa lớp bao gồm xác thực thiết bị, truyền dữ liệu mã hóa, cơ sở hạ tầng đám mây an toàn, kiểm tra bảo mật định kỳ và khả năng cập nhật qua mạng. Chúng tôi cũng triển khai phân đoạn mạng, kiểm soát truy cập và giám sát liên tục để bảo vệ chống lại các mối đe dọa. Các khái niệm bảo mật của chúng tôi được thiết kế ngay từ đầu để bảo vệ cả thiết bị và dữ liệu."
+          },
+          {
+            "question": "Bạn làm việc với những nền tảng và giao thức nào?",
+            "answer": "Chúng tôi có chuyên môn trên tất cả các nền tảng IoT chính bao gồm AWS IoT, Azure IoT, Google Cloud IoT và các nền tảng cụ thể của ngành. Chúng tôi làm việc với các giao thức tiêu chuẩn như MQTT, CoAP, HTTP/HTTPS và hỗ trợ nhiều tùy chọn kết nối bao gồm WiFi, mạng di động (4G/5G), LoRaWAN, NB-IoT và Bluetooth. Cách tiếp cận không phụ thuộc vào nền tảng của chúng tôi đảm bảo chúng tôi chọn ngăn xếp công nghệ tốt nhất cho các yêu cầu cụ thể của bạn."
+          },
+          {
+            "question": "Một dự án IoT thường mất bao lâu?",
+            "answer": "Mốc thời gian dự án khác nhau dựa trên độ phức tạp và phạm vi. Một dự án thử nghiệm với số lượng thiết bị hạn chế có thể được triển khai trong 2-3 tháng, trong khi việc triển khai trên quyô toàn doanh nghiệp có thể mất 6-12 tháng. Chúng tôi thực hiện theo phương pháp tiếp cận linh hoạt, bắt đầu bằng việc phát triển chiến lược và chứng minh khái niệm, sau đó chuyển sang triển khai thử nghiệm và cuối cùng là mở rộng sang sản xuất. Cách tiếp cận theo từng giai đoạn này cho phép bạn thấy giá trị nhanh chóng trong khi giảm thiểu rủi ro."
+          }
+        ]
+      }
+    },
+    "mobileWebApps": {
+      "hero": {
+        "badge": "Ứng dụng Di động & Web",
+        "title": "Xây dựng các Ứng dụng Mạnh mẽ cho",
+        "titleHighlight": "Mọi Nền tảng",
+        "description": "Từ ý tưởng đến khi ra mắt – chúng tôi tạo ra các ứng dụng di động và web tùy chỉnh thúc đẩy sự tăng trưởng của doanh nghiệp. Các ứng dụng gốc, đa nền tảng hoặc ứng dụng web lũy tiến với hệ thống quản trị đám mây mạnh mẽ."
+      },
+      "consultant": {
+        "name": "David Vu",
+        "role": "CEO & Người sáng lập Gotik",
+        "cta": "Tư vấn Miễn phí"
+      },
+      "solutions": {
+        "title": "Giải pháp Ứng dụng Toàn diện",
+        "description": "Chọn cách tiếp cận phù hợp cho doanh nghiệp của bạn – hiệu suất gốc, hiệu quả đa nền tảng hoặc tính linh hoạt của web.",
+        "items": [
+          {
+            "title": "Ứng dụng iOS & Android Gốc",
+            "description": "Các ứng dụng gốc tùy chỉnh mang lại hiệu suất và trải nghiệm người dùng tốt nhất trên từng nền tảng."
+          },
+          {
+            "title": "Ứng dụng Đa nền tảng",
+            "description": "Một cơ sở mã duy nhất cho iOS và Android sử dụng React Native, Flutter hoặc .NET MAUI."
+          },
+          {
+            "title": "Ứng dụng Web Lũy tiến (PWA)",
+            "description": "Các ứng dụng web hoạt động ngoại tuyến, gửi thông báo đẩy và mang lại cảm giác như ứng dụng gốc."
+          },
+          {
+            "title": "Ứng dụng Doanh nghiệp",
+            "description": "Các giải pháp doanh nghiệp tùy chỉnh cho tự động hóa bán hàng, tiếp thị và dịch vụ khách hàng."
+          },
+          {
+            "title": "Giải pháp Thương mại điện tử",
+            "description": "Các cửa hàng trực tuyến đầy đủ tính năng với thanh toán an toàn và quản lý hàng tồn kho."
+          },
+          {
+            "title": "Cổng thông tin Web Tùy chỉnh",
+            "description": "Các cổng thông tin được thiết kế riêng cho khách hàng, đối tác hoặc nhân viên với quyền truy cập dựa trên vai trò."
+          },
+          {
+            "title": "Tích hợp Hệ thống quản trị Đám mây",
+            "description": "Các ứng dụng web và di động hiện đại với hệ thống quản trị đám mây mạnh mẽ, có thể mở rộng trên AWS, Azure hoặc Google Cloud."
+          }
+        ]
+      },
+      "technology": {
+        "title": "Ngăn xếp Công nghệ của chúng tôi",
+        "categories": [
+          {
+            "title": "Công nghệ Di động",
+            "items": [
+              {
+                "title": "iOS (Swift & SwiftUI)",
+                "description": "Phát triển ứng dụng gốc cho iPhone và iPad"
+              },
+              {
+                "title": "Android (Kotlin & Jetpack Compose)",
+                "description": "Phát triển ứng dụng Android hiện đại"
+              },
+              {
+                "title": "React Native",
+                "description": "Đa nền tảng với JavaScript/TypeScript"
+              },
+              {
+                "title": "Flutter",
+                "description": "Giao diện đa nền tảng đẹp mắt với Dart"
+              }
+            ]
+          },
+          {
+            "title": "Công nghệ Web",
+            "items": [
+              {
+                "title": "React & Next.js",
+                "description": "Ứng dụng web hiện đại với kết xuất phía máy chủ"
+              },
+              {
+                "title": "Vue.js & Nuxt",
+                "description": "Ứng dụng web lũy tiến và hiệu suất cao"
+              },
+              {
+                "title": ".NET & ASP.NET Core",
+                "description": "Ứng dụng web cấp doanh nghiệp"
+              },
+              {
+                "title": "Java & Spring Boot",
+                "description": "Các dịch vụ hệ thống quản trị mạnh mẽ"
+              }
+            ]
+          }
+        ]
+      },
+      "approach": {
+        "title": "Cách tiếp cận Phát triển của chúng tôi",
+        "description": "Từ ý tưởng đến khi ra mắt, chúng tôi hướng dẫn bạn qua từng bước với các phương pháp linh hoạt đã được chứng minh và thiết kế lấy người dùng làm trung tâm.",
+        "steps": [
+          {
+            "title": "Khám phá & Thiết kế",
+            "subtitle": "Thấu hiểu tầm nhìn của bạn",
+            "description": "Chúng tôi hợp tác chặt chẽ với bạn để thấu hiểu mục tiêu, xác định các tính năng và tạo ra các thiết kế lấy người dùng làm trung tâm để làm hài lòng khách hàng."
+          },
+          {
+            "title": "Phát triển Linh hoạt (Agile)",
+            "subtitle": "Lặp đi lặp lại và cộng tác",
+            "description": "Sử dụng các phương pháp linh hoạt, chúng tôi bàn giao phần mềm hoạt động theo các giai đoạn (sprints), cho phép bạn thấy tiến độ và cung cấp phản hồi liên tục."
+          },
+          {
+            "title": "Ra mắt & Hỗ trợ",
+            "subtitle": "Triển khai thành công",
+            "points": [
+              "Gửi & phê duyệt trên cửa hàng ứng dụng",
+              "Giám sát hiệu suất & phân tích",
+              "Bảo trì & cập nhật liên tục",
+              "Hỗ trợ người dùng & khắc phục lỗi"
+            ]
+          }
+        ]
+      },
+      "whyChoose": {
+        "title": "Tại sao chọn Gotik để Phát triển Ứng dụng?",
+        "description": "Hỗ trợ toàn diện từ ý tưởng ban đầu đến khi ra mắt thành công. Chúng tôi tạo ra các ứng dụng mà người dùng yêu thích và doanh nghiệp tin cậy.",
+        "features": [
+          "Chuyên môn toàn diện về công nghệ di động và web",
+          "Thiết kế lấy người dùng làm trung tâm và trải nghiệm người dùng (UX) vượt trội",
+          "Phát triển linh hoạt với việc bàn giao liên tục",
+          "Các dịch vụ bảo trì và hỗ trợ toàn diện"
+        ],
+        "stats": [
+          {
+            "value": "200+",
+            "label": "Ứng dụng đã Ra mắt"
+          },
+          {
+            "value": "5M+",
+            "label": "Người dùng Hoạt động"
+          },
+          {
+            "value": "4.8/5",
+            "label": "Xếp hạng Ứng dụng Trung bình"
+          },
+          {
+            "value": "98%",
+            "label": "Sự hài lòng của Khách hàng"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Các câu hỏi thường gặp",
+        "items": [
+          {
+            "question": "Tôi nên xây dựng ứng dụng gốc hay đa nền tảng?",
+            "answer": "Sự lựa chọn phụ thuộc vào yêu cầu của bạn. Các ứng dụng gốc (Swift cho iOS, Kotlin cho Android) mang lại hiệu suất tốt nhất và khả năng truy cập tất cả các tính năng của nền tảng, lý tưởng cho các ứng dụng phức tạp hoặc yêu cầu các tính năng tiên tiến. Các khuôn khổ đa nền tảng như React Native hoặc Flutter rất tuyệt vời để rút ngắn thời gian đưa sản phẩm ra thị trường và khi bạn muốn duy trì một cơ sở mã duy nhất. Chúng tôi sẽ giúp bạn đánh giá các yếu tố như ngân sách, lộ trình thời gian, các tính năng yêu cầu và đối tượng mục tiêu để đưa ra lựa chọn tốt nhất."
+          },
+          {
+            "question": "Ứng dụng Web Lũy tiến (PWA) là gì?",
+            "answer": "Ứng dụng Web Lũy tiến là các ứng dụng web sử dụng công nghệ web hiện đại để mang lại trải nghiệm giống như ứng dụng. PWA hoạt động trên bất kỳ thiết bị nào có trình duyệt web, có thể được cài đặt vào màn hình chính, hoạt động ngoại tuyến, gửi thông báo đẩy và tự động cập nhật. Chúng tiết kiệm chi phí vì bạn chỉ duy trì một cơ sở mã cho tất cả các nền tảng và người dùng không cần tải chúng từ các cửa hàng ứng dụng. PWA lý tưởng cho các ứng dụng nhiều nội dung, thương mại điện tử và khi bạn muốn tiếp cận người dùng trên tất cả các nền tảng một cách hiệu quả."
+          },
+          {
+            "question": "Mất bao lâu để phát triển một ứng dụng di động?",
+            "answer": "Lộ trình thời gian phát triển thay đổi tùy theo độ phức tạp của ứng dụng. Một ứng dụng đơn giản với các tính năng cơ bản có thể mất 2-3 tháng, trong khi một ứng dụng có độ phức tạp trung bình với các tính năng tùy chỉnh và tích hợp hệ thống quản trị thường yêu cầu 4-6 tháng. Các ứng dụng phức tạp với các tính năng nâng cao, tích hợp bên thứ ba và hệ thống quản trị tinh vi có thể mất 6-12 tháng hoặc hơn. Chúng tôi sử dụng các phương pháp linh hoạt để bàn giao phần mềm hoạt động theo từng giai đoạn, vì vậy bạn sẽ thấy tiến triển trong suốt quá trình phát triển và có thể bắt đầu thử nghiệm các phiên bản sớm."
+          },
+          {
+            "question": "Bạn có cung cấp hỗ trợ và bảo trì sau khi ra mắt không?",
+            "answer": "Có, chúng tôi cung cấp hỗ trợ toàn diện sau khi ra mắt bao gồm khắc phục lỗi, giám sát hiệu suất, cập nhật bảo mật, cập nhật tương thích hệ điều hành, nâng cao tính năng và hỗ trợ kỹ thuật. Chúng tôi có thể cung cấp các hợp đồng bảo trì liên tục hoặc hỗ trợ theo yêu cầu dựa trên nhu cầu của bạn. Các dịch vụ hỗ trợ của chúng tôi đảm bảo ứng dụng của bạn luôn cập nhật với các yêu cầu nền tảng mới nhất, duy trì hiệu suất tối ưu và tiếp tục làm hài lòng người dùng của bạn lâu dài sau khi ra mắt."
+          }
+        ]
+      }
+    },
+    "rustTransition": {
+      "hero": {
+        "badge": "Dịch vụ Chuyển đổi sang Rust",
+        "title": "Tiến tới Tương lai An toàn với",
+        "titleHighlight": "Rust",
+        "description": "Phát triển phần mềm đang thay đổi nhanh chóng. Dịch vụ Chuyển đổi sang Rust của chúng tôi giúp công ty của bạn làm cho phần mềm trở nên an toàn, hiệu quả và sẵn sàng cho tương lai."
+      },
+      "consultant": {
+        "name": "David Vu",
+        "role": "CEO & Người sáng lập Gotik",
+        "cta": "Tư vấn Miễn phí"
+      },
+      "whyRust": {
+        "title": "Tại sao Rust là Bước đi Đúng đắn Ngay bây giờ",
+        "description": "Áp lực quy định để làm cho phần mềm an toàn hơn, hiệu quả hơn và kinh tế hơn đang tăng lên. Các yêu cầu như Đạo luật phục hồi không gian mạng (CRA) hoặc các tiêu chuẩn như IEC 62443 hoặc IEC 60601 (công nghệ y tế) làm tăng đáng kể các yêu cầu về bảo mật phần mềm. Các ngôn ngữ truyền thống như C++ đang đạt đến giới hạn - Rust mang lại những lợi thế quyết định thông qua việc phát triển an toàn bộ nhớ và luồng, cùng với hiệu suất mang tính xác định mà không cần thu gom rác.",
+        "features": [
+          {
+            "title": "An toàn Bộ nhớ",
+            "description": "Rust đảm bảo an toàn bộ nhớ thông qua hệ thống sở hữu của nó, loại bỏ toàn bộ các lớp lỗ hổng bảo mật."
+          },
+          {
+            "title": "Hiệu suất Có thể Dự đoán",
+            "description": "Hiệu suất mang tính xác định không cần thu gom rác, tương đương với tốc độ và hiệu quả của C++."
+          },
+          {
+            "title": "Đồng thời An toàn",
+            "description": "Phát triển an toàn luồng ngăn chặn các cuộc chạy đua dữ liệu (data races) ngay tại thời điểm biên dịch."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Lợi ích của bạn khi Sử dụng Rust",
+        "description": "Rust thực hiện các kiểm tra chính thức trong quá trình biên dịch dựa trên các quy tắc sở hữu. Điều này đảm bảo rằng bộ nhớ không thể được viết và giải phóng cùng lúc khi nó không còn cần thiết nữa.",
+        "items": [
+          {
+            "title": "Tăng cường Bảo mật Phần mềm",
+            "description": "Bảo vệ chống lại các lỗi bộ nhớ và lỗ hổng bảo mật như tràn bộ đệm hoặc use-after-free."
+          },
+          {
+            "title": "Tối ưu hóa Tuân thủ Quy định",
+            "description": "Đơn giản hóa việc tuân thủ các tiêu chuẩn và quy định đặc thù của ngành như IEC 62443, IEC 60601 và CRA."
+          },
+          {
+            "title": "Lợi ích Kinh tế",
+            "description": "Giảm tổng chi phí sở hữu (TCO) thông qua việc ít lỗi hơn, chu kỳ phát triển ngắn hơn và chi phí bảo trì thấp hơn."
+          }
+        ]
+      },
+      "approach": {
+        "title": "Khía cạnh then chốt của Dịch vụ Chuyển đổi sang Rust của Gotik",
+        "description": "Dịch vụ Chuyển đổi mang lại sự thay đổi liên tục từ các ngôn ngữ lập trình truyền thống như một sự hiện đại hóa phần mềm trong quá trình phát triển tiếp theo của nó trong các dự án đang triển khai, hoặc một \"bước khởi đầu sớm\" cho các dự án mới.",
+        "highlight": {
+          "title": "Ngăn ngừa các Hệ thống Lỗi thời",
+          "description": "Tránh nợ kỹ thuật bằng cách áp dụng Rust ngay từ đầu."
+        },
+        "steps": [
+          {
+            "id": "01",
+            "label": "Đánh giá"
+          },
+          {
+            "id": "02",
+            "label": "Lập kế hoạch"
+          },
+          {
+            "id": "03",
+            "label": "Di dời"
+          },
+          {
+            "id": "04",
+            "label": "Tối ưu hóa"
+          }
+        ]
+      },
+      "details": {
+        "badge": "Cách tiếp cận của chúng tôi",
+        "title": "Chi tiết về Dịch vụ Chuyển đổi sang Rust của Gotik",
+        "description": "Với Dịch vụ Chuyển đổi sang Rust của chúng tôi, chúng tôi đồng hành cùng bạn một cách toàn diện và có cấu trúc thông qua việc chuyển đổi chiến lược sang Rust.",
+        "items": [
+          {
+            "title": "Hỗ trợ Tổ chức",
+            "description": "Chúng tôi đồng hành với việc thành lập một nhóm di dời chuyên môn và tích cực hỗ trợ công ty của bạn trong quá trình quản lý thay đổi để đảm bảo việc giới thiệu Rust diễn ra suôn sẻ."
+          },
+          {
+            "title": "Triển khai Kỹ thuật",
+            "description": "Các chuyên gia của chúng tôi thực hiện phân tích kiến trúc, tích hợp Rust một cách hợp lý vào các hệ thống hiện có và hiện đại hóa phần mềm của bạn trong khi cân nhắc các phụ thuộc hiện có. Chúng tôi cũng tối ưu hóa các quy trình CI/CD của bạn để di dời sang Rust hiệu quả."
+          },
+          {
+            "title": "Phát triển Nhân lực",
+            "description": "Chúng tôi cung cấp các chương trình đào tạo cá nhân, hội thảo và tư vấn cá nhân để chuẩn bị tốt nhất cho đội ngũ của bạn trong việc sử dụng Rust và đảm bảo phát triển kỹ năng bền vững."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Các câu hỏi thường gặp",
+        "items": [
+          {
+            "question": "Tại sao bây giờ là thời điểm thích hợp để chuyển sang Rust?",
+            "answer": "Các yêu cầu quy định ngày càng tăng và rủi ro mạng ngày càng lớn làm cho việc sử dụng các ngôn ngữ truyền thống như C++ một cách an toàn và kinh tế ngày càng trở nên khó khăn. Rust, với tư cách là một ngôn ngữ an toàn bộ nhớ, mang lại một giải pháp tối ưu cho những thách thức này."
+          },
+          {
+            "question": "Những ngành công nghiệp nào được hưởng lợi nhiều nhất từ Rust?",
+            "answer": "Đặc biệt là các ngành quan trọng về an toàn và được quản lý chặt chẽ như ngành công nghiệp ô tô, công nghệ y tế hoặc lĩnh vực tài chính được hưởng lợi đặc biệt từ việc giới thiệu Rust."
+          },
+          {
+            "question": "Rust hỗ trợ hiệu quả các yêu cầu quy định nào?",
+            "answer": "Rust tạo điều kiện tuân thủ các tiêu chuẩn an toàn quan trọng như ISO 26262, IEC 62304, IEC 62443, IEC 60601, hướng dẫn của FDA, CRA và chỉ thị NIS2 của Châu Âu."
+          },
+          {
+            "question": "Việc giới thiệu Rust từng bước có khả thi không?",
+            "answer": "Có, Rust có thể được tích hợp vào các dự án hiện có theo từng bước và theo cách có kiểm soát, ví dụ thông qua FFI (Foreign Function Interface) hoặc các công cụ xây dựng đặc biệt như Corrosion."
+          }
+        ]
+      }
+    },
+    "softwareArchitecture": {
+      "hero": {
+        "badge": "Kiến trúc Phần mềm",
+        "title": "Kiến trúc Linh hoạt cho",
+        "titleHighlight": "Phần mềm Sẵn sàng cho Tương lai",
+        "description": "Chúng tôi phát triển các kiến trúc mang tính tiến hóa cho phép điều chỉnh nhanh chóng và cải tiến liên tục. Các giải pháp mạnh mẽ, có thể mở rộng nhằm làm chủ các thách thức hiện tại và thích ứng linh hoạt với các yêu cầu trong tương lai."
+      },
+      "consultant": {
+        "name": "David Vu",
+        "role": "CEO & Người sáng lập Gotik",
+        "cta": "Tư vấn Miễn phí"
+      },
+      "services": {
+        "title": "Dịch vụ Kiến trúc của chúng tôi",
+        "description": "Từ các giải pháp ưu tiên đám mây (cloud-native) đến các kiến trúc vi dịch vụ (microservices) – chúng tôi thiết kế các hệ thống phát triển cùng với doanh nghiệp của bạn.",
+        "items": [
+          {
+            "title": "Kiến trúc Đám mây",
+            "description": "Các giải pháp đám mây có thể mở rộng và hiệu quả với chuyên môn trong việc triển khai Cloud-Native, IaaS, PaaS và SaaS."
+          },
+          {
+            "title": "Vi dịch vụ (Microservices)",
+            "description": "Các dịch vụ độc lập, có thể mở rộng, mỗi dịch vụ đảm nhận các chức năng kinh doanh cụ thể với tính linh hoạt và tính mô-đun cao."
+          },
+          {
+            "title": "Kiến trúc Serverless",
+            "description": "Các ứng dụng tiết kiệm chi phí và dễ dàng mở rộng bằng cách sử dụng các công nghệ và mô hình không máy chủ hiện đại."
+          },
+          {
+            "title": "Kiến trúc Tiến hóa",
+            "description": "Các kiến trúc có khả năng thích ứng được thiết kế cho sự thay đổi dần dần, đảm bảo giá trị lâu dài và sự linh hoạt trong kinh doanh."
+          },
+          {
+            "title": "Kiến trúc Hướng dịch vụ (SOA)",
+            "description": "Các giải pháp SOA cho phép các thành phần phần mềm có tính mô-đun và có thể tái sử dụng để đạt được tính linh hoạt tối đa."
+          },
+          {
+            "title": "Hệ thống Phân tán",
+            "description": "Các thành phần và dịch vụ chạy trên nhiều máy khác nhau để tăng cường độ tin cậy và hiệu suất."
+          },
+          {
+            "title": "Thiết kế Hướng tên miền (DDD)",
+            "description": "Cách tiếp cận chiến lược trong thiết kế phần mềm tập trung vào tên miền cốt lõi và logic tên miền, với các bối cảnh giới hạn mạnh mẽ và sự tách biệt rõ ràng giữa các mối quan tâm."
+          }
+        ]
+      },
+      "testimonials": {
+        "title": "Khách hàng nói gì về chúng tôi",
+        "items": [
+          {
+            "text": "\"Kiến trúc vi dịch vụ mà Gotik thiết kế cho chúng tôi đã thay đổi khả năng mở rộng của chúng tôi. Giờ đây, chúng tôi có thể triển khai các bản cập nhật một cách độc lập và đáp ứng các thay đổi của thị trường nhanh hơn bao giờ hết.\"",
+            "author": "Michael S.",
+            "role": "CTO, Công ty Công nghệ"
+          },
+          {
+            "text": "\"Làm việc với Gotik trong quá trình di chuyển lên đám mây của chúng tôi là một bước ngoặt. Cách tiếp cận kiến trúc tiến hóa của họ giúp chúng tôi có thể di dời dần dần mà không làm gián đoạn các hoạt động kinh doanh.\"",
+            "author": "Laura W.",
+            "role": "Trưởng phòng IT, Dịch vụ Tài chính"
+          }
+        ]
+      },
+      "approach": {
+        "title": "Cách tiếp cận Kiến trúc của chúng tôi",
+        "description": "Chúng tôi tuân theo một cách tiếp cận có hệ thống để đảm bảo kiến trúc phần mềm của bạn mạnh mẽ, có thể mở rộng và phù hợp với các mục tiêu kinh doanh của bạn.",
+        "steps": [
+          {
+            "title": "Phân tích & Đánh giá",
+            "subtitle": "Thấu hiểu trạng thái hiện tại của bạn",
+            "description": "Chúng tôi phân tích các hệ thống hiện có của bạn, xác định các điểm nghẽn và đánh giá nợ kỹ thuật để tạo ra một cơ sở ban đầu rõ ràng."
+          },
+          {
+            "title": "Thiết kế Kiến trúc",
+            "subtitle": "Xây dựng giải pháp tối ưu",
+            "description": "Chúng tôi thiết kế các kiến trúc tiến hóa cân bằng giữa nhu cầu hiện tại và tính linh hoạt trong tương lai, lựa chọn các mô hình và công nghệ phù hợp."
+          },
+          {
+            "title": "Triển khai & Phát triển",
+            "subtitle": "Xây dựng để cải tiến liên tục",
+            "points": [
+              "Triển khai từng bước với các thành quả nhanh chóng",
+              "Các thực hành & tự động hóa DevOps",
+              "Giám sát & tối ưu hóa liên tục",
+              "Chuyển giao kiến thức & nâng cao năng lực đội ngũ"
+            ]
+          }
+        ]
+      },
+      "whyChoose": {
+        "title": "Tại sao chọn Gotik cho Kiến trúc Phần mềm?",
+        "description": "Chuyên môn của chúng tôi về kiến trúc phần mềm đảm bảo các giải pháp mạnh mẽ và hiệu quả, hỗ trợ đắc lực cho các quy trình kinh doanh của bạn với tính linh hoạt tối đa.",
+        "features": [
+          "Kiến trúc tiến hóa được thiết kế cho sự thay đổi dần dần",
+          "Chuyên môn cloud-native trên tất cả các nền tảng chính",
+          "Chuyên gia về vi dịch vụ và hệ thống phân tán",
+          "Các giải pháp sẵn sàng cho tương lai với khả năng mở rộng cao"
+        ],
+        "stats": [
+          {
+            "value": "20+",
+            "label": "Năm Thiết kế Kiến trúc"
+          },
+          {
+            "value": "300+",
+            "label": "Kiến trúc đã Thiết kế"
+          },
+          {
+            "value": "99.9%",
+            "label": "Thời gian hoạt động Hệ thống"
+          },
+          {
+            "value": "50+",
+            "label": "Chuyên gia Kiến trúc"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Các câu hỏi thường gặp",
+        "items": [
+          {
+            "question": "Kiến trúc tiến hóa là gì?",
+            "answer": "Kiến trúc tiến hóa là một cách tiếp cận thiết kế cho sự thay đổi dần dần như một nguyên tắc hàng đầu. Thay vì cố gắng dự đoán tất cả các yêu cầu trong tương lai ngay từ đầu, kiến trúc tiến hóa chấp nhận sự thay đổi và làm cho việc sửa đổi hệ thống theo thời gian trở nên dễ dàng. Cách tiếp cận này sử dụng các nguyên tắc như bối cảnh giới hạn mạnh mẽ, các thực hành DevOps tiên tiến và thử nghiệm tự động để cho phép sự tiến hóa an toàn, liên tục của phần mềm."
+          },
+          {
+            "question": "Khi nào tôi nên xem xét kiến trúc vi dịch vụ (microservices)?",
+            "answer": "Vi dịch vụ là lý tưởng khi bạn cần khả năng mở rộng cao, triển khai độc lập các khả năng kinh doanh khác nhau hoặc có nhiều đội ngũ làm việc trên các phần khác nhau của hệ thống. Chúng đặc biệt có giá trị đối với các lĩnh vực phức tạp được hưởng lợi từ sự tách biệt rõ ràng các nhiệm vụ và khi bạn cần sử dụng các công nghệ khác nhau cho các dịch vụ khác nhau. Tuy nhiên, chúng làm tăng độ phức tạp trong vận hành, vì vậy chúng phù hợp nhất cho các tổ chức sẵn sàng đầu tư vào các thực hành DevOps và quản lý hệ thống phân tán."
+          },
+          {
+            "question": "Làm thế nào để bạn đảm bảo kiến trúc của chúng tôi luôn linh hoạt?",
+            "answer": "Chúng tôi thiết kế kiến trúc với sự linh hoạt bằng cách sử dụng các nguyên tắc như ghép nối lỏng lẻo (loose coupling), tính gắn kết mạnh mẽ (strong cohesion) và ranh giới rõ ràng giữa các thành phần. Chúng tôi sử dụng các mô hình như Thiết kế hướng tên miền (DDD) để điều chỉnh cấu trúc phần mềm phù hợp với các lĩnh vực kinh doanh, sử dụng các cách tiếp cận cloud-native để có khả năng mở rộng và triển khai thử nghiệm tự động toàn diện để cho phép cấu trúc lại (refactoring) an toàn. Các đợt đánh giá kiến trúc định kỳ và các thực hành cải tiến liên tục đảm bảo kiến trúc luôn phát triển cùng với nhu cầu kinh doanh của bạn."
+          },
+          {
+            "question": "Sự khác biệt giữa cloud-native và cloud-ready là gì?",
+            "answer": "Các ứng dụng cloud-ready có thể chạy trên đám mây nhưng có thể không tận dụng hết các khả năng của đám mây. Các ứng dụng cloud-native được thiết kế đặc biệt để tận dụng lợi thế của các khung điện toán đám mây – chúng được xây dựng để có khả năng mở rộng, khả năng phục hồi và tính linh hoạt. Các kiến trúc cloud-native thường sử dụng vi dịch vụ, container, điều phối động và các thực hành DevOps. Chúng cho phép bạn thử nghiệm các dịch vụ sáng tạo, tự động mở rộng quy mô dựa trên nhu cầu và đạt được khả năng phục hồi cao hơn thông qua các kiến trúc phân tán."
+          }
+        ]
+      }
+    },
+    "odoo": {
+      "hero": {
+        "badge": "Nền tảng Odoo",
+        "title": "Tối ưu hóa Doanh nghiệp với",
+        "titleHighlight": "Giải pháp Odoo ERP",
+        "description": "Gotik tự hào là Đối tác của Odoo. Chúng tôi giúp bạn chuyển đổi các hoạt động vận hành với nền tảng ERP tích hợp đầy đủ, mô-đun hóa được thiết kế cho sự tăng trưởng hiện đại."
+      },
+      "consultant": {
+        "name": "Thảo Quỳnh Nguyễn",
+        "role": "Tư vấn Quan hệ Đối tác tại HK",
+        "cta": "Đặt lịch Demo"
+      },
+      "benefits": {
+        "title": "Lợi thế từ Odoo",
+        "description": "Cách tiếp cận mô-đun độc đáo của Odoo cho phép doanh nghiệp bắt đầu với những gì họ cần và mở rộng liền mạch khi phát triển.",
+        "items": [
+          {
+            "title": "Tích hợp Tất cả trong Một",
+            "description": "Thay thế nhiều hệ thống cũ rời rạc bằng một cơ sở dữ liệu tích hợp duy nhất. Tài chính, Nhân sự, Bán hàng và Kho hàng đều hoạt động cùng nhau một cách hài hòa hoàn hảo."
+          },
+          {
+            "title": "Tính Mô-đun Vô hạn",
+            "description": "Với hơn 30.000 ứng dụng có sẵn, Odoo có thể được tùy chỉnh cho bất kỳ ngành nghề hoặc quy mô doanh nghiệp nào. Bạn chỉ trả tiền cho những tính năng thực sự sử dụng."
+          },
+          {
+            "title": "Khả năng Mở rộng Tiết kiệm Chi phí",
+            "description": "Tận hưởng tổng chi phí sở hữu thấp hơn so với các ERP truyền thống. Lõi mã nguồn mở của Odoo và chính sách giá linh hoạt giúp cả doanh nghiệp vừa và nhỏ (SME) và các tập đoàn lớn đều có thể tiếp cận."
+          },
+          {
+            "title": "Giao diện Thân thiện với Người dùng",
+            "description": "Odoo sở hữu giao diện hiện đại, trực quan giúp đơn giản hóa các quy trình kinh doanh phức tạp, dẫn đến tỷ lệ nhân viên áp dụng cao hơn và ít sai sót hơn."
+          }
+        ]
+      },
+      "services": {
+        "title": "Dịch vụ Odoo của chúng tôi",
+        "description": "Với tư cách là Đối tác Odoo, chúng tôi cung cấp các dịch vụ trọn gói để đảm bảo việc triển khai ERP của bạn thành công.",
+        "items": [
+          {
+            "title": "Triển khai & Tư vấn",
+            "description": "Chúng tôi hướng dẫn bạn qua toàn bộ quá trình triển khai, từ phân tích kinh doanh và thu thập yêu cầu đến cấu hình và vận hành chính thức.",
+            "points": [
+              "Xây dựng quy trình kinh doanh",
+              "Cấu hình & Thiết lập hệ thống",
+              "Đào tạo người dùng & Hỗ trợ thích nghi"
+            ]
+          },
+          {
+            "title": "Phát triển Mô-đun Tùy chỉnh",
+            "description": "Nếu các ứng dụng Odoo tiêu chuẩn không phù hợp với nhu cầu của bạn, chúng tôi sẽ phát triển các mô-đun riêng để mở rộng chức năng, đảm bảo ERP vừa vặn với doanh nghiệp của bạn.",
+            "points": [
+              "Phát triển kỹ thuật (Python)",
+              "Tùy chỉnh UI/UX (XML)",
+              "Tích hợp với các API bên thứ ba"
+            ]
+          },
+          {
+            "title": "Di chuyển & Nâng cấp Phiên bản",
+            "description": "Chúng tôi giúp bạn nâng cấp từ các phiên bản Odoo cũ hoặc di chuyển từ các hệ thống ERP khác như SAP hoặc Microsoft Dynamics trong khi vẫn bảo toàn được dữ liệu quan trọng.",
+            "points": [
+              "Di chuyển dữ liệu cũ",
+              "Nâng cấp phiên bản Odoo",
+              "Hỗ trợ kỹ thuật liên tục"
+            ]
+          },
+          {
+            "title": "Tích hợp Thương mại điện tử & Web",
+            "description": "Chúng tôi kết nối liền mạch Odoo với cửa hàng trực tuyến của bạn hoặc xây dựng giải pháp Thương mại điện tử Odoo mạnh mẽ để đồng bộ hóa bán hàng, kho hàng và kế toán theo thời gian thực.",
+            "points": [
+              "Tích hợp Shopify & WooCommerce",
+              "Triển khai Thương mại điện tử Odoo",
+              "Đồng bộ kho hàng theo thời gian thực"
+            ]
+          }
+        ]
+      },
+      "testimonials": {
+        "title": "Được các Doanh nghiệp tin dùng",
+        "items": [
+          "\"Chuyển sang Odoo là quyết định đúng đắn nhất cho việc quản lý kho hàng của chúng tôi. Quá trình triển khai của Gotik diễn ra suôn sẻ và hiệu quả.\"",
+          "\"Các mô-đun tùy chỉnh do Gotik xây dựng giúp chúng tôi tự động hóa quy trình thanh toán đặc thù, tiết kiệm hàng giờ làm việc thủ công mỗi tuần.\""
+        ]
+      },
+      "faq": {
+        "title": "Odoo FAQ",
+        "items": [
+          {
+            "question": "Odoo có phù hợp với doanh nghiệp nhỏ không?",
+            "answer": "Có, Odoo có khả năng mở rộng rất cao. Doanh nghiệp nhỏ có thể bắt đầu chỉ với một ứng dụng (như Hóa đơn) và thêm nhiều mô-đun hơn khi phát triển, khiến nó trở thành một trong những giải pháp ERP tiết kiệm chi phí nhất trên thị trường."
+          },
+          {
+            "question": "Odoo có thể được lưu trữ tại chỗ (on-premise) không?",
+            "answer": "Hoàn toàn có thể. Odoo cung cấp nhiều tùy chọn lưu trữ: Odoo Online (SaaS), Odoo.sh (PaaS), hoặc lưu trữ tại chỗ trên máy chủ riêng của bạn để có toàn quyền kiểm soát."
+          },
+          {
+            "question": "Việc triển khai Odoo mất bao lâu?",
+            "answer": "Một cuộc triển khai điển hình có thể mất từ vài tuần cho các cấu hình tiêu chuẩn đến vài tháng cho các đợt ra quân phức tạp, đa bộ phận với nhiều tùy chỉnh chuyên sâu."
+          }
+        ]
       }
     },
     "salesforce": {
       "hero": {
-        "badge": "Giải Pháp Salesforce",
-        "title": "Chuyển Đổi Doanh Nghiệp Của Bạn Với",
-        "titleHighlight": "Giải Pháp Salesforce Chuyên Nghiệp",
-        "description": "Mở khóa toàn bộ tiềm năng CRM của bạn. Chúng tôi cung cấp triển khai Salesforce phù hợp và phát triển tùy chỉnh để thúc đẩy hiệu quả và tăng trưởng.",
-        "consultant": {
-          "title": "Chuyên Môn Salesforce",
-          "role": "Chiến Lược Gia CRM Được Chứng Nhận",
-          "cta": "Yêu Cầu Báo Giá"
-        }
+        "badge": "Giải pháp Salesforce",
+        "title": "Chuyển đổi Doanh nghiệp với",
+        "titleHighlight": "Giải pháp Salesforce Chuyên sâu",
+        "description": "Khai phá toàn bộ tiềm năng của CRM. Chúng tôi cung cấp các dịch vụ triển khai và phát triển Salesforce tùy chỉnh để thúc đẩy hiệu quả và tăng trưởng."
+      },
+      "consultant": {
+        "name": "Chuyên gia Salesforce",
+        "role": "Chiến lược gia CRM được Chứng nhận",
+        "cta": "Nhận Báo giá"
       },
       "benefits": {
-        "title": "Tại Sao Chọn Dịch Vụ Salesforce Của Chúng Tôi?",
-        "description": "Chúng tôi thu hẹp khoảng cách giữa nhu cầu kinh doanh và khả năng của Salesforce, đảm bảo nền tảng của bạn là chất xúc tác cho thành công."
-      }
-    },
-    "odoo": {
-      "meta": {
-        "title": "Giải Pháp Odoo ERP | Gotik Consulting",
-        "description": "Chuyển đổi hoạt động kinh doanh của bạn với Odoo ERP. Gotik là đối tác Odoo chính thức cung cấp triển khai, tùy chỉnh và hỗ trợ."
-      },
-      "badge": "Nền Tảng Odoo",
-      "hero": {
-        "title": "Tối Ưu Hóa Doanh Nghiệp Với",
-        "titleHighlight": "Giải Pháp Odoo ERP",
-        "description": "Gotik là đối tác chính thức của Odoo. Chúng tôi giúp bạn chuyển đổi hoạt động với nền tảng ERP tích hợp hoàn toàn, được thiết kế cho sự phát triển hiện đại.",
-        "consultantName": "Thao Quynh Nguyen",
-        "consultantRole": "Tư Vấn Đối Tác @ HK",
-        "bookDemo": "Đặt Lịch Demo"
-      },
-      "benefits": {
-        "title": "Ưu Điểm Của Odoo",
-        "description": "Cách tiếp cận module độc đáo của Odoo cho phép doanh nghiệp bắt đầu với những gì họ cần và mở rộng linh hoạt khi phát triển.",
-        "integration": {
-          "title": "Tích Hợp Tất Cả Trong Một",
-          "description": "Thay thế nhiều hệ thống kế thừa không kết nối bằng một cơ sở dữ liệu tích hợp duy nhất. Tài chính, Nhân sự, Bán hàng và Kho vận đều hoạt động cùng nhau một cách hoàn hảo."
-        },
-        "modularity": {
-          "title": "Tính Module Vô Hạn",
-          "description": "Với hơn 30.000 ứng dụng có sẵn, Odoo có thể được tùy chỉnh cho bất kỳ ngành hoặc quy mô doanh nghiệp nào. Chỉ trả tiền cho các tính năng bạn thực sự sử dụng."
-        },
-        "scalability": {
-          "title": "Mở Rộng Tiết Kiệm Chi Phí",
-          "description": "Hưởng tổng chi phí sở hữu thấp hơn so với các ERP truyền thống. Lõi mã nguồn mở và giá linh hoạt của Odoo khiến nó phù hợp cho cả SME và doanh nghiệp lớn."
-        },
-        "interface": {
-          "title": "Giao Diện Thân Thiện",
-          "description": "Odoo có giao diện hiện đại, trực quan giúp đơn giản hóa các quy trình kinh doanh phức tạp, dẫn đến việc áp dụng cao hơn và ít lỗi hơn."
-        }
+        "title": "Tại sao chọn Dịch vụ Salesforce của chúng tôi?",
+        "description": "Chúng tôi thu hẹp khoảng cách giữa nhu cầu kinh doanh và khả năng của Salesforce, đảm bảo nền tảng của bạn là chất xúc tác cho sự thành công.",
+        "items": [
+          {
+            "title": "Tối ưu hóa Customer 360",
+            "description": "Có được cái nhìn hoàn chỉnh, thống nhất về khách hàng của bạn trên tất cả các bộ phận. Chúng tôi tối ưu hóa hệ thống Salesforce để mang lại những trải nghiệm cá nhân hóa nhằm thúc đẩy lòng trung thành."
+          },
+          {
+            "title": "Tự động hóa Quy trình",
+            "description": "Loại bỏ các tác vụ thủ công và tăng năng suất với các tính năng tự động hóa Salesforce Flow và Process Builder tiên tiến. Để đội ngũ của bạn tập trung vào các hoạt động có giá trị cao."
+          },
+          {
+            "title": "Tích hợp Liền mạch",
+            "description": "Kết nối Salesforce với các công cụ ERP, marketing và kế toán hiện có của bạn. Chúng tôi đảm bảo dữ liệu lưu chuyển mượt mà trong toàn bộ hệ thống công nghệ để tạo ra một nguồn dữ liệu tin cậy duy nhất."
+          },
+          {
+            "title": "Phân tích Dữ liệu Thực tiễn",
+            "description": "Tận dụng các báo cáo và bảng điều khiển (dashboards) của Salesforce để đưa ra các quyết định sáng suốt. Chúng tôi giúp bạn trực quan hóa các chỉ số quan trọng và dự báo các xu hướng tương lai một cách chính xác."
+          }
+        ]
       },
       "services": {
-        "title": "Dịch Vụ Odoo Của Chúng Tôi",
-        "description": "Là đối tác Odoo của bạn, chúng tôi cung cấp dịch vụ từ đầu đến cuối để đảm bảo triển khai ERP thành công."
+        "title": "Chuyên môn Salesforce của chúng tôi",
+        "description": "Từ thiết lập ban đầu đến phát triển tùy chỉnh phức tạp, chúng tôi cung cấp đầy đủ các dịch vụ Salesforce.",
+        "items": [
+          {
+            "title": "Triển khai & Tùy chỉnh",
+            "description": "Chúng tôi giúp bạn thiết lập Sales Cloud, Service Cloud và Marketing Cloud từ đầu hoặc tinh chỉnh cấu hình hiện tại để phù hợp hơn với các mục tiêu kinh doanh của bạn.",
+            "points": [
+              "Cấu hình Đối tượng Tiêu chuẩn & Tùy chỉnh",
+              "Mô hình Bảo mật & Quyền truy cập",
+              "Di chuyển & Làm sạch Dữ liệu"
+            ]
+          },
+          {
+            "title": "Phát triển Tùy chỉnh (Apex & LWC)",
+            "description": "Khi các tính năng có sẵn không đủ đáp ứng, các nhà phát triển của chúng tôi sẽ xây dựng các thành phần và logic tùy chỉnh bằng Lightning Web Components và Apex để đáp ứng các nhu cầu riêng biệt của bạn.",
+            "points": [
+              "Giao diện tùy chỉnh với Lightning Web Components",
+              "Bộ kích hoạt Apex (Triggers) & Bộ điều khiển (Controllers)",
+              "Triển khai Logic Kinh doanh Phức tạp"
+            ]
+          },
+          {
+            "title": "Tích hợp API & Hệ thống",
+            "description": "Chúng tôi kết nối Salesforce với các hệ thống bên ngoài bằng REST/SOAP API và các phần mềm trung gian như MuleSoft hoặc Dell Boomi để đảm bảo trao đổi dữ liệu liền mạch.",
+            "points": [
+              "Tích hợp Ứng dụng Bên thứ ba",
+              "Nguồn Dữ liệu Bên ngoài (OData)",
+              "Phát triển API Tùy chỉnh"
+            ]
+          },
+          {
+            "title": "Dịch vụ Quản trị & Hỗ trợ",
+            "description": "Giữ cho môi trường Salesforce của bạn hoạt động ở hiệu suất cao nhất với các dịch vụ hỗ trợ quản trị liên tục, kiểm tra sức khỏe hệ thống và các chương trình đào tạo người dùng.",
+            "points": [
+              "Kiểm tra Sức khỏe & Kiểm toán Định kỳ",
+              "Đào tạo Người dùng & Hỗ trợ Thích nghi",
+              "Hỗ trợ & Tối ưu hóa Liên tục"
+            ]
+          }
+        ]
       },
       "testimonials": {
-        "title": "Được Yêu Thích Bởi Doanh Nghiệp"
+        "title": "Thúc đẩy Thành công cùng Salesforce",
+        "items": [
+          "\"Nhờ chuyên môn Salesforce của họ, chu kỳ bán hàng của chúng tôi đã giảm 30% thông qua tự động hóa và khả năng hiển thị dữ liệu tốt hơn.\"",
+          "\"Các thành phần Lightning tùy chỉnh mà họ xây dựng đã thay đổi trải nghiệm người dùng của chúng tôi và tăng đáng kể tỷ lệ sử dụng CRM.\""
+        ]
       },
       "faq": {
-        "title": "Câu Hỏi Thường Gặp Về Odoo"
+        "title": "Salesforce FAQ",
+        "items": [
+          {
+            "question": "Bạn hỗ trợ những loại Salesforce Clouds nào?",
+            "answer": "Chúng tôi hỗ trợ toàn bộ hệ sinh thái Salesforce, với chuyên môn sâu về Sales Cloud, Service Cloud, Marketing Cloud và Community Cloud."
+          },
+          {
+            "question": "Bạn có thể tích hợp Salesforce với ERP hiện tại của tôi không?",
+            "answer": "Có, chúng tôi có kinh nghiệm sâu rộng trong việc tích hợp Salesforce với SAP, Oracle, Microsoft Dynamics và các hệ thống cũ tùy chỉnh bằng cách sử dụng cả API điểm-điểm và các trục dịch vụ doanh nghiệp (enterprise service buses)."
+          },
+          {
+            "question": "Bạn có cung cấp dịch vụ hỗ trợ quản trị liên tục không?",
+            "answer": "Hoàn toàn có thể. Chúng tôi cung cấp các gói dịch vụ quản trị bao gồm hỗ trợ người dùng hàng ngày, bảo trì hệ thống định kỳ và xây dựng lộ trình chiến lược để đảm bảo nền tảng phát triển cùng với doanh nghiệp của bạn."
+          }
+        ]
       }
     }
   }

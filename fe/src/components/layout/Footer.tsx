@@ -2,8 +2,12 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import {useTranslations} from 'next-intl';
 
 export function Footer() {
+    const t = useTranslations('footer');
+    const tServices = useTranslations('services');
+
     const [email, setEmail] = useState("");
     const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
     const [message, setMessage] = useState("");
@@ -26,7 +30,7 @@ export function Footer() {
 
             if (response.ok) {
                 setStatus("success");
-                setMessage("Thanks for subscribing! Check your email.");
+                setMessage(t('successMessage'));
                 setEmail("");
 
                 // Reset success message after 5 seconds
@@ -36,7 +40,7 @@ export function Footer() {
                 }, 5000);
             } else {
                 setStatus("error");
-                setMessage(data.error || "Failed to subscribe. Please try again.");
+                setMessage(data.error || t('errorMessage'));
 
                 // Reset error message after 5 seconds
                 setTimeout(() => {
@@ -46,7 +50,7 @@ export function Footer() {
             }
         } catch (error) {
             setStatus("error");
-            setMessage("Something went wrong. Please try again.");
+            setMessage(t('errorMessage'));
 
             // Reset error message after 5 seconds
             setTimeout(() => {
@@ -66,7 +70,7 @@ export function Footer() {
                             <span className="font-display text-2xl tracking-tight font-medium">Gotik Consulting</span>
                         </Link>
                         <p className="mb-4 leading-relaxed text-white/60 max-w-xs text-sm font-light">
-                            Transforming ideas into scalable software solutions since 2011. Your trusted partner in digital transformation.
+                            {t('tagline')}
                         </p>
                     </div>
                     <div className="flex gap-4 text-white/40 mt-8">
@@ -83,33 +87,33 @@ export function Footer() {
                 </div>
 
                 <div className="md:col-span-2">
-                    <h5 className="text-[10px] font-bold uppercase tracking-widest mb-6 text-sky-blue">Services</h5>
+                    <h5 className="text-[10px] font-bold uppercase tracking-widest mb-6 text-sky-blue">{t('servicesTitle')}</h5>
                     <ul className="space-y-3 text-sm text-white/60 font-light">
-                        <li><Link href="/software-engineer" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Software Engineering</Link></li>
-                        <li><Link href="/software-modernization" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Software Modernization</Link></li>
-                        <li><Link href="/ai-consulting" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">AI Consulting</Link></li>
-                        <li><Link href="/rust-transition" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Rust Transition</Link></li>
-                        <li><Link href="/data-management" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Data Management</Link></li>
-                        <li><Link href="/data-architecture" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Data Architecture</Link></li>
-                        <li><Link href="/data-and-analytics" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Data & Analytics</Link></li>
+                        <li><Link href="/software-engineer" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">{tServices('softwareEngineering')}</Link></li>
+                        <li><Link href="/software-modernization" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">{tServices('softwareModernization')}</Link></li>
+                        <li><Link href="/ai-consulting" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">{tServices('aiConsulting')}</Link></li>
+                        <li><Link href="/rust-transition" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">{tServices('rustTransition')}</Link></li>
+                        <li><Link href="/data-management" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">{tServices('dataManagement')}</Link></li>
+                        <li><Link href="/data-architecture" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">{tServices('dataArchitecture')}</Link></li>
+                        <li><Link href="/data-and-analytics" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">{tServices('dataAnalytics')}</Link></li>
                     </ul>
                 </div>
 
                 <div className="md:col-span-2">
-                    <h5 className="text-[10px] font-bold uppercase tracking-widest mb-6 text-sky-blue">More Services</h5>
+                    <h5 className="text-[10px] font-bold uppercase tracking-widest mb-6 text-sky-blue">{t('moreServicesTitle')}</h5>
                     <ul className="space-y-3 text-sm text-white/60 font-light">
-                        <li><Link href="/bim2fm" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">BIM2FM</Link></li>
-                        <li><Link href="/software-architecture" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Software Architecture</Link></li>
-                        <li><Link href="/internet-of-things" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Internet of Things</Link></li>
-                        <li><Link href="/mobile-web-apps" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Mobile & Web Apps</Link></li>
-                        <li><Link href="/cloud-services" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Cloud Services</Link></li>
-                        <li><Link href="/salesforce" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Salesforce</Link></li>
-                        <li><Link href="/odoo" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Odoo</Link></li>
+                        <li><Link href="/bim2fm" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">{tServices('bim2fm')}</Link></li>
+                        <li><Link href="/software-architecture" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">{tServices('softwareArchitecture')}</Link></li>
+                        <li><Link href="/internet-of-things" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">{tServices('iot')}</Link></li>
+                        <li><Link href="/mobile-web-apps" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">{tServices('mobileWebApps')}</Link></li>
+                        <li><Link href="/cloud-services" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">{tServices('cloudServices')}</Link></li>
+                        <li><Link href="/salesforce" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">{tServices('salesforce')}</Link></li>
+                        <li><Link href="/odoo" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">{tServices('odoo')}</Link></li>
                     </ul>
                 </div>
 
                 <div className="md:col-span-2">
-                    <h5 className="text-[10px] font-bold uppercase tracking-widest mb-6 text-sky-blue">Company</h5>
+                    <h5 className="text-[10px] font-bold uppercase tracking-widest mb-6 text-sky-blue">{t('companyTitle')}</h5>
                     <ul className="space-y-3 text-sm text-white/60 font-light">
                         <li><Link href="#about" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Our Story</Link></li>
                         <li><Link href="#approach" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">Our Process</Link></li>
@@ -118,13 +122,13 @@ export function Footer() {
                 </div>
 
                 <div className="md:col-span-4">
-                    <h5 className="text-[10px] font-bold uppercase tracking-widest mb-6 text-sky-blue">Newsletter</h5>
-                    <p className="text-sm text-white/60 mb-6 font-light">Stay updated with our latest insights and news.</p>
+                    <h5 className="text-[10px] font-bold uppercase tracking-widest mb-6 text-sky-blue">{t('newsletterTitle')}</h5>
+                    <p className="text-sm text-white/60 mb-6 font-light">{t('newsletterDescription')}</p>
                     <form onSubmit={handleSubmit} className="space-y-3">
                         <div className="flex gap-2">
                             <input
                                 type="email"
-                                placeholder="Email Address"
+                                placeholder={t('emailPlaceholder')}
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 disabled={status === "loading"}
@@ -136,7 +140,7 @@ export function Footer() {
                                 disabled={status === "loading"}
                                 className="bg-white text-navy-blue px-4 py-2 rounded-lg font-bold text-[10px] uppercase tracking-widest hover:bg-sky-blue hover:text-white transition-all disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
                             >
-                                {status === "loading" ? "..." : "Join"}
+                                {status === "loading" ? t('joiningButton') : t('joinButton')}
                             </button>
                         </div>
                         {message && (
@@ -149,10 +153,10 @@ export function Footer() {
             </div>
 
             <div className="max-w-7xl mx-auto pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] uppercase tracking-[0.2em] text-white/40 font-bold">
-                <p>© 2026 Gotik Consulting. All rights reserved.</p>
+                <p>{t('copyright')}</p>
                 <div className="flex gap-8">
-                    <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
-                    <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
+                    <Link href="#" className="hover:text-white transition-colors">{t('privacyPolicy')}</Link>
+                    <Link href="#" className="hover:text-white transition-colors">{t('termsOfService')}</Link>
                 </div>
             </div>
         </footer>

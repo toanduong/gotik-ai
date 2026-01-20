@@ -1,0 +1,142 @@
+{
+  "metadata": {
+    "title": "Gotik Consulting • Transforming Ideas into Scalable Software Solutions",
+    "siteName": "Gotik Consulting",
+    "description": "Expert guidance for your digital transformation journey. From cloud migration to custom development, we turn your vision into reality.",
+    "keywords": "software consulting, digital transformation, cloud migration, AI consulting, data solutions, software architecture, cloud services, custom development, enterprise software"
+  },
+  "navigation": {
+    "services": "SERVICES",
+    "blog": "BLOG",
+    "academy": "Academy",
+    "ourStory": "Our Story",
+    "getStarted": "Get Started",
+    "viewAllPosts": "View All Posts →",
+    "noPostsAvailable": "No posts available",
+    "solutions": "Solutions",
+    "recentBlog": "Recent Blog",
+    "contact": "Contact"
+  },
+  "services": {
+    "softwareEngineering": "Software Engineering",
+    "softwareModernization": "Software Modernization",
+    "aiConsulting": "AI Consulting",
+    "rustTransition": "Rust Transition",
+    "dataManagement": "Data Management",
+    "dataArchitecture": "Data Architecture",
+    "dataAnalytics": "Data & Analytics",
+    "bim2fm": "BIM2FM",
+    "softwareArchitecture": "Software Architecture",
+    "iot": "Internet of Things",
+    "mobileWebApps": "Mobile & Web Apps",
+    "cloudServices": "Cloud Services",
+    "salesforce": "Salesforce",
+    "odoo": "Odoo"
+  },
+  "hero": {
+    "badge": "Success anywhere, Dreamforce anywhere and Do more with less",
+    "title": "Transforming",
+    "titleHighlight": "Ideas",
+    "titleSuffix": "Into Scalable Software",
+    "description": "We help visionary companies build, launch, and scale modern digital products with speed, precision, and world-class engineering.",
+    "startProject": "Start Your Project",
+    "ourSolutions": "Our Solutions",
+    "projectsLaunched": "Projects Launched",
+    "successRate": "Success Rate",
+    "scroll": "Scroll"
+  },
+  "contact": {
+    "badge": "Get In Touch",
+    "title": "Let's Build Something",
+    "titleHighlight": "Amazing",
+    "description": "Ready to transform your ideas into reality? Fill out the form and our team will get back to you within 24 hours.",
+    "email": "Email",
+    "phone": "Phone",
+    "formName": "Full Name *",
+    "formEmail": "Email *",
+    "formCompany": "Company",
+    "formService": "Service Interest",
+    "formMessage": "Project Details",
+    "formSubmit": "Send Message",
+    "formSubmitting": "Sending...",
+    "selectService": "Select a service",
+    "serviceOptions": {
+      "ai": "AI Solutions",
+      "data": "Data Solutions",
+      "cloud": "Cloud Solutions",
+      "erp": "ERP Solutions",
+      "training": "Technical Training"
+    },
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Your Company Inc.",
+      "message": "Tell us about your project..."
+    },
+    "successMessage": "✓ Message sent successfully! We'll get back to you soon.",
+    "errorMessage": "✗"
+  },
+  "footer": {
+    "tagline": "Transforming ideas into scalable software solutions since 2011. Your trusted partner in digital transformation.",
+    "servicesTitle": "Services",
+    "moreServicesTitle": "More Services",
+    "companyTitle": "Company",
+    "newsletterTitle": "Newsletter",
+    "newsletterDescription": "Stay updated with our latest insights and news.",
+    "emailPlaceholder": "Email Address",
+    "joinButton": "Join",
+    "joiningButton": "...",
+    "successMessage": "Thanks for subscribing! Check your email.",
+    "errorMessage": "Failed to subscribe. Please try again.",
+    "copyright": "© 2026 Gotik Consulting. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  },
+  "pages": {
+    "odoo": {
+      "meta": {
+        "title": "Odoo ERP Solutions | Gotik Consulting",
+        "description": "Transform your business operations with Odoo ERP. Gotik is a proud Odoo Partner offering implementation, customization, and support services."
+      },
+      "badge": "Odoo Platform",
+      "hero": {
+        "title": "Streamline Your Business with",
+        "titleHighlight": "Odoo ERP Solutions",
+        "description": "Gotik is a proud Odoo Partner. We help you transform your operations with a fully integrated, modular ERP platform designed for modern growth.",
+        "consultantName": "Thao Quynh Nguyen",
+        "consultantRole": "Partnerships Consultant @ HK",
+        "bookDemo": "Book a Demo"
+      },
+      "benefits": {
+        "title": "The Odoo Advantage",
+        "description": "Odoo's unique modular approach allows businesses to start with what they need and scale seamlessly as they grow.",
+        "integration": {
+          "title": "All-in-One Integration",
+          "description": "Replace multiple disconnected legacy systems with a single integrated database. Finance, HR, Sales, and Inventory all work together in perfect harmony."
+        },
+        "modularity": {
+          "title": "Infinite Modularity",
+          "description": "With over 30,000 apps available, Odoo can be tailored to any industry or business size. Only pay for the features you actually use."
+        },
+        "scalability": {
+          "title": "Cost-Effective Scalability",
+          "description": "Enjoy lower total cost of ownership compared to traditional ERPs. Odoo's open-source core and flexible pricing make it accessible for both SMEs and enterprises."
+        },
+        "interface": {
+          "title": "User-Friendly Interface",
+          "description": "Odoo features a modern, intuitive interface that simplifies complex business processes, leading to higher employee adoption and fewer errors."
+        }
+      },
+      "services": {
+        "title": "Our Odoo Services",
+        "description": "As your Odoo Partner, we provide end-to-end services to ensure your ERP implementation is a success."
+      },
+      "testimonials": {
+        "title": "Loved by Businesses"
+      },
+      "faq": {
+        "title": "Odoo FAQ"
+      }
+    }
+  }
+}

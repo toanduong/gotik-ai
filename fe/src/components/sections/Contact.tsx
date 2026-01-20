@@ -1,8 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import {useTranslations} from 'next-intl';
 
 export default function Contact() {
+    const t = useTranslations('contact');
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -84,12 +87,12 @@ export default function Contact() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-6xl mx-auto">
                 {/* Left: Info */}
                 <div className="contact-info opacity-0">
-                    <span className="text-[10px] font-bold text-sky-blue uppercase tracking-widest mb-3 block">Get In Touch</span>
+                    <span className="text-[10px] font-bold text-sky-blue uppercase tracking-widest mb-3 block">{t('badge')}</span>
                     <h2 className="text-4xl md:text-5xl font-display text-white tracking-tight leading-[1.1] mb-6">
-                        Let&apos;s Build Something <span className="text-sky-blue">Amazing</span>
+                        {t('title')} <span className="text-sky-blue">{t('titleHighlight')}</span>
                     </h2>
                     <p className="text-white/70 mb-8 leading-relaxed">
-                        Ready to transform your ideas into reality? Fill out the form and our team will get back to you within 24 hours.
+                        {t('description')}
                     </p>
 
                     <div className="space-y-4 mb-12">
@@ -98,7 +101,7 @@ export default function Contact() {
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-sky-blue"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
                             </div>
                             <div>
-                                <div className="text-xs text-white/50 uppercase tracking-wider">Email</div>
+                                <div className="text-xs text-white/50 uppercase tracking-wider">{t('email')}</div>
                                 <a href="mailto:hello@gotik.ai" className="text-white hover:text-sky-blue transition-colors">david@gotik.ai</a>
                             </div>
                         </div>
@@ -107,7 +110,7 @@ export default function Contact() {
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-sky-blue"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
                             </div>
                             <div>
-                                <div className="text-xs text-white/50 uppercase tracking-wider">Phone</div>
+                                <div className="text-xs text-white/50 uppercase tracking-wider">{t('phone')}</div>
                                 <a href="tel:(+84) 0328763738" className="text-white hover:text-sky-blue transition-colors">(+84) 0328763738</a>
                             </div>
                         </div>
@@ -130,67 +133,67 @@ export default function Contact() {
                 <div className="contact-form opacity-0">
                     <form onSubmit={handleSubmit} className="space-y-6">
                         <div>
-                            <label className="block text-xs font-bold uppercase tracking-widest text-white/70 mb-2">Full Name *</label>
+                            <label className="block text-xs font-bold uppercase tracking-widest text-white/70 mb-2">{t('formName')}</label>
                             <input
                                 type="text"
                                 name="name"
                                 value={formData.name}
                                 onChange={handleChange}
-                                placeholder="John Doe"
+                                placeholder={t('placeholders.name')}
                                 required
                                 disabled={isSubmitting}
                                 className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:border-sky-blue focus:outline-none transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                             />
                         </div>
                         <div>
-                            <label className="block text-xs font-bold uppercase tracking-widest text-white/70 mb-2">Email *</label>
+                            <label className="block text-xs font-bold uppercase tracking-widest text-white/70 mb-2">{t('formEmail')}</label>
                             <input
                                 type="email"
                                 name="email"
                                 value={formData.email}
                                 onChange={handleChange}
-                                placeholder="john@company.com"
+                                placeholder={t('placeholders.email')}
                                 required
                                 disabled={isSubmitting}
                                 className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:border-sky-blue focus:outline-none transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                             />
                         </div>
                         <div>
-                            <label className="block text-xs font-bold uppercase tracking-widest text-white/70 mb-2">Company</label>
+                            <label className="block text-xs font-bold uppercase tracking-widest text-white/70 mb-2">{t('formCompany')}</label>
                             <input
                                 type="text"
                                 name="company"
                                 value={formData.company}
                                 onChange={handleChange}
-                                placeholder="Your Company Inc."
+                                placeholder={t('placeholders.company')}
                                 disabled={isSubmitting}
                                 className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:border-sky-blue focus:outline-none transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                             />
                         </div>
                         <div>
-                            <label className="block text-xs font-bold uppercase tracking-widest text-white/70 mb-2">Service Interest</label>
+                            <label className="block text-xs font-bold uppercase tracking-widest text-white/70 mb-2">{t('formService')}</label>
                             <select
                                 name="service"
                                 value={formData.service}
                                 onChange={handleChange}
                                 disabled={isSubmitting}
                                 className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:border-sky-blue focus:outline-none transition-colors [&>option]:text-navy-blue disabled:opacity-50 disabled:cursor-not-allowed">
-                                <option>Select a service</option>
-                                <option>AI Solutions</option>
-                                <option>Data Solutions</option>
-                                <option>Cloud Solutions</option>
-                                <option>ERP Solutions</option>
-                                <option>Technical Training</option>
+                                <option>{t('selectService')}</option>
+                                <option>{t('serviceOptions.ai')}</option>
+                                <option>{t('serviceOptions.data')}</option>
+                                <option>{t('serviceOptions.cloud')}</option>
+                                <option>{t('serviceOptions.erp')}</option>
+                                <option>{t('serviceOptions.training')}</option>
                             </select>
                         </div>
                         <div>
-                            <label className="block text-xs font-bold uppercase tracking-widest text-white/70 mb-2">Project Details</label>
+                            <label className="block text-xs font-bold uppercase tracking-widest text-white/70 mb-2">{t('formMessage')}</label>
                             <textarea
                                 rows={4}
                                 name="message"
                                 value={formData.message}
                                 onChange={handleChange}
-                                placeholder="Tell us about your project..."
+                                placeholder={t('placeholders.message')}
                                 disabled={isSubmitting}
                                 className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:border-sky-blue focus:outline-none transition-colors resize-none disabled:opacity-50 disabled:cursor-not-allowed">
                             </textarea>
@@ -199,12 +202,12 @@ export default function Contact() {
                         {/* Status Messages */}
                         {submitStatus === 'success' && (
                             <div className="bg-green-500/20 border border-green-500/50 rounded-lg px-4 py-3 text-green-100">
-                                ✓ Message sent successfully! We&apos;ll get back to you soon.
+                                {t('successMessage')}
                             </div>
                         )}
                         {submitStatus === 'error' && (
                             <div className="bg-red-500/20 border border-red-500/50 rounded-lg px-4 py-3 text-red-100">
-                                ✗ {errorMessage}
+                                {t('errorMessage')} {errorMessage}
                             </div>
                         )}
 
@@ -212,7 +215,7 @@ export default function Contact() {
                             type="submit"
                             disabled={isSubmitting}
                             className="w-full bg-sky-blue text-white h-12 rounded-lg hover:bg-white hover:text-navy-blue hover:scale-105 transition-all flex items-center justify-center gap-2 text-xs font-semibold uppercase tracking-widest shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:bg-sky-blue disabled:hover:text-white">
-                            <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
+                            <span>{isSubmitting ? t('formSubmitting') : t('formSubmit')}</span>
                             {!isSubmitting && (
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m22 2-7 20-4-9-9-4Z" /><path d="M22 2 11 13" /></svg>
                             )}

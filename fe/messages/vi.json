@@ -1,0 +1,142 @@
+{
+  "metadata": {
+    "title": "Gotik Consulting • Chuyển Đổi Ý Tưởng Thành Giải Pháp Phần Mềm Mở Rộng",
+    "siteName": "Gotik Consulting",
+    "description": "Hướng dẫn chuyên nghiệp cho hành trình chuyển đổi số của bạn. Từ di chuyển đám mây đến phát triển tùy chỉnh, chúng tôi biến tầm nhìn của bạn thành hiện thực.",
+    "keywords": "tư vấn phần mềm, chuyển đổi số, di chuyển đám mây, tư vấn AI, giải pháp dữ liệu, kiến trúc phần mềm, dịch vụ đám mây, phát triển tùy chỉnh, phần mềm doanh nghiệp"
+  },
+  "navigation": {
+    "services": "DỊCH VỤ",
+    "blog": "BLOG",
+    "academy": "Đào Tạo",
+    "ourStory": "Về Chúng Tôi",
+    "getStarted": "Bắt Đầu",
+    "viewAllPosts": "Xem Tất Cả →",
+    "noPostsAvailable": "Chưa có bài viết",
+    "solutions": "Giải Pháp",
+    "recentBlog": "Blog Gần Đây",
+    "contact": "Liên Hệ"
+  },
+  "services": {
+    "softwareEngineering": "Kỹ Thuật Phần Mềm",
+    "softwareModernization": "Hiện Đại Hóa Phần Mềm",
+    "aiConsulting": "Tư Vấn AI",
+    "rustTransition": "Chuyển Đổi Rust",
+    "dataManagement": "Quản Lý Dữ Liệu",
+    "dataArchitecture": "Kiến Trúc Dữ Liệu",
+    "dataAnalytics": "Dữ Liệu & Phân Tích",
+    "bim2fm": "BIM2FM",
+    "softwareArchitecture": "Kiến Trúc Phần Mềm",
+    "iot": "Internet of Things",
+    "mobileWebApps": "Ứng Dụng Mobile & Web",
+    "cloudServices": "Dịch Vụ Đám Mây",
+    "salesforce": "Salesforce",
+    "odoo": "Odoo"
+  },
+  "hero": {
+    "badge": "Thành công mọi nơi, Dreamforce mọi nơi và Làm nhiều hơn với ít hơn",
+    "title": "Chuyển Đổi",
+    "titleHighlight": "Ý Tưởng",
+    "titleSuffix": "Thành Phần Mềm Mở Rộng",
+    "description": "Chúng tôi giúp các công ty có tầm nhìn xây dựng, ra mắt và mở rộng các sản phẩm số hiện đại với tốc độ, độ chính xác và kỹ thuật đẳng cấp thế giới.",
+    "startProject": "Bắt Đầu Dự Án",
+    "ourSolutions": "Giải Pháp Của Chúng Tôi",
+    "projectsLaunched": "Dự Án Đã Triển Khai",
+    "successRate": "Tỷ Lệ Thành Công",
+    "scroll": "Cuộn"
+  },
+  "contact": {
+    "badge": "Liên Hệ",
+    "title": "Hãy Cùng Xây Dựng Điều Gì Đó",
+    "titleHighlight": "Tuyệt Vời",
+    "description": "Sẵn sàng biến ý tưởng của bạn thành hiện thực? Điền vào form và đội ngũ của chúng tôi sẽ liên hệ lại trong vòng 24 giờ.",
+    "email": "Email",
+    "phone": "Điện Thoại",
+    "formName": "Họ và Tên *",
+    "formEmail": "Email *",
+    "formCompany": "Công Ty",
+    "formService": "Dịch Vụ Quan Tâm",
+    "formMessage": "Chi Tiết Dự Án",
+    "formSubmit": "Gửi Tin Nhắn",
+    "formSubmitting": "Đang gửi...",
+    "selectService": "Chọn dịch vụ",
+    "serviceOptions": {
+      "ai": "Giải Pháp AI",
+      "data": "Giải Pháp Dữ Liệu",
+      "cloud": "Giải Pháp Đám Mây",
+      "erp": "Giải Pháp ERP",
+      "training": "Đào Tạo Kỹ Thuật"
+    },
+    "placeholders": {
+      "name": "Nguyễn Văn A",
+      "email": "nguyenvana@congty.com",
+      "company": "Công Ty Của Bạn",
+      "message": "Cho chúng tôi biết về dự án của bạn..."
+    },
+    "successMessage": "✓ Tin nhắn đã được gửi thành công! Chúng tôi sẽ liên hệ lại sớm.",
+    "errorMessage": "✗"
+  },
+  "footer": {
+    "tagline": "Chuyển đổi ý tưởng thành giải pháp phần mềm mở rộng từ năm 2011. Đối tác tin cậy của bạn trong chuyển đổi số.",
+    "servicesTitle": "Dịch Vụ",
+    "moreServicesTitle": "Dịch Vụ Khác",
+    "companyTitle": "Công Ty",
+    "newsletterTitle": "Bản Tin",
+    "newsletterDescription": "Cập nhật những thông tin và tin tức mới nhất của chúng tôi.",
+    "emailPlaceholder": "Địa Chỉ Email",
+    "joinButton": "Đăng Ký",
+    "joiningButton": "...",
+    "successMessage": "Cảm ơn bạn đã đăng ký! Vui lòng kiểm tra email.",
+    "errorMessage": "Đăng ký thất bại. Vui lòng thử lại.",
+    "copyright": "© 2026 Gotik Consulting. Bảo lưu mọi quyền.",
+    "privacyPolicy": "Chính Sách Bảo Mật",
+    "termsOfService": "Điều Khoản Dịch Vụ"
+  },
+  "pages": {
+    "odoo": {
+      "meta": {
+        "title": "Giải Pháp Odoo ERP | Gotik Consulting",
+        "description": "Chuyển đổi hoạt động kinh doanh của bạn với Odoo ERP. Gotik là đối tác Odoo chính thức cung cấp triển khai, tùy chỉnh và hỗ trợ."
+      },
+      "badge": "Nền Tảng Odoo",
+      "hero": {
+        "title": "Tối Ưu Hóa Doanh Nghiệp Với",
+        "titleHighlight": "Giải Pháp Odoo ERP",
+        "description": "Gotik là đối tác chính thức của Odoo. Chúng tôi giúp bạn chuyển đổi hoạt động với nền tảng ERP tích hợp hoàn toàn, được thiết kế cho sự phát triển hiện đại.",
+        "consultantName": "Thao Quynh Nguyen",
+        "consultantRole": "Tư Vấn Đối Tác @ HK",
+        "bookDemo": "Đặt Lịch Demo"
+      },
+      "benefits": {
+        "title": "Ưu Điểm Của Odoo",
+        "description": "Cách tiếp cận module độc đáo của Odoo cho phép doanh nghiệp bắt đầu với những gì họ cần và mở rộng linh hoạt khi phát triển.",
+        "integration": {
+          "title": "Tích Hợp Tất Cả Trong Một",
+          "description": "Thay thế nhiều hệ thống kế thừa không kết nối bằng một cơ sở dữ liệu tích hợp duy nhất. Tài chính, Nhân sự, Bán hàng và Kho vận đều hoạt động cùng nhau một cách hoàn hảo."
+        },
+        "modularity": {
+          "title": "Tính Module Vô Hạn",
+          "description": "Với hơn 30.000 ứng dụng có sẵn, Odoo có thể được tùy chỉnh cho bất kỳ ngành hoặc quy mô doanh nghiệp nào. Chỉ trả tiền cho các tính năng bạn thực sự sử dụng."
+        },
+        "scalability": {
+          "title": "Mở Rộng Tiết Kiệm Chi Phí",
+          "description": "Hưởng tổng chi phí sở hữu thấp hơn so với các ERP truyền thống. Lõi mã nguồn mở và giá linh hoạt của Odoo khiến nó phù hợp cho cả SME và doanh nghiệp lớn."
+        },
+        "interface": {
+          "title": "Giao Diện Thân Thiện",
+          "description": "Odoo có giao diện hiện đại, trực quan giúp đơn giản hóa các quy trình kinh doanh phức tạp, dẫn đến việc áp dụng cao hơn và ít lỗi hơn."
+        }
+      },
+      "services": {
+        "title": "Dịch Vụ Odoo Của Chúng Tôi",
+        "description": "Là đối tác Odoo của bạn, chúng tôi cung cấp dịch vụ từ đầu đến cuối để đảm bảo triển khai ERP thành công."
+      },
+      "testimonials": {
+        "title": "Được Yêu Thích Bởi Doanh Nghiệp"
+      },
+      "faq": {
+        "title": "Câu Hỏi Thường Gặp Về Odoo"
+      }
+    }
+  }
+}

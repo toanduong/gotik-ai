@@ -2,8 +2,10 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
+import {useTranslations} from 'next-intl';
 
 export default function Hero() {
+    const t = useTranslations('hero');
     useEffect(() => {
         // Initialize Motion.dev animations
         if (typeof window !== 'undefined' && (window as any).Motion) {
@@ -47,15 +49,15 @@ export default function Hero() {
                     <div className="max-w-2xl">
                         <div className="hero-badge inline-flex items-center gap-2 px-4 py-2 rounded-full bg-navy-blue/5 border border-navy-blue/10 mb-8 opacity-0">
                             <span className="w-2 h-2 rounded-full bg-bright-blue animate-pulse"></span>
-                            <span className="text-[10px] font-bold uppercase tracking-widest text-navy-blue">Success anywhere, Dreamforce anywhere and Do more with less</span>
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-navy-blue">{t('badge')}</span>
                         </div>
 
                         <h1 className="hero-title text-5xl md:text-7xl font-display font-medium text-navy-blue leading-[1.1] tracking-tight mb-8 opacity-0">
-                            Transforming <span className="italic block text-sky-blue">Ideas</span> Into Scalable Software
+                            {t('title')} <span className="italic block text-sky-blue">{t('titleHighlight')}</span> {t('titleSuffix')}
                         </h1>
 
                         <p className="hero-description text-lg md:text-xl text-neutral-gray mb-12 leading-relaxed opacity-0">
-                            We help visionary companies build, launch, and scale modern digital products with speed, precision, and world-class engineering.
+                            {t('description')}
                         </p>
 
                         <div className="hero-cta flex flex-col sm:flex-row gap-4 opacity-0">
@@ -63,26 +65,26 @@ export default function Hero() {
                                 href="#contact"
                                 className="group relative bg-navy-blue text-white px-8 py-5 rounded-full text-xs font-bold uppercase tracking-[0.2em] overflow-hidden transition-all duration-300 hover:bg-bright-blue text-center hover:scale-105"
                             >
-                                <span className="relative z-10">Start Your Project</span>
+                                <span className="relative z-10">{t('startProject')}</span>
                                 <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-300 opacity-10"></div>
                             </Link>
                             <Link
                                 href="#solutions"
                                 className="px-8 py-5 rounded-full text-xs font-bold uppercase tracking-[0.2em] border border-navy-blue/10 text-navy-blue hover:bg-navy-blue/5 transition-all duration-300 text-center hover:scale-105"
                             >
-                                Our Solutions
+                                {t('ourSolutions')}
                             </Link>
                         </div>
 
                         <div className="hero-stats mt-16 pt-8 border-t border-navy-blue/5 flex items-center gap-8 opacity-0">
                             <div>
                                 <p className="text-2xl font-display font-bold text-navy-blue mb-1">25+</p>
-                                <p className="text-[10px] uppercase font-bold tracking-widest text-neutral-gray">Projects Launched</p>
+                                <p className="text-[10px] uppercase font-bold tracking-widest text-neutral-gray">{t('projectsLaunched')}</p>
                             </div>
                             <div className="w-px h-8 bg-navy-blue/10"></div>
                             <div>
                                 <p className="text-2xl font-display font-bold text-navy-blue mb-1">98%</p>
-                                <p className="text-[10px] uppercase font-bold tracking-widest text-neutral-gray">Success Rate</p>
+                                <p className="text-[10px] uppercase font-bold tracking-widest text-neutral-gray">{t('successRate')}</p>
                             </div>
                         </div>
                     </div>
@@ -156,7 +158,7 @@ export default function Hero() {
 
             {/* Scroll Indicator */}
             <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-0 hero-cta">
-                <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-neutral-gray [writing-mode:vertical-lr]">Scroll</p>
+                <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-neutral-gray [writing-mode:vertical-lr]">{t('scroll')}</p>
                 <div className="w-px h-16 bg-navy-blue/10 relative overflow-hidden">
                     <div className="scroll-indicator-line absolute top-0 left-0 w-full h-1/2 bg-sky-blue"></div>
                 </div>

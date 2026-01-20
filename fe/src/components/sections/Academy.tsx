@@ -1,63 +1,65 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
-const learningPaths = [
-    {
-        category: "Engineering Excellence",
-        icon: (
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="16 18 22 12 16 6"/>
-                <polyline points="8 6 2 12 8 18"/>
-            </svg>
-        ),
-        description: "Master modern software development from fundamentals to advanced patterns",
-        topics: ["Clean Architecture", "Test-Driven Development", "Design Patterns", "Code Review Best Practices"]
-    },
-    {
-        category: "Cloud & DevOps",
-        icon: (
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
-            </svg>
-        ),
-        description: "Build, deploy, and scale applications in modern cloud environments",
-        topics: ["Kubernetes & Docker", "CI/CD Pipelines", "Infrastructure as Code", "Cloud Security"]
-    },
-    {
-        category: "Data & AI",
-        icon: (
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-            </svg>
-        ),
-        description: "Transform data into insights and build intelligent applications",
-        topics: ["Machine Learning Fundamentals", "LLM Integration", "Data Engineering", "AI Strategy"]
-    },
-    {
-        category: "Leadership & Strategy",
-        icon: (
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                <circle cx="9" cy="7" r="4"/>
-                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-            </svg>
-        ),
-        description: "Lead technical teams and drive strategic technology decisions",
-        topics: ["Technical Leadership", "Agile at Scale", "Tech Debt Management", "Team Building"]
-    }
-];
-
-const stats = [
-    { value: "5,000+", label: "Engineers Trained" },
-    { value: "200+", label: "Organizations" },
-    { value: "4.9/5", label: "Average Rating" },
-    { value: "95%", label: "Completion Rate" }
-];
+import { useTranslations } from 'next-intl';
 
 export default function Academy() {
     const [activeIndex, setActiveIndex] = useState(0);
+    const t = useTranslations('academy');
+
+    const learningPaths = [
+        {
+            category: t('learningPaths.engineering.category'),
+            icon: (
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="16 18 22 12 16 6"/>
+                    <polyline points="8 6 2 12 8 18"/>
+                </svg>
+            ),
+            description: t('learningPaths.engineering.description'),
+            topics: t.raw('learningPaths.engineering.topics')
+        },
+        {
+            category: t('learningPaths.cloud.category'),
+            icon: (
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
+                </svg>
+            ),
+            description: t('learningPaths.cloud.description'),
+            topics: t.raw('learningPaths.cloud.topics')
+        },
+        {
+            category: t('learningPaths.data.category'),
+            icon: (
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+            ),
+            description: t('learningPaths.data.description'),
+            topics: t.raw('learningPaths.data.topics')
+        },
+        {
+            category: t('learningPaths.leadership.category'),
+            icon: (
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+            ),
+            description: t('learningPaths.leadership.description'),
+            topics: t.raw('learningPaths.leadership.topics')
+        }
+    ];
+
+    const stats = [
+        { value: "5,000+", label: t('stats.engineersTrained') },
+        { value: "200+", label: t('stats.organizations') },
+        { value: "4.9/5", label: t('stats.rating') },
+        { value: "95%", label: t('stats.completion') }
+    ];
 
     useEffect(() => {
         if (typeof window !== 'undefined' && (window as any).Motion) {
@@ -98,12 +100,12 @@ export default function Academy() {
             <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
                 {/* Header */}
                 <div className="academy-header text-center mb-20 opacity-0">
-                    <span className="text-[10px] font-bold text-sky-blue uppercase tracking-widest mb-4 block">Gotik Academy</span>
+                    <span className="text-[10px] font-bold text-sky-blue uppercase tracking-widest mb-4 block">{t('badge')}</span>
                     <h2 className="text-4xl md:text-5xl font-display text-white mb-6 tracking-tight">
-                        Invest in Your Team's Growth
+                        {t('title')}
                     </h2>
                     <p className="text-lg text-white/70 max-w-3xl mx-auto leading-relaxed">
-                        We don't just deliver solutions—we empower your team to excel. Our tailored training programs combine real-world experience with practical knowledge, designed to elevate your organization's technical capabilities.
+                        {t('description')}
                     </p>
                 </div>
 
@@ -130,9 +132,9 @@ export default function Academy() {
                             </div>
 
                             <div className="space-y-3">
-                                <div className="text-xs text-sky-blue/80 uppercase tracking-widest font-bold mb-4">Key Topics</div>
+                                <div className="text-xs text-sky-blue/80 uppercase tracking-widest font-bold mb-4">{t('keyTopics')}</div>
                                 <div className="grid grid-cols-2 gap-3">
-                                    {path.topics.map((topic, idx) => (
+                                    {path.topics.map((topic: string, idx: number) => (
                                         <div key={idx} className="flex items-center gap-2 text-sm text-white/60">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-sky-blue flex-shrink-0">
                                                 <polyline points="20 6 9 17 4 12"/>
@@ -145,7 +147,7 @@ export default function Academy() {
 
                             <div className="mt-8 pt-6 border-t border-white/10">
                                 <div className="flex items-center justify-between text-sm">
-                                    <span className="text-white/60">Custom programs available</span>
+                                    <span className="text-white/60">{t('customPrograms')}</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-sky-blue group-hover:translate-x-1 transition-transform">
                                         <path d="M5 12h14"/>
                                         <path d="m12 5 7 7-7 7"/>
@@ -159,24 +161,24 @@ export default function Academy() {
                 {/* CTA Section */}
                 <div className="bg-gradient-to-br from-sky-blue/20 to-purple-500/20 border border-white/10 rounded-3xl p-12 text-center backdrop-blur-sm">
                     <h3 className="text-3xl md:text-4xl font-display text-white mb-4">
-                        Ready to Transform Your Team?
+                        {t('cta.title')}
                     </h3>
                     <p className="text-white/70 mb-8 max-w-2xl mx-auto">
-                        Whether you need on-site workshops, virtual training, or custom curriculum development, we'll work with you to design a program that fits your team's needs and schedule.
+                        {t('cta.description')}
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                         <a
                             href="#contact"
                             className="inline-flex items-center gap-2 px-8 py-4 bg-white text-navy-blue font-bold text-sm uppercase tracking-widest rounded-lg hover:bg-sky-blue hover:text-white hover:scale-105 transition-all duration-300"
                         >
-                            Schedule a Consultation
+                            {t('cta.consultation')}
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M5 12h14"/>
                                 <path d="m12 5 7 7-7 7"/>
                             </svg>
                         </a>
                         <button className="inline-flex items-center gap-2 px-8 py-4 border-2 border-white/30 text-white font-bold text-sm uppercase tracking-widest rounded-lg hover:border-white hover:bg-white/10 transition-all duration-300">
-                            Download Curriculum
+                            {t('cta.download')}
                         </button>
                     </div>
                 </div>

@@ -1,35 +1,38 @@
 "use client";
 
 import { useEffect } from "react";
-
-const steps = [
-    {
-        number: 1,
-        title: "Discovery Workshop",
-        description: "Week 1: Two-day intensive session to understand your business goals, technical requirements, and success metrics.",
-        features: ["Stakeholder interviews", "Technical architecture review", "Risk assessment"],
-    },
-    {
-        number: 2,
-        title: "Strategic Planning",
-        description: "Week 2-3: Develop comprehensive roadmap with milestones, deliverables, and resource allocation.",
-        features: ["Detailed project plan", "Technology stack selection", "Budget and timeline finalization"],
-    },
-    {
-        number: 3,
-        title: "Agile Execution",
-        description: "Week 4+: Sprint-based development with continuous feedback and iterative improvements.",
-        features: ["2-week sprints", "Daily standups", "Weekly demos"],
-    },
-    {
-        number: 4,
-        title: "Delivery & Support",
-        description: "Final week: Deployment, training, and 90-day support period to ensure smooth transition.",
-        features: ["Production deployment", "Team training sessions", "90-day warranty support"],
-    },
-];
+import { useTranslations } from 'next-intl';
 
 export default function Process() {
+    const t = useTranslations('process');
+
+    const steps = [
+        {
+            number: 1,
+            title: t('steps.discovery.title'),
+            description: t('steps.discovery.description'),
+            features: t.raw('steps.discovery.features'),
+        },
+        {
+            number: 2,
+            title: t('steps.planning.title'),
+            description: t('steps.planning.description'),
+            features: t.raw('steps.planning.features'),
+        },
+        {
+            number: 3,
+            title: t('steps.execution.title'),
+            description: t('steps.execution.description'),
+            features: t.raw('steps.execution.features'),
+        },
+        {
+            number: 4,
+            title: t('steps.delivery.title'),
+            description: t('steps.delivery.description'),
+            features: t.raw('steps.delivery.features'),
+        },
+    ];
+
     useEffect(() => {
         // Animate Process section with Motion.dev
         if (typeof window !== 'undefined' && (window as any).Motion) {
@@ -53,9 +56,9 @@ export default function Process() {
     return (
         <section id="approach" className="py-32 px-6 md:px-12 bg-slate-50 relative z-10">
             <div className="process-header mb-16 text-center opacity-0">
-                <span className="text-[10px] font-bold text-neutral-gray uppercase tracking-widest mb-3 block">Our Process</span>
+                <span className="text-[10px] font-bold text-neutral-gray uppercase tracking-widest mb-3 block">{t('badge')}</span>
                 <h2 className="text-4xl md:text-5xl font-display text-navy-blue tracking-tight leading-[1.1]">
-                    How We Approach <br /><span className="text-sky-blue">Your Project</span>
+                    {t('title')} <br /><span className="text-sky-blue">{t('titleHighlight')}</span>
                 </h2>
             </div>
 
@@ -69,7 +72,7 @@ export default function Process() {
                             <h3 className="text-2xl font-display font-semibold text-navy-blue mb-3">{step.title}</h3>
                             <p className="text-neutral-gray mb-4">{step.description}</p>
                             <ul className="space-y-2 text-sm text-neutral-gray">
-                                {step.features.map((feature, fIndex) => (
+                                {step.features.map((feature: string, fIndex: number) => (
                                     <li key={fIndex} className="flex items-center gap-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-sky-blue"><path d="M20 6 9 17l-5-5" /></svg>
                                         {feature}

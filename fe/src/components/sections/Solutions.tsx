@@ -2,101 +2,103 @@
 
 import { useEffect, useRef } from "react";
 import Link from "next/link";
-
-const solutions = [
-    {
-        title: "Software Engineering",
-        description: "Build robust, scalable software solutions with modern engineering practices and cutting-edge technologies.",
-        subItems: ["Custom Development", "Agile Methodology", "Quality Assurance"],
-        icon: "code",
-        href: "/software-engineer",
-        className: "col-span-1",
-    },
-    {
-        title: "Software Modernization",
-        description: "Transform legacy systems into modern, cloud-ready applications with minimal disruption.",
-        subItems: ["Legacy Migration", "Architecture Redesign", "Tech Stack Upgrade"],
-        icon: "refresh",
-        href: "/software-modernization",
-        className: "col-span-1",
-    },
-    {
-        title: "AI Consulting",
-        description: "Embed intelligence into your products with custom AI solutions and autonomous systems.",
-        subItems: ["Custom LLMs", "ML Models", "AI Strategy"],
-        icon: "brain",
-        href: "/ai-consulting",
-        className: "col-span-1",
-    },
-    {
-        title: "Data Management",
-        description: "Turn data into your competitive advantage with comprehensive management strategies.",
-        subItems: ["Data Strategy", "Governance", "Quality Management"],
-        icon: "database",
-        href: "/data-management",
-        className: "lg:col-span-2",
-    },
-    {
-        title: "Data Architecture",
-        description: "Design scalable data architectures that support your business growth and analytics needs.",
-        subItems: ["Data Modeling", "Pipeline Design", "Infrastructure"],
-        icon: "layers",
-        href: "/data-architecture",
-        className: "col-span-1",
-    },
-    {
-        title: "Data & Analytics",
-        description: "Transform raw data into actionable insights with advanced analytics and BI solutions.",
-        subItems: ["Business Intelligence", "Predictive Analytics", "Data Visualization"],
-        icon: "chart",
-        href: "/data-and-analytics",
-        className: "col-span-1",
-    },
-    {
-        title: "BIM2FM",
-        description: "Seamlessly connect BIM data to facility management with our award-winning LCDM Hub platform.",
-        subItems: ["Data Synchronization", "Quality Control", "FM Integration"],
-        icon: "building",
-        href: "/bim2fm",
-        className: "col-span-1",
-    },
-    {
-        title: "Software Architecture",
-        description: "Design evolutionary architectures that enable quick adjustments and continuous improvements.",
-        subItems: ["Cloud-Native", "Microservices", "Distributed Systems"],
-        icon: "architecture",
-        href: "/software-architecture",
-        className: "lg:col-span-2",
-    },
-    {
-        title: "Internet of Things",
-        description: "Connect your devices to the cloud with end-to-end IoT solutions for smart operations.",
-        subItems: ["Device Connectivity", "IoT Platforms", "Real-time Analytics"],
-        icon: "iot",
-        href: "/internet-of-things",
-        className: "col-span-1",
-    },
-    {
-        title: "Mobile & Web Apps",
-        description: "Create powerful mobile and web applications that users love across all platforms.",
-        subItems: ["Native Apps", "Progressive Web Apps", "Cross-Platform"],
-        icon: "mobile",
-        href: "/mobile-web-apps",
-        className: "col-span-1",
-    },
-    {
-        title: "Cloud Services",
-        description: "Scale your infrastructure with expert cloud solutions on AWS, Azure, and Google Cloud.",
-        subItems: ["Cloud Migration", "Multi-Cloud Strategy", "Cost Optimization"],
-        icon: "cloud",
-        href: "/cloud-services",
-        className: "col-span-1",
-    },
-];
+import { useTranslations } from 'next-intl';
 
 export default function Solutions() {
     const containerRef = useRef<HTMLDivElement>(null);
     const sectionRef = useRef<HTMLDivElement>(null);
+    const t = useTranslations('solutions');
+
+    const solutions = [
+        {
+            title: t('items.softwareEngineering.title'),
+            description: t('items.softwareEngineering.description'),
+            subItems: t.raw('items.softwareEngineering.subItems'),
+            icon: "code",
+            href: "/software-engineer",
+            className: "col-span-1",
+        },
+        {
+            title: t('items.softwareModernization.title'),
+            description: t('items.softwareModernization.description'),
+            subItems: t.raw('items.softwareModernization.subItems'),
+            icon: "refresh",
+            href: "/software-modernization",
+            className: "col-span-1",
+        },
+        {
+            title: t('items.aiConsulting.title'),
+            description: t('items.aiConsulting.description'),
+            subItems: t.raw('items.aiConsulting.subItems'),
+            icon: "brain",
+            href: "/ai-consulting",
+            className: "col-span-1",
+        },
+        {
+            title: t('items.dataManagement.title'),
+            description: t('items.dataManagement.description'),
+            subItems: t.raw('items.dataManagement.subItems'),
+            icon: "database",
+            href: "/data-management",
+            className: "lg:col-span-2",
+        },
+        {
+            title: t('items.dataArchitecture.title'),
+            description: t('items.dataArchitecture.description'),
+            subItems: t.raw('items.dataArchitecture.subItems'),
+            icon: "layers",
+            href: "/data-architecture",
+            className: "col-span-1",
+        },
+        {
+            title: t('items.dataAnalytics.title'),
+            description: t('items.dataAnalytics.description'),
+            subItems: t.raw('items.dataAnalytics.subItems'),
+            icon: "chart",
+            href: "/data-and-analytics",
+            className: "col-span-1",
+        },
+        {
+            title: t('items.bim2fm.title'),
+            description: t('items.bim2fm.description'),
+            subItems: t.raw('items.bim2fm.subItems'),
+            icon: "building",
+            href: "/bim2fm",
+            className: "col-span-1",
+        },
+        {
+            title: t('items.softwareArchitecture.title'),
+            description: t('items.softwareArchitecture.description'),
+            subItems: t.raw('items.softwareArchitecture.subItems'),
+            icon: "architecture",
+            href: "/software-architecture",
+            className: "lg:col-span-2",
+        },
+        {
+            title: t('items.iot.title'),
+            description: t('items.iot.description'),
+            subItems: t.raw('items.iot.subItems'),
+            icon: "iot",
+            href: "/internet-of-things",
+            className: "col-span-1",
+        },
+        {
+            title: t('items.mobileWeb.title'),
+            description: t('items.mobileWeb.description'),
+            subItems: t.raw('items.mobileWeb.subItems'),
+            icon: "mobile",
+            href: "/mobile-web-apps",
+            className: "col-span-1",
+        },
+        {
+            title: t('items.cloudServices.title'),
+            description: t('items.cloudServices.description'),
+            subItems: t.raw('items.cloudServices.subItems'),
+            icon: "cloud",
+            href: "/cloud-services",
+            className: "col-span-1",
+        },
+    ];
 
     useEffect(() => {
         const container = containerRef.current;
@@ -141,11 +143,11 @@ export default function Solutions() {
     return (
         <section ref={sectionRef} id="solutions" className="py-32 px-6 md:px-12 relative z-10 bg-white">
             <div className="solutions-header mb-16 opacity-0">
-                <span className="text-[10px] font-bold text-neutral-gray uppercase tracking-widest mb-3 block">Our Solutions</span>
+                <span className="text-[10px] font-bold text-neutral-gray uppercase tracking-widest mb-3 block">{t('badge')}</span>
                 <h2 className="text-4xl md:text-5xl font-display text-navy-blue tracking-tight leading-[1.1] mb-6">
-                    Comprehensive Technology <br /><span className="text-sky-blue">Consulting Services</span>
+                    {t('title')} <br /><span className="text-sky-blue">{t('titleHighlight')}</span>
                 </h2>
-                <p className="text-neutral-gray max-w-2xl">From cloud architecture to generative AI, we provide end-to-end solutions that drive enterprise growth.</p>
+                <p className="text-neutral-gray max-w-2xl">{t('description')}</p>
             </div>
 
             <div ref={containerRef} className="spotlight-group grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -163,7 +165,7 @@ export default function Solutions() {
                             <p className="text-neutral-gray text-sm leading-relaxed mb-6">{solution.description}</p>
 
                             <ul className="mb-8 space-y-2">
-                                {solution.subItems.map((item, i) => (
+                                {solution.subItems.map((item: string, i: number) => (
                                     <li key={i} className="flex items-center gap-2 text-xs text-neutral-gray/80">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-emerald-500"><path d="M20 6 9 17l-5-5" /></svg>
                                         {item}
@@ -176,7 +178,7 @@ export default function Solutions() {
                                     href={solution.href}
                                     className="inline-flex items-center gap-2 text-xs text-sky-blue font-semibold uppercase tracking-wider group-hover:gap-3 transition-all"
                                 >
-                                    Learn More
+                                    {t('learnMore')}
                                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14m-7-7 7 7-7 7" /></svg>
                                 </Link>
                             </div>

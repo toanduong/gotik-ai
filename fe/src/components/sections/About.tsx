@@ -1,15 +1,11 @@
 "use client";
 
 import { useEffect } from "react";
-
-const stats = [
-    { label: "Founded", value: "2011" },
-    { label: "Projects Delivered", value: "200+" },
-    { label: "Expert Team", value: "50+" },
-    { label: "Client Rating", value: "4.9★" },
-];
+import { useTranslations } from 'next-intl';
 
 export default function About() {
+    const t = useTranslations('about');
+
     useEffect(() => {
         // Animate About section with Motion.dev
         if (typeof window !== 'undefined' && (window as any).Motion) {
@@ -30,8 +26,8 @@ export default function About() {
     return (
         <section id="about" className="py-32 px-6 md:px-12 relative z-10 bg-white">
             <div className="about-header text-center mb-16 opacity-0">
-                <span className="text-[10px] font-bold text-neutral-gray uppercase tracking-widest mb-3 block">Our Story</span>
-                <h3 className="text-3xl md:text-4xl font-display text-navy-blue tracking-tight">15+ Years of Partnership & Excellence</h3>
+                <span className="text-[10px] font-bold text-neutral-gray uppercase tracking-widest mb-3 block">{t('badge')}</span>
+                <h3 className="text-3xl md:text-4xl font-display text-navy-blue tracking-tight">{t('title')}</h3>
             </div>
 
             {/* Our Story */}
@@ -41,25 +37,14 @@ export default function About() {
                 </div>
 
                 <div className="space-y-6 text-lg text-neutral-gray leading-relaxed text-left">
-                    <p>
-                        For over 15 years, we've been dedicated to building meaningful solutions that truly serve our customers. From day one, we believed that great work starts with a <span className="text-navy-blue font-medium">shared vision</span>—understanding our clients' goals as if they were our own.
-                    </p>
-
-                    <p>
-                        We don't see ourselves as just a service provider, but as a <span className="text-navy-blue font-medium">co-operator and long-term partner</span>. We work side by side with our customers, listening carefully, adapting quickly, and collaborating openly to achieve real, measurable results.
-                    </p>
-
-                    <p>
-                        To us, <span className="text-sky-blue font-medium">our customers' success is our success</span>. Every project we take on is driven by that belief, pushing us to deliver work that creates lasting value—not just short-term wins.
-                    </p>
-
-                    <p>
-                        As the world evolves, so do we. We are <span className="text-navy-blue font-medium">constantly improving ourselves</span>, refining our skills, and raising our standards to become better than we were yesterday. This commitment to growth allows us to stay relevant, innovative, and reliable for the people who trust us.
-                    </p>
+                    <p dangerouslySetInnerHTML={{ __html: t.raw('paragraph1') }} />
+                    <p dangerouslySetInnerHTML={{ __html: t.raw('paragraph2') }} />
+                    <p dangerouslySetInnerHTML={{ __html: t.raw('paragraph3') }} />
+                    <p dangerouslySetInnerHTML={{ __html: t.raw('paragraph4') }} />
 
                     <div className="text-center pt-8">
                         <p className="text-2xl font-display text-navy-blue font-semibold">
-                            Together, we grow. Together, we succeed.
+                            {t('motto')}
                         </p>
                     </div>
                 </div>

@@ -92,7 +92,410 @@
     "privacyPolicy": "Chính Sách Bảo Mật",
     "termsOfService": "Điều Khoản Dịch Vụ"
   },
+  "solutions": {
+    "badge": "Giải Pháp Của Chúng Tôi",
+    "title": "Dịch Vụ Tư Vấn Công Nghệ",
+    "titleHighlight": "Toàn Diện",
+    "description": "Từ kiến trúc đám mây đến AI sinh tạo, chúng tôi cung cấp giải pháp từ đầu đến cuối thúc đẩy tăng trưởng doanh nghiệp.",
+    "learnMore": "Tìm Hiểu Thêm",
+    "items": {
+      "softwareEngineering": {
+        "title": "Kỹ Thuật Phần Mềm",
+        "description": "Xây dựng giải pháp phần mềm mạnh mẽ, có khả năng mở rộng với các phương pháp kỹ thuật hiện đại và công nghệ tiên tiến.",
+        "subItems": [
+          "Phát Triển Tùy Chỉnh",
+          "Phương Pháp Agile",
+          "Đảm Bảo Chất Lượng"
+        ]
+      },
+      "softwareModernization": {
+        "title": "Hiện Đại Hóa Phần Mềm",
+        "description": "Chuyển đổi hệ thống cũ thành ứng dụng hiện đại, sẵn sàng cho đám mây với sự gián đoạn tối thiểu.",
+        "subItems": [
+          "Di Chuyển Hệ Thống Cũ",
+          "Thiết Kế Lại Kiến Trúc",
+          "Nâng Cấp Công Nghệ"
+        ]
+      },
+      "aiConsulting": {
+        "title": "Tư Vấn AI",
+        "description": "Tích hợp trí tuệ vào sản phẩm của bạn với giải pháp AI tùy chỉnh và hệ thống tự động.",
+        "subItems": [
+          "LLM Tùy Chỉnh",
+          "Mô Hình ML",
+          "Chiến Lược AI"
+        ]
+      },
+      "dataManagement": {
+        "title": "Quản Lý Dữ Liệu",
+        "description": "Biến dữ liệu thành lợi thế cạnh tranh của bạn với chiến lược quản lý toàn diện.",
+        "subItems": [
+          "Chiến Lược Dữ Liệu",
+          "Quản Trị",
+          "Quản Lý Chất Lượng"
+        ]
+      },
+      "dataArchitecture": {
+        "title": "Kiến Trúc Dữ Liệu",
+        "description": "Thiết kế kiến trúc dữ liệu có khả năng mở rộng hỗ trợ tăng trưởng kinh doanh và nhu cầu phân tích của bạn.",
+        "subItems": [
+          "Mô Hình Hóa Dữ Liệu",
+          "Thiết Kế Pipeline",
+          "Cơ Sở Hạ Tầng"
+        ]
+      },
+      "dataAnalytics": {
+        "title": "Dữ Liệu & Phân Tích",
+        "description": "Chuyển đổi dữ liệu thô thành thông tin hành động với phân tích nâng cao và giải pháp BI.",
+        "subItems": [
+          "Business Intelligence",
+          "Phân Tích Dự Đoán",
+          "Trực Quan Hóa Dữ Liệu"
+        ]
+      },
+      "bim2fm": {
+        "title": "BIM2FM",
+        "description": "Kết nối liền mạch dữ liệu BIM với quản lý cơ sở vật chất thông qua nền tảng LCDM Hub đạt giải thưởng của chúng tôi.",
+        "subItems": [
+          "Đồng Bộ Dữ Liệu",
+          "Kiểm Soát Chất Lượng",
+          "Tích Hợp FM"
+        ]
+      },
+      "softwareArchitecture": {
+        "title": "Kiến Trúc Phần Mềm",
+        "description": "Thiết kế kiến trúc tiến hóa cho phép điều chỉnh nhanh chóng và cải tiến liên tục.",
+        "subItems": [
+          "Cloud-Native",
+          "Microservices",
+          "Hệ Thống Phân Tán"
+        ]
+      },
+      "iot": {
+        "title": "Internet of Things",
+        "description": "Kết nối thiết bị của bạn với đám mây thông qua giải pháp IoT từ đầu đến cuối cho hoạt động thông minh.",
+        "subItems": [
+          "Kết Nối Thiết Bị",
+          "Nền Tảng IoT",
+          "Phân Tích Thời Gian Thực"
+        ]
+      },
+      "mobileWeb": {
+        "title": "Ứng Dụng Mobile & Web",
+        "description": "Tạo ứng dụng mobile và web mạnh mẽ mà người dùng yêu thích trên mọi nền tảng.",
+        "subItems": [
+          "Ứng Dụng Native",
+          "Progressive Web Apps",
+          "Đa Nền Tảng"
+        ]
+      },
+      "cloudServices": {
+        "title": "Dịch Vụ Đám Mây",
+        "description": "Mở rộng cơ sở hạ tầng của bạn với giải pháp đám mây chuyên nghiệp trên AWS, Azure và Google Cloud.",
+        "subItems": [
+          "Di Chuyển Đám Mây",
+          "Chiến Lược Đa Đám Mây",
+          "Tối Ưu Chi Phí"
+        ]
+      }
+    }
+  },
+  "academy": {
+    "badge": "Gotik Academy",
+    "title": "Đầu Tư Vào Sự Phát Triển Của Đội Ngũ",
+    "description": "Chúng tôi không chỉ cung cấp giải pháp—chúng tôi trao quyền cho đội ngũ của bạn để xuất sắc. Các chương trình đào tạo được thiết kế riêng của chúng tôi kết hợp kinh nghiệm thực tế với kiến thức thực tiễn, được thiết kế để nâng cao năng lực kỹ thuật của tổ chức bạn.",
+    "learningPaths": {
+      "engineering": {
+        "category": "Xuất Sắc Kỹ Thuật",
+        "description": "Làm chủ phát triển phần mềm hiện đại từ cơ bản đến các mẫu nâng cao",
+        "topics": [
+          "Kiến Trúc Sạch",
+          "Phát Triển Hướng Kiểm Thử",
+          "Mẫu Thiết Kế",
+          "Thực Hành Tốt Nhất Code Review"
+        ]
+      },
+      "cloud": {
+        "category": "Cloud & DevOps",
+        "description": "Xây dựng, triển khai và mở rộng ứng dụng trong môi trường đám mây hiện đại",
+        "topics": [
+          "Kubernetes & Docker",
+          "CI/CD Pipelines",
+          "Infrastructure as Code",
+          "Bảo Mật Đám Mây"
+        ]
+      },
+      "data": {
+        "category": "Dữ Liệu & AI",
+        "description": "Chuyển đổi dữ liệu thành thông tin và xây dựng ứng dụng thông minh",
+        "topics": [
+          "Cơ Bản Machine Learning",
+          "Tích Hợp LLM",
+          "Data Engineering",
+          "Chiến Lược AI"
+        ]
+      },
+      "leadership": {
+        "category": "Lãnh Đạo & Chiến Lược",
+        "description": "Lãnh đạo đội ngũ kỹ thuật và thúc đẩy các quyết định công nghệ chiến lược",
+        "topics": [
+          "Lãnh Đạo Kỹ Thuật",
+          "Agile Quy Mô Lớn",
+          "Quản Lý Technical Debt",
+          "Xây Dựng Đội Ngũ"
+        ]
+      }
+    },
+    "stats": {
+      "engineersTrained": "Kỹ Sư Được Đào Tạo",
+      "organizations": "Tổ Chức",
+      "rating": "Đánh Giá Trung Bình",
+      "completion": "Tỷ Lệ Hoàn Thành"
+    },
+    "keyTopics": "Chủ Đề Chính",
+    "customPrograms": "Chương trình tùy chỉnh có sẵn",
+    "cta": {
+      "title": "Sẵn Sàng Chuyển Đổi Đội Ngũ Của Bạn?",
+      "description": "Cho dù bạn cần workshop tại chỗ, đào tạo trực tuyến, hoặc phát triển chương trình giảng dạy tùy chỉnh, chúng tôi sẽ làm việc với bạn để thiết kế chương trình phù hợp với nhu cầu và lịch trình của đội ngũ bạn.",
+      "consultation": "Đặt Lịch Tư Vấn",
+      "download": "Tải Chương Trình Giảng Dạy"
+    }
+  },
+  "about": {
+    "badge": "Câu Chuyện Của Chúng Tôi",
+    "title": "15+ Năm Đối Tác & Xuất Sắc",
+    "paragraph1": "Hơn 15 năm qua, chúng tôi luôn tận tâm xây dựng các giải pháp có ý nghĩa thực sự phục vụ khách hàng. Ngay từ ngày đầu tiên, chúng tôi tin rằng công việc tuyệt vời bắt đầu từ một <span class='text-navy-blue font-medium'>tầm nhìn chung</span>—hiểu mục tiêu của khách hàng như thể đó là mục tiêu của chính chúng tôi.",
+    "paragraph2": "Chúng tôi không coi mình chỉ là nhà cung cấp dịch vụ, mà là <span class='text-navy-blue font-medium'>đối tác đồng hành và lâu dài</span>. Chúng tôi làm việc cùng khách hàng, lắng nghe cẩn thận, thích ứng nhanh chóng và hợp tác cởi mở để đạt được kết quả thực tế, có thể đo lường được.",
+    "paragraph3": "Đối với chúng tôi, <span class='text-sky-blue font-medium'>thành công của khách hàng chính là thành công của chúng tôi</span>. Mỗi dự án chúng tôi thực hiện đều được thúc đẩy bởi niềm tin đó, thôi thúc chúng tôi cung cấp công việc tạo ra giá trị lâu dài—không chỉ là chiến thắng ngắn hạn.",
+    "paragraph4": "Khi thế giới phát triển, chúng tôi cũng vậy. Chúng tôi <span class='text-navy-blue font-medium'>không ngừng cải thiện bản thân</span>, trau dồi kỹ năng và nâng cao tiêu chuẩn để trở nên tốt hơn mỗi ngày. Cam kết về sự phát triển này cho phép chúng tôi luôn phù hợp, sáng tạo và đáng tin cậy đối với những người tin tưởng chúng tôi.",
+    "motto": "Cùng nhau, chúng ta phát triển. Cùng nhau, chúng ta thành công."
+  },
+  "process": {
+    "badge": "Quy Trình Của Chúng Tôi",
+    "title": "Cách Chúng Tôi Tiếp Cận",
+    "titleHighlight": "Dự Án Của Bạn",
+    "steps": {
+      "discovery": {
+        "title": "Buổi Khám Phá",
+        "description": "Tuần 1: Buổi làm việc chuyên sâu hai ngày để hiểu mục tiêu kinh doanh, yêu cầu kỹ thuật và chỉ số thành công của bạn.",
+        "features": [
+          "Phỏng vấn các bên liên quan",
+          "Đánh giá kiến trúc kỹ thuật",
+          "Đánh giá rủi ro"
+        ]
+      },
+      "planning": {
+        "title": "Lập Kế Hoạch Chiến Lược",
+        "description": "Tuần 2-3: Phát triển lộ trình toàn diện với các mốc quan trọng, kết quả cần đạt và phân bổ nguồn lực.",
+        "features": [
+          "Kế hoạch dự án chi tiết",
+          "Lựa chọn công nghệ",
+          "Hoàn thiện ngân sách và tiến độ"
+        ]
+      },
+      "execution": {
+        "title": "Thực Hiện Agile",
+        "description": "Tuần 4+: Phát triển theo sprint với phản hồi liên tục và cải tiến lặp đi lặp lại.",
+        "features": [
+          "Sprint 2 tuần",
+          "Họp hàng ngày",
+          "Demo hàng tuần"
+        ]
+      },
+      "delivery": {
+        "title": "Triển Khai & Hỗ Trợ",
+        "description": "Tuần cuối: Triển khai, đào tạo và thời gian hỗ trợ 90 ngày để đảm bảo chuyển giao suôn sẻ.",
+        "features": [
+          "Triển khai production",
+          "Buổi đào tạo đội ngũ",
+          "Hỗ trợ bảo hành 90 ngày"
+        ]
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Câu Chuyện Thành Công Của Khách Hàng",
+    "title": "Khách Hàng Nói Gì Về Chúng Tôi",
+    "items": [
+      {
+        "quote": "Gotik đã hỗ trợ chúng tôi hiện đại hóa phần mềm thành một hệ thống có tính linh hoạt cao. Chúng tôi đã được hưởng lợi rất nhiều từ kiến thức chuyên môn của các chuyên gia Gotik.",
+        "author": "Rolf Traber",
+        "role": "CTO",
+        "initials": "RT"
+      },
+      {
+        "quote": "Chúng tôi đã mời Gotik để có thể triển khai các đổi mới tương lai nhanh hơn trong phần mềm của mình. Sự hợp tác với Gotik là hạng nhất – cả về kỹ thuật lẫn cá nhân.",
+        "author": "Christian Königsdorfer",
+        "role": "CEO",
+        "initials": "CK"
+      },
+      {
+        "quote": "Kiến trúc microservices mà Gotik thiết kế cho chúng tôi đã chuyển đổi khả năng mở rộng của chúng tôi. Giờ đây chúng tôi có thể triển khai cập nhật độc lập và phản ứng với thay đổi thị trường nhanh hơn bao giờ hết.",
+        "author": "Michael S.",
+        "role": "CTO, Công Ty Công Nghệ",
+        "initials": "MS"
+      }
+    ]
+  },
   "pages": {
+    "softwareEngineer": {
+      "meta": {
+        "title": "Kỹ Thuật Phần Mềm | Gotik Consulting",
+        "description": "Chúng tôi biến ý tưởng của bạn thành giải pháp phần mềm xuất sắc. Hưởng lợi từ chuyên môn và kiến thức phương pháp mới nhất của chúng tôi."
+      },
+      "hero": {
+        "badge": "Kỹ Thuật Phần Mềm",
+        "title": "Chuyển Đổi Ý Tưởng Của Bạn Thành",
+        "titleHighlight": "Phần Mềm Xuất Sắc",
+        "description": "Mô tả mới",
+        "consultant": {
+          "name": "David Vu",
+          "role": "CEO & Người Sáng Lập Gotik",
+          "cta": "Tư Vấn Miễn Phí"
+        }
+      },
+      "benefits": {
+        "title": "Lợi Ích Của Kỹ Thuật Phần Mềm Chuyên Nghiệp",
+        "description": "Với hơn 25 năm kinh nghiệm trong phát triển phần mềm, chúng tôi có hiểu biết sâu sắc về các thách thức và nhu cầu của các công ty thuộc mọi quy mô và ngành nghề.",
+        "items": {
+          "customSoftware": {
+            "title": "Phần Mềm Tùy Chỉnh Xuất Sắc",
+            "description": "Các giải pháp phần mềm được thiết kế riêng của chúng tôi được đặc trưng bởi chất lượng cao nhất đến từng chi tiết nhỏ. Chúng tôi triển khai dự án của bạn không chỉ với kỹ thuật điêu luyện mà còn kết hợp các kiến thức phương pháp mới nhất để phát triển phần mềm tùy chỉnh xuất sắc."
+          },
+          "solutionPortfolio": {
+            "title": "Danh Mục Giải Pháp Toàn Diện",
+            "description": "Dịch vụ của chúng tôi bao gồm toàn bộ phổ giải pháp, từ các thành phần và giao diện đến nền tảng toàn diện và bộ phần mềm hoàn chỉnh. Cho dù yêu cầu đơn giản hay cực kỳ phức tạp, chúng tôi phát triển giải pháp phù hợp cho Cloud, Web, Mobile, Desktop và hệ thống Embedded."
+          },
+          "technologyCompetence": {
+            "title": "Năng Lực Công Nghệ Đa Dạng",
+            "description": "Chúng tôi quen thuộc với nhiều công nghệ, phương pháp và công cụ. Phổ chuyên môn rộng này cho phép chúng tôi lựa chọn các tùy chọn tốt nhất cho dự án cụ thể của bạn."
+          },
+          "crossIndustry": {
+            "title": "Kiến Thức Liên Ngành",
+            "description": "Đội ngũ của chúng tôi bao gồm các chuyên gia được công nhận quen thuộc với các lĩnh vực và công nghệ khác nhau. Chuyên môn liên ngành này cho phép chúng tôi phản ứng linh hoạt và hiệu quả với các yêu cầu và thách thức cá nhân của dự án của bạn."
+          }
+        }
+      },
+      "services": {
+        "title": "Dịch Vụ Kỹ Thuật Phần Mềm Của Chúng Tôi",
+        "description": "Từ ý tưởng ban đầu đến triển khai thành công – chúng tôi đồng hành cùng bạn trong suốt vòng đời phát triển phần mềm.",
+        "items": {
+          "endToEnd": {
+            "title": "Phát Triển Phần Mềm Từ Đầu Đến Cuối",
+            "description": "Các chuyên gia của chúng tôi hỗ trợ bạn từ ý tưởng ban đầu đến giới thiệu thành công – cho các dự án đơn giản cũng như cực kỳ phức tạp. Danh mục kỹ thuật của chúng tôi bao gồm tất cả các loại phần mềm – từ các thành phần và giao diện đến nền tảng mở rộng và bộ phần mềm hoàn chỉnh. Chúng tôi biến ý tưởng của bạn thành ứng dụng mạnh mẽ cho Cloud, Web, Mobile, Desktop và hệ thống Embedded.",
+            "features": [
+              "Ứng Dụng Cloud & Web",
+              "Giải Pháp Mobile & Desktop",
+              "Hệ Thống Embedded"
+            ]
+          },
+          "techConsulting": {
+            "title": "Tư Vấn Công Nghệ",
+            "description": "Các chuyên gia công nghệ của chúng tôi tư vấn cho bạn về việc lựa chọn và triển khai các công nghệ tốt nhất cho dự án của bạn. Chúng tôi luôn ở đầu công nghệ và cung cấp cho bạn các giải pháp sáng tạo và hướng tới tương lai.",
+            "features": [
+              "Lựa Chọn & Đánh Giá Công Nghệ",
+              "Thiết Kế Kiến Trúc",
+              "Giải Pháp Hướng Tới Tương Lai"
+            ]
+          },
+          "projectManagement": {
+            "title": "Quản Lý Dự Án",
+            "description": "Các nhà quản lý dự án giàu kinh nghiệm của chúng tôi đảm bảo thực thi suôn sẻ các dự án phần mềm của bạn. Họ thành thạo cả phương pháp cổ điển và agile và đảm bảo dự án của bạn hoàn thành đúng thời gian và trong ngân sách.",
+            "features": [
+              "Phương Pháp Agile & Waterfall",
+              "Quản Lý Rủi Ro",
+              "Giao Hàng Đúng Hạn"
+            ]
+          },
+          "managedTeams": {
+            "title": "Đội Ngũ Quản Lý",
+            "description": "Với các đội ngũ được quản lý của chúng tôi, chúng tôi cung cấp cho bạn một giải pháp hiệu quả để giảm tải cho tổ chức của bạn và tăng cường linh hoạt với chuyên môn và nguồn nhân lực cần thiết trong thời gian ngắn. Cùng với bạn, chúng tôi tập hợp một đội ngũ chuyên dụng được điều chỉnh chính xác theo yêu cầu cá nhân của bạn về quy mô và kỹ năng.",
+            "features": [
+              "Tập Hợp Đội Ngũ Chuyên Dụng",
+              "Mở Rộng Linh Hoạt",
+              "Ghép Nối Kỹ Năng"
+            ]
+          }
+        }
+      },
+      "qualityMap": {
+        "badge": "Đảm Bảo Chất Lượng",
+        "title": "Bản Đồ Chất Lượng Phát Triển Phần Mềm",
+        "description": "Chất lượng phần mềm tốt là mối quan tâm của mọi đội ngũ phát triển. Nhưng phải làm gì khi phần mềm chưa đạt chất lượng mong muốn? Bản Đồ Chất Lượng Phát Triển Phần Mềm chỉ ra con đường giải quyết: Nó đưa các đội ngũ vào hành trình khám phá qua 80 chủ đề khác nhau.",
+        "imageAlt": "Bản Đồ Chất Lượng Phát Triển Phần Mềm",
+        "caption": "80 Chủ Đề Để Đạt Xuất Sắc",
+        "subcaption": "Con đường của bạn đến chất lượng phần mềm tốt hơn"
+      },
+      "testimonials": {
+        "title": "Khách Hàng Nói Gì",
+        "items": [
+          {
+            "quote": "Gotik đã có thể nhanh chóng triển khai yêu cầu của chúng tôi thành phần mềm chất lượng cao. Chúng tôi rất hài lòng với sự hợp tác tốt và chất lượng cao của phần mềm.",
+            "author": "Daniel Mayer",
+            "initials": "DM"
+          },
+          {
+            "quote": "Gotik là đối tác phần mềm lý tưởng cho chúng tôi: chuyên môn tuyệt vời, mạnh mẽ trong phân tích và hiệu quả trong triển khai.",
+            "author": "Istvan Szalai",
+            "initials": "IS"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Câu Hỏi Thường Gặp Về Kỹ Thuật Phần Mềm",
+        "items": [
+          {
+            "question": "Phần mềm tùy chỉnh là gì?",
+            "answer": "Phần mềm tùy chỉnh là giải pháp phần mềm được thiết kế riêng phát triển cụ thể theo yêu cầu và nhu cầu của công ty hoặc dự án của bạn. Kinh nghiệm, bí quyết và tiêu chuẩn chất lượng của chúng tôi đảm bảo giải pháp phần mềm cá nhân của bạn hoàn hảo đến từng chi tiết nhỏ."
+          },
+          {
+            "question": "Ưu điểm của phần mềm tùy chỉnh so với phần mềm tiêu chuẩn là gì?",
+            "answer": "Phần mềm tùy chỉnh cung cấp tính linh hoạt, khả năng mở rộng và sự phù hợp hoàn hảo với quy trình kinh doanh của bạn. Trong khi phần mềm tiêu chuẩn có thể yêu cầu thỏa hiệp, các giải pháp tùy chỉnh được thiết kế chính xác cho nhu cầu của bạn. Điều này dẫn đến hiệu quả cao hơn, trải nghiệm người dùng tốt hơn và lợi thế cạnh tranh."
+          },
+          {
+            "question": "Gotik có thể phát triển thêm hoặc hiện đại hóa phần mềm hiện có không?",
+            "answer": "Có, chúng tôi không chỉ cung cấp phát triển giải pháp phần mềm mới mà còn có thể phát triển thêm hoặc hiện đại hóa phần mềm hiện có của bạn. Sử dụng chuyên môn của chúng tôi để hiện đại hóa phần mềm của bạn để nó có thể thích ứng linh hoạt với các yêu cầu kinh doanh thay đổi."
+          }
+        ]
+      }
+    },
+    "softwareModernization": {
+      "hero": {
+        "badge": "Hiện Đại Hóa Phần Mềm",
+        "title": "Khai Thác Tiềm Năng Của",
+        "titleHighlight": "Hiện Đại Hóa Phần Mềm",
+        "description": "Hiện đại hóa phần mềm hứa hẹn tiềm năng to lớn: từ tăng hiệu suất, cải thiện bảo mật và chất lượng, đến phát triển các ý tưởng kinh doanh mới.",
+        "consultant": { "name": "David Vu", "role": "CEO & Người Sáng Lập Gotik", "cta": "Tư Vấn Miễn Phí" }
+      },
+      "benefits": {
+        "title": "Lợi Ích Của Bạn Thông Qua Hiện Đại Hóa Phần Mềm",
+        "description": "Làm cho phần mềm của bạn phù hợp với tương lai. Các phương pháp mới mở ra cánh cửa để hợp lý hóa đáng kể các quy trình kinh doanh và phát triển các dịch vụ mới.",
+        "items": {
+          "potential": { "title": "Tiềm Năng To Lớn", "description": "Tăng hiệu suất, bảo mật và chất lượng phần mềm của bạn, và phát triển các ý tưởng kinh doanh mới. Di chuyển hệ thống cũ lên đám mây, duy trì và phát triển thêm các ứng dụng hiện có, và tích hợp ứng dụng di động." },
+          "efficient": { "title": "Quy Trình Kinh Doanh Hiệu Quả", "description": "Sử dụng các phương pháp hiện đại để tối ưu hóa quy trình kinh doanh của bạn và tạo ra các dịch vụ mới thúc đẩy hiệu quả và đổi mới." },
+          "adaptive": { "title": "Phần Mềm Thích Ứng", "description": "Hưởng lợi từ chuyên môn của chúng tôi để hiện đại hóa phần mềm của bạn để nó có thể thích ứng linh hoạt với các yêu cầu kinh doanh và người dùng thay đổi." },
+          "futureProof": { "title": "Giải Pháp Hướng Tới Tương Lai", "description": "Chuẩn bị cho tương lai và tránh các bản vá tốn kém thông qua hiện đại hóa có mục tiêu hoặc phát triển lại hoàn toàn phần mềm của bạn." },
+          "quality": { "title": "Chất Lượng và Ổn Định", "description": "Giải quyết các vấn đề chất lượng và ổn định hiện có và cập nhật hướng dẫn người dùng phù hợp với tiêu chuẩn UX hiện đại." }
+        }
+      }
+    },
+    "salesforce": {
+      "hero": {
+        "badge": "Giải Pháp Salesforce",
+        "title": "Chuyển Đổi Doanh Nghiệp Của Bạn Với",
+        "titleHighlight": "Giải Pháp Salesforce Chuyên Nghiệp",
+        "description": "Mở khóa toàn bộ tiềm năng CRM của bạn. Chúng tôi cung cấp triển khai Salesforce phù hợp và phát triển tùy chỉnh để thúc đẩy hiệu quả và tăng trưởng.",
+        "consultant": {
+          "title": "Chuyên Môn Salesforce",
+          "role": "Chiến Lược Gia CRM Được Chứng Nhận",
+          "cta": "Yêu Cầu Báo Giá"
+        }
+      },
+      "benefits": {
+        "title": "Tại Sao Chọn Dịch Vụ Salesforce Của Chúng Tôi?",
+        "description": "Chúng tôi thu hẹp khoảng cách giữa nhu cầu kinh doanh và khả năng của Salesforce, đảm bảo nền tảng của bạn là chất xúc tác cho thành công."
+      }
+    },
     "odoo": {
       "meta": {
         "title": "Giải Pháp Odoo ERP | Gotik Consulting",

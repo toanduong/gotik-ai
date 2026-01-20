@@ -92,7 +92,310 @@
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
   },
+  "solutions": {
+    "badge": "Our Solutions",
+    "title": "Comprehensive Technology",
+    "titleHighlight": "Consulting Services",
+    "description": "From cloud architecture to generative AI, we provide end-to-end solutions that drive enterprise growth.",
+    "learnMore": "Learn More",
+    "items": {
+      "softwareEngineering": {
+        "title": "Software Engineering",
+        "description": "Build robust, scalable software solutions with modern engineering practices and cutting-edge technologies.",
+        "subItems": ["Custom Development", "Agile Methodology", "Quality Assurance"]
+      },
+      "softwareModernization": {
+        "title": "Software Modernization",
+        "description": "Transform legacy systems into modern, cloud-ready applications with minimal disruption.",
+        "subItems": ["Legacy Migration", "Architecture Redesign", "Tech Stack Upgrade"]
+      },
+      "aiConsulting": {
+        "title": "AI Consulting",
+        "description": "Embed intelligence into your products with custom AI solutions and autonomous systems.",
+        "subItems": ["Custom LLMs", "ML Models", "AI Strategy"]
+      },
+      "dataManagement": {
+        "title": "Data Management",
+        "description": "Turn data into your competitive advantage with comprehensive management strategies.",
+        "subItems": ["Data Strategy", "Governance", "Quality Management"]
+      },
+      "dataArchitecture": {
+        "title": "Data Architecture",
+        "description": "Design scalable data architectures that support your business growth and analytics needs.",
+        "subItems": ["Data Modeling", "Pipeline Design", "Infrastructure"]
+      },
+      "dataAnalytics": {
+        "title": "Data & Analytics",
+        "description": "Transform raw data into actionable insights with advanced analytics and BI solutions.",
+        "subItems": ["Business Intelligence", "Predictive Analytics", "Data Visualization"]
+      },
+      "bim2fm": {
+        "title": "BIM2FM",
+        "description": "Seamlessly connect BIM data to facility management with our award-winning LCDM Hub platform.",
+        "subItems": ["Data Synchronization", "Quality Control", "FM Integration"]
+      },
+      "softwareArchitecture": {
+        "title": "Software Architecture",
+        "description": "Design evolutionary architectures that enable quick adjustments and continuous improvements.",
+        "subItems": ["Cloud-Native", "Microservices", "Distributed Systems"]
+      },
+      "iot": {
+        "title": "Internet of Things",
+        "description": "Connect your devices to the cloud with end-to-end IoT solutions for smart operations.",
+        "subItems": ["Device Connectivity", "IoT Platforms", "Real-time Analytics"]
+      },
+      "mobileWeb": {
+        "title": "Mobile & Web Apps",
+        "description": "Create powerful mobile and web applications that users love across all platforms.",
+        "subItems": ["Native Apps", "Progressive Web Apps", "Cross-Platform"]
+      },
+      "cloudServices": {
+        "title": "Cloud Services",
+        "description": "Scale your infrastructure with expert cloud solutions on AWS, Azure, and Google Cloud.",
+        "subItems": ["Cloud Migration", "Multi-Cloud Strategy", "Cost Optimization"]
+      }
+    }
+  },
+  "academy": {
+    "badge": "Gotik Academy",
+    "title": "Invest in Your Team's Growth",
+    "description": "We don't just deliver solutions—we empower your team to excel. Our tailored training programs combine real-world experience with practical knowledge, designed to elevate your organization's technical capabilities.",
+    "learningPaths": {
+      "engineering": {
+        "category": "Engineering Excellence",
+        "description": "Master modern software development from fundamentals to advanced patterns",
+        "topics": ["Clean Architecture", "Test-Driven Development", "Design Patterns", "Code Review Best Practices"]
+      },
+      "cloud": {
+        "category": "Cloud & DevOps",
+        "description": "Build, deploy, and scale applications in modern cloud environments",
+        "topics": ["Kubernetes & Docker", "CI/CD Pipelines", "Infrastructure as Code", "Cloud Security"]
+      },
+      "data": {
+        "category": "Data & AI",
+        "description": "Transform data into insights and build intelligent applications",
+        "topics": ["Machine Learning Fundamentals", "LLM Integration", "Data Engineering", "AI Strategy"]
+      },
+      "leadership": {
+        "category": "Leadership & Strategy",
+        "description": "Lead technical teams and drive strategic technology decisions",
+        "topics": ["Technical Leadership", "Agile at Scale", "Tech Debt Management", "Team Building"]
+      }
+    },
+    "stats": {
+      "engineersTrained": "Engineers Trained",
+      "organizations": "Organizations",
+      "rating": "Average Rating",
+      "completion": "Completion Rate"
+    },
+    "keyTopics": "Key Topics",
+    "customPrograms": "Custom programs available",
+    "cta": {
+      "title": "Ready to Transform Your Team?",
+      "description": "Whether you need on-site workshops, virtual training, or custom curriculum development, we'll work with you to design a program that fits your team's needs and schedule.",
+      "consultation": "Schedule a Consultation",
+      "download": "Download Curriculum"
+    }
+  },
+  "about": {
+    "badge": "Our Story",
+    "title": "15+ Years of Partnership & Excellence",
+    "paragraph1": "For over 15 years, we've been dedicated to building meaningful solutions that truly serve our customers. From day one, we believed that great work starts with a <span class='text-navy-blue font-medium'>shared vision</span>—understanding our clients' goals as if they were our own.",
+    "paragraph2": "We don't see ourselves as just a service provider, but as a <span class='text-navy-blue font-medium'>co-operator and long-term partner</span>. We work side by side with our customers, listening carefully, adapting quickly, and collaborating openly to achieve real, measurable results.",
+    "paragraph3": "To us, <span class='text-sky-blue font-medium'>our customers' success is our success</span>. Every project we take on is driven by that belief, pushing us to deliver work that creates lasting value—not just short-term wins.",
+    "paragraph4": "As the world evolves, so do we. We are <span class='text-navy-blue font-medium'>constantly improving ourselves</span>, refining our skills, and raising our standards to become better than we were yesterday. This commitment to growth allows us to stay relevant, innovative, and reliable for the people who trust us.",
+    "motto": "Together, we grow. Together, we succeed."
+  },
+  "process": {
+    "badge": "Our Process",
+    "title": "How We Approach",
+    "titleHighlight": "Your Project",
+    "steps": {
+      "discovery": {
+        "title": "Discovery Workshop",
+        "description": "Week 1: Two-day intensive session to understand your business goals, technical requirements, and success metrics.",
+        "features": ["Stakeholder interviews", "Technical architecture review", "Risk assessment"]
+      },
+      "planning": {
+        "title": "Strategic Planning",
+        "description": "Week 2-3: Develop comprehensive roadmap with milestones, deliverables, and resource allocation.",
+        "features": ["Detailed project plan", "Technology stack selection", "Budget and timeline finalization"]
+      },
+      "execution": {
+        "title": "Agile Execution",
+        "description": "Week 4+: Sprint-based development with continuous feedback and iterative improvements.",
+        "features": ["2-week sprints", "Daily standups", "Weekly demos"]
+      },
+      "delivery": {
+        "title": "Delivery & Support",
+        "description": "Final week: Deployment, training, and 90-day support period to ensure smooth transition.",
+        "features": ["Production deployment", "Team training sessions", "90-day warranty support"]
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Client Success Stories",
+    "title": "What Our Clients Say",
+    "items": [
+      {
+        "quote": "Gotik supported us in modernizing our software to a highly flexible system. We benefited enormously from the know-how of the various Gotik experts.",
+        "author": "Rolf Traber",
+        "role": "CTO",
+        "initials": "RT"
+      },
+      {
+        "quote": "We brought in Gotik so that we can implement future innovations faster in our software. The collaboration with Gotik was first-class – technically and personally.",
+        "author": "Christian Königsdorfer",
+        "role": "CEO",
+        "initials": "CK"
+      },
+      {
+        "quote": "The microservices architecture that Gotik designed for us has transformed our ability to scale. We can now deploy updates independently and respond to market changes faster than ever before.",
+        "author": "Michael S.",
+        "role": "CTO, Technology Company",
+        "initials": "MS"
+      }
+    ]
+  },
   "pages": {
+    "softwareEngineer": {
+      "meta": {
+        "title": "Software Engineering | Gotik Consulting",
+        "description": "We turn your ideas into excellent software solutions. Benefit from our expertise and the latest methodological insights."
+      },
+      "hero": {
+        "badge": "Software Engineering",
+        "title": "Transform Your Ideas into",
+        "titleHighlight": "Excellent Software",
+        "description": "We turn your ideas into excellent software solutions. Benefit from our expertise and the latest methodological insights.",
+        "consultant": {
+          "name": "David Vu",
+          "role": "CEO & Gotik Founder",
+          "cta": "Free Consultation"
+        }
+      },
+      "benefits": {
+        "title": "Benefits of Professional Software Engineering",
+        "description": "With over 25 years of experience in software development, we have a deep understanding of the challenges and needs of companies of all sizes and industries.",
+        "items": {
+          "customSoftware": {
+            "title": "Excellent Custom Software",
+            "description": "Our tailored software solutions are characterized by the highest quality down to the smallest detail. We implement your project not only skillfully technically, but also incorporate the latest methodological insights to develop excellent custom software."
+          },
+          "solutionPortfolio": {
+            "title": "Comprehensive Solution Portfolio",
+            "description": "Our offering covers the entire solution spectrum, from components and interfaces to comprehensive platforms and entire software suites. Whether simple or highly complex requirements, we develop tailored solutions for Cloud, Web, Mobile, Desktop, and Embedded systems."
+          },
+          "technologyCompetence": {
+            "title": "Versatile Technology Competence",
+            "description": "We are familiar with a wide range of technologies, methods, and tools. This broad spectrum of expertise allows us to select the best options for your specific project."
+          },
+          "crossIndustry": {
+            "title": "Cross-Industry Know-how",
+            "description": "Our team consists of proven specialists who are familiar with different domains and technologies. This cross-industry expertise enables us to respond flexibly and effectively to the individual requirements and challenges of your project."
+          }
+        }
+      },
+      "services": {
+        "title": "Our Software Engineering Services",
+        "description": "From the initial idea to successful implementation – we accompany you throughout the entire software development lifecycle.",
+        "items": {
+          "endToEnd": {
+            "title": "End-to-End Software Development",
+            "description": "Our experts support you from the initial idea to successful introduction – for simple as well as highly complex projects. Our engineering portfolio includes all types of software – from components and interfaces to extensive platforms and entire software suites. We turn your ideas into powerful applications for Cloud, Web, Mobile, Desktop, and Embedded systems.",
+            "features": ["Cloud & Web Applications", "Mobile & Desktop Solutions", "Embedded Systems"]
+          },
+          "techConsulting": {
+            "title": "Technology Consulting",
+            "description": "Our technology experts advise you on selecting and deploying the best technologies for your project. We are always at the cutting edge and offer you innovative and future-proof solutions.",
+            "features": ["Technology Selection & Evaluation", "Architecture Design", "Future-Proof Solutions"]
+          },
+          "projectManagement": {
+            "title": "Project Management",
+            "description": "Our experienced project managers ensure smooth execution of your software projects. They master both classical and agile methods and ensure your project is completed on time and within budget.",
+            "features": ["Agile & Waterfall Methods", "Risk Management", "On-Time Delivery"]
+          },
+          "managedTeams": {
+            "title": "Managed Teams",
+            "description": "With our managed teams, we offer you an effective solution to relieve your organization and flexibly strengthen it with the required expertise and manpower at short notice. Together with you, we put together a dedicated team that is precisely tailored to your individual requirements in terms of size and skill set.",
+            "features": ["Dedicated Team Assembly", "Flexible Scaling", "Skill Matching"]
+          }
+        }
+      },
+      "qualityMap": {
+        "badge": "Quality Assurance",
+        "title": "Software Development Quality Map",
+        "description": "Good software quality is close to every development team's heart. But what to do when the software hasn't reached the desired quality yet? The Software Development Quality Map shows the solution path: It takes teams on a discovery journey through 80 different topics.",
+        "imageAlt": "Software Development Quality Map",
+        "caption": "80 Topics for Excellence",
+        "subcaption": "Your path to better software quality"
+      },
+      "testimonials": {
+        "title": "What Our Clients Say",
+        "items": [
+          {
+            "quote": "Gotik was able to quickly implement our requirements into high-quality software. We are thrilled with the good collaboration and the high quality of the software.",
+            "author": "Daniel Mayer",
+            "initials": "DM"
+          },
+          {
+            "quote": "Gotik is the ideal software partner for us: great expertise, strong in analysis, and efficient in implementation.",
+            "author": "Istvan Szalai",
+            "initials": "IS"
+          }
+        ]
+      },
+      "faq": {
+        "title": "FAQ About Software Engineering",
+        "items": [
+          {
+            "question": "What is custom software?",
+            "answer": "Custom software is a tailored software solution developed specifically according to the requirements and needs of your company or project. Our experience, know-how, and quality standards ensure that your individual software solution is perfect down to the smallest detail."
+          },
+          {
+            "question": "What are the advantages of custom software over standard software?",
+            "answer": "Custom software offers flexibility, scalability, and perfect alignment with your business processes. While standard software may require compromises, custom solutions are designed exactly for your needs. This leads to higher efficiency, better user experience, and competitive advantages."
+          },
+          {
+            "question": "Can Gotik also further develop or modernize existing software?",
+            "answer": "Yes, we not only offer the development of new software solutions but can also further develop or modernize your existing software. Use our expertise to modernize your software so that it can flexibly adapt to changing business requirements."
+          }
+        ]
+      }
+    },
+    "softwareModernization": {
+      "hero": {
+        "badge": "Software Modernization",
+        "title": "Harness the Potential of",
+        "titleHighlight": "Software Modernization",
+        "description": "Software modernization promises enormous potential: from boosting performance, improving security and quality, to developing new business ideas.",
+        "consultant": { "name": "David Vu", "role": "CEO & Gotik Founder", "cta": "Free Consultation" }
+      },
+      "benefits": {
+        "title": "Your Benefits through Software Modernization",
+        "description": "Make your software fit for the future. New methods open the door to significantly streamline business processes and develop new services.",
+        "items": {
+          "potential": { "title": "Enormous Potential", "description": "Boost your software's performance, security, and quality, and develop new business ideas. Migrate legacy systems to the cloud, maintain and further develop existing applications, and integrate mobile apps." },
+          "efficient": { "title": "Efficient Business Processes", "description": "Use modern methods to optimize your business processes and create new services that drive efficiency and innovation." },
+          "adaptive": { "title": "Adaptive Software", "description": "Benefit from our expertise to modernize your software so it can flexibly adapt to changing business and user requirements." },
+          "futureProof": { "title": "Future-Proof Solutions", "description": "Prepare for the future and avoid costly patchwork through targeted modernization or a complete redevelopment of your software." },
+          "quality": { "title": "Quality and Stability", "description": "Resolve existing quality and stability issues and bring user guidance up to date with modern UX standards." }
+        }
+      }
+    },
+    "salesforce": {
+      "hero": {
+        "badge": "Salesforce Solutions",
+        "title": "Transform Your Business with",
+        "titleHighlight": "Expert Salesforce Solutions",
+        "description": "Unlock the full potential of your CRM. We provide tailored Salesforce implementations and custom development to drive efficiency and growth.",
+        "consultant": { "title": "Salesforce Expertise", "role": "Certified CRM Strategists", "cta": "Request a Quote" }
+      },
+      "benefits": {
+        "title": "Why Choose Our Salesforce Services?",
+        "description": "We bridge the gap between business needs and Salesforce capabilities, ensuring your platform is a catalyst for success."
+      }
+    },
     "odoo": {
       "meta": {
         "title": "Odoo ERP Solutions | Gotik Consulting",

@@ -12,6 +12,7 @@ import { Sidebar } from "@/components/admin/Sidebar";
 import { Topbar } from "@/components/admin/Topbar";
 import { Loader2 } from "lucide-react";
 import { usePathname } from "next/navigation";
+import "../globals.css";
 
 function AdminLoadingFallback() {
   return (
@@ -33,51 +34,55 @@ export default function AdminLayout({
   const isLoginPage = pathname === "/admin/login";
 
   return (
-    <Suspense fallback={<AdminLoadingFallback />}>
-      <Refine
-        routerProvider={routerProvider}
-        dataProvider={dataProvider(supabaseClient)}
-        liveProvider={liveProvider(supabaseClient)}
-        authProvider={authProvider}
-        resources={[
-          {
-            name: "posts",
-            list: "/admin/posts",
-            create: "/admin/posts/create",
-            edit: "/admin/posts/edit/:id",
-            show: "/admin/posts/show/:id",
-            meta: {
-              canDelete: true,
-            },
-          },
-          {
-            name: "categories",
-            list: "/admin/categories",
-            create: "/admin/categories/create",
-            edit: "/admin/categories/edit/:id",
-            show: "/admin/categories/show/:id",
-            meta: {
-              canDelete: true,
-            },
-          },
-        ]}
-        options={{
-          syncWithLocation: true,
-          warnWhenUnsavedChanges: true,
-        }}
-      >
-        {isLoginPage ? (
-          children
-        ) : (
-          <Authenticated key="admin-auth" appendCurrentPathToQuery={false}>
-            <div className="admin-layout min-h-screen">
-              <Sidebar />
-              <Topbar />
-              <main className="ml-64 mt-16 p-6 md:p-8">{children}</main>
-            </div>
-          </Authenticated>
-        )}
-      </Refine>
-    </Suspense>
+    <html lang="en">
+      <body className="antialiased">
+        <Suspense fallback={<AdminLoadingFallback />}>
+          <Refine
+            routerProvider={routerProvider}
+            dataProvider={dataProvider(supabaseClient)}
+            liveProvider={liveProvider(supabaseClient)}
+            authProvider={authProvider}
+            resources={[
+              {
+                name: "posts",
+                list: "/admin/posts",
+                create: "/admin/posts/create",
+                edit: "/admin/posts/edit/:id",
+                show: "/admin/posts/show/:id",
+                meta: {
+                  canDelete: true,
+                },
+              },
+              {
+                name: "categories",
+                list: "/admin/categories",
+                create: "/admin/categories/create",
+                edit: "/admin/categories/edit/:id",
+                show: "/admin/categories/show/:id",
+                meta: {
+                  canDelete: true,
+                },
+              },
+            ]}
+            options={{
+              syncWithLocation: true,
+              warnWhenUnsavedChanges: true,
+            }}
+          >
+            {isLoginPage ? (
+              children
+            ) : (
+              <Authenticated key="admin-auth" appendCurrentPathToQuery={false}>
+                <div className="admin-layout min-h-screen">
+                  <Sidebar />
+                  <Topbar />
+                  <main className="ml-64 mt-16 p-6 md:p-8">{children}</main>
+                </div>
+              </Authenticated>
+            )}
+          </Refine>
+        </Suspense>
+      </body>
+    </html>
   );
 }

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl';
 
 export function Footer() {
     const t = useTranslations('footer');
@@ -102,7 +102,6 @@ export function Footer() {
                 <div className="md:col-span-2">
                     <h5 className="text-[10px] font-bold uppercase tracking-widest mb-6 text-sky-blue">{t('moreServicesTitle')}</h5>
                     <ul className="space-y-3 text-sm text-white/60 font-light">
-                        <li><Link href="/bim2fm" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">{tServices('bim2fm')}</Link></li>
                         <li><Link href="/software-architecture" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">{tServices('softwareArchitecture')}</Link></li>
                         <li><Link href="/internet-of-things" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">{tServices('iot')}</Link></li>
                         <li><Link href="/mobile-web-apps" className="hover:text-sky-blue transition-colors block border-b border-transparent hover:border-sky-blue/30 w-fit">{tServices('mobileWebApps')}</Link></li>

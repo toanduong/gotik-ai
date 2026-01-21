@@ -50,8 +50,6 @@ export default function Home() {
             <span className="w-1 h-1 rounded-full bg-sky-blue"></span>
             <span>Software Engineering</span>
             <span className="w-1 h-1 rounded-full bg-sky-blue"></span>
-            <span>BIM2FM</span>
-            <span className="w-1 h-1 rounded-full bg-sky-blue"></span>
             <span>Data & Analytics</span>
             <span className="w-1 h-1 rounded-full bg-sky-blue"></span>
             <span>Internet of Things</span>

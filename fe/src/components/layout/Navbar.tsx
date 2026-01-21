@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import {useTranslations, useLocale} from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { supabaseClient } from "@/lib/supabase";
 import LanguageSwitcher from './LanguageSwitcher';
 
@@ -26,7 +26,6 @@ export default function Navbar() {
         { name: tServices('dataManagement'), href: "/data-management" },
         { name: tServices('dataArchitecture'), href: "/data-architecture" },
         { name: tServices('dataAnalytics'), href: "/data-and-analytics" },
-        { name: tServices('bim2fm'), href: "/bim2fm" },
         { name: tServices('softwareArchitecture'), href: "/software-architecture" },
         { name: tServices('iot'), href: "/internet-of-things" },
         { name: tServices('mobileWebApps'), href: "/mobile-web-apps" },

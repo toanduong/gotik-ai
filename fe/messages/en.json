@@ -445,6 +445,166 @@
         "cta": "Book Free AI Consulting Now"
       }
     },
+    "softwareEngineer": {
+      "meta": {
+        "title": "Software Engineering | Gotik Consulting",
+        "description": "We transform your ideas into excellent software solutions. Benefit from our expertise and the latest methodological knowledge."
+      },
+      "hero": {
+        "badge": "Software Engineering",
+        "title": "Transform Your Ideas Into",
+        "titleHighlight": "Excellent Software",
+        "description": "We transform your ideas into excellent software solutions. Benefit from our expertise and the latest methodological knowledge.",
+        "consultant": {
+          "name": "David Vu",
+          "role": "CEO & Gotik Founder",
+          "cta": "Free Consultation"
+        }
+      },
+      "benefits": {
+        "title": "Benefits of Professional Software Engineering",
+        "description": "With over 25 years of experience in software development, we have a deep understanding of the challenges and needs of companies of all sizes and industries.",
+        "items": {
+          "customSoftware": {
+            "title": "Excellent Custom Software",
+            "description": "Our tailor-made software solutions are characterized by the highest quality down to the smallest detail. We implement your project not only with technical skill but also combine the latest methodological insights for excellent custom software development."
+          },
+          "solutionPortfolio": {
+            "title": "Comprehensive Solution Portfolio",
+            "description": "Our services cover the entire spectrum of solutions, from components and interfaces to comprehensive platforms and complete software suites. Whether simple or highly complex requirements, we develop the right solution for Cloud, Web, Mobile, Desktop, and Embedded systems."
+          },
+          "technologyCompetence": {
+            "title": "Diverse Technology Competence",
+            "description": "We are familiar with a wide range of technologies, methods, and tools. This broad spectrum of expertise allows us to select the best options for your specific project."
+          },
+          "crossIndustry": {
+            "title": "Cross-Industry Knowledge",
+            "description": "Our team consists of recognized experts familiar with different fields and technologies. This interdisciplinary expertise allows us to react flexibly and efficiently to individual project requirements and challenges."
+          }
+        }
+      },
+      "services": {
+        "title": "Our Software Engineering Services",
+        "description": "From the initial idea to successful implementation – we accompany you throughout the software development lifecycle.",
+        "items": {
+          "endToEnd": {
+            "title": "End-to-End Software Development",
+            "description": "Our experts support you from the initial idea to successful introduction – for simple and highly complex projects. Our engineering portfolio includes all types of software – from components and interfaces to scalable platforms and complete software suites. We turn your ideas into powerful applications for Cloud, Web, Mobile, Desktop, and Embedded systems.",
+            "features": [
+              "Cloud & Web Applications",
+              "Mobile & Desktop Solutions",
+              "Embedded Systems"
+            ]
+          },
+          "techConsulting": {
+            "title": "Technology Consulting",
+            "description": "Our technology experts advise you on the selection and implementation of the best technologies for your project. We are always at the cutting edge of technology and provide you with innovative and future-oriented solutions.",
+            "features": [
+              "Technology Selection & Evaluation",
+              "Architecture Design",
+              "Future-Oriented Solutions"
+            ]
+          },
+          "projectManagement": {
+            "title": "Project Management",
+            "description": "Our experienced project managers ensure smooth execution of your software projects. They master both classical and agile methodologies and ensure your project is completed on time and within budget.",
+            "features": [
+              "Agile & Waterfall Methodologies",
+              "Risk Management",
+              "On-Time Delivery"
+            ]
+          },
+          "managedTeams": {
+            "title": "Managed Teams",
+            "description": "With our managed teams, we offer you an efficient solution to offload your organization and increase flexibility with the necessary expertise and human resources on short notice. Together with you, we assemble a dedicated team precisely adjusted to your individual requirements in terms of size and skills.",
+            "features": [
+              "Dedicated Team Assembly",
+              "Flexible Scaling",
+              "Skill Matching"
+            ]
+          }
+        }
+      },
+      "qualityMap": {
+        "badge": "Quality Assurance",
+        "title": "Software Development Quality Map",
+        "description": "Good software quality is the concern of every development team. But what to do when software hasn't reached the desired quality? The Software Development Quality Map shows the way: It takes teams on a journey of discovery through 80 different topics.",
+        "imageAlt": "Software Development Quality Map",
+        "caption": "80 Topics to Reach Excellence",
+        "subcaption": "Your path to better software quality"
+      },
+      "testimonials": {
+        "title": "What Our Clients Say",
+        "items": [
+          {
+            "quote": "Gotik was able to quickly implement our requirements into high-quality software. We are very satisfied with the good cooperation and high quality of the software.",
+            "author": "Daniel Mayer",
+            "initials": "DM"
+          },
+          {
+            "quote": "Gotik is the ideal software partner for us: excellent expertise, strong in analysis, and efficient in implementation.",
+            "author": "Istvan Szalai",
+            "initials": "IS"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Software Engineering FAQ",
+        "items": [
+          {
+            "question": "What is custom software?",
+            "answer": "Custom software is a tailor-made software solution developed specifically according to the requirements and needs of your company or project. Our experience, know-how, and quality standards ensure your individual software solution is perfect down to the smallest detail."
+          },
+          {
+            "question": "What are the advantages of custom software over standard software?",
+            "answer": "Custom software offers flexibility, scalability, and a perfect fit for your business processes. While standard software may require compromises, custom solutions are designed precisely for your needs. This leads to higher efficiency, better user experience, and a competitive advantage."
+          },
+          {
+            "question": "Can Gotik further develop or modernize existing software?",
+            "answer": "Yes, we not only offer new software solution development but can also further develop or modernize your existing software. Use our expertise to modernize your software so it can adapt flexibly to changing business and user requirements."
+          }
+        ]
+      }
+    },
+    "softwareModernization": {
+      "hero": {
+        "badge": "Software Modernization",
+        "title": "Unlock the Potential of",
+        "titleHighlight": "Software Modernization",
+        "description": "Software modernization promises great potential: from increased performance, improved security and quality, to developing new business ideas.",
+        "consultant": {
+          "name": "David Vu",
+          "role": "CEO & Gotik Founder",
+          "cta": "Free Consultation"
+        }
+      },
+      "benefits": {
+        "title": "Your Benefits Through Software Modernization",
+        "description": "Make your software fit for the future. New methods open doors to significantly streamline business processes and develop new services.",
+        "items": {
+          "potential": {
+            "title": "Great Potential",
+            "description": "Increase performance, security, and quality of your software, and develop new business ideas. Migrate legacy systems to the cloud, maintain and further develop existing applications, and integrate mobile apps."
+          },
+          "efficient": {
+            "title": "Efficient Business Processes",
+            "description": "Use modern methods to optimize your business processes and create new services that drive efficiency and innovation."
+          },
+          "adaptive": {
+            "title": "Adaptive Software",
+            "description": "Benefit from our expertise to modernize your software so it can adapt flexibly to changing business and user requirements."
+          },
+          "futureProof": {
+            "title": "Future-Oriented Solutions",
+            "description": "Prepare for the future and avoid expensive patches through targeted modernization or complete redevelopment of your software."
+          },
+          "quality": {
+            "title": "Quality and Stability",
+            "description": "Resolve existing quality and stability issues and update user guidance to match modern UX standards."
+          }
+        }
+      }
+    },
     "aiSolutions": {
       "hero": {
         "badge": "Interactive Solutions Map",

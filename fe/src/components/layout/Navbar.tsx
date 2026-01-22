@@ -3,12 +3,15 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTranslations, useLocale } from 'next-intl';
+import { usePathname } from 'next/navigation';
 import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Navbar() {
     const t = useTranslations('navigation');
     const tServices = useTranslations('services');
     const locale = useLocale();
+    const pathname = usePathname();
+    const isLandingPage = pathname === '/' || pathname === `/${locale}` || pathname === `/${locale}/`;
 
     // Move solutionsMenu inside component to use translations
     const solutionsMenu = [
@@ -19,6 +22,7 @@ export default function Navbar() {
         { name: tServices('dataManagement'), href: "/data-management" },
         { name: tServices('dataArchitecture'), href: "/data-architecture" },
         { name: tServices('dataAnalytics'), href: "/data-and-analytics" },
+        { name: tServices('bim2fm'), href: "/bim2fm" },
         { name: tServices('softwareArchitecture'), href: "/software-architecture" },
         { name: tServices('iot'), href: "/internet-of-things" },
         { name: tServices('mobileWebApps'), href: "/mobile-web-apps" },
@@ -53,7 +57,7 @@ export default function Navbar() {
     return (
         <>
             <nav
-                className={`fixed top-0 w-full z-50 transition-all duration-300 py-6 px-6 md:px-12 flex items-center justify-between ${isScrolled
+                className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 py-6 px-6 md:px-12 flex items-center justify-between ${isScrolled
                     ? "bg-navy-blue/90 backdrop-blur-xl text-white shadow-lg"
                     : "text-black"
                     }`}
@@ -112,15 +116,15 @@ export default function Navbar() {
                 <div className="absolute left-1/2 top-6 -translate-x-1/2 text-center pointer-events-auto">
                     <Link href="/" className="flex items-center gap-2">
                         <img src="/logo_footer.png" alt="Gotik Consulting" className="h-4 w-auto" />
-                        <span className="font-display text-xl tracking-tight font-medium">Gotik Consulting</span>
+                        <span className="font-display text-xl tracking-tight font-medium hidden md:inline">Gotik Consulting</span>
                     </Link>
                 </div>
 
-                <div className="isolate flex items-center gap-4">
+                <div className="isolate flex items-center gap-4 mr-[15px] md:mr-0">
                     <LanguageSwitcher />
                     <Link
                         href="/#contact"
-                        className={`px-6 py-2.5 text-[10px] font-bold uppercase tracking-widest hover:bg-sky-blue hover:text-white transition-all hover:scale-105 rounded-full ${isScrolled ? "bg-sky-blue text-navy-blue" : "bg-black text-white"} flex items-center justify-center`}
+                        className={`hidden md:flex px-6 py-2.5 text-[10px] font-bold uppercase tracking-widest hover:bg-sky-blue hover:text-white transition-all hover:scale-105 rounded-full ${isScrolled ? "bg-sky-blue text-navy-blue" : "bg-black text-white"} items-center justify-center`}
                     >
                         <span className="hidden md:inline">{t('getStarted')}</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="md:hidden">
@@ -133,8 +137,9 @@ export default function Navbar() {
 
             {/* Mobile Menu Overlay */}
             <div
-                className={`fixed inset-0 bg-navy-blue z-[60] flex flex-col justify-center items-center transition-transform duration-500 md:hidden ${isMenuOpen ? "translate-y-0" : "-translate-y-full"
+                className={`fixed top-0 left-0 w-full h-full bg-navy-blue z-[9999] flex flex-col justify-center items-center transition-transform duration-500 md:hidden ${isMenuOpen ? "translate-y-0" : "-translate-y-full"
                     }`}
+                style={!isLandingPage ? { left: '-65px' } : {}}
             >
                 <button
                     onClick={toggleMenu}

@@ -25,6 +25,7 @@ type PostFormValues = {
   slug: string;
   content: string;
   status: "draft" | "published";
+  locale: "en" | "vi";
   category_id: string;
   featured_image_url?: string;
   author_id?: string;
@@ -114,6 +115,7 @@ export default function EditPost() {
   });
 
   const status = watch("status");
+  const locale = watch("locale");
   const content = watch("content");
   const postTitle = watch("title");
   const categoryId = watch("category_id");
@@ -126,6 +128,7 @@ export default function EditPost() {
         slug: post.slug,
         content: post.content,
         status: post.status as any,
+        locale: post.locale || "en", // Default to 'en' if null
         category_id: post.category_id ? String(post.category_id) : "none",
         featured_image_url: post.featured_image_url || "",
         author_id: post.author_id,
@@ -280,7 +283,30 @@ export default function EditPost() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="space-y-2">
+                <Label htmlFor="locale" className="text-sm font-medium text-[var(--admin-text-primary)]">
+                  Locale
+                </Label>
+                <Select
+                  value={locale}
+                  onValueChange={(value) => setValue("locale", value as "en" | "vi")}
+                >
+                  <SelectTrigger className="border-[var(--admin-border)] focus:border-[var(--admin-sky)] focus:ring-[var(--admin-sky)]/20">
+                    <SelectValue placeholder="Select locale" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="en">English (en)</SelectItem>
+                    <SelectItem value="vi">Vietnamese (vi)</SelectItem>
+                  </SelectContent>
+                </Select>
+                {errors.locale?.message && (
+                  <p className="text-sm text-[var(--admin-error)] mt-1">
+                    {String(errors.locale.message)}
+                  </p>
+                )}
+              </div>
+
               <div className="space-y-2">
                 <Label htmlFor="category_id" className="text-sm font-medium text-[var(--admin-text-primary)]">
                   Category

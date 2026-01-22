@@ -24,6 +24,7 @@ type PostFormValues = {
   slug: string;
   content: string;
   status: "draft" | "published";
+  locale: "en" | "vi";
   category_id: string;
   featured_image_url?: string;
 };
@@ -77,12 +78,14 @@ export default function CreatePost() {
       slug: "",
       content: "",
       status: "draft",
+      locale: "en",
       category_id: "none",
       featured_image_url: "",
     },
   });
 
   const status = watch("status");
+  const locale = watch("locale");
   const content = watch("content");
   const categoryId = watch("category_id");
   const title = watch("title");
@@ -202,7 +205,30 @@ export default function CreatePost() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="space-y-2">
+                <Label htmlFor="locale" className="text-sm font-medium text-[var(--admin-text-primary)]">
+                  Locale
+                </Label>
+                <Select
+                  value={locale}
+                  onValueChange={(value) => setValue("locale", value as "en" | "vi")}
+                >
+                  <SelectTrigger className="border-[var(--admin-border)] focus:border-[var(--admin-sky)] focus:ring-[var(--admin-sky)]/20">
+                    <SelectValue placeholder="Select locale" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="en">English (en)</SelectItem>
+                    <SelectItem value="vi">Vietnamese (vi)</SelectItem>
+                  </SelectContent>
+                </Select>
+                {errors.locale?.message && (
+                  <p className="text-sm text-[var(--admin-error)] mt-1">
+                    {String(errors.locale.message)}
+                  </p>
+                )}
+              </div>
+
               <div className="space-y-2">
                 <Label htmlFor="category_id" className="text-sm font-medium text-[var(--admin-text-primary)]">
                   Category

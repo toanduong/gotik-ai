@@ -149,7 +149,7 @@ export default function BlogPage() {
                                             {/* Date Badge */}
                                             <div className="px-6 pt-6 pb-4">
                                                 <time className="text-sm text-sky-blue font-medium">
-                                                    {new Date(post.created_at).toLocaleDateString('en-US', {
+                                                    {new Date(post.created_at).toLocaleDateString(locale == 'vi' ? 'vi-VN' : 'en-US', {
                                                         month: 'long',
                                                         day: 'numeric',
                                                         year: 'numeric'
@@ -171,7 +171,7 @@ export default function BlogPage() {
                                                     {getExcerpt(getLocalizedContent(post, 'content') as string)}
                                                 </p>
                                                 <div className="flex items-center text-sky-blue font-medium text-sm group-hover:gap-2 transition-all">
-                                                    <span>Read more</span>
+                                                    <span>{t('readMore')}</span>
                                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                                     </svg>

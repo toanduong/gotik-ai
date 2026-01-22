@@ -46,7 +46,7 @@ export default function AIConsulting() {
             <Navbar />
 
             {/* Hero Section */}
-            <section className="pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-gradient-to-b from-slate-50 to-white">
+            <section className="pt-32 lg:pt-40 overflow-hidden bg-gradient-to-b from-slate-50 to-white">
                 <div className="ac-hero-1 absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl"></div>
                 <div className="ac-hero-2 absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-navy-blue/5 rounded-full blur-3xl"></div>
 
@@ -67,7 +67,7 @@ export default function AIConsulting() {
             </section>
 
             {/* Benefits Section */}
-            <section className="py-24 bg-white" id="benefits">
+            <section className="pb-24 bg-white" id="benefits">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="text-center max-w-3xl mx-auto mb-16" {...motionConfig.fadeIn}>
                         <h2 className="font-display text-4xl lg:text-5xl text-navy-blue mb-6">

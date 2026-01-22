@@ -5,6 +5,8 @@ import { Footer } from "@/components/layout/Footer";
 import Contact from "@/components/sections/Contact";
 import { motion, Variants, Transition } from "framer-motion";
 
+import { useTranslations } from 'next-intl';
+
 const containerVariants: Variants = {
     initial: { opacity: 0 },
     visible: {
@@ -31,53 +33,55 @@ const popInVariants: Variants = {
     }
 };
 
-const features = [
-    {
-        icon: "payments",
-        title: "Finance & Accounting",
-        description: "Automate financial operations, manage cash flow, and generate real-time compliance reports."
-    },
-    {
-        icon: "local_shipping",
-        title: "Supply Chain",
-        description: "Optimize logistics, track inventory in real-time, and forecast demand with AI-driven insights."
-    },
-    {
-        icon: "groups",
-        title: "Human Resources",
-        description: "Manage talent acquisition, payroll, benefits, and employee performance in one unified portal."
-    },
-    {
-        icon: "contacts",
-        title: "CRM Integration",
-        description: "Seamless customer tracking and engagement history directly linked to your sales pipeline."
-    }
-];
-
-const processSteps = [
-    {
-        icon: "search",
-        title: "Audit & Discovery",
-        description: "We analyze your current technology stack and business processes to identify bottlenecks and opportunities."
-    },
-    {
-        icon: "tune",
-        title: "Customization",
-        description: "Our engineers tailor the ERP modules to fit your specific workflows, ensuring the system adapts to you, not the other way around."
-    },
-    {
-        icon: "cloud_upload",
-        title: "Migration",
-        description: "Secure, encrypted data transfer from legacy systems with zero data loss guarantee and integrity verification."
-    },
-    {
-        icon: "school",
-        title: "Training & Support",
-        description: "We empower your team with comprehensive training sessions and provide 24/7 dedicated support post-launch."
-    }
-];
-
 export default function ERPSystem() {
+    const t = useTranslations('pages.erpSystem');
+
+    const features = [
+        {
+            icon: "payments",
+            title: t('features.items.finance.title'),
+            description: t('features.items.finance.description')
+        },
+        {
+            icon: "local_shipping",
+            title: t('features.items.supplyChain.title'),
+            description: t('features.items.supplyChain.description')
+        },
+        {
+            icon: "groups",
+            title: t('features.items.hr.title'),
+            description: t('features.items.hr.description')
+        },
+        {
+            icon: "contacts",
+            title: t('features.items.crm.title'),
+            description: t('features.items.crm.description')
+        }
+    ];
+
+    const processSteps = [
+        {
+            icon: "search",
+            title: t('process.steps.audit.title'),
+            description: t('process.steps.audit.description')
+        },
+        {
+            icon: "tune",
+            title: t('process.steps.customization.title'),
+            description: t('process.steps.customization.description')
+        },
+        {
+            icon: "cloud_upload",
+            title: t('process.steps.migration.title'),
+            description: t('process.steps.migration.description')
+        },
+        {
+            icon: "school",
+            title: t('process.steps.training.title'),
+            description: t('process.steps.training.description')
+        }
+    ];
+
     return (
         <main className="relative bg-white min-h-screen font-sans overflow-x-hidden">
             {/* Material Symbols Font */}
@@ -106,12 +110,12 @@ export default function ERPSystem() {
                                 animate: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } }
                             }}
                         >
-                            <span className="text-sky-blue font-bold tracking-wider uppercase text-sm">ERP Solutions</span>
+                            <span className="text-sky-blue font-bold tracking-wider uppercase text-sm">{t('hero.badge')}</span>
                             <h1 className="text-4xl md:text-5xl lg:text-7xl font-display font-black leading-tight tracking-tight text-navy-blue dark:text-white">
-                                Unified Business Management for the <span className="text-sky-blue">Modern Age</span>
+                                {t('hero.title')} <span className="text-sky-blue">{t('hero.titleHighlight')}</span>
                             </h1>
                             <p className="text-neutral-gray dark:text-slate-400 text-lg md:text-xl font-normal leading-relaxed max-w-xl">
-                                Scalable ERP solutions designed to seamlessly integrate your finance, HR, and supply chain into one intuitive dashboard.
+                                {t('hero.description')}
                             </p>
                         </motion.div>
                         <motion.div
@@ -127,14 +131,14 @@ export default function ERPSystem() {
                                 href="#contact"
                                 className="flex items-center justify-center rounded-full h-12 px-8 bg-sky-blue hover:bg-bright-blue text-white text-base font-bold transition-all shadow-lg shadow-sky-blue/20"
                             >
-                                Request Consultation
+                                {t('cta.primary')}
                             </motion.a>
                             <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                                 className="flex items-center justify-center rounded-full h-12 px-8 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-navy-blue dark:text-white text-base font-bold transition-all"
                             >
-                                View Demo
+                                {t('cta.secondary')}
                             </motion.button>
                         </motion.div>
                     </motion.div>
@@ -195,10 +199,12 @@ export default function ERPSystem() {
                         variants={itemVariants}
                     >
                         <h2 className="text-navy-blue dark:text-white text-3xl md:text-5xl font-display font-bold leading-tight">
-                            Core ERP <span className="text-sky-blue">Modules</span>
+                            {t.rich('features.title', {
+                                span: (chunks) => <span className="text-sky-blue">{chunks}</span>
+                            })}
                         </h2>
                         <p className="text-neutral-gray dark:text-slate-400 text-lg leading-relaxed">
-                            Comprehensive tools to manage every aspect of your business operations efficiently, built on a secure cloud infrastructure.
+                            {t('features.description')}
                         </p>
                     </motion.div>
 
@@ -238,10 +244,12 @@ export default function ERPSystem() {
                                 transition={{ duration: 0.8 }}
                             >
                                 <h2 className="text-navy-blue dark:text-white text-3xl md:text-5xl font-display font-bold leading-tight mb-6">
-                                    Implementation <span className="text-sky-blue">Lifecycle</span>
+                                    {t.rich('process.title', {
+                                        span: (chunks) => <span className="text-sky-blue">{chunks}</span>
+                                    })}
                                 </h2>
                                 <p className="text-neutral-gray dark:text-slate-400 text-lg leading-relaxed">
-                                    We don't just sell software; we partner with you to transform your business. Our proven methodology ensures a smooth transition with minimal downtime.
+                                    {t('process.description')}
                                 </p>
                             </motion.div>
                             <motion.div
@@ -340,10 +348,12 @@ export default function ERPSystem() {
                         transition={{ duration: 0.8 }}
                     >
                         <h2 className="text-navy-blue dark:text-white text-4xl md:text-7xl font-display font-black leading-tight tracking-tight mb-6">
-                            Ready to <span className="text-sky-blue underline decoration-sky-blue/30 underline-offset-8">modernize</span> your operations?
+                            {t.rich('cta.title', {
+                                underline: (chunks) => <span className="text-sky-blue underline decoration-sky-blue/30 underline-offset-8">{chunks}</span>
+                            })}
                         </h2>
                         <p className="text-neutral-gray dark:text-slate-400 text-lg md:text-2xl max-w-2xl mx-auto leading-relaxed">
-                            Schedule a free 30-minute discovery call with our ERP specialists and see how Gotik can transform your business.
+                            {t('cta.description')}
                         </p>
                     </motion.div>
 
@@ -359,7 +369,7 @@ export default function ERPSystem() {
                             whileTap={{ scale: 0.95 }}
                             className="group flex items-center justify-center rounded-full h-18 px-12 bg-sky-blue text-white text-xl font-bold transition-all"
                         >
-                            Start Your Transformation
+                            {t('cta.primary')}
                             <motion.span className="ml-2" animate={{ x: [0, 5, 0] }} transition={{ repeat: Infinity, duration: 1.5 }}>→</motion.span>
                         </motion.button>
                         <motion.button
@@ -367,7 +377,7 @@ export default function ERPSystem() {
                             whileTap={{ scale: 0.95 }}
                             className="flex items-center justify-center rounded-full h-18 px-12 border-2 border-slate-200 dark:border-slate-700 bg-transparent text-navy-blue dark:text-white text-xl font-bold transition-all"
                         >
-                            Contact Sales
+                            {t('cta.secondary')}
                         </motion.button>
                     </motion.div>
                 </div>

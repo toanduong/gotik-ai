@@ -59,7 +59,7 @@ const SalesforcePage = () => {
             <Navbar />
 
             {/* Hero Section */}
-            <section className="relative pt-32 pb-20 overflow-hidden bg-slate-50">
+            <section className="pt-32 lg:pt-40 overflow-hidden bg-gradient-to-b from-slate-50 to-white">
                 <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-50/50 skew-x-12 translate-x-1/4 -z-10" />
                 <div className="container px-4 mx-auto">
                     <div className="flex flex-col lg:flex-row items-center gap-12">

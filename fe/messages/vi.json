@@ -17,6 +17,22 @@
     "recentBlog": "Blog Gần Đây",
     "contact": "Liên Hệ"
   },
+  "blog": {
+    "title": "Blog của chúng tôi",
+    "subtitle": "Thông tin chi tiết, cập nhật và câu chuyện từ thế giới công nghệ và đổi mới",
+    "loading": "Đang tải bài viết...",
+    "loadingPost": "Đang tải bài viết...",
+    "noPosts": "Chưa có bài viết nào.",
+    "readMore": "Đọc thêm",
+    "viewMore": "Xem Thêm Bài Viết",
+    "showing": "Hiển thị {count} trong {total} bài viết",
+    "backToBlog": "Quay Lại Blog",
+    "share": "Chia sẻ",
+    "relatedPosts": "Bài Viết Liên Quan",
+    "postNotFound": "Không tìm thấy bài viết hoặc chưa được xuất bản",
+    "failedToLoad": "Không thể tải bài viết",
+    "updated": "Đã cập nhật"
+  },
   "services": {
     "softwareEngineering": "Kỹ Thuật Phần Mềm",
     "softwareModernization": "Hiện Đại Hóa Phần Mềm",
@@ -90,7 +106,10 @@
     "errorMessage": "Đăng ký thất bại. Vui lòng thử lại.",
     "copyright": "© 2026 Gotik Consulting. Bảo lưu mọi quyền.",
     "privacyPolicy": "Chính Sách Bảo Mật",
-    "termsOfService": "Điều Khoản Dịch Vụ"
+    "termsOfService": "Điều Khoản Dịch Vụ",
+    "ourstory": "Về chúng tôi",
+    "oursolution": "Giải pháp",
+    "ourprocess": "Qui trình"
   },
   "solutions": {
     "badge": "Giải Pháp Của Chúng Tôi",

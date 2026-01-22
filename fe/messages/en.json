@@ -17,6 +17,22 @@
     "recentBlog": "Recent Blog",
     "contact": "Contact"
   },
+  "blog": {
+    "title": "Our blog",
+    "subtitle": "Insights, updates, and stories from the world of technology and innovation",
+    "loading": "Loading blog posts...",
+    "loadingPost": "Loading post...",
+    "noPosts": "No blog posts available yet.",
+    "readMore": "Read more",
+    "viewMore": "View More Posts",
+    "showing": "Showing {count} of {total} posts",
+    "backToBlog": "Back to Blog",
+    "share": "Share",
+    "relatedPosts": "Related Posts",
+    "postNotFound": "Post not found or not published",
+    "failedToLoad": "Failed to load post",
+    "updated": "Updated"
+  },
   "services": {
     "softwareEngineering": "Software Engineering",
     "softwareModernization": "Software Modernization",
@@ -90,7 +106,10 @@
     "errorMessage": "Failed to subscribe. Please try again.",
     "copyright": "© 2026 Gotik Consulting. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service"
+    "termsOfService": "Terms of Service",
+    "ourstory": "Our Story",
+    "oursolution": "Our solutions",
+    "ourprocess": "Our process"
   },
   "solutions": {
     "badge": "Our Solutions",

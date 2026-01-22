@@ -7,6 +7,7 @@ import Navbar from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { supabaseClient } from "@/lib/supabase";
 import { Loader2 } from "lucide-react";
+import { useLocale, useTranslations } from 'next-intl';
 
 type Post = {
     id: number;
@@ -21,6 +22,8 @@ type Post = {
 const POSTS_PER_PAGE = 10;
 
 export default function BlogPage() {
+    const locale = useLocale();
+    const t = useTranslations('blog');
     const [posts, setPosts] = useState<Post[]>([]);
     const [displayedPosts, setDisplayedPosts] = useState<Post[]>([]);
     const [isLoading, setIsLoading] = useState(true);
@@ -37,6 +40,7 @@ export default function BlogPage() {
                     .from('posts')
                     .select('id, title, content, status, created_at, featured_image_url, slug')
                     .eq('status', 'published')
+                    .eq('locale', locale)
                     .order('created_at', { ascending: false });
 
                 if (error) throw error;
@@ -65,6 +69,18 @@ export default function BlogPage() {
             setHasMore(newDisplayedPosts.length < posts.length);
             setIsLoadingMore(false);
         }, 500);
+    };
+
+    // Get localized content based on current locale
+    const getLocalizedContent = (post: Post, field: 'title' | 'content' | 'slug'): string => {
+        if (locale === 'vi') {
+            const viField = `${field}_vi` as keyof Post;
+            const viContent = post[viField];
+            if (viContent && typeof viContent === 'string') {
+                return viContent;
+            }
+        }
+        return post[field] as string;
     };
 
     // Extract excerpt from content (first 150 characters of plain text)
@@ -102,10 +118,10 @@ export default function BlogPage() {
                         className="text-center"
                     >
                         <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-navy-blue mb-6">
-                            Our Blog
+                            {t('title')}
                         </h1>
                         <p className="text-xl text-sky-blue max-w-2xl mx-auto">
-                            Insights, updates, and stories from the world of technology and innovation
+                            {t('subtitle')}
                         </p>
                     </motion.div>
                 </div>
@@ -144,15 +160,15 @@ export default function BlogPage() {
                                             {/* Content */}
                                             <div className="px-6 pb-6 flex-1 flex flex-col">
                                                 <h2 className="text-2xl font-display font-bold text-navy-blue mb-4 group-hover:text-sky-blue transition-colors line-clamp-2">
-                                                    {post.title}
+                                                    {getLocalizedContent(post, 'title')}
                                                 </h2>
                                                 <img
                                                     src={post.featured_image_url}
-                                                    alt={post.slug}
+                                                    alt={getLocalizedContent(post, 'slug')}
                                                     className="w-full h-auto"
                                                 />
                                                 <p className="text-neutral-gray leading-relaxed mb-4 line-clamp-3 flex-1">
-                                                    {getExcerpt(post.content)}
+                                                    {getExcerpt(getLocalizedContent(post, 'content') as string)}
                                                 </p>
                                                 <div className="flex items-center text-sky-blue font-medium text-sm group-hover:gap-2 transition-all">
                                                     <span>Read more</span>

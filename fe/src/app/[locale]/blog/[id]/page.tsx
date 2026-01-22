@@ -8,6 +8,7 @@ import Navbar from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { supabaseClient } from "@/lib/supabase";
 import { Loader2, Calendar, ArrowLeft, Share2 } from "lucide-react";
+import { useLocale } from 'next-intl';
 
 type Post = {
     id: number;
@@ -28,6 +29,7 @@ export default function BlogDetailPage() {
     const params = useParams();
     const router = useRouter();
     const postId = params?.id as string;
+    const locale = useLocale();
 
     const [post, setPost] = useState<Post | null>(null);
     const [relatedPosts, setRelatedPosts] = useState<RelatedPost[]>([]);
@@ -48,6 +50,7 @@ export default function BlogDetailPage() {
                     .select('*')
                     .eq('id', postId)
                     .eq('status', 'published')
+                    .eq('locale', locale)
                     .single();
 
                 if (postError) {
@@ -66,6 +69,7 @@ export default function BlogDetailPage() {
                     .from('posts')
                     .select('id, title, created_at')
                     .eq('status', 'published')
+                    .eq('locale', locale)
                     .neq('id', postId)
                     .order('created_at', { ascending: false })
                     .limit(3);
@@ -80,7 +84,8 @@ export default function BlogDetailPage() {
         }
 
         fetchPostAndRelated();
-    }, [postId]);
+        fetchPostAndRelated();
+    }, [postId, locale]);
 
     const handleShare = async () => {
         if (navigator.share) {

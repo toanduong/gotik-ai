@@ -138,7 +138,7 @@ export default function LoginPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="max-w-md"
           >
-            <h2 className="mb-4 text-3xl font-bold tracking-tight">IMS Saigon CMS Admin Dashboard</h2>
+            <h2 className="mb-4 text-3xl font-bold tracking-tight">IMS CMS Admin Dashboard</h2>
             <p className="mb-12 text-blue-100/80">
               Advanced control panel for managing your content, analytics, and business growth.
             </p>

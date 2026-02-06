@@ -108,14 +108,13 @@ export default function Navbar() {
                             {t('blog')}
                         </Link>
 
-                        <Link href="/#academy" className="hover:text-sky-blue transition-colors">{t('academy')}</Link>
                         <Link href="/#about" className="hover:text-sky-blue transition-colors">{t('ourStory')}</Link>
                     </div>
                 </div>
 
                 <div className="absolute left-1/2 top-6 -translate-x-1/2 text-center pointer-events-auto">
                     <Link href="/" className="flex items-center gap-2">
-                        <span className="font-display text-xl tracking-tight font-medium">IMS Saigon</span>
+                        <span className="font-display text-xl tracking-tight font-medium">IMS SOLUTIONS</span>
                     </Link>
                 </div>
 
@@ -183,13 +182,6 @@ export default function Navbar() {
                         {t('blog')}
                     </Link>
 
-                    <Link
-                        href="/#academy"
-                        onClick={toggleMenu}
-                        className="text-3xl font-display text-sky-blue hover:text-white transition-colors"
-                    >
-                        {t('academy')}
-                    </Link>
                     <Link
                         href="/#about"
                         onClick={toggleMenu}

@@ -21,8 +21,8 @@ export function OrganizationSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "IMS Saigon",
-    "alternateName": "IMS Saigon",
+    "name": "IMS",
+    "alternateName": "IMS",
     "url": SITE_URL,
     "description": "Expert software consulting, cloud migration, AI solutions, and digital transformation services. Transform your business with scalable, modern technology solutions.",
     "email": "support@ims-saigon.com",
@@ -33,7 +33,7 @@ export function OrganizationSchema() {
     },
     "sameAs": [
       "https://www.linkedin.com/company/ims-saigon",
-      "https://twitter.com/imssaigon",
+      "https://twitter.com/ims",
       "https://github.com/ims-saigon"
     ],
     "contactPoint": {
@@ -74,12 +74,12 @@ export function WebsiteSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "IMS Saigon",
+    "name": "IMS",
     "url": SITE_URL,
     "description": "Expert guidance for your digital transformation journey. From cloud migration to custom development, we turn your vision into reality.",
     "publisher": {
       "@type": "Organization",
-      "name": "IMS Saigon"
+      "name": "IMS"
     },
     "potentialAction": {
       "@type": "SearchAction",
@@ -111,7 +111,7 @@ export function ServiceSchema({
   serviceType,
   areaServed = "Worldwide",
   provider = {
-    name: "IMS Saigon",
+    name: "IMS",
     url: SITE_URL
   }
 }: ServiceSchemaProps) {

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cloud Services • IMS Saigon",
+    title: "Cloud Services • IMS",
     description: "Comprehensive cloud services for infrastructure, migration, and management.",
   },
   alternates: {

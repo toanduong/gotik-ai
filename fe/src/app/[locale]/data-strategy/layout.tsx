@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Data Strategy Consulting • IMS Saigon",
+    title: "Data Strategy Consulting • IMS",
     description: "Strategic data consulting for comprehensive data strategies and governance.",
   },
   alternates: {

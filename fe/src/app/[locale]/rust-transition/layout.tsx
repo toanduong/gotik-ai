@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rust Transition Services • IMS Saigon",
+    title: "Rust Transition Services • IMS",
     description: "Transition to Rust for improved performance and memory safety in enterprise systems.",
   },
   alternates: {

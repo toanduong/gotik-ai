@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Consulting Services • IMS Saigon",
+    title: "AI Consulting Services • IMS",
     description: "Transform your business with expert AI consulting. Custom AI agent development, strategy, and implementation services.",
   },
   alternates: {

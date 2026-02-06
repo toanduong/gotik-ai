@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Software Modernization • IMS Saigon",
+    title: "Software Modernization • IMS",
     description: "Modernize legacy systems and transform outdated applications with modern architectures.",
   },
   alternates: {

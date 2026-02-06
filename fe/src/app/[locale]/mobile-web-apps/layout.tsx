@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mobile & Web App Development • IMS Saigon",
+    title: "Mobile & Web App Development • IMS",
     description: "Custom mobile and web application development with cross-platform solutions.",
   },
   alternates: {

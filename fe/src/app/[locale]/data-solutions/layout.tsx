@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gen AI Data Solutions • IMS Saigon",
+    title: "Gen AI Data Solutions • IMS",
     description: "Next-generation AI data solutions with RAG and vector databases.",
   },
   alternates: {

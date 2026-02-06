@@ -3,7 +3,6 @@ import Navbar from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import Solutions from "@/components/sections/Solutions";
-import Academy from "@/components/sections/Academy";
 import About from "@/components/sections/About";
 import Process from "@/components/sections/Process";
 import Testimonials from "@/components/sections/Testimonials";
@@ -11,17 +10,17 @@ import Contact from "@/components/sections/Contact";
 
 export const metadata: Metadata = {
   title: "Software Consulting & Digital Transformation Services",
-  description: "IMS Saigon delivers expert software consulting, cloud migration, AI solutions, and digital transformation services. Transform your business with scalable, modern technology solutions.",
+  description: "IMS delivers expert software consulting, cloud migration, AI solutions, and digital transformation services. Transform your business with scalable, modern technology solutions.",
   keywords: ["software consulting", "digital transformation", "cloud migration", "AI consulting", "custom software development", "enterprise solutions", "cloud services", "data solutions"],
   openGraph: {
-    title: "IMS Saigon • Software Consulting & Digital Transformation",
+    title: "IMS • Software Consulting & Digital Transformation",
     description: "Transform your business with expert software consulting, cloud migration, AI solutions, and custom development services.",
     url: "https://ims-saigon.com",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "IMS Saigon • Software Consulting & Digital Transformation",
+    title: "IMS • Software Consulting & Digital Transformation",
     description: "Transform your business with expert software consulting, cloud migration, AI solutions, and custom development services.",
   },
   alternates: {
@@ -46,8 +45,6 @@ export default function Home() {
             <span className="w-1 h-1 rounded-full bg-sky-blue"></span>
             <span>Data Management</span>
             <span className="w-1 h-1 rounded-full bg-sky-blue"></span>
-            <span>Technical Training</span>
-            <span className="w-1 h-1 rounded-full bg-sky-blue"></span>
             <span>Software Engineering</span>
             <span className="w-1 h-1 rounded-full bg-sky-blue"></span>
             <span>Data & Analytics</span>
@@ -66,7 +63,6 @@ export default function Home() {
       </div>
 
       <Solutions />
-      <Academy />
       <About />
       <Process />
       <Testimonials />

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Data Management Services • IMS Saigon",
+    title: "Data Management Services • IMS",
     description: "Enterprise data management solutions for governance, quality, and integration.",
   },
   alternates: {

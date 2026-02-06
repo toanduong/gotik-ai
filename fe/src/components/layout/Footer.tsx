@@ -66,7 +66,7 @@ export function Footer() {
                 <div className="md:col-span-4 flex flex-col justify-between h-full">
                     <div>
                         <Link href="/" className="flex items-center gap-2 mb-6">
-                            <span className="font-display text-2xl tracking-tight font-medium">IMS Saigon</span>
+                            <span className="font-display text-2xl tracking-tight font-medium">IMS Solutions</span>
                         </Link>
                         <p className="mb-4 leading-relaxed text-white/60 max-w-xs text-sm font-light">
                             {t('tagline')}

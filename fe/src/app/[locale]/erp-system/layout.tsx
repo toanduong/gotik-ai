@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ERP System Solutions • IMS Saigon",
+    title: "ERP System Solutions • IMS",
     description: "Enterprise Resource Planning implementation and integration services.",
   },
   alternates: {

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "IoT Solutions • IMS Saigon",
+    title: "IoT Solutions • IMS",
     description: "End-to-end Internet of Things solutions for connected devices and smart systems.",
   },
   alternates: {

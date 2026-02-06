@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "BIM2FM Solutions • IMS Saigon",
+    title: "BIM2FM Solutions • IMS",
     description: "Transform Building Information Modeling into facilities management systems.",
   },
   alternates: {

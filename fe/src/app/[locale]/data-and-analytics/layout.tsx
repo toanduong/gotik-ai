@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Data & Analytics Solutions • IMS Saigon",
+    title: "Data & Analytics Solutions • IMS",
     description: "Transform data into actionable insights with business intelligence and analytics.",
   },
   alternates: {

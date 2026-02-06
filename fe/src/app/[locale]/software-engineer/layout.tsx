@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Software Engineering Services • IMS Saigon",
+    title: "Software Engineering Services • IMS",
     description: "Expert software engineering services. Custom development and system architecture for enterprise solutions.",
   },
   alternates: {

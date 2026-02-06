@@ -27,8 +27,8 @@ export async function POST(request: NextRequest) {
 
     // Send email using Resend
     const { data, error } = await resend.emails.send({
-      from: 'IMS Saigon Contact Form <onboarding@resend.dev>', // Update this with your verified domain
-      to: ['victor@IMS Saigon'],
+      from: 'IMS Contact Form <onboarding@resend.dev>', // Update this with your verified domain
+      to: ['support@ims-saigon.com'],
       subject: `New Contact Form Submission from ${name}`,
       html: `
         <!DOCTYPE html>

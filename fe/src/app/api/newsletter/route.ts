@@ -27,9 +27,9 @@ export async function POST(request: NextRequest) {
 
     // Send confirmation email to the subscriber
     const { data: subscriberData, error: subscriberError } = await resend.emails.send({
-      from: 'IMS Saigon <onboarding@resend.dev>',
+      from: 'IMS <onboarding@resend.dev>',
       to: [email],
-      subject: 'Welcome to IMS Saigon Newsletter',
+      subject: 'Welcome to IMS Newsletter',
       html: `
                 <!DOCTYPE html>
                 <html>
@@ -52,7 +52,7 @@ export async function POST(request: NextRequest) {
                         <h1>Welcome to Our Newsletter! 🎉</h1>
                       </div>
                       <div class="content">
-                         <p>Thank you for subscribing to the IMS Saigon newsletter!</p>
+                         <p>Thank you for subscribing to the IMS newsletter!</p>
                         <p>You'll now receive our latest insights, industry news, and updates on digital transformation, software engineering, and innovative technology solutions.</p>
                         <p>We're excited to have you as part of our community.</p>
                         <p style="margin-top: 30px;">
@@ -60,7 +60,7 @@ export async function POST(request: NextRequest) {
                         </p>
                       </div>
                       <div class="footer">
-                         <p>© 2026 IMS Saigon. All rights reserved.</p>
+                         <p>© 2026 IMS. All rights reserved.</p>
                         <p style="font-size: 12px; margin-top: 10px;">
                           You're receiving this email because you subscribed to our newsletter.
                         </p>
@@ -77,7 +77,7 @@ export async function POST(request: NextRequest) {
 
     // Send notification to admin
     const { data: adminData, error: adminError } = await resend.emails.send({
-      from: 'IMS Saigon Newsletter <onboarding@resend.dev>',
+      from: 'IMS Newsletter <onboarding@resend.dev>',
       to: ['support@ims-saigon.com'],
       subject: `New Newsletter Subscription`,
       html: `

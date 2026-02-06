@@ -7,16 +7,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Data Strategy Consulting • Roadmap & Governance Framework",
     description: "Strategic data consulting. Comprehensive data strategies and governance frameworks aligned with business objectives.",
-    url: "https://gotik.ai/data-strategy",
+    url: "https://ims-saigon.com/data-strategy",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Data Strategy Consulting • Gotik Consulting",
+    title: "Data Strategy Consulting • IMS Saigon",
     description: "Strategic data consulting for comprehensive data strategies and governance.",
   },
   alternates: {
-    canonical: "https://gotik.ai/data-strategy",
+    canonical: "https://ims-saigon.com/data-strategy",
   },
 };
 

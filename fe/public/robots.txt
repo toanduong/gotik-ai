@@ -1,4 +1,4 @@
-# robots.txt for Gotik Consulting
+# robots.txt for IMS Saigon
 
 User-agent: *
 Allow: /
@@ -8,7 +8,7 @@ Allow: /
 # Disallow: /api/
 
 # Sitemap location
-Sitemap: https://gotik.ai/sitemap.xml
+Sitemap: https://ims-saigon.com/sitemap.xml
 
 # Crawl-delay (optional, for rate limiting)
 # Crawl-delay: 1

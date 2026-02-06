@@ -11,21 +11,21 @@ import Contact from "@/components/sections/Contact";
 
 export const metadata: Metadata = {
   title: "Software Consulting & Digital Transformation Services",
-  description: "Gotik Consulting delivers expert software consulting, cloud migration, AI solutions, and digital transformation services. Transform your business with scalable, modern technology solutions.",
+  description: "IMS Saigon delivers expert software consulting, cloud migration, AI solutions, and digital transformation services. Transform your business with scalable, modern technology solutions.",
   keywords: ["software consulting", "digital transformation", "cloud migration", "AI consulting", "custom software development", "enterprise solutions", "cloud services", "data solutions"],
   openGraph: {
-    title: "Gotik Consulting • Software Consulting & Digital Transformation",
+    title: "IMS Saigon • Software Consulting & Digital Transformation",
     description: "Transform your business with expert software consulting, cloud migration, AI solutions, and custom development services.",
-    url: "https://gotik.ai",
+    url: "https://ims-saigon.com",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gotik Consulting • Software Consulting & Digital Transformation",
+    title: "IMS Saigon • Software Consulting & Digital Transformation",
     description: "Transform your business with expert software consulting, cloud migration, AI solutions, and custom development services.",
   },
   alternates: {
-    canonical: "https://gotik.ai",
+    canonical: "https://ims-saigon.com",
   },
 };
 

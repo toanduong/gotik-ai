@@ -7,16 +7,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Data & Analytics Solutions • Business Intelligence & Insights",
     description: "Transform data into insights. Business intelligence, analytics, and visualization for informed decisions.",
-    url: "https://gotik.ai/data-and-analytics",
+    url: "https://ims-saigon.com/data-and-analytics",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Data & Analytics Solutions • Gotik Consulting",
+    title: "Data & Analytics Solutions • IMS Saigon",
     description: "Transform data into actionable insights with business intelligence and analytics.",
   },
   alternates: {
-    canonical: "https://gotik.ai/data-and-analytics",
+    canonical: "https://ims-saigon.com/data-and-analytics",
   },
 };
 

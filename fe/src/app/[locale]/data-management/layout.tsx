@@ -7,16 +7,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Data Management Services • Governance, Quality & Integration",
     description: "Enterprise data management solutions. Data governance, quality assurance, and integration strategies.",
-    url: "https://gotik.ai/data-management",
+    url: "https://ims-saigon.com/data-management",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Data Management Services • Gotik Consulting",
+    title: "Data Management Services • IMS Saigon",
     description: "Enterprise data management solutions for governance, quality, and integration.",
   },
   alternates: {
-    canonical: "https://gotik.ai/data-management",
+    canonical: "https://ims-saigon.com/data-management",
   },
 };
 

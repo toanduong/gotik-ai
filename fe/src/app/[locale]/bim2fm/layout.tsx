@@ -7,16 +7,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "BIM2FM Solutions • Building Information to Facilities Management",
     description: "Bridge design and operations with BIM2FM. Transform BIM data into facilities management systems.",
-    url: "https://gotik.ai/bim2fm",
+    url: "https://ims-saigon.com/bim2fm",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "BIM2FM Solutions • Gotik Consulting",
+    title: "BIM2FM Solutions • IMS Saigon",
     description: "Transform Building Information Modeling into facilities management systems.",
   },
   alternates: {
-    canonical: "https://gotik.ai/bim2fm",
+    canonical: "https://ims-saigon.com/bim2fm",
   },
 };
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl';
 
 export default function Contact() {
     const t = useTranslations('contact');
@@ -102,7 +102,7 @@ export default function Contact() {
                             </div>
                             <div>
                                 <div className="text-xs text-white/50 uppercase tracking-wider">{t('email')}</div>
-                                <a href="mailto:hello@gotik.ai" className="text-white hover:text-sky-blue transition-colors">david@gotik.ai</a>
+                                <a href="mailto:support@ims-saigon.com" className="text-white hover:text-sky-blue transition-colors">support@ims-saigon.com</a>
                             </div>
                         </div>
                         <div className="flex items-center gap-3">

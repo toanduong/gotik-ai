@@ -8,16 +8,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AI Consulting Services • Strategy, Implementation & AI Agents",
     description: "Transform your business with expert AI consulting. Custom AI agent development, strategy, and implementation services for enterprises.",
-    url: "https://gotik.ai/ai-consulting",
+    url: "https://ims-saigon.com/ai-consulting",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Consulting Services • Gotik Consulting",
+    title: "AI Consulting Services • IMS Saigon",
     description: "Transform your business with expert AI consulting. Custom AI agent development, strategy, and implementation services.",
   },
   alternates: {
-    canonical: "https://gotik.ai/ai-consulting",
+    canonical: "https://ims-saigon.com/ai-consulting",
   },
 };
 
@@ -31,13 +31,13 @@ export default function AIConsultingLayout({
       <ServiceSchema
         name="AI Consulting Services"
         description="Transform your business with expert AI consulting. From AI strategy development to custom AI agent implementation, we help enterprises harness the power of artificial intelligence."
-        url="https://gotik.ai/ai-consulting"
+        url="https://ims-saigon.com/ai-consulting"
         serviceType="AI Consulting"
       />
       <BreadcrumbSchema
         items={[
-          { name: "Home", url: "https://gotik.ai" },
-          { name: "AI Consulting", url: "https://gotik.ai/ai-consulting" }
+          { name: "Home", url: "https://ims-saigon.com" },
+          { name: "AI Consulting", url: "https://ims-saigon.com/ai-consulting" }
         ]}
       />
       {children}

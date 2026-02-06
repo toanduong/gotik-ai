@@ -1,7 +1,7 @@
-import {NextIntlClientProvider} from 'next-intl';
-import {getMessages, getTranslations} from 'next-intl/server';
-import {notFound} from 'next/navigation';
-import {locales} from '@/i18n';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages, getTranslations } from 'next-intl/server';
+import { notFound } from 'next/navigation';
+import { locales } from '@/i18n';
 import type { Metadata } from "next";
 import "../globals.css";
 import { OrganizationSchema, WebsiteSchema } from "@/components/seo/JsonLd";
@@ -9,24 +9,25 @@ import { WebVitals } from "@/components/analytics/WebVitals";
 
 type Props = {
   children: React.ReactNode;
-  params: Promise<{locale: string}>;
+  params: Promise<{ locale: string }>;
 };
 
-export async function generateMetadata({params}: Props): Promise<Metadata> {
-  const {locale} = await params;
-  const t = await getTranslations({locale, namespace: 'metadata'});
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+  const t = await getTranslations({ locale, namespace: 'metadata' });
 
   return {
-    metadataBase: new URL('https://gotik.ai'),
+    metadataBase: new URL(siteUrl),
     title: {
       default: t('title'),
       template: `%s | ${t('siteName')}`
     },
     description: t('description'),
     keywords: t('keywords').split(',').map(k => k.trim()),
-    authors: [{ name: "Gotik Consulting" }],
-    creator: "Gotik Consulting",
-    publisher: "Gotik Consulting",
+    authors: [{ name: "IMS Saigon" }],
+    creator: "IMS Saigon",
+    publisher: "IMS Saigon",
     formatDetection: {
       email: false,
       address: false,
@@ -38,16 +39,16 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
       shortcut: '/logo_footer.png',
     },
     alternates: {
-      canonical: locale === 'en' ? 'https://gotik.ai' : `https://gotik.ai/${locale}`,
+      canonical: locale === 'en' ? siteUrl : `${siteUrl}/${locale}`,
       languages: {
-        'en': 'https://gotik.ai',
-        'vi': 'https://gotik.ai/vi',
+        'en': siteUrl,
+        'vi': `${siteUrl}/vi`,
       },
     },
     openGraph: {
       type: 'website',
       locale: locale === 'en' ? 'en_US' : 'vi_VN',
-      url: locale === 'en' ? 'https://gotik.ai' : `https://gotik.ai/${locale}`,
+      url: locale === 'en' ? siteUrl : `${siteUrl}/${locale}`,
       siteName: t('siteName'),
       title: t('title'),
       description: t('description'),
@@ -56,7 +57,7 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
           url: '/og-image.png',
           width: 1200,
           height: 630,
-          alt: 'Gotik Consulting - Software & Cloud Solutions',
+          alt: 'IMS Saigon - Software & Cloud Solutions',
         },
       ],
     },
@@ -65,7 +66,7 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
       title: t('title'),
       description: t('description'),
       images: ['/og-image.png'],
-      creator: '@gotikAI',
+      creator: '@imssaigonAI',
     },
     robots: {
       index: true,
@@ -88,14 +89,14 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
 }
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({locale}));
+  return locales.map((locale) => ({ locale }));
 }
 
 export default async function LocaleLayout({
   children,
   params
 }: Props) {
-  const {locale} = await params;
+  const { locale } = await params;
 
   // Validate locale
   if (!locales.includes(locale as any)) {

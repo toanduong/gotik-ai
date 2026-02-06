@@ -7,16 +7,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Software Architecture Design • Enterprise System Architecture",
     description: "Expert software architecture design. Microservices, event-driven architectures, and scalable system design.",
-    url: "https://gotik.ai/software-architecture",
+    url: "https://ims-saigon.com/software-architecture",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Software Architecture Design • Gotik Consulting",
+    title: "Software Architecture Design • IMS Saigon",
     description: "Expert software architecture design for scalable, resilient enterprise systems.",
   },
   alternates: {
-    canonical: "https://gotik.ai/software-architecture",
+    canonical: "https://ims-saigon.com/software-architecture",
   },
 };
 

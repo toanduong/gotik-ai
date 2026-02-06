@@ -7,16 +7,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Azure Cloud Solutions • Enterprise Cloud Architecture",
     description: "Specialized Azure cloud solutions. Cloud-native development and hybrid cloud strategies on Microsoft Azure.",
-    url: "https://gotik.ai/cloud-solutions",
+    url: "https://ims-saigon.com/cloud-solutions",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Azure Cloud Solutions • Gotik Consulting",
+    title: "Azure Cloud Solutions • IMS Saigon",
     description: "Specialized Azure cloud solutions for enterprise digital transformation.",
   },
   alternates: {
-    canonical: "https://gotik.ai/cloud-solutions",
+    canonical: "https://ims-saigon.com/cloud-solutions",
   },
 };
 

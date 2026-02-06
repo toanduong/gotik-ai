@@ -7,16 +7,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Gen AI Data Solutions • RAG & AI-Powered Data Systems",
     description: "Next-generation AI data solutions. RAG, vector databases, and AI-powered data systems.",
-    url: "https://gotik.ai/data-solutions",
+    url: "https://ims-saigon.com/data-solutions",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gen AI Data Solutions • Gotik Consulting",
+    title: "Gen AI Data Solutions • IMS Saigon",
     description: "Next-generation AI data solutions with RAG and vector databases.",
   },
   alternates: {
-    canonical: "https://gotik.ai/data-solutions",
+    canonical: "https://ims-saigon.com/data-solutions",
   },
 };
 

@@ -7,16 +7,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Data Architecture Design • Modern Data Platforms & Warehouses",
     description: "Expert data architecture design. Modern data platforms, warehouses, and lakes for data-driven businesses.",
-    url: "https://gotik.ai/data-architecture",
+    url: "https://ims-saigon.com/data-architecture",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Data Architecture Design • Gotik Consulting",
+    title: "Data Architecture Design • IMS Saigon",
     description: "Expert data architecture design for modern data platforms and warehouses.",
   },
   alternates: {
-    canonical: "https://gotik.ai/data-architecture",
+    canonical: "https://ims-saigon.com/data-architecture",
   },
 };
 

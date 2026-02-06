@@ -2,35 +2,35 @@ import { Resend } from 'resend';
 import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(request: NextRequest) {
-    const resend = new Resend(process.env.RESEND_API_KEY);
+  const resend = new Resend(process.env.RESEND_API_KEY);
 
-    try {
-        const body = await request.json();
-        const { email } = body;
+  try {
+    const body = await request.json();
+    const { email } = body;
 
-        // Validate required field
-        if (!email) {
-            return NextResponse.json(
-                { error: 'Email is required' },
-                { status: 400 }
-            );
-        }
+    // Validate required field
+    if (!email) {
+      return NextResponse.json(
+        { error: 'Email is required' },
+        { status: 400 }
+      );
+    }
 
-        // Validate email format
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            return NextResponse.json(
-                { error: 'Invalid email format' },
-                { status: 400 }
-            );
-        }
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return NextResponse.json(
+        { error: 'Invalid email format' },
+        { status: 400 }
+      );
+    }
 
-        // Send confirmation email to the subscriber
-        const { data: subscriberData, error: subscriberError } = await resend.emails.send({
-            from: 'Gotik Consulting <onboarding@resend.dev>',
-            to: [email],
-            subject: 'Welcome to Gotik Consulting Newsletter',
-            html: `
+    // Send confirmation email to the subscriber
+    const { data: subscriberData, error: subscriberError } = await resend.emails.send({
+      from: 'IMS Saigon <onboarding@resend.dev>',
+      to: [email],
+      subject: 'Welcome to IMS Saigon Newsletter',
+      html: `
                 <!DOCTYPE html>
                 <html>
                   <head>
@@ -52,15 +52,15 @@ export async function POST(request: NextRequest) {
                         <h1>Welcome to Our Newsletter! 🎉</h1>
                       </div>
                       <div class="content">
-                        <p>Thank you for subscribing to the Gotik Consulting newsletter!</p>
+                         <p>Thank you for subscribing to the IMS Saigon newsletter!</p>
                         <p>You'll now receive our latest insights, industry news, and updates on digital transformation, software engineering, and innovative technology solutions.</p>
                         <p>We're excited to have you as part of our community.</p>
                         <p style="margin-top: 30px;">
-                          <a href="https://gotik.ai" class="button">Visit Our Website</a>
+                           <a href="${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}" class="button">Visit Our Website</a>
                         </p>
                       </div>
                       <div class="footer">
-                        <p>© 2026 Gotik Consulting. All rights reserved.</p>
+                         <p>© 2026 IMS Saigon. All rights reserved.</p>
                         <p style="font-size: 12px; margin-top: 10px;">
                           You're receiving this email because you subscribed to our newsletter.
                         </p>
@@ -69,18 +69,18 @@ export async function POST(request: NextRequest) {
                   </body>
                 </html>
             `,
-        });
+    });
 
-        if (subscriberError) {
-            console.error('Resend error (subscriber):', subscriberError);
-        }
+    if (subscriberError) {
+      console.error('Resend error (subscriber):', subscriberError);
+    }
 
-        // Send notification to admin
-        const { data: adminData, error: adminError } = await resend.emails.send({
-            from: 'Gotik Newsletter <onboarding@resend.dev>',
-            to: ['daovo@gotik.ai'],
-            subject: `New Newsletter Subscription`,
-            html: `
+    // Send notification to admin
+    const { data: adminData, error: adminError } = await resend.emails.send({
+      from: 'IMS Saigon Newsletter <onboarding@resend.dev>',
+      to: ['support@ims-saigon.com'],
+      subject: `New Newsletter Subscription`,
+      html: `
                 <!DOCTYPE html>
                 <html>
                   <head>
@@ -114,25 +114,25 @@ export async function POST(request: NextRequest) {
                   </body>
                 </html>
             `,
-        });
+    });
 
-        if (adminError) {
-            console.error('Resend error (admin):', adminError);
-        }
-
-        // Return success even if one email fails
-        return NextResponse.json(
-            {
-                message: 'Successfully subscribed to newsletter',
-                id: subscriberData?.id || adminData?.id
-            },
-            { status: 200 }
-        );
-    } catch (error) {
-        console.error('Error processing newsletter subscription:', error);
-        return NextResponse.json(
-            { error: 'Internal server error' },
-            { status: 500 }
-        );
+    if (adminError) {
+      console.error('Resend error (admin):', adminError);
     }
+
+    // Return success even if one email fails
+    return NextResponse.json(
+      {
+        message: 'Successfully subscribed to newsletter',
+        id: subscriberData?.id || adminData?.id
+      },
+      { status: 200 }
+    );
+  } catch (error) {
+    console.error('Error processing newsletter subscription:', error);
+    return NextResponse.json(
+      { error: 'Internal server error' },
+      { status: 500 }
+    );
+  }
 }

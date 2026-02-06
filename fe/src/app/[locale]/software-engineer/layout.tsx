@@ -7,16 +7,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Software Engineering Services • Custom Development & Architecture",
     description: "Expert software engineering services. Custom development, system architecture, and engineering best practices for enterprise solutions.",
-    url: "https://gotik.ai/software-engineer",
+    url: "https://ims-saigon.com/software-engineer",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Software Engineering Services • Gotik Consulting",
+    title: "Software Engineering Services • IMS Saigon",
     description: "Expert software engineering services. Custom development and system architecture for enterprise solutions.",
   },
   alternates: {
-    canonical: "https://gotik.ai/software-engineer",
+    canonical: "https://ims-saigon.com/software-engineer",
   },
 };
 

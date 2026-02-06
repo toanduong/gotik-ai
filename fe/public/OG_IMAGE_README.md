@@ -13,7 +13,7 @@
 ## Design Recommendations:
 
 1. **Content:**
-   - Company logo (Gotik Consulting)
+   - Company logo (IMS Saigon)
    - Tagline: "Transforming Ideas into Scalable Software Solutions"
    - Visual elements representing: AI, Cloud, Data, Software
    - Clean, professional design with brand colors

@@ -7,16 +7,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Software Modernization • Legacy System Transformation",
     description: "Modernize legacy systems. Update outdated applications, migrate to modern architectures, and reduce technical debt.",
-    url: "https://gotik.ai/software-modernization",
+    url: "https://ims-saigon.com/software-modernization",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Software Modernization • Gotik Consulting",
+    title: "Software Modernization • IMS Saigon",
     description: "Modernize legacy systems and transform outdated applications with modern architectures.",
   },
   alternates: {
-    canonical: "https://gotik.ai/software-modernization",
+    canonical: "https://ims-saigon.com/software-modernization",
   },
 };
 

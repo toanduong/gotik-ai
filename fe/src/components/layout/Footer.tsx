@@ -66,8 +66,7 @@ export function Footer() {
                 <div className="md:col-span-4 flex flex-col justify-between h-full">
                     <div>
                         <Link href="/" className="flex items-center gap-2 mb-6">
-                            <img src="/logo_footer.png" alt="Gotik Consulting" className="h-5 w-auto" />
-                            <span className="font-display text-2xl tracking-tight font-medium">Gotik Consulting</span>
+                            <span className="font-display text-2xl tracking-tight font-medium">IMS Saigon</span>
                         </Link>
                         <p className="mb-4 leading-relaxed text-white/60 max-w-xs text-sm font-light">
                             {t('tagline')}

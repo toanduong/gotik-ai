@@ -115,8 +115,7 @@ export default function Navbar() {
 
                 <div className="absolute left-1/2 top-6 -translate-x-1/2 text-center pointer-events-auto">
                     <Link href="/" className="flex items-center gap-2">
-                        <img src="/logo_footer.png" alt="Gotik Consulting" className="h-4 w-auto" />
-                        <span className="font-display text-xl tracking-tight font-medium hidden md:inline">Gotik Consulting</span>
+                        <span className="font-display text-xl tracking-tight font-medium">IMS Saigon</span>
                     </Link>
                 </div>
 

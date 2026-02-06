@@ -8,16 +8,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cloud Services • Infrastructure, Migration & Management",
     description: "Comprehensive cloud services. Infrastructure setup, migration strategies, and management across AWS, Azure, and Google Cloud.",
-    url: "https://gotik.ai/cloud-services",
+    url: "https://ims-saigon.com/cloud-services",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cloud Services • Gotik Consulting",
+    title: "Cloud Services • IMS Saigon",
     description: "Comprehensive cloud services for infrastructure, migration, and management.",
   },
   alternates: {
-    canonical: "https://gotik.ai/cloud-services",
+    canonical: "https://ims-saigon.com/cloud-services",
   },
 };
 
@@ -31,13 +31,13 @@ export default function CloudServicesLayout({
       <ServiceSchema
         name="Cloud Services"
         description="Comprehensive cloud services for modern enterprises. Cloud infrastructure setup, migration strategies, and ongoing management across AWS, Azure, and Google Cloud."
-        url="https://gotik.ai/cloud-services"
+        url="https://ims-saigon.com/cloud-services"
         serviceType="Cloud Computing Services"
       />
       <BreadcrumbSchema
         items={[
-          { name: "Home", url: "https://gotik.ai" },
-          { name: "Cloud Services", url: "https://gotik.ai/cloud-services" }
+          { name: "Home", url: "https://ims-saigon.com" },
+          { name: "Cloud Services", url: "https://ims-saigon.com/cloud-services" }
         ]}
       />
       {children}

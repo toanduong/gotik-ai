@@ -141,7 +141,7 @@ export default function Hero() {
                                     <svg viewBox="0 0 100 100" className="w-full h-full fill-white/10">
                                         <path id="textPath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
                                         <text className="text-[8px] font-bold uppercase tracking-[0.3em]">
-                                            <textPath href="#textPath">GOTIK AI SOLUTIONS • GEN AI EXPERTS • STRATEGY • </textPath>
+                                            <textPath href="#textPath">IMS SAIGON AI SOLUTIONS • GEN AI EXPERTS • STRATEGY • </textPath>
                                         </text>
                                     </svg>
                                 </div>

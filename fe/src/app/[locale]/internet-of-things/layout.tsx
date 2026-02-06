@@ -7,16 +7,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "IoT Solutions • Internet of Things Development & Integration",
     description: "End-to-end IoT solutions for connected devices. Sensor integration to analytics for scalable IoT applications.",
-    url: "https://gotik.ai/internet-of-things",
+    url: "https://ims-saigon.com/internet-of-things",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "IoT Solutions • Gotik Consulting",
+    title: "IoT Solutions • IMS Saigon",
     description: "End-to-end Internet of Things solutions for connected devices and smart systems.",
   },
   alternates: {
-    canonical: "https://gotik.ai/internet-of-things",
+    canonical: "https://ims-saigon.com/internet-of-things",
   },
 };
 

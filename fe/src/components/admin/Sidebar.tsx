@@ -39,7 +39,7 @@ export function Sidebar() {
             G
           </div>
           <span className="text-lg font-semibold text-white">
-            Gotik CMS
+            IMS Saigon CMS
           </span>
         </Link>
       </div>

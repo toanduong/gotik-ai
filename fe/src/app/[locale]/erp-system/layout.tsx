@@ -7,16 +7,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ERP System Solutions • Enterprise Resource Planning Implementation",
     description: "ERP implementation and integration services. Streamline processes and gain real-time business visibility.",
-    url: "https://gotik.ai/erp-system",
+    url: "https://ims-saigon.com/erp-system",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ERP System Solutions • Gotik Consulting",
+    title: "ERP System Solutions • IMS Saigon",
     description: "Enterprise Resource Planning implementation and integration services.",
   },
   alternates: {
-    canonical: "https://gotik.ai/erp-system",
+    canonical: "https://ims-saigon.com/erp-system",
   },
 };
 

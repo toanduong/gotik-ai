@@ -69,7 +69,7 @@ export default function SoftwareModernization() {
                             </div>
                             <div className="text-center md:text-left">
                                 <h3 className="font-bold text-navy-blue text-lg">David Vu</h3>
-                                <p className="text-sky-blue text-sm font-medium">CEO & Gotik Founder</p>
+                                <p className="text-sky-blue text-sm font-medium">CEO & IMS Saigon Founder</p>
                             </div>
                             <div className="ml-auto">
                                 <a href="#contact" className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-navy-blue rounded-lg hover:bg-navy-blue/90 transition-all duration-300">
@@ -230,7 +230,7 @@ export default function SoftwareModernization() {
                         <div {...motionConfig.slideLeft} className="bg-sky-blue/5 rounded-3xl p-8 border border-sky-blue/10">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="text-sky-blue/30 mb-4"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
                             <p className="text-neutral-gray text-lg leading-relaxed mb-6">
-                                "Gotik supported us in modernizing our software to a highly flexible system. We benefited enormously from the know-how of the various Gotik experts."
+                                "IMS Saigon supported us in modernizing our software to a highly flexible system. We benefited enormously from the know-how of the various IMS Saigon experts."
                             </p>
                             <div className="flex items-center gap-4">
                                 <div className="w-12 h-12 rounded-full bg-sky-blue/20 flex items-center justify-center text-navy-blue font-bold">
@@ -245,7 +245,7 @@ export default function SoftwareModernization() {
                         <div {...motionConfig.slideRight} className="bg-slate-50 rounded-3xl p-8 border border-sky-blue/10">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="text-sky-blue/30 mb-4"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
                             <p className="text-neutral-gray text-lg leading-relaxed mb-6">
-                                "We brought in Gotik so that we can implement future innovations faster in our software. The collaboration with Gotik was first-class – technically and personally."
+                                "We brought in IMS Saigon so that we can implement future innovations faster in our software. The collaboration with IMS Saigon was first-class – technically and personally."
                             </p>
                             <div className="flex items-center gap-4">
                                 <div className="w-12 h-12 rounded-full bg-slate-200 flex items-center justify-center text-navy-blue font-bold">

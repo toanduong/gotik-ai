@@ -7,16 +7,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Rust Transition Services • Migrate to Rust Programming",
     description: "Transition to Rust for improved performance and memory safety. Expert guidance for enterprise Rust adoption.",
-    url: "https://gotik.ai/rust-transition",
+    url: "https://ims-saigon.com/rust-transition",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rust Transition Services • Gotik Consulting",
+    title: "Rust Transition Services • IMS Saigon",
     description: "Transition to Rust for improved performance and memory safety in enterprise systems.",
   },
   alternates: {
-    canonical: "https://gotik.ai/rust-transition",
+    canonical: "https://ims-saigon.com/rust-transition",
   },
 };
 

@@ -7,16 +7,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AI Solutions & Ecosystem • End-to-End AI Implementation",
     description: "Comprehensive AI solutions for modern enterprises. From AI ecosystem design to implementation, we deliver scalable AI systems.",
-    url: "https://gotik.ai/ai-solutions",
+    url: "https://ims-saigon.com/ai-solutions",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Solutions & Ecosystem • Gotik Consulting",
+    title: "AI Solutions & Ecosystem • IMS Saigon",
     description: "Comprehensive AI solutions for modern enterprises. Scalable AI systems and ecosystem design.",
   },
   alternates: {
-    canonical: "https://gotik.ai/ai-solutions",
+    canonical: "https://ims-saigon.com/ai-solutions",
   },
 };
 

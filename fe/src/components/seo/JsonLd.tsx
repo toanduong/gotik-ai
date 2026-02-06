@@ -1,5 +1,7 @@
 import Script from 'next/script';
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+
 interface JsonLdProps {
   data: Record<string, any>;
 }
@@ -19,26 +21,25 @@ export function OrganizationSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Gotik Consulting",
-    "alternateName": "Gotik AI",
-    "url": "https://gotik.ai",
-    "logo": "https://gotik.ai/logo_footer.png",
+    "name": "IMS Saigon",
+    "alternateName": "IMS Saigon",
+    "url": SITE_URL,
     "description": "Expert software consulting, cloud migration, AI solutions, and digital transformation services. Transform your business with scalable, modern technology solutions.",
-    "email": "contact@gotik.ai",
+    "email": "support@ims-saigon.com",
     "foundingDate": "2020",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "US"
     },
     "sameAs": [
-      "https://www.linkedin.com/company/gotik-consulting",
-      "https://twitter.com/gotikAI",
-      "https://github.com/gotik-consulting"
+      "https://www.linkedin.com/company/ims-saigon",
+      "https://twitter.com/imssaigon",
+      "https://github.com/ims-saigon"
     ],
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "Customer Service",
-      "email": "daovo@gotik.ai",
+      "email": "support@ims-saigon.com",
       "availableLanguage": ["English"]
     },
     "areaServed": {
@@ -73,16 +74,16 @@ export function WebsiteSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Gotik Consulting",
-    "url": "https://gotik.ai",
+    "name": "IMS Saigon",
+    "url": SITE_URL,
     "description": "Expert guidance for your digital transformation journey. From cloud migration to custom development, we turn your vision into reality.",
     "publisher": {
       "@type": "Organization",
-      "name": "Gotik Consulting"
+      "name": "IMS Saigon"
     },
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://gotik.ai/?s={search_term_string}",
+      "target": `${SITE_URL}/?s={search_term_string}`,
       "query-input": "required name=search_term_string"
     }
   };
@@ -110,8 +111,8 @@ export function ServiceSchema({
   serviceType,
   areaServed = "Worldwide",
   provider = {
-    name: "Gotik Consulting",
-    url: "https://gotik.ai"
+    name: "IMS Saigon",
+    url: SITE_URL
   }
 }: ServiceSchemaProps) {
   const schema = {

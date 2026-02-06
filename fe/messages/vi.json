@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Gotik Consulting • Chuyển Đổi Ý Tưởng Thành Giải Pháp Phần Mềm Mở Rộng",
-    "siteName": "Gotik Consulting",
+    "title": "IMS Saigon • Chuyển Đổi Ý Tưởng Thành Giải Pháp Phần Mềm Mở Rộng",
+    "siteName": "IMS Saigon",
     "description": "Hướng dẫn chuyên nghiệp cho hành trình chuyển đổi số của bạn. Từ di chuyển đám mây đến phát triển tùy chỉnh, chúng tôi biến tầm nhìn của bạn thành hiện thực.",
     "keywords": "tư vấn phần mềm, chuyển đổi số, di chuyển đám mây, tư vấn AI, giải pháp dữ liệu, kiến trúc phần mềm, dịch vụ đám mây, phát triển tùy chỉnh, phần mềm doanh nghiệp"
   },
@@ -104,7 +104,7 @@
     "joiningButton": "...",
     "successMessage": "Cảm ơn bạn đã đăng ký! Vui lòng kiểm tra email.",
     "errorMessage": "Đăng ký thất bại. Vui lòng thử lại.",
-    "copyright": "© 2026 Gotik Consulting. Bảo lưu mọi quyền.",
+    "copyright": "© 2026 IMS Saigon. Bảo lưu mọi quyền.",
     "privacyPolicy": "Chính Sách Bảo Mật",
     "termsOfService": "Điều Khoản Dịch Vụ",
     "ourstory": "Về chúng tôi",
@@ -220,7 +220,7 @@
     }
   },
   "academy": {
-    "badge": "Gotik Academy",
+    "badge": "IMS Saigon Academy",
     "title": "Đầu Tư Vào Sự Phát Triển Của Đội Ngũ",
     "description": "Chúng tôi không chỉ cung cấp giải pháp—chúng tôi trao quyền cho đội ngũ của bạn để xuất sắc. Các chương trình đào tạo được thiết kế riêng của chúng tôi kết hợp kinh nghiệm thực tế với kiến thức thực tiễn, được thiết kế để nâng cao năng lực kỹ thuật của tổ chức bạn.",
     "learningPaths": {
@@ -337,19 +337,19 @@
     "title": "Khách Hàng Nói Gì Về Chúng Tôi",
     "items": [
       {
-        "quote": "Gotik đã hỗ trợ chúng tôi hiện đại hóa phần mềm thành một hệ thống có tính linh hoạt cao. Chúng tôi đã được hưởng lợi rất nhiều từ kiến thức chuyên môn của các chuyên gia Gotik.",
+        "quote": "IMS Saigon đã hỗ trợ chúng tôi hiện đại hóa phần mềm thành một hệ thống có tính linh hoạt cao. Chúng tôi đã được hưởng lợi rất nhiều từ kiến thức chuyên môn của các chuyên gia IMS Saigon.",
         "author": "Rolf Traber",
         "role": "CTO",
         "initials": "RT"
       },
       {
-        "quote": "Chúng tôi đã mời Gotik để có thể triển khai các đổi mới tương lai nhanh hơn trong phần mềm của mình. Sự hợp tác với Gotik là hạng nhất – cả về kỹ thuật lẫn cá nhân.",
+        "quote": "Chúng tôi đã mời IMS Saigon để có thể triển khai các đổi mới tương lai nhanh hơn trong phần mềm của mình. Sự hợp tác với IMS Saigon là hạng nhất – cả về kỹ thuật lẫn cá nhân.",
         "author": "Christian Königsdorfer",
         "role": "CEO",
         "initials": "CK"
       },
       {
-        "quote": "Kiến trúc microservices mà Gotik thiết kế cho chúng tôi đã chuyển đổi khả năng mở rộng của chúng tôi. Giờ đây chúng tôi có thể triển khai cập nhật độc lập và phản ứng với thay đổi thị trường nhanh hơn bao giờ hết.",
+        "quote": "Kiến trúc microservices mà IMS Saigon thiết kế cho chúng tôi đã chuyển đổi khả năng mở rộng của chúng tôi. Giờ đây chúng tôi có thể triển khai cập nhật độc lập và phản ứng với thay đổi thị trường nhanh hơn bao giờ hết.",
         "author": "Michael S.",
         "role": "CTO, Công Ty Công Nghệ",
         "initials": "MS"
@@ -359,7 +359,7 @@
   "pages": {
     "softwareEngineer": {
       "meta": {
-        "title": "Kỹ Thuật Phần Mềm | Gotik Consulting",
+        "title": "Kỹ Thuật Phần Mềm | IMS Saigon",
         "description": "Chúng tôi biến ý tưởng của bạn thành giải pháp phần mềm xuất sắc. Hưởng lợi từ chuyên môn và kiến thức phương pháp mới nhất của chúng tôi."
       },
       "hero": {
@@ -369,7 +369,7 @@
         "description": "Chúng tôi biến ý tưởng của bạn thành các giải pháp phần mềm xuất sắc. Hãy tận hưởng lợi ích từ chuyên môn và những hiểu biết về phương pháp mới nhất của chúng tôi.",
         "consultant": {
           "name": "David Vu",
-          "role": "CEO & Người Sáng Lập Gotik",
+          "role": "CEO & Người Sáng Lập IMS Saigon",
           "cta": "Tư Vấn Miễn Phí"
         }
       },
@@ -449,12 +449,12 @@
         "title": "Khách Hàng Nói Gì",
         "items": [
           {
-            "quote": "Gotik đã có thể nhanh chóng triển khai yêu cầu của chúng tôi thành phần mềm chất lượng cao. Chúng tôi rất hài lòng với sự hợp tác tốt và chất lượng cao của phần mềm.",
+            "quote": "IMS Saigon đã có thể nhanh chóng triển khai yêu cầu của chúng tôi thành phần mềm chất lượng cao. Chúng tôi rất hài lòng với sự hợp tác tốt và chất lượng cao của phần mềm.",
             "author": "Daniel Mayer",
             "initials": "DM"
           },
           {
-            "quote": "Gotik là đối tác phần mềm lý tưởng cho chúng tôi: chuyên môn tuyệt vời, mạnh mẽ trong phân tích và hiệu quả trong triển khai.",
+            "quote": "IMS Saigon là đối tác phần mềm lý tưởng cho chúng tôi: chuyên môn tuyệt vời, mạnh mẽ trong phân tích và hiệu quả trong triển khai.",
             "author": "Istvan Szalai",
             "initials": "IS"
           }
@@ -472,7 +472,7 @@
             "answer": "Phần mềm tùy chỉnh cung cấp tính linh hoạt, khả năng mở rộng và sự phù hợp hoàn hảo với quy trình kinh doanh của bạn. Trong khi phần mềm tiêu chuẩn có thể yêu cầu thỏa hiệp, các giải pháp tùy chỉnh được thiết kế chính xác cho nhu cầu của bạn. Điều này dẫn đến hiệu quả cao hơn, trải nghiệm người dùng tốt hơn và lợi thế cạnh tranh."
           },
           {
-            "question": "Gotik có thể phát triển thêm hoặc hiện đại hóa phần mềm hiện có không?",
+            "question": "IMS Saigon có thể phát triển thêm hoặc hiện đại hóa phần mềm hiện có không?",
             "answer": "Có, chúng tôi không chỉ cung cấp phát triển giải pháp phần mềm mới mà còn có thể phát triển thêm hoặc hiện đại hóa phần mềm hiện có của bạn. Sử dụng chuyên môn của chúng tôi để hiện đại hóa phần mềm của bạn để nó có thể thích ứng linh hoạt với các yêu cầu kinh doanh thay đổi."
           }
         ]
@@ -486,7 +486,7 @@
         "description": "Hiện đại hóa phần mềm hứa hẹn tiềm năng to lớn: từ tăng hiệu suất, cải thiện bảo mật và chất lượng, đến phát triển các ý tưởng kinh doanh mới.",
         "consultant": {
           "name": "David Vu",
-          "role": "CEO & Người Sáng Lập Gotik",
+          "role": "CEO & Người Sáng Lập IMS Saigon",
           "cta": "Tư Vấn Miễn Phí"
         }
       },
@@ -524,7 +524,7 @@
         "titleHighlight": "Công Ty Của Bạn",
         "description": "Khám phá thế giới tư vấn AI cá nhân hóa. Các agent AI tiên tiến của chúng tôi mở ra những chân trời mới cho quá trình chuyển đổi số của công ty bạn.",
         "consultantName": "David Vu",
-        "consultantRole": "CEO & Người Sáng Lập Gotik",
+        "consultantRole": "CEO & Người Sáng Lập IMS Saigon",
         "consultation": "Tư Vấn Miễn Phí"
       },
       "benefits": {
@@ -565,7 +565,7 @@
       "aiHub": {
         "badge": "Nền Tảng AI",
         "title": "AI Hub",
-        "description": "Gotik AI Hub là một nền tảng AI an toàn và linh hoạt, cho phép các công ty dễ dàng sử dụng AI sinh tạo. Với các agent AI có thể cấu hình sẵn và tùy chỉnh, bạn tăng hiệu quả và bảo vệ dữ liệu của mình.",
+        "description": "IMS Saigon Hub là một nền tảng AI an toàn và linh hoạt, cho phép các công ty dễ dàng sử dụng AI sinh tạo. Với các agent AI có thể cấu hình sẵn và tùy chỉnh, bạn tăng hiệu quả và bảo vệ dữ liệu của mình.",
         "features": {
           "configurable": {
             "title": "Cấu Hình Linh Hoạt",
@@ -584,7 +584,7 @@
             "description": "Bảng điều khiển rõ ràng với số lượng token, chi phí và phân tích sử dụng."
           }
         },
-        "imageAlt": "Gotik AI Hub",
+        "imageAlt": "IMS Saigon Hub",
         "imageTitle": "Nền Tảng AI An Toàn",
         "imageSubtitle": "Linh Hoạt. Riêng Tư. Quy Mô."
       },
@@ -886,7 +886,7 @@
         "description": "Chiến lược đám mây tùy chỉnh phù hợp với nhu cầu của bạn. Từ di chuyển đến tối ưu hóa, chúng tôi cung cấp các giải pháp đám mây an toàn, có khả năng mở rộng trên AWS, Azure và Google Cloud.",
         "founder": {
           "name": "David Vu",
-          "role": "CEO & Người Sáng Lập Gotik",
+          "role": "CEO & Người Sáng Lập IMS Saigon",
           "cta": "Tư Vấn Miễn Phí"
         }
       },
@@ -985,7 +985,7 @@
         }
       },
       "whyChoose": {
-        "title": "Tại sao Chọn Gotik cho Dịch vụ Đám mây?",
+        "title": "Tại sao Chọn IMS Saigon cho Dịch vụ Đám mây?",
         "description": "Chuyên môn đám mây toàn diện trên tất cả các nền tảng chính. Chúng tôi cung cấp các giải pháp an toàn, có khả năng mở rộng thúc đẩy giá trị kinh doanh và sự đổi mới.",
         "points": [
           "Chuyên môn đa đám mây (AWS, Azure, GCP)",
@@ -1039,11 +1039,11 @@
         "badge": "Dữ liệu & Phân tích",
         "title": "Chúng tôi biến dữ liệu của bạn thành",
         "titleHighlight": "Kiến thức giá trị",
-        "description": "Các chuyên gia của Gotik đồng hành cùng bạn trong suốt chuỗi giá trị dữ liệu: từ phát triển và triển khai chiến lược dữ liệu đến xây dựng các công cụ thu thập dữ liệu và lựa chọn các phương pháp phân tích tối ưu."
+        "description": "Các chuyên gia của IMS Saigon đồng hành cùng bạn trong suốt chuỗi giá trị dữ liệu: từ phát triển và triển khai chiến lược dữ liệu đến xây dựng các công cụ thu thập dữ liệu và lựa chọn các phương pháp phân tích tối ưu."
       },
       "consultant": {
         "name": "David Vu",
-        "role": "CEO & Founder Gotik",
+        "role": "CEO & Founder IMS Saigon",
         "cta": "Tư vấn miễn phí"
       },
       "benefits": {
@@ -1157,7 +1157,7 @@
       },
       "consultant": {
         "name": "David Vu",
-        "role": "CEO & Founder Gotik",
+        "role": "CEO & Founder IMS Saigon",
         "cta": "Tư vấn miễn phí"
       },
       "challenges": {
@@ -1239,7 +1239,7 @@
         ]
       },
       "whyTrust": {
-        "title": "Tại sao Khách hàng Tin tưởng Gotik",
+        "title": "Tại sao Khách hàng Tin tưởng IMS Saigon",
         "items": {
           "expertise": {
             "title": "Chuyên môn sâu rộng",
@@ -1275,11 +1275,11 @@
             "answer": "Có, chắc chắn rồi. Đặc biệt các doanh nghiệp vừa và nhỏ có thể hưởng lợi rất nhiều từ một chiến lược dữ liệu rõ ràng. Nó cho phép vận hành hiệu quả hơn, hiểu rõ khách hàng hơn và phản ứng nhanh hơn với các thay đổi của thị trường – thường với ít nguồn lực hơn các tập đoàn lớn. Một chiến lược dữ liệu được thiết kế riêng cho SME đảm bảo rằng các khoản đầu tư dữ liệu có mục tiêu và mang lại lợi ích tối đa."
           },
           {
-            "question": "Quy trình phát triển chiến lược dữ liệu với Gotik diễn ra như thế nào?",
+            "question": "Quy trình phát triển chiến lược dữ liệu với IMS Saigon diễn ra như thế nào?",
             "answer": "Cách tiếp cận của chúng tôi mang tính hợp tác và tùy chỉnh. Chúng tôi thường bắt đầu bằng một bản đánh giá để hiểu tình hình hiện tại, các thách thức và mục tiêu của bạn. Dựa trên đó, chúng tôi cùng bạn phát triển chiến lược, xác định các biện pháp cụ thể và tạo lộ trình triển khai. Chúng tôi nhấn mạnh rằng chiến lược phải mang tính thực tiễn và phù hợp với công ty của bạn."
           },
           {
-            "question": "Đây chỉ là chiến lược trên giấy hay Gotik cũng hỗ trợ triển khai thực tế?",
+            "question": "Đây chỉ là chiến lược trên giấy hay IMS Saigon cũng hỗ trợ triển khai thực tế?",
             "answer": "Chúng tôi đồng hành cùng bạn xa hơn việc xây dựng chiến lược thuần túy nếu được yêu cầu. Các dịch vụ của chúng tôi cũng bao gồm hỗ trợ triển khai các quy trình quản trị dữ liệu, giới thiệu các cấu trúc quản trị, tích hợp hệ thống và đào tạo nhân viên của bạn. Mục tiêu của chúng tôi là đảm bảo chiến lược dữ liệu của bạn được lồng ghép bền vững trong công ty và mang lại kết quả có thể đo lường được."
           }
         ]
@@ -1294,7 +1294,7 @@
       },
       "consultant": {
         "name": "David Vu",
-        "role": "CEO & Founder Gotik",
+        "role": "CEO & Founder IMS Saigon",
         "cta": "Tư vấn miễn phí"
       },
       "entryPoints": {
@@ -1333,7 +1333,7 @@
           },
           "pimcore": {
             "title": "Tôi muốn làm chủ dữ liệu và làm hài lòng khách hàng",
-            "description": "Chuyển đổi bối cảnh dữ liệu phức tạp thành trải nghiệm khách hàng liền mạch, được hỗ trợ bởi AI. Chúng tôi kết hợp sức mạnh quản trị dữ liệu của Pimcore với Gotik AI Hub.",
+            "description": "Chuyển đổi bối cảnh dữ liệu phức tạp thành trải nghiệm khách hàng liền mạch, được hỗ trợ bởi AI. Chúng tôi kết hợp sức mạnh quản trị dữ liệu của Pimcore với IMS Saigon Hub.",
             "cta": "Đến Agentic Pimcore",
             "color": "rose"
           }
@@ -1343,13 +1343,13 @@
         "title": "Khách hàng nói gì về chúng tôi",
         "items": [
           {
-            "content": "Nhờ hợp tác với Gotik, giờ đây chúng tôi đưa ra các quyết định dựa trên dữ liệu, làm việc hiệu quả hơn và tập trung vào những gì quan trọng: khách hàng và sự đổi mới. Điều này mang lại cho chúng tôi sự an tâm – và một cảm giác tốt.",
+            "content": "Nhờ hợp tác với IMS Saigon, giờ đây chúng tôi đưa ra các quyết định dựa trên dữ liệu, làm việc hiệu quả hơn và tập trung vào những gì quan trọng: khách hàng và sự đổi mới. Điều này mang lại cho chúng tôi sự an tâm – và một cảm giác tốt.",
             "author": "Peter K.",
             "role": "Giám đốc điều hành, Công ty Công nghiệp",
             "initials": "PK"
           },
           {
-            "content": "Dữ liệu của chúng tôi được phân tán trên nhiều hệ thống – điều đó khiến chúng tôi tốn thời gian, tiền bạc và sự mệt mỏi. Với Gotik, chúng tôi đã phát triển một chiến lược dữ liệu rõ ràng và liên kết các hệ thống của mình một cách thông minh. Cuối cùng, chúng tôi thực sự có thể sử dụng dữ liệu của mình.",
+            "content": "Dữ liệu của chúng tôi được phân tán trên nhiều hệ thống – điều đó khiến chúng tôi tốn thời gian, tiền bạc và sự mệt mỏi. Với IMS Saigon, chúng tôi đã phát triển một chiến lược dữ liệu rõ ràng và liên kết các hệ thống của mình một cách thông minh. Cuối cùng, chúng tôi thực sự có thể sử dụng dữ liệu của mình.",
             "author": "Dieter F.",
             "role": "CDO, Công ty Dịch vụ",
             "initials": "DF"
@@ -1386,7 +1386,7 @@
         ]
       },
       "benefits": {
-        "title": "Tại sao chọn Gotik để Quản trị dữ liệu?",
+        "title": "Tại sao chọn IMS Saigon để Quản trị dữ liệu?",
         "description": "Chúng tôi kết hợp tư vấn chiến lược với triển khai kỹ thuật từ một nguồn duy nhất. Kiến trúc bền vững của chúng tôi đảm bảo thành công lâu dài.",
         "list": [
           "Tư vấn chiến lược & triển khai kỹ thuật từ một nguồn duy nhất",
@@ -1425,7 +1425,7 @@
             "answer": "Các công ty quản lý dữ liệu tích cực sẽ có khả năng cạnh tranh cao hơn: Họ đưa ra quyết định nhanh hơn và sáng suốt hơn, giảm rủi ro hoạt động và tạo nền tảng cho các ứng dụng AI, tự động hóa và đổi mới dựa trên dữ liệu. Tóm lại: Quản trị dữ liệu tốt quyết định mức độ trưởng thành về mặt kỹ thuật số của công ty bạn."
           },
           {
-            "question": "Một dự án quản trị dữ liệu điển hình với Gotik diễn ra như thế nào?",
+            "question": "Một dự án quản trị dữ liệu điển hình với IMS Saigon diễn ra như thế nào?",
             "answer": "Một dự án thường bắt đầu bằng việc phân tích dữ liệu và đánh giá tiềm năng. Tiếp theo là phát triển khái niệm và thiết kế kiến trúc, triển khai bao gồm tích hợp dữ liệu và quản trị, quản lý chất lượng và đào tạo, cùng với vận hành, giám sát và tối ưu hóa liên tục. Chúng tôi làm việc lặp đi lặp lại và thu hút tất cả các bên liên quan ngay từ đầu."
           },
           {
@@ -1444,7 +1444,7 @@
       },
       "consultant": {
         "name": "David Vu",
-        "role": "CEO & Gotik Founder",
+        "role": "CEO & IMS Saigon Founder",
         "cta": "Tư vấn miễn phí"
       },
       "benefits": {
@@ -1561,7 +1561,7 @@
       },
       "consultant": {
         "name": "David Vu",
-        "role": "CEO & Người sáng lập Gotik",
+        "role": "CEO & Người sáng lập IMS Saigon",
         "cta": "Tư vấn Miễn phí"
       },
       "useCases": {
@@ -1672,7 +1672,7 @@
         ]
       },
       "whyChoose": {
-        "title": "Tại sao chọn Gotik cho IoT?",
+        "title": "Tại sao chọn IMS Saigon cho IoT?",
         "description": "Chuyên môn IoT toàn diện từ kết nối thiết bị đến phân tích đám mây. Chúng tôi cung cấp các giải pháp an toàn, có thể mở rộng để chuyển đổi hoạt động của bạn.",
         "features": [
           "Chiến lược và triển khai IoT hoàn chỉnh",
@@ -1730,7 +1730,7 @@
       },
       "consultant": {
         "name": "David Vu",
-        "role": "CEO & Người sáng lập Gotik",
+        "role": "CEO & Người sáng lập IMS Saigon",
         "cta": "Tư vấn Miễn phí"
       },
       "solutions": {
@@ -1841,7 +1841,7 @@
         ]
       },
       "whyChoose": {
-        "title": "Tại sao chọn Gotik để Phát triển Ứng dụng?",
+        "title": "Tại sao chọn IMS Saigon để Phát triển Ứng dụng?",
         "description": "Hỗ trợ toàn diện từ ý tưởng ban đầu đến khi ra mắt thành công. Chúng tôi tạo ra các ứng dụng mà người dùng yêu thích và doanh nghiệp tin cậy.",
         "features": [
           "Chuyên môn toàn diện về công nghệ di động và web",
@@ -1899,7 +1899,7 @@
       },
       "consultant": {
         "name": "David Vu",
-        "role": "CEO & Người sáng lập Gotik",
+        "role": "CEO & Người sáng lập IMS Saigon",
         "cta": "Tư vấn Miễn phí"
       },
       "whyRust": {
@@ -1939,7 +1939,7 @@
         ]
       },
       "approach": {
-        "title": "Khía cạnh then chốt của Dịch vụ Chuyển đổi sang Rust của Gotik",
+        "title": "Khía cạnh then chốt của Dịch vụ Chuyển đổi sang Rust của IMS Saigon",
         "description": "Dịch vụ Chuyển đổi mang lại sự thay đổi liên tục từ các ngôn ngữ lập trình truyền thống như một sự hiện đại hóa phần mềm trong quá trình phát triển tiếp theo của nó trong các dự án đang triển khai, hoặc một \"bước khởi đầu sớm\" cho các dự án mới.",
         "highlight": {
           "title": "Ngăn ngừa các Hệ thống Lỗi thời",
@@ -1966,7 +1966,7 @@
       },
       "details": {
         "badge": "Cách tiếp cận của chúng tôi",
-        "title": "Chi tiết về Dịch vụ Chuyển đổi sang Rust của Gotik",
+        "title": "Chi tiết về Dịch vụ Chuyển đổi sang Rust của IMS Saigon",
         "description": "Với Dịch vụ Chuyển đổi sang Rust của chúng tôi, chúng tôi đồng hành cùng bạn một cách toàn diện và có cấu trúc thông qua việc chuyển đổi chiến lược sang Rust.",
         "items": [
           {
@@ -2014,7 +2014,7 @@
       },
       "consultant": {
         "name": "David Vu",
-        "role": "CEO & Người sáng lập Gotik",
+        "role": "CEO & Người sáng lập IMS Saigon",
         "cta": "Tư vấn Miễn phí"
       },
       "services": {
@@ -2055,12 +2055,12 @@
         "title": "Khách hàng nói gì về chúng tôi",
         "items": [
           {
-            "text": "\"Kiến trúc vi dịch vụ mà Gotik thiết kế cho chúng tôi đã thay đổi khả năng mở rộng của chúng tôi. Giờ đây, chúng tôi có thể triển khai các bản cập nhật một cách độc lập và đáp ứng các thay đổi của thị trường nhanh hơn bao giờ hết.\"",
+            "text": "\"Kiến trúc vi dịch vụ mà IMS Saigon thiết kế cho chúng tôi đã thay đổi khả năng mở rộng của chúng tôi. Giờ đây, chúng tôi có thể triển khai các bản cập nhật một cách độc lập và đáp ứng các thay đổi của thị trường nhanh hơn bao giờ hết.\"",
             "author": "Michael S.",
             "role": "CTO, Công ty Công nghệ"
           },
           {
-            "text": "\"Làm việc với Gotik trong quá trình di chuyển lên đám mây của chúng tôi là một bước ngoặt. Cách tiếp cận kiến trúc tiến hóa của họ giúp chúng tôi có thể di dời dần dần mà không làm gián đoạn các hoạt động kinh doanh.\"",
+            "text": "\"Làm việc với IMS Saigon trong quá trình di chuyển lên đám mây của chúng tôi là một bước ngoặt. Cách tiếp cận kiến trúc tiến hóa của họ giúp chúng tôi có thể di dời dần dần mà không làm gián đoạn các hoạt động kinh doanh.\"",
             "author": "Laura W.",
             "role": "Trưởng phòng IT, Dịch vụ Tài chính"
           }
@@ -2093,7 +2093,7 @@
         ]
       },
       "whyChoose": {
-        "title": "Tại sao chọn Gotik cho Kiến trúc Phần mềm?",
+        "title": "Tại sao chọn IMS Saigon cho Kiến trúc Phần mềm?",
         "description": "Chuyên môn của chúng tôi về kiến trúc phần mềm đảm bảo các giải pháp mạnh mẽ và hiệu quả, hỗ trợ đắc lực cho các quy trình kinh doanh của bạn với tính linh hoạt tối đa.",
         "features": [
           "Kiến trúc tiến hóa được thiết kế cho sự thay đổi dần dần",
@@ -2147,7 +2147,7 @@
         "badge": "Nền tảng Odoo",
         "title": "Tối ưu hóa Doanh nghiệp với",
         "titleHighlight": "Giải pháp Odoo ERP",
-        "description": "Gotik tự hào là Đối tác của Odoo. Chúng tôi giúp bạn chuyển đổi các hoạt động vận hành với nền tảng ERP tích hợp đầy đủ, mô-đun hóa được thiết kế cho sự tăng trưởng hiện đại."
+        "description": "IMS Saigon tự hào là Đối tác của Odoo. Chúng tôi giúp bạn chuyển đổi các hoạt động vận hành với nền tảng ERP tích hợp đầy đủ, mô-đun hóa được thiết kế cho sự tăng trưởng hiện đại."
       },
       "consultant": {
         "name": "Thảo Quỳnh Nguyễn",
@@ -2221,8 +2221,8 @@
       "testimonials": {
         "title": "Được các Doanh nghiệp tin dùng",
         "items": [
-          "\"Chuyển sang Odoo là quyết định đúng đắn nhất cho việc quản lý kho hàng của chúng tôi. Quá trình triển khai của Gotik diễn ra suôn sẻ và hiệu quả.\"",
-          "\"Các mô-đun tùy chỉnh do Gotik xây dựng giúp chúng tôi tự động hóa quy trình thanh toán đặc thù, tiết kiệm hàng giờ làm việc thủ công mỗi tuần.\""
+          "\"Chuyển sang Odoo là quyết định đúng đắn nhất cho việc quản lý kho hàng của chúng tôi. Quá trình triển khai của IMS Saigon diễn ra suôn sẻ và hiệu quả.\"",
+          "\"Các mô-đun tùy chỉnh do IMS Saigon xây dựng giúp chúng tôi tự động hóa quy trình thanh toán đặc thù, tiết kiệm hàng giờ làm việc thủ công mỗi tuần.\""
         ]
       },
       "faq": {

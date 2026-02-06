@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Gotik Consulting • Transforming Ideas into Scalable Software Solutions",
-    "siteName": "Gotik Consulting",
+    "title": "IMS Saigon • Transforming Ideas into Scalable Software Solutions",
+    "siteName": "IMS Saigon",
     "description": "Expert guidance for your digital transformation journey. From cloud migration to custom development, we turn your vision into reality.",
     "keywords": "software consulting, digital transformation, cloud migration, AI consulting, data solutions, software architecture, cloud services, custom development, enterprise software"
   },
@@ -104,7 +104,7 @@
     "joiningButton": "...",
     "successMessage": "Thanks for subscribing! Check your email.",
     "errorMessage": "Failed to subscribe. Please try again.",
-    "copyright": "© 2026 Gotik Consulting. All rights reserved.",
+    "copyright": "© 2026 IMS Saigon. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
     "ourstory": "Our Story",
@@ -220,7 +220,7 @@
     }
   },
   "academy": {
-    "badge": "Gotik Academy",
+    "badge": "IMS Saigon Academy",
     "title": "Invest in Your Team's Growth",
     "description": "We don't just deliver solutions—we empower your team to excel. Our tailored training programs combine real-world experience with practical knowledge, designed to elevate your organization's technical capabilities.",
     "learningPaths": {
@@ -337,19 +337,19 @@
     "title": "What Our Clients Say",
     "items": [
       {
-        "quote": "Gotik supported us in modernizing our software to a highly flexible system. We benefited enormously from the know-how of the various Gotik experts.",
+        "quote": "IMS Saigon supported us in modernizing our software to a highly flexible system. We benefited enormously from the know-how of the various IMS Saigon experts.",
         "author": "Rolf Traber",
         "role": "CTO",
         "initials": "RT"
       },
       {
-        "quote": "We brought in Gotik so that we can implement future innovations faster in our software. The collaboration with Gotik was first-class – technically and personally.",
+        "quote": "We brought in IMS Saigon so that we can implement future innovations faster in our software. The collaboration with IMS Saigon was first-class – technically and personally.",
         "author": "Christian Königsdorfer",
         "role": "CEO",
         "initials": "CK"
       },
       {
-        "quote": "The microservices architecture that Gotik designed for us has transformed our ability to scale. We can now deploy updates independently and respond to market changes faster than ever before.",
+        "quote": "The microservices architecture that IMS Saigon designed for us has transformed our ability to scale. We can now deploy updates independently and respond to market changes faster than ever before.",
         "author": "Michael S.",
         "role": "CTO, Technology Company",
         "initials": "MS"
@@ -364,7 +364,7 @@
         "titleHighlight": "Your Company",
         "description": "Discover the world of individualized AI consulting. Our advanced AI agents open new horizons for your company's digital transformation.",
         "consultantName": "David Vu",
-        "consultantRole": "CEO & Gotik Founder",
+        "consultantRole": "CEO & IMS Saigon Founder",
         "consultation": "Free Consultation"
       },
       "benefits": {
@@ -405,7 +405,7 @@
       "aiHub": {
         "badge": "AI Platform",
         "title": "AI Hub",
-        "description": "The Gotik AI Hub is a secure and flexible AI platform that enables companies to easily use generative AI. With pre-configurable and customizable AI agents, you increase efficiency and protect your data.",
+        "description": "The IMS Saigon Hub is a secure and flexible AI platform that enables companies to easily use generative AI. With pre-configurable and customizable AI agents, you increase efficiency and protect your data.",
         "features": {
           "configurable": {
             "title": "Flexibly Configurable",
@@ -424,7 +424,7 @@
             "description": "Clear dashboard with token counts, costs, and usage analytics."
           }
         },
-        "imageAlt": "Gotik AI Hub",
+        "imageAlt": "IMS Saigon Hub",
         "imageTitle": "Secure AI Platform",
         "imageSubtitle": "Flexible. Private. Scalable."
       },
@@ -466,7 +466,7 @@
     },
     "softwareEngineer": {
       "meta": {
-        "title": "Software Engineering | Gotik Consulting",
+        "title": "Software Engineering | IMS Saigon",
         "description": "We transform your ideas into excellent software solutions. Benefit from our expertise and the latest methodological knowledge."
       },
       "hero": {
@@ -476,7 +476,7 @@
         "description": "We transform your ideas into excellent software solutions. Benefit from our expertise and the latest methodological knowledge.",
         "consultant": {
           "name": "David Vu",
-          "role": "CEO & Gotik Founder",
+          "role": "CEO & IMS Saigon Founder",
           "cta": "Free Consultation"
         }
       },
@@ -556,12 +556,12 @@
         "title": "What Our Clients Say",
         "items": [
           {
-            "quote": "Gotik was able to quickly implement our requirements into high-quality software. We are very satisfied with the good cooperation and high quality of the software.",
+            "quote": "IMS Saigon was able to quickly implement our requirements into high-quality software. We are very satisfied with the good cooperation and high quality of the software.",
             "author": "Daniel Mayer",
             "initials": "DM"
           },
           {
-            "quote": "Gotik is the ideal software partner for us: excellent expertise, strong in analysis, and efficient in implementation.",
+            "quote": "IMS Saigon is the ideal software partner for us: excellent expertise, strong in analysis, and efficient in implementation.",
             "author": "Istvan Szalai",
             "initials": "IS"
           }
@@ -579,7 +579,7 @@
             "answer": "Custom software offers flexibility, scalability, and a perfect fit for your business processes. While standard software may require compromises, custom solutions are designed precisely for your needs. This leads to higher efficiency, better user experience, and a competitive advantage."
           },
           {
-            "question": "Can Gotik further develop or modernize existing software?",
+            "question": "Can IMS Saigon further develop or modernize existing software?",
             "answer": "Yes, we not only offer new software solution development but can also further develop or modernize your existing software. Use our expertise to modernize your software so it can adapt flexibly to changing business and user requirements."
           }
         ]
@@ -593,7 +593,7 @@
         "description": "Software modernization promises great potential: from increased performance, improved security and quality, to developing new business ideas.",
         "consultant": {
           "name": "David Vu",
-          "role": "CEO & Gotik Founder",
+          "role": "CEO & IMS Saigon Founder",
           "cta": "Free Consultation"
         }
       },
@@ -886,7 +886,7 @@
         "description": "Custom cloud strategies tailored to your needs. From migration to optimization, we deliver secure, scalable cloud solutions on AWS, Azure, and Google Cloud.",
         "founder": {
           "name": "David Vu",
-          "role": "CEO & Gotik Founder",
+          "role": "CEO & IMS Saigon Founder",
           "cta": "Free Consultation"
         }
       },
@@ -985,7 +985,7 @@
         }
       },
       "whyChoose": {
-        "title": "Why Choose Gotik for Cloud Services?",
+        "title": "Why Choose IMS Saigon for Cloud Services?",
         "description": "Comprehensive cloud expertise across all major platforms. We deliver secure, scalable solutions that drive business value and innovation.",
         "points": [
           "Multi-cloud expertise (AWS, Azure, GCP)",
@@ -1039,11 +1039,11 @@
         "badge": "Data & Analytics",
         "title": "We Turn Your Data into",
         "titleHighlight": "Valuable Knowledge",
-        "description": "Gotik specialists accompany you along the entire data value chain: from developing and implementing your data strategy to building tools for data collection and selecting optimal analysis methods."
+        "description": "IMS Saigon specialists accompany you along the entire data value chain: from developing and implementing your data strategy to building tools for data collection and selecting optimal analysis methods."
       },
       "consultant": {
         "name": "David Vu",
-        "role": "CEO & Gotik Founder",
+        "role": "CEO & IMS Saigon Founder",
         "cta": "Free Consultation"
       },
       "benefits": {
@@ -1157,7 +1157,7 @@
       },
       "consultant": {
         "name": "David Vu",
-        "role": "CEO & Gotik Founder",
+        "role": "CEO & IMS Saigon Founder",
         "cta": "Free Consultation"
       },
       "challenges": {
@@ -1239,7 +1239,7 @@
         ]
       },
       "whyTrust": {
-        "title": "Why Clients Trust Gotik",
+        "title": "Why Clients Trust IMS Saigon",
         "items": {
           "expertise": {
             "title": "Comprehensive Expertise",
@@ -1275,11 +1275,11 @@
             "answer": "Yes, absolutely. SMEs in particular can benefit enormously from a clear data strategy. It enables more efficient operations, better customer knowledge, and faster responses to market changes – often with fewer resources than large corporations. A data strategy tailored to SMEs ensures that data investments are targeted and deliver maximum benefit."
           },
           {
-            "question": "What is the process for developing a data strategy with Gotik?",
+            "question": "What is the process for developing a data strategy with IMS Saigon?",
             "answer": "Our approach is collaborative and customized. We typically start with an assessment to understand your current situation, challenges, and goals. Based on this, we develop the strategy together with you, define concrete measures, and create an implementation roadmap. We emphasize that the strategy is practical and fits your company."
           },
           {
-            "question": "Is it only about the strategy on paper, or does Gotik also support with implementation?",
+            "question": "Is it only about the strategy on paper, or does IMS Saigon also support with implementation?",
             "answer": "We accompany you beyond pure strategy development if desired. Our offering also includes support for implementing data management processes, introducing governance structures, integrating systems, and training your employees. Our goal is to ensure your data strategy is sustainably embedded in the company and delivers measurable results."
           }
         ]
@@ -1294,7 +1294,7 @@
       },
       "consultant": {
         "name": "David Vu",
-        "role": "CEO & Gotik Founder",
+        "role": "CEO & IMS Saigon Founder",
         "cta": "Free Consultation"
       },
       "entryPoints": {
@@ -1333,7 +1333,7 @@
           },
           "pimcore": {
             "title": "I want to master data and delight customers",
-            "description": "Transform complex data landscapes into seamless, AI-powered customer experiences. We combine Pimcore's data management power with the Gotik AI Hub.",
+            "description": "Transform complex data landscapes into seamless, AI-powered customer experiences. We combine Pimcore's data management power with the IMS Saigon Hub.",
             "cta": "To Agentic Pimcore",
             "color": "rose"
           }
@@ -1343,13 +1343,13 @@
         "title": "What Our Clients Say",
         "items": [
           {
-            "content": "Thanks to our collaboration with Gotik, we now make data-driven decisions, work more efficiently, and focus on what matters: our customers and innovations. This gives us security – and a good feeling.",
+            "content": "Thanks to our collaboration with IMS Saigon, we now make data-driven decisions, work more efficiently, and focus on what matters: our customers and innovations. This gives us security – and a good feeling.",
             "author": "Peter K.",
             "role": "Managing Director, Industrial Company",
             "initials": "PK"
           },
           {
-            "content": "Our data was distributed across many systems – that cost us time, money, and nerves. With Gotik, we developed a clear data strategy and intelligently linked our systems. Finally, we can really use our data.",
+            "content": "Our data was distributed across many systems – that cost us time, money, and nerves. With IMS Saigon, we developed a clear data strategy and intelligently linked our systems. Finally, we can really use our data.",
             "author": "Dieter F.",
             "role": "CDO, Service Company",
             "initials": "DF"
@@ -1386,7 +1386,7 @@
         ]
       },
       "benefits": {
-        "title": "Why Gotik for Data Management?",
+        "title": "Why IMS Saigon for Data Management?",
         "description": "We combine strategic consulting with technical implementation from a single source. Our sustainable architectures ensure long-term success.",
         "list": [
           "Strategic consulting & technical implementation from a single source",
@@ -1425,7 +1425,7 @@
             "answer": "Companies that actively manage data are more competitive: They make decisions faster and more informed, reduce operational risks, and create the basis for AI applications, automation, and data-driven innovation. In short: Good data management determines the digital maturity of your company."
           },
           {
-            "question": "How does a typical data management project with Gotik work?",
+            "question": "How does a typical data management project with IMS Saigon work?",
             "answer": "A project usually starts with data analysis and potential assessment. This is followed by concept development and architecture design, implementation including data integration and governance, quality management and training, and operations, monitoring, and continuous optimization. We work iteratively and involve all relevant stakeholders from the start."
           },
           {
@@ -1444,7 +1444,7 @@
       },
       "consultant": {
         "name": "David Vu",
-        "role": "CEO & Gotik Founder",
+        "role": "CEO & IMS Saigon Founder",
         "cta": "Free Consultation"
       },
       "benefits": {
@@ -1561,7 +1561,7 @@
       },
       "consultant": {
         "name": "David Vu",
-        "role": "CEO & Gotik Founder",
+        "role": "CEO & IMS Saigon Founder",
         "cta": "Free Consultation"
       },
       "useCases": {
@@ -1672,7 +1672,7 @@
         ]
       },
       "whyChoose": {
-        "title": "Why Choose Gotik for IoT?",
+        "title": "Why Choose IMS Saigon for IoT?",
         "description": "End-to-end IoT expertise from device connectivity to cloud analytics. We deliver secure, scalable solutions that transform your operations.",
         "features": [
           "Complete IoT strategy and implementation",
@@ -1730,7 +1730,7 @@
       },
       "consultant": {
         "name": "David Vu",
-        "role": "CEO & Gotik Founder",
+        "role": "CEO & IMS Saigon Founder",
         "cta": "Free Consultation"
       },
       "solutions": {
@@ -1841,7 +1841,7 @@
         ]
       },
       "whyChoose": {
-        "title": "Why Choose Gotik for App Development?",
+        "title": "Why Choose IMS Saigon for App Development?",
         "description": "Comprehensive support from initial concept to successful launch. We create apps that users love and businesses rely on.",
         "features": [
           "Full-stack expertise in mobile and web technologies",
@@ -1899,7 +1899,7 @@
       },
       "consultant": {
         "name": "David Vu",
-        "role": "CEO & Gotik Founder",
+        "role": "CEO & IMS Saigon Founder",
         "cta": "Free Consultation"
       },
       "whyRust": {
@@ -1939,7 +1939,7 @@
         ]
       },
       "approach": {
-        "title": "The Key Aspect of the Gotik Rust Transition Service",
+        "title": "The Key Aspect of the IMS Saigon Rust Transition Service",
         "description": "The Transition Service offers a continuous switch from traditional programming languages as a modernization of software during its further development in ongoing projects, or a \"jumpstart\" for new projects.",
         "highlight": {
           "title": "Prevention of Legacy Systems",
@@ -1966,7 +1966,7 @@
       },
       "details": {
         "badge": "Our Approach",
-        "title": "Details of the Gotik Rust Transition Service",
+        "title": "Details of the IMS Saigon Rust Transition Service",
         "description": "With our Rust Transition Service, we accompany you holistically and structured through the strategic switch to Rust.",
         "items": [
           {
@@ -2014,7 +2014,7 @@
       },
       "consultant": {
         "name": "David Vu",
-        "role": "CEO & Gotik Founder",
+        "role": "CEO & IMS Saigon Founder",
         "cta": "Free Consultation"
       },
       "services": {
@@ -2055,12 +2055,12 @@
         "title": "What Our Clients Say",
         "items": [
           {
-            "text": "\"The microservices architecture that Gotik designed for us has transformed our ability to scale. We can now deploy updates independently and respond to market changes faster than ever before.\"",
+            "text": "\"The microservices architecture that IMS Saigon designed for us has transformed our ability to scale. We can now deploy updates independently and respond to market changes faster than ever before.\"",
             "author": "Michael S.",
             "role": "CTO, Technology Company"
           },
           {
-            "text": "\"Working with Gotik on our cloud migration was a game-changer. Their evolutionary architecture approach meant we could migrate incrementally without disrupting our business operations.\"",
+            "text": "\"Working with IMS Saigon on our cloud migration was a game-changer. Their evolutionary architecture approach meant we could migrate incrementally without disrupting our business operations.\"",
             "author": "Laura W.",
             "role": "Head of IT, Financial Services"
           }
@@ -2093,7 +2093,7 @@
         ]
       },
       "whyChoose": {
-        "title": "Why Choose Gotik for Software Architecture?",
+        "title": "Why Choose IMS Saigon for Software Architecture?",
         "description": "Our expertise in software architecture guarantees robust and performant solutions that efficiently support your business processes with maximum flexibility.",
         "features": [
           "Evolutionary architectures designed for incremental change",
@@ -2147,7 +2147,7 @@
         "badge": "Odoo Platform",
         "title": "Streamline Your Business with",
         "titleHighlight": "Odoo ERP Solutions",
-        "description": "Gotik is a proud Odoo Partner. We help you transform your operations with a fully integrated, modular ERP platform designed for modern growth."
+        "description": "IMS Saigon is a proud Odoo Partner. We help you transform your operations with a fully integrated, modular ERP platform designed for modern growth."
       },
       "consultant": {
         "name": "Thao Quynh Nguyen",
@@ -2221,8 +2221,8 @@
       "testimonials": {
         "title": "Loved by Businesses",
         "items": [
-          "\"Moving to Odoo was the best decision for our warehouse management. Gotik's implementation was smooth and efficient.\"",
-          "\"The custom modules built by Gotik allowed us to automate our unique billing process, saving us hours of manual work every week.\""
+          "\"Moving to Odoo was the best decision for our warehouse management. IMS Saigon's implementation was smooth and efficient.\"",
+          "\"The custom modules built by IMS Saigon allowed us to automate our unique billing process, saving us hours of manual work every week.\""
         ]
       },
       "faq": {

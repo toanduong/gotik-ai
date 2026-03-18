@@ -6,7 +6,7 @@
  * Hiển thị tất cả translations có sẵn
  *
  * Cách sử dụng:
- * node scripts/view-translations.js [search-term] [--lang=vi]
+ * node scripts/view-translations.js [search-term] [--lang=en]
  *
  * Ví dụ:
  * node scripts/view-translations.js                    # Hiển thị tất cả
@@ -19,7 +19,7 @@ const path = require('path');
 
 const args = process.argv.slice(2);
 const searchTerm = args.find(arg => !arg.startsWith('--')) || '';
-const lang = args.find(arg => arg.startsWith('--lang='))?.split('=')[1] || 'vi';
+const lang = args.find(arg => arg.startsWith('--lang='))?.split('=')[1] || 'en';
 
 const filePath = path.join(__dirname, '..', 'messages', `${lang}.json`);
 

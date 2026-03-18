@@ -3,7 +3,7 @@ import {defineRouting} from 'next-intl/routing';
 import {notFound} from 'next/navigation';
 
 // Supported locales
-export const locales = ['en', 'vi'] as const;
+export const locales = ['en'] as const;
 export type Locale = (typeof locales)[number];
 
 // Default locale (no prefix)

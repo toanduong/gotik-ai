@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTranslations, useLocale } from 'next-intl';
 import { usePathname } from 'next/navigation';
-import LanguageSwitcher from './LanguageSwitcher';
+
 
 export default function Navbar() {
     const t = useTranslations('navigation');
@@ -119,7 +119,7 @@ export default function Navbar() {
                 </div>
 
                 <div className="isolate flex items-center gap-4 mr-[15px] md:mr-0">
-                    <LanguageSwitcher />
+
                     <Link
                         href="/#contact"
                         className={`hidden md:flex px-6 py-2.5 text-[10px] font-bold uppercase tracking-widest hover:bg-sky-blue hover:text-white transition-all hover:scale-105 rounded-full ${isScrolled ? "bg-sky-blue text-navy-blue" : "bg-black text-white"} items-center justify-center`}

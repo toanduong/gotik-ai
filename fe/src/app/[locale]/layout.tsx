@@ -39,16 +39,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       shortcut: '/logo_footer.png',
     },
     alternates: {
-      canonical: locale === 'en' ? siteUrl : `${siteUrl}/${locale}`,
+      canonical: siteUrl,
       languages: {
         'en': siteUrl,
-        'vi': `${siteUrl}/vi`,
       },
     },
     openGraph: {
       type: 'website',
-      locale: locale === 'en' ? 'en_US' : 'vi_VN',
-      url: locale === 'en' ? siteUrl : `${siteUrl}/${locale}`,
+      locale: 'en_US',
+      url: siteUrl,
       siteName: t('siteName'),
       title: t('title'),
       description: t('description'),

@@ -4,10 +4,10 @@
  * Translation Editor Helper
  *
  * Cách sử dụng:
- * node scripts/edit-translation.js <key> <new-value> [--lang=vi]
+ * node scripts/edit-translation.js <key> <new-value> [--lang=en]
  *
  * Ví dụ:
- * node scripts/edit-translation.js "pages.softwareEngineer.hero.title" "Tiêu đề mới" --lang=vi
+ * node scripts/edit-translation.js "pages.softwareEngineer.hero.title" "New title" --lang=en
  */
 
 const fs = require('fs');
@@ -16,18 +16,18 @@ const path = require('path');
 const args = process.argv.slice(2);
 const keyPath = args[0];
 const newValue = args[1];
-const lang = args.find(arg => arg.startsWith('--lang='))?.split('=')[1] || 'vi';
+const lang = args.find(arg => arg.startsWith('--lang='))?.split('=')[1] || 'en';
 
 if (!keyPath || !newValue) {
   console.log(`
 📝 Translation Editor
 
 Cách sử dụng:
-  node scripts/edit-translation.js <key-path> <new-value> [--lang=vi|en]
+  node scripts/edit-translation.js <key-path> <new-value> [--lang=en]
 
 Ví dụ:
-  node scripts/edit-translation.js "pages.softwareEngineer.hero.title" "Tiêu đề mới" --lang=vi
-  node scripts/edit-translation.js "navigation.services" "Dịch vụ" --lang=vi
+  node scripts/edit-translation.js "pages.softwareEngineer.hero.title" "New title" --lang=en
+  node scripts/edit-translation.js "navigation.services" "Services" --lang=en
 
 Key paths có sẵn:
   - navigation.*
